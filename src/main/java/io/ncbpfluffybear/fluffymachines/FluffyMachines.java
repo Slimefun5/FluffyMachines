@@ -4,14 +4,11 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.BlobBuildUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 import io.ncbpfluffybear.fluffymachines.listeners.KeyedCrafterListener;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
 import io.ncbpfluffybear.fluffymachines.utils.Events;
 import io.ncbpfluffybear.fluffymachines.utils.McMMOEvents;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -24,7 +21,6 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Registry;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
@@ -50,10 +46,6 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             instance = this;
             // Read something from your config.yml
             Config cfg = new Config(this);
-
-            if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Dev - ")) {
-                new BlobBuildUpdater(this, getFile(), "FluffyMachines", "Dev").start();
-            }
 
             // Register ACT Recipes
             Iterator<Recipe> recipeIterator = Bukkit.recipeIterator();
