@@ -1,7 +1,15 @@
 # FluffyMachines
 
-These are some thrown together machines made by me for fun :)
+A [Slimefun5](https://github.com/Slimefun5/Slimefun5) addon — these are some thrown together machines made by me for fun :)
 I pretty much add whatever comes to mind, is suggested by me, or other addons don't want to add.
+
+## Building
+
+```bash
+./gradlew build
+```
+
+The compiled jar will be in `build/libs/`.
 
 Custom item settings can be changed in `plugins/Slimefun/Items.yml`
 
