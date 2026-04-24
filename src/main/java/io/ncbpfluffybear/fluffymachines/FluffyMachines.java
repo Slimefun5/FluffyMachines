@@ -20,7 +20,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import javax.annotation.Nonnull;
-import lombok.SneakyThrows;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
@@ -29,7 +28,6 @@ import org.bukkit.Registry;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.enchantments.EnchantmentWrapper;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -46,70 +44,74 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
     public static final HashMap<ItemStack, List<Pair<ItemStack, List<RecipeChoice>>>> shapelessVanillaRecipes =
             new HashMap<>();
 
-    @SneakyThrows
     @Override
     public void onEnable() {
-        instance = this;
-        // Read something from your config.yml
-        Config cfg = new Config(this);
+        try {
+            instance = this;
+            // Read something from your config.yml
+            Config cfg = new Config(this);
 
-        if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Dev - ")) {
-            new BlobBuildUpdater(this, getFile(), "FluffyMachines", "Dev").start();
-        }
+            if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Dev - ")) {
+                new BlobBuildUpdater(this, getFile(), "FluffyMachines", "Dev").start();
+            }
 
-        // Register ACT Recipes
-        Iterator<Recipe> recipeIterator = Bukkit.recipeIterator();
-        while (recipeIterator.hasNext()) {
-            Recipe r = recipeIterator.next();
+            // Register ACT Recipes
+            Iterator<Recipe> recipeIterator = Bukkit.recipeIterator();
+            while (recipeIterator.hasNext()) {
+                Recipe r = recipeIterator.next();
 
-            if (r instanceof ShapedRecipe) {
-                ShapedRecipe sr = (ShapedRecipe) r;
-                List<RecipeChoice> rc = new ArrayList<>();
-                ItemStack key = new ItemStack(sr.getResult().getType(), 1);
+                if (r instanceof ShapedRecipe) {
+                    ShapedRecipe sr = (ShapedRecipe) r;
+                    List<RecipeChoice> rc = new ArrayList<>();
+                    ItemStack key = new ItemStack(sr.getResult().getType(), 1);
 
-                // Convert the recipe to a list
-                for (Map.Entry<Character, RecipeChoice> choice : sr.getChoiceMap().entrySet()) {
-                    if (choice.getValue() != null) {
-                        rc.add(choice.getValue());
+                    // Convert the recipe to a list
+                    for (Map.Entry<Character, RecipeChoice> choice : sr.getChoiceMap().entrySet()) {
+                        if (choice.getValue() != null) {
+                            rc.add(choice.getValue());
+                        }
+                    }
+
+                    if (!shapedVanillaRecipes.containsKey(key)) {
+                        shapedVanillaRecipes.put(key,
+                                new ArrayList<>(Collections.singletonList(new Pair<>(sr.getResult(), rc))));
+                    } else {
+                        shapedVanillaRecipes.get(key).add(new Pair<>(sr.getResult(), rc));
+                    }
+
+                } else if (r instanceof ShapelessRecipe) {
+                    ShapelessRecipe slr = (ShapelessRecipe) r;
+                    ItemStack key = new ItemStack(slr.getResult().getType(), 1);
+
+                    // Key has a list of recipe options
+                    if (!shapelessVanillaRecipes.containsKey(key)) {
+                        shapelessVanillaRecipes.put(key,
+                                new ArrayList<>(Collections.singletonList(new Pair<>(slr.getResult(), slr.getChoiceList()))));
+                    } else {
+                        shapelessVanillaRecipes.get(key).add(new Pair<>(slr.getResult(), slr.getChoiceList()));
                     }
                 }
-
-                if (!shapedVanillaRecipes.containsKey(key)) {
-                    shapedVanillaRecipes.put(key,
-                            new ArrayList<>(Collections.singletonList(new Pair<>(sr.getResult(), rc))));
-                } else {
-                    shapedVanillaRecipes.get(key).add(new Pair<>(sr.getResult(), rc));
-                }
-
-            } else if (r instanceof ShapelessRecipe) {
-                ShapelessRecipe slr = (ShapelessRecipe) r;
-                ItemStack key = new ItemStack(slr.getResult().getType(), 1);
-
-                // Key has a list of recipe options
-                if (!shapelessVanillaRecipes.containsKey(key)) {
-                    shapelessVanillaRecipes.put(key,
-                            new ArrayList<>(Collections.singletonList(new Pair<>(slr.getResult(), slr.getChoiceList()))));
-                } else {
-                    shapelessVanillaRecipes.get(key).add(new Pair<>(slr.getResult(), slr.getChoiceList()));
-                }
             }
+
+            // Register McMMO Events
+            if (getServer().getPluginManager().isPluginEnabled("McMMO")) {
+                Bukkit.getLogger().log(Level.INFO, "McMMO found!");
+                getServer().getPluginManager().registerEvents(new McMMOEvents(), this);
+            }
+
+            // Registering Items
+            FluffyItemSetup.setup(this);
+            FluffyItemSetup.setupBarrels(this);
+
+            // Register Events Class
+            getServer().getPluginManager().registerEvents(new Events(), this);
+            getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
+
+            final Metrics metrics = new Metrics(this, 8927);
+        } catch (Exception e) {
+            getLogger().log(Level.SEVERE, "An error occurred while enabling FluffyMachines", e);
+            getServer().getPluginManager().disablePlugin(this);
         }
-
-        // Register McMMO Events
-        if (getServer().getPluginManager().isPluginEnabled("McMMO")) {
-            Bukkit.getLogger().log(Level.INFO, "McMMO found!");
-            getServer().getPluginManager().registerEvents(new McMMOEvents(), this);
-        }
-
-        // Registering Items
-        FluffyItemSetup.setup(this);
-        FluffyItemSetup.setupBarrels(this);
-
-        // Register Events Class
-        getServer().getPluginManager().registerEvents(new Events(), this);
-        getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
-
-        final Metrics metrics = new Metrics(this, 8927);
     }
 
     @Override
@@ -137,7 +139,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
                 Utils.send(p, String.valueOf(p.getInventory().getItemInMainHand().getItemMeta()));
                 return true;
             case "RAWMETA":
-                p.sendMessage(String.valueOf(p.getInventory().getItemInMainHand().getItemMeta()).replace("§", "&"));
+                p.sendMessage(String.valueOf(p.getInventory().getItemInMainHand().getItemMeta()).replace("\u00a7", "&"));
                 return true;
             case "VERSION":
             case "V":
