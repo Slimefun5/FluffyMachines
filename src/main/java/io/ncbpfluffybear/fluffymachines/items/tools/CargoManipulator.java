@@ -113,7 +113,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
             for (int i = 0; i < 9; i++) { // Iterate through all slots in cargo filter
                 ItemStack menuItem = parentInventory.getItemInSlot(CARGO_SLOTS[i]);
                 if (menuItem != null) {
-                    filterItems[i] = new CustomItemStack(menuItem, 1);
+                    filterItems[i] = CustomItemStack.create(menuItem, 1);
                 } else {
                     filterItems[i] = null;
                 }
@@ -187,7 +187,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
                         playerItem.setAmount(playerItem.getAmount() - 1);
 
                         // Insert item into node menu
-                        nodeMenu.replaceExistingItem(CARGO_SLOTS[i], new CustomItemStack(playerItem, 1));
+                        nodeMenu.replaceExistingItem(CARGO_SLOTS[i], CustomItemStack.create(playerItem, 1));
                         break;
                     }
                 }
