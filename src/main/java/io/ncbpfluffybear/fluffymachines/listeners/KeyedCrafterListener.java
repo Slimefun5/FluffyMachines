@@ -21,6 +21,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+
 public class KeyedCrafterListener implements Listener {
 
     public KeyedCrafterListener() {
@@ -56,7 +58,7 @@ public class KeyedCrafterListener implements Listener {
                     return;
                 }
 
-                if (SmartFactory.getAcceptedItems().contains((SlimefunItemStack) key.getItem())) {
+                if (SmartFactory.getAcceptedItems().stream().anyMatch(i -> SlimefunUtils.isItemSimilar(i.item(), key.getItem(), false))) {
 
                     BlockStorage.addBlockInfo(b, "recipe", key.getId());
                     BlockStorage.getInventory(b).replaceExistingItem(SmartFactory.RECIPE_SLOT,
@@ -91,7 +93,8 @@ public class KeyedCrafterListener implements Listener {
     }
 
     private boolean isCargoNode(@Nullable SlimefunItem recipe) {
-        return recipe != null && (recipe.getItem() == SlimefunItems.CARGO_INPUT_NODE
-                || recipe.getItem() == SlimefunItems.CARGO_OUTPUT_NODE || recipe.getItem() == SlimefunItems.CARGO_OUTPUT_NODE_2);
+        return recipe != null && (SlimefunUtils.isItemSimilar(recipe.getItem(), SlimefunItems.CARGO_INPUT_NODE.item(), false)
+                || SlimefunUtils.isItemSimilar(recipe.getItem(), SlimefunItems.CARGO_OUTPUT_NODE.item(), false)
+                || SlimefunUtils.isItemSimilar(recipe.getItem(), SlimefunItems.CARGO_OUTPUT_NODE_2.item(), false));
     }
 }

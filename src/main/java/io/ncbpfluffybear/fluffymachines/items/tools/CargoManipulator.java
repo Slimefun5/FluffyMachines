@@ -74,11 +74,11 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
         Block b = e.getClickedBlock();
 
         // Check if targeted block is cargo node
-        SlimefunItemStack nodeType = getCargoNodeType(b);
+        ItemStack nodeType = getCargoNodeType(b);
         if (nodeType == null || (
-                nodeType != SlimefunItems.CARGO_OUTPUT_NODE &&
-                        nodeType != SlimefunItems.CARGO_OUTPUT_NODE_2 &&
-                        nodeType != SlimefunItems.CARGO_INPUT_NODE
+                !SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_OUTPUT_NODE.item(), false) &&
+                        !SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_OUTPUT_NODE_2.item(), false) &&
+                        !SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_INPUT_NODE.item(), false)
         )) {
             return;
         }
@@ -102,12 +102,12 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
      * Copy's a node's data into the manipulator. Cargo inventories stored in map.
      * Action: Right Click Block
      */
-    private void copyNode(Block parent, Player p, SlimefunItemStack nodeType) {
+    private void copyNode(Block parent, Player p, ItemStack nodeType) {
         // Copy BlockStorage data
         JsonObject nodeData = (JsonObject) new JsonParser().parse(BlockStorage.getBlockInfoAsJson(parent));
 
         ItemStack[] filterItems = new ItemStack[9];
-        if (nodeType != SlimefunItems.CARGO_OUTPUT_NODE) { // No inventory
+        if (!SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_OUTPUT_NODE.item(), false)) { // No inventory
             // Copy inventory into map
             BlockMenu parentInventory = BlockStorage.getInventory(parent);
             for (int i = 0; i < 9; i++) { // Iterate through all slots in cargo filter
@@ -130,7 +130,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
      * Pastes stored node contents
      * Action: Left Click
      */
-    private void pasteNode(Block child, Player p, SlimefunItemStack nodeType) {
+    private void pasteNode(Block child, Player p, ItemStack nodeType) {
         Pair<JsonObject, ItemStack[]> nodeSettings = storedFilters.getOrDefault(p, null);
 
         // No data saved yet
@@ -142,10 +142,10 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
         // Get saved data
         JsonObject jsonData = nodeSettings.getFirstValue();
 
-        SlimefunItemStack savedNodeType = (SlimefunItemStack) SlimefunItem.getById(jsonData.get("id").getAsString()).getItem();
-        if (savedNodeType != nodeType) {
-            Utils.send(p, "&cYou copied a " + savedNodeType.getDisplayName() +
-                    " &cbut you are trying to modify a " + nodeType.getDisplayName() + "&c!");
+        ItemStack savedNodeType = SlimefunItem.getById(jsonData.get("id").getAsString()).getItem();
+        if (!SlimefunUtils.isItemSimilar(savedNodeType, nodeType, false)) {
+            Utils.send(p, "&cYou copied a " + Utils.getViewableName(savedNodeType) +
+                    " &cbut you are trying to modify a " + Utils.getViewableName(nodeType) + "&c!");
             createParticle(child, Color.RED);
             return;
         }
@@ -153,7 +153,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
         // Set the data
         BlockStorage.setBlockInfo(child, jsonData.toString(), false);
 
-        if (nodeType != SlimefunItems.CARGO_OUTPUT_NODE) {
+        if (!SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_OUTPUT_NODE.item(), false)) {
             // Set the filter
             BlockMenu nodeMenu = BlockStorage.getInventory(child);
             ItemStack[] filterItems = nodeSettings.getSecondValue();
@@ -196,7 +196,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
         // Force menu update
         BlockStorage.getStorage(child.getWorld()).reloadInventory(child.getLocation());
-        Utils.send(p, "&aYour " + savedNodeType.getDisplayName() + " &ahas been pasted.");
+        Utils.send(p, "&aYour " + Utils.getViewableName(savedNodeType) + " &ahas been pasted.");
         createParticle(child, Color.LIME);
 
     }
@@ -205,20 +205,20 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
      * Clears the data of a targeted node
      * Action: Sneak + Right Click Block
      */
-    private void clearNode(Block node, Player p, SlimefunItemStack nodeType) {
+    private void clearNode(Block node, Player p, ItemStack nodeType) {
         // Clear node settings
         BlockStorage.addBlockInfo(node, "owner", p.getUniqueId().toString());
         BlockStorage.addBlockInfo(node, "frequency", "0");
 
         // These settings are only for Input and Advanced Output nodes
-        if (nodeType != SlimefunItems.CARGO_OUTPUT_NODE) {
+        if (!SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_OUTPUT_NODE.item(), false)) {
             // AbstractFilterNode settings
             BlockStorage.addBlockInfo(node, "index", "0");
             BlockStorage.addBlockInfo(node, "filter-type", "whitelist");
             BlockStorage.addBlockInfo(node, "filter-lore", String.valueOf(true));
             BlockStorage.addBlockInfo(node, "filter-durability", String.valueOf(false));
 
-            if (nodeType == SlimefunItems.CARGO_INPUT_NODE) {
+            if (SlimefunUtils.isItemSimilar(nodeType, SlimefunItems.CARGO_INPUT_NODE.item(), false)) {
                 // CargoInputNode settings
                 BlockStorage.addBlockInfo(node, "round-robin", String.valueOf(false));
                 BlockStorage.addBlockInfo(node, "smart-fill", String.valueOf(false));
@@ -253,7 +253,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
     /**
      * Get the SlimefunItemStack of the cargo node
      */
-    private SlimefunItemStack getCargoNodeType(Block b) {
+    private ItemStack getCargoNodeType(Block b) {
         if (b == null) {
             return null;
         }
@@ -264,11 +264,11 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
             return null;
         }
 
-        return (SlimefunItemStack) SlimefunItem.getById(blockId).getItem();
+        return SlimefunItem.getById(blockId).getItem();
     }
 
     private void createParticle(Block b, Color color) {
         Particle.DustOptions dustOption = new Particle.DustOptions(color, 1);
-        b.getLocation().getWorld().spawnParticle(Particle.REDSTONE, b.getLocation().add(0.5, 0.5, 0.5), 1, dustOption);
+        b.getLocation().getWorld().spawnParticle(Particle.DUST, b.getLocation().add(0.5, 0.5, 0.5), 1, dustOption);
     }
 }

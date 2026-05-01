@@ -58,7 +58,7 @@ public class ElectricDustFabricator extends AContainer implements RecipeDisplayI
             displayRecipes.add(CustomItemStack.create(Material.COBBLESTONE,
                 "&fAny Cobblestone Variant", "&7Cobblestone", "&7Andesite", "&7Diorite", "&7Granite"
             ));
-            displayRecipes.add(dust);
+            displayRecipes.add(dust.item());
         }
 
         return displayRecipes;

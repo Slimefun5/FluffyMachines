@@ -140,7 +140,7 @@ public final class FluffyItemSetup {
                     barrelType.getBorder(), barrelType.getReinforcement(), barrelType.getBorder()
             }, barrelType.getDefaultSize()).register(plugin);
 
-            previousBarrel = barrelStack;
+            previousBarrel = barrelStack.item().clone();
 
         }
     }
@@ -429,7 +429,7 @@ public final class FluffyItemSetup {
                 new ItemStack(Material.PISTON), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.PISTON),
                 SlimefunItems.ALUMINUM_BRONZE_INGOT.item(), SlimefunItems.ALUMINUM_BRONZE_INGOT.item(),
                 SlimefunItems.ALUMINUM_BRONZE_INGOT.item()},
-                new SlimefunItemStack(FluffyItems.ALTERNATE_ELEVATOR_PLATE, 2)
+                new org.bukkit.inventory.ItemStack(FluffyItems.ALTERNATE_ELEVATOR_PLATE.item().getType(), 2)
         ).register(plugin);
 
         new AdvancedChargingBench(machines, FluffyItems.ADVANCED_CHARGING_BENCH,

@@ -341,7 +341,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
 
         ItemStack[] recipe = key.getRecipe();
         if (key == SlimefunItems.COPPER_WIRE.getItem()) {
-            recipe = new SlimefunItemStack[] {SlimefunItems.COPPER_DUST};
+            recipe = new ItemStack[] {SlimefunItems.COPPER_DUST.item()};
         }
 
         for (ItemStack item : recipe) {
@@ -359,7 +359,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                     rawSlimefun.put(recipeItem, rawSlimefun.getOrDefault(recipeItem, 0) + amt * item.getAmount());
                 });
             } else {
-                if (item instanceof SlimefunItemStack) {
+                if (SlimefunItem.getByItem(item) != null) {
                     rawSlimefun.put(SlimefunItem.getByItem(item), rawSlimefun.getOrDefault(SlimefunItem.getByItem(item), 0) + item.getAmount());
                 } else {
                     // Replace some vanilla items
@@ -416,7 +416,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
         List<ItemStack> recipes = new ArrayList<>();
 
         for (SlimefunItemStack sfStack : ACCEPTED_ITEMS) {
-            ItemStack display = sfStack.clone();
+            ItemStack display = sfStack.item().clone();
             ItemMeta displayMeta = display.getItemMeta();
 
             List<String> lore = new ArrayList<>();

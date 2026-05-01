@@ -427,7 +427,7 @@ public class SuperheatedFurnace extends NonHopperableBlock {
             } else if (type.equals("IRON")) {
                 ingotItem = new ItemStack(Material.IRON_INGOT, amount);
             } else {
-                ingotItem = CustomItemStack.create(SlimefunItem.getById(type + "_INGOT").getItem().item().clone(), amount);
+                ingotItem = SlimefunItem.getById(type + "_INGOT").getItem().clone(); ingotItem.setAmount(amount);
             }
 
             if (menu.fits(ingotItem, INGOT_OUTPUT_SLOT)) {

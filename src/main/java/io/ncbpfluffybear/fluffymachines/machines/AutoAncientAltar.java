@@ -61,7 +61,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
 
     private final ItemStack ironBars = new ItemStack(Material.IRON_BARS);
     private final ItemStack earthRune = new SlimefunItemStack(SlimefunItems.EARTH_RUNE.getItemId(),
-            SlimefunItems.EARTH_RUNE);
+            SlimefunItems.EARTH_RUNE.item()).item();
     private final List<ItemStack> jarInputs = new ArrayList<>(Arrays.asList(ironBars, earthRune, ironBars, earthRune,
             ironBars, earthRune, ironBars, earthRune));
 
@@ -319,7 +319,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
         ItemStack catalyst;
         if (sfCatalyst != null) {
             SlimefunItemStack catalystStack = new SlimefunItemStack(sfCatalyst.getId(), catalystItem);
-            catalyst = new SlimefunItemStack(catalystStack, 1);
+            catalyst = catalystStack.item().clone(); catalyst.setAmount(1);
         } else if (!catalystItem.hasItemMeta()) {
             catalyst = new ItemStack(catalystItem.getType(), 1);
         } else {
@@ -352,9 +352,9 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
             } catch (IllegalArgumentException ignored) {
             }
 
-        } else if (SlimefunUtils.isItemSimilar(catalystItem, SlimefunItems.BROKEN_SPAWNER, false, false)) {
+        } else if (SlimefunUtils.isItemSimilar(catalystItem, SlimefunItems.BROKEN_SPAWNER.item(), false, false)) {
 
-            Optional<ItemStack> result = checkRecipe(SlimefunItems.BROKEN_SPAWNER, pedestalItems);
+            Optional<ItemStack> result = checkRecipe(SlimefunItems.BROKEN_SPAWNER.item(), pedestalItems);
             if (result.isPresent()) {
                 RepairedSpawner spawner = (RepairedSpawner) SlimefunItems.REPAIRED_SPAWNER.getItem();
                 ItemStack spawnerResult = spawner.getItemForEntityType(spawner.getEntityType(catalystItem).orElse(EntityType.PIG));
