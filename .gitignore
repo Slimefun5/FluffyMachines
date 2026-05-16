@@ -1,17 +1,15 @@
 # Gradle
 .gradle/
 build/
-
-# IDE
-/.idea/
+out/
+bin/
+.idea/
 *.iml
-.project
-.classpath
-/.settings/
+*.iws
 
-# OS
+# MacOS
 .DS_Store
 
-# Maven (legacy)
-/target/
-dependency-reduced-pom.xml
+# Temporary files
+*.tmp
+*.log
