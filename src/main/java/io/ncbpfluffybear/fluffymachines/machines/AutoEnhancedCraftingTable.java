@@ -1,8 +1,8 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.ncbpfluffybear.fluffymachines.objects.AutoCrafter;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -14,3 +14,4 @@ public class AutoEnhancedCraftingTable extends AutoCrafter {
         );
     }
 }
+

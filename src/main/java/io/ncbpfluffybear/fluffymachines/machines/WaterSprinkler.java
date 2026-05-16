@@ -1,15 +1,15 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.accelerators.AbstractGrowthAccelerator;
-import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.accelerators.CropGrowthAccelerator;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun5.implementation.items.electric.machines.accelerators.AbstractGrowthAccelerator;
+import io.github.thebusybiscuit.slimefun5.implementation.items.electric.machines.accelerators.CropGrowthAccelerator;
+import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
@@ -152,3 +152,4 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
     }
 
 }
+

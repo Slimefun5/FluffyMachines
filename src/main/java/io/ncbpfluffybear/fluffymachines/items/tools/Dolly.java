@@ -1,14 +1,14 @@
 package io.ncbpfluffybear.fluffymachines.items.tools;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerBackpack;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.player.PlayerBackpack;
+import io.github.thebusybiscuit.slimefun5.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
@@ -291,3 +291,4 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
     }
 
 }
+

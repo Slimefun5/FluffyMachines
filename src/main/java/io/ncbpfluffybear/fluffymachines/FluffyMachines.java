@@ -1,9 +1,9 @@
 package io.ncbpfluffybear.fluffymachines;
 
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun5.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.collections.Pair;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import io.ncbpfluffybear.fluffymachines.listeners.KeyedCrafterListener;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
 import io.ncbpfluffybear.fluffymachines.utils.Events;
@@ -202,3 +202,4 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
     }
 
 }
+

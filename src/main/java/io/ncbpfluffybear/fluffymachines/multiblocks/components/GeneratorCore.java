@@ -1,11 +1,11 @@
 package io.ncbpfluffybear.fluffymachines.multiblocks.components;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetProvider;
-import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.attributes.EnergyNetProvider;
+import io.github.thebusybiscuit.slimefun5.core.networks.energy.EnergyNetComponentType;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
@@ -36,3 +36,4 @@ public class GeneratorCore extends SlimefunItem implements EnergyNetProvider {
         return 64;
     }
 }
+

@@ -1,16 +1,16 @@
 package io.ncbpfluffybear.fluffymachines.items.tools;
 
 
-import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
+import io.github.thebusybiscuit.slimefun5.core.attributes.Rechargeable;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.common.ChatColors;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -214,3 +214,4 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
 
     }
 }
+

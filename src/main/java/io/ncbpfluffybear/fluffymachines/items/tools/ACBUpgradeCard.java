@@ -1,15 +1,15 @@
 package io.ncbpfluffybear.fluffymachines.items.tools;
 
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemHandler;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemHandler;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.EquipmentSlot;
@@ -70,3 +70,4 @@ public class ACBUpgradeCard extends SimpleSlimefunItem<ItemHandler> {
         };
     }
 }
+

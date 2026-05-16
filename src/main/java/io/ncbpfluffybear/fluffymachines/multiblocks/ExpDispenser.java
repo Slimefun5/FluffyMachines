@@ -1,9 +1,9 @@
 package io.ncbpfluffybear.fluffymachines.multiblocks;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.core.multiblocks.MultiBlockMachine;
 import io.ncbpfluffybear.fluffymachines.items.Barrel;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
@@ -59,3 +59,4 @@ public class ExpDispenser extends MultiBlockMachine {
         }
     }
 }
+

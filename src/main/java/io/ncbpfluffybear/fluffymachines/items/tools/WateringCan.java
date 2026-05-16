@@ -1,20 +1,20 @@
 package io.ncbpfluffybear.fluffymachines.items.tools;
 
-import io.github.thebusybiscuit.slimefun4.api.items.settings.DoubleRangeSetting;
-import io.github.thebusybiscuit.slimefun4.api.items.settings.IntRangeSetting;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
+import io.github.thebusybiscuit.slimefun5.api.items.settings.DoubleRangeSetting;
+import io.github.thebusybiscuit.slimefun5.api.items.settings.IntRangeSetting;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.common.ChatColors;
 import io.ncbpfluffybear.fluffymachines.utils.CancelPlace;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
@@ -254,3 +254,4 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
     }
 
 }
+

@@ -1,6 +1,6 @@
 package io.ncbpfluffybear.fluffymachines.utils;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.ncbpfluffybear.fluffymachines.items.Barrel;
 import io.ncbpfluffybear.fluffymachines.items.FireproofRune;
 import io.ncbpfluffybear.fluffymachines.items.HelicopterHat;
@@ -211,3 +211,4 @@ public class Events implements Listener {
         }
     }
 }
+

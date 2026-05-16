@@ -1,15 +1,15 @@
 package io.ncbpfluffybear.fluffymachines.multiblocks;
 
-import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.slimefun5.core.multiblocks.MultiBlockMachine;
+import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import io.ncbpfluffybear.fluffymachines.multiblocks.components.SuperheatedFurnace;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import java.util.Objects;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -73,3 +73,4 @@ public class Foundry extends MultiBlockMachine {
         }
      }
 }
+

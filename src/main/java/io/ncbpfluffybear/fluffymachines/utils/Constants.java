@@ -1,9 +1,9 @@
 package io.ncbpfluffybear.fluffymachines.utils;
 
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 
@@ -32,3 +32,4 @@ public final class Constants {
     private Constants() {}
 
 }
+

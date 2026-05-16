@@ -1,12 +1,12 @@
 package io.ncbpfluffybear.fluffymachines.items;
 
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemDropHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
+import io.github.thebusybiscuit.slimefun5.core.handlers.ItemDropHandler;
+import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -152,3 +152,4 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
         return false;
     }
 }
+

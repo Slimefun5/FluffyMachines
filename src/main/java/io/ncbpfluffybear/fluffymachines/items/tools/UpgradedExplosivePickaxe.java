@@ -1,9 +1,9 @@
 package io.ncbpfluffybear.fluffymachines.items.tools;
 
-import io.github.thebusybiscuit.slimefun4.implementation.items.tools.ExplosiveShovel;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.implementation.items.tools.ExplosiveShovel;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
@@ -23,3 +23,4 @@ public class UpgradedExplosivePickaxe extends UpgradedExplosiveTool {
     }
 
 }
+

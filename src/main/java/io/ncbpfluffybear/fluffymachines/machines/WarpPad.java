@@ -1,16 +1,16 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
-import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
-import io.github.thebusybiscuit.slimefun4.core.attributes.HologramOwner;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockUseHandler;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemHandler;
+import io.github.thebusybiscuit.slimefun5.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun5.core.attributes.HologramOwner;
+import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
+import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
+import io.github.thebusybiscuit.slimefun5.core.handlers.BlockUseHandler;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemHandler;
 import io.ncbpfluffybear.fluffymachines.objects.NonHopperableBlock;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -53,3 +53,4 @@ public class WarpPad extends NonHopperableBlock implements HologramOwner {
         return (BlockUseHandler) PlayerRightClickEvent::cancel;
     }
 }
+
