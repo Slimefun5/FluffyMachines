@@ -1,4 +1,4 @@
-plugins {
+﻿plugins {
     java
     id("com.gradleup.shadow") version "9.3.2"
     id("io.github.intisy.github-gradle") version "1.8.2.1"
@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
@@ -30,9 +30,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
+    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
     compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.1.149") {
         exclude(group = "org.jetbrains", module = "annotations")
         exclude(group = "com.sk89q.worldguard")
