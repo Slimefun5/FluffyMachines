@@ -5,7 +5,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/FluffyMachines?style=social)](https://github.com/Slimefun5/FluffyMachines)
 
-A Slimefun 5 Addon.
+A Slimefun addon that adds advanced machines for automation and crafting.
 
 ## Requirements
 - Java 25
