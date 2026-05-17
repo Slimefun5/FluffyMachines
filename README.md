@@ -12,23 +12,6 @@ A Slimefun addon that adds advanced machines for automation and crafting.
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-## Developer API
-
-You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
-
-In your `build.gradle.kts`:
-
-```kotlin
-plugins {
-    id("io.github.intisy.github-gradle") version "1.8.2.1"
-}
-
-dependencies {
-    "githubCompileOnly"("Slimefun5:FluffyMachines:v1.22.1")
-}
-```
-
-
 A [Slimefun5](https://github.com/Slimefun5/Slimefun5) addon — these are some thrown together machines made by me for fun :)
 I pretty much add whatever comes to mind, is suggested by me, or other addons don't want to add.
 
@@ -110,3 +93,19 @@ Custom item settings can be changed in `plugins/Slimefun/Items.yml`
 ## FAQ
 **Can cargo be used on the Foundry?**
 *Yes, but you can not place it directly on the Superheated Furnace. Place down a chest in its place, put the cargo on the chest, and then replace the chest wth the Superheated Furnace.*
+
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:FluffyMachines:v1.22.1")
+}
+```
