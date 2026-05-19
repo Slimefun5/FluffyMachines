@@ -4,6 +4,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/FluffyMachines/total)
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/FluffyMachines?style=social)](https://github.com/Slimefun5/FluffyMachines)
+[![bStats](https://bStats.org/signatures/bukkit/FluffyMachines.svg)](https://bStats.org/plugin/bukkit/FluffyMachines/8927)
 
 A Slimefun addon that adds advanced machines for automation and crafting.
 
