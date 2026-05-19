@@ -30,6 +30,7 @@ repositories {
 }
 
 dependencies {
+    githubImplementation("Slimefun5:SlimefunMetrics:master")
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
@@ -39,8 +40,7 @@ dependencies {
     }
 
     // Shaded
-    implementation("org.bstats:bstats-bukkit:3.0.2")
-    implementation("com.github.Slimefun-Addon-Community:extrautils:73e76ac06c") {
+        implementation("com.github.Slimefun-Addon-Community:extrautils:73e76ac06c") {
         isTransitive = false
     }
 
@@ -72,8 +72,7 @@ tasks {
     }
     shadowJar {
         archiveFileName.set("FluffyMachines v${project.version}.jar")
-        relocate("org.bstats", "io.ncbpfluffybear.fluffymachines.bstats")
-        relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
+                relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
         exclude("META-INF/**")
     }
     build {
