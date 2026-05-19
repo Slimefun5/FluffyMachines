@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.logging.Level;
 import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -31,6 +30,7 @@ import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
+import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.util.RayTraceResult;
 
 public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
@@ -42,6 +42,8 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
+        MetricsModule.setup(this, 8927);
+
         try {
             instance = this;
             // Read something from your config.yml
@@ -99,8 +101,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             getServer().getPluginManager().registerEvents(new Events(), this);
             getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
 
-            final Metrics metrics = new Metrics(this, 8927);
-        } catch (Exception e) {
+            final         } catch (Exception e) {
             getLogger().log(Level.SEVERE, "An error occurred while enabling FluffyMachines", e);
             getServer().getPluginManager().disablePlugin(this);
         }
