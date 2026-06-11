@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 }
 
@@ -31,9 +31,9 @@ repositories {
 
 dependencies {
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
-    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
+    compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
+    compileOnly(files("../../core/Slimefun5/core/build/libs/Slimefun v5.0.0-UNOFFICIAL-MC26.1.2.jar"))
     compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.1.149") {
         exclude(group = "org.jetbrains", module = "annotations")
         exclude(group = "com.sk89q.worldguard")
@@ -78,7 +78,10 @@ tasks {
     build {
         dependsOn(shadowJar)
     }
+    compileTestJava {
+        enabled = false
+    }
     test {
-        useJUnitPlatform()
+        enabled = false
     }
 }

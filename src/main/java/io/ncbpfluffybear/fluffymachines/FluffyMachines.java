@@ -101,7 +101,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             getServer().getPluginManager().registerEvents(new Events(), this);
             getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
 
-            final         } catch (Exception e) {
+            } catch (Exception e) {
             getLogger().log(Level.SEVERE, "An error occurred while enabling FluffyMachines", e);
             getServer().getPluginManager().disablePlugin(this);
         }
