@@ -33,7 +33,7 @@ dependencies {
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    compileOnly(files("../../core/Slimefun5/core/build/libs/Slimefun v5.0.0-UNOFFICIAL-MC26.1.2.jar"))
+    githubCompileOnly("Slimefun5:Slimefun5:v5.2.1")
     compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.1.149") {
         exclude(group = "org.jetbrains", module = "annotations")
         exclude(group = "com.sk89q.worldguard")
@@ -71,6 +71,7 @@ tasks {
         enabled = false
     }
     shadowJar {
+        relocate("org.bstats", "fluffymachines.libs.bstats")
         archiveFileName.set("FluffyMachines v${project.version}.jar")
                 relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
         exclude("META-INF/**")
