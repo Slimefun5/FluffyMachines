@@ -13,6 +13,8 @@ import javax.annotation.Nullable;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
@@ -76,7 +78,7 @@ public class KeyedCrafterListener implements Listener {
                 }
                 e.cancel();
 
-                if (item.getType() == Material.AIR) {
+                if (item.getType() == MaterialCompat.safe(XMaterial.AIR)) {
                     Utils.send(p, "&cRight click the machine with an item to set the vanilla recipe");
                     return;
                 }

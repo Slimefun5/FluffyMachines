@@ -14,6 +14,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -128,7 +130,7 @@ class UpgradedExplosiveTool extends ExplosiveTool {
                     }
 
                     // Small check to reduce lag
-                    if (relative.getType() != Material.AIR) {
+                    if (relative.getType() != MaterialCompat.safe(XMaterial.AIR)) {
                         blocks.add(relative);
                     }
                 }

@@ -10,6 +10,8 @@ import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -171,7 +173,7 @@ public class Events implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onExtractionNodePlace(BlockPlaceEvent e) {
-        if ((e.getBlock().getY() != e.getBlockAgainst().getY() || e.getBlockAgainst().getType() != Material.ENDER_CHEST)
+        if ((e.getBlock().getY() != e.getBlockAgainst().getY() || e.getBlockAgainst().getType() != MaterialCompat.safe(XMaterial.ENDER_CHEST))
                 && isExtractionNode(e.getItemInHand())) {
             Utils.send(e.getPlayer(), "&cYou can only place this on an Ender Chest!");
             e.setCancelled(true);

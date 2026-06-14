@@ -15,7 +15,7 @@ import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.NamespacedKey;
+import io.ncbpfluffybear.fluffymachines.compat.Pdc;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -25,17 +25,15 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
 
 import java.util.List;
 
 public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, Listener {
 
-    private final NamespacedKey xCoord = new NamespacedKey(FluffyMachines.getInstance(), "xCoordinate");
-    private final NamespacedKey yCoord = new NamespacedKey(FluffyMachines.getInstance(), "yCoordinate");
-    private final NamespacedKey zCoord = new NamespacedKey(FluffyMachines.getInstance(), "zCoordinate");
-    private final NamespacedKey world = new NamespacedKey(FluffyMachines.getInstance(), "world");
+    private static final String xCoord = "fluffymachines:xcoordinate";
+    private static final String yCoord = "fluffymachines:ycoordinate";
+    private static final String zCoord = "fluffymachines:zcoordinate";
+    private static final String world = "fluffymachines:world";
 
     private static final int LORE_COORDINATE_INDEX = 4;
     private final ItemSetting<Integer> MAX_DISTANCE = new ItemSetting<>(this, "max-distance", 100);
@@ -67,17 +65,16 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
                 ItemStack item = p.getInventory().getItemInMainHand();
                 ItemMeta meta = item.getItemMeta();
                 List<String> lore = meta.getLore();
-                PersistentDataContainer pdc = meta.getPersistentDataContainer();
 
                 if (e.getAction() == Action.RIGHT_CLICK_BLOCK) {
 
                     // Destination
                     if (p.isSneaking()) {
-                        pdc.set(world, PersistentDataType.STRING, b.getWorld().getName());
+                        Pdc.setString(meta, world, b.getWorld().getName());
 
-                        pdc.set(xCoord, PersistentDataType.INTEGER, b.getX());
-                        pdc.set(yCoord, PersistentDataType.INTEGER, b.getY());
-                        pdc.set(zCoord, PersistentDataType.INTEGER, b.getZ());
+                        Pdc.setInt(meta, xCoord, b.getX());
+                        Pdc.setInt(meta, yCoord, b.getY());
+                        Pdc.setInt(meta, zCoord, b.getZ());
                         lore.set(LORE_COORDINATE_INDEX, ChatColor.translateAlternateColorCodes(
                             '&', "&eLinked Coordinates: &7" + b.getX() + ", " + b.getY() + ", " + b.getZ()));
 
@@ -89,11 +86,10 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
                         Utils.send(p, "&3This pad has been marked as a &aDestination &3and bound to your configurator");
 
                     // Origin
-                    } else if (pdc.has(world, PersistentDataType.STRING) && b.getWorld().getName().equals(
-                        pdc.get(world, PersistentDataType.STRING))) {
-                        int x = pdc.getOrDefault(xCoord, PersistentDataType.INTEGER, 0);
-                        int y = pdc.getOrDefault(yCoord, PersistentDataType.INTEGER, 0);
-                        int z = pdc.getOrDefault(zCoord, PersistentDataType.INTEGER, 0);
+                    } else if (b.getWorld().getName().equals(Pdc.getString(meta, world, ""))) {
+                        int x = Pdc.getInt(meta, xCoord, 0);
+                        int y = Pdc.getInt(meta, yCoord, 0);
+                        int z = Pdc.getInt(meta, zCoord, 0);
 
                         if (Math.abs(x - b.getX()) > MAX_DISTANCE.getValue()
                             || Math.abs(z - b.getZ()) > MAX_DISTANCE.getValue()) {

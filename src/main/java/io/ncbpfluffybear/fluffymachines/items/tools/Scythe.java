@@ -10,12 +10,13 @@ import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.Vein;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.Ageable;
 import org.bukkit.event.Event;
 import org.bukkit.inventory.ItemStack;
 
@@ -50,10 +51,11 @@ public class Scythe extends SimpleSlimefunItem<ItemUseHandler> implements NotPla
                 return;
             }
 
-            if (e.getBlock().getBlockData() instanceof Ageable
-                && ((Ageable) e.getBlock().getBlockData()).getAge()
-                == ((Ageable) e.getBlock().getBlockData()).getMaximumAge()) {
-                List<Block> crops = Vein.find(e.getBlock(), MAX_BROKEN, b -> Tag.CROPS.isTagged(b.getType()));
+            if (CompatUtils.isBlockDataAvailable()
+                && CompatUtils.isAgeable(e.getBlock())
+                && CompatUtils.getAge(e.getBlock())
+                == CompatUtils.getMaximumAge(e.getBlock())) {
+                List<Block> crops = Vein.find(e.getBlock(), MAX_BROKEN, b -> CompatUtils.isTagged("CROPS", b.getType()));
 
                 crops.remove(e.getBlock());
 
@@ -64,7 +66,7 @@ public class Scythe extends SimpleSlimefunItem<ItemUseHandler> implements NotPla
                         AlternateBreakEvent breakEvent = new AlternateBreakEvent(b, e.getPlayer());
                         Bukkit.getPluginManager().callEvent(breakEvent);
                         if (creative) {
-                            b.setType(Material.AIR);
+                            b.setType(MaterialCompat.safe(XMaterial.AIR));
                         } else {
                             b.breakNaturally(tool);
                         }

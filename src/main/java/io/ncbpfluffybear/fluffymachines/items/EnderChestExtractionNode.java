@@ -14,7 +14,9 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
@@ -38,7 +40,7 @@ import java.util.UUID;
  */
 public class EnderChestExtractionNode extends SlimefunItem {
 
-    private static final Material material = Material.ENDER_CHEST;
+    private static final Material material = MaterialCompat.safe(XMaterial.ENDER_CHEST);
 
     public EnderChestExtractionNode(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
@@ -107,7 +109,7 @@ public class EnderChestExtractionNode extends SlimefunItem {
                     }
 
                     // Prevent putting shulkers in shulkers
-                    if (state instanceof ShulkerBox && !Tag.SHULKER_BOXES.isTagged(enderItem.getType())) {
+                    if (state instanceof ShulkerBox && !CompatUtils.isTagged("SHULKER_BOXES", enderItem.getType())) {
                         continue;
                     }
 

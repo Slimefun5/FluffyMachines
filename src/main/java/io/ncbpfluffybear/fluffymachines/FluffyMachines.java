@@ -26,18 +26,20 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.util.RayTraceResult;
 
 public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
     private static FluffyMachines instance;
-    public static final HashMap<ItemStack, List<Pair<ItemStack, List<RecipeChoice>>>> shapedVanillaRecipes = new HashMap<>();
-    public static final HashMap<ItemStack, List<Pair<ItemStack, List<RecipeChoice>>>> shapelessVanillaRecipes =
+    // RecipeChoice (1.13+) is held as Object so the type is never referenced in bytecode; on legacy
+    // versions Bukkit exposes no choice-based recipes, so these maps simply stay empty.
+    public static final HashMap<ItemStack, List<Pair<ItemStack, List<Object>>>> shapedVanillaRecipes = new HashMap<>();
+    public static final HashMap<ItemStack, List<Pair<ItemStack, List<Object>>>> shapelessVanillaRecipes =
             new HashMap<>();
 
     @Override
@@ -56,11 +58,11 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
                 if (r instanceof ShapedRecipe) {
                     ShapedRecipe sr = (ShapedRecipe) r;
-                    List<RecipeChoice> rc = new ArrayList<>();
+                    List<Object> rc = new ArrayList<>();
                     ItemStack key = new ItemStack(sr.getResult().getType(), 1);
 
-                    // Convert the recipe to a list
-                    for (Map.Entry<Character, RecipeChoice> choice : sr.getChoiceMap().entrySet()) {
+                    // Convert the recipe to a list (RecipeChoice access is reflective for 1.8 safety)
+                    for (Map.Entry<Character, Object> choice : CompatUtils.getChoiceMap(sr).entrySet()) {
                         if (choice.getValue() != null) {
                             rc.add(choice.getValue());
                         }
@@ -76,13 +78,14 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
                 } else if (r instanceof ShapelessRecipe) {
                     ShapelessRecipe slr = (ShapelessRecipe) r;
                     ItemStack key = new ItemStack(slr.getResult().getType(), 1);
+                    List<Object> rc = CompatUtils.getShapelessChoiceList(slr);
 
                     // Key has a list of recipe options
                     if (!shapelessVanillaRecipes.containsKey(key)) {
                         shapelessVanillaRecipes.put(key,
-                                new ArrayList<>(Collections.singletonList(new Pair<>(slr.getResult(), slr.getChoiceList()))));
+                                new ArrayList<>(Collections.singletonList(new Pair<>(slr.getResult(), rc))));
                     } else {
-                        shapelessVanillaRecipes.get(key).add(new Pair<>(slr.getResult(), slr.getChoiceList()));
+                        shapelessVanillaRecipes.get(key).add(new Pair<>(slr.getResult(), rc));
                     }
                 }
             }

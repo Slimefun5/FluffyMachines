@@ -33,6 +33,8 @@ import org.apache.commons.lang.WordUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -62,10 +64,10 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
     private final IntRangeSetting levelLimit = new IntRangeSetting(this, "enchant-level-limit", 0, 10, Short.MAX_VALUE);
     private static final Map<BlockPosition, Integer> progress = new HashMap<>();
 
-    private static final ItemStack DEFAULT_SELECTION_ITEM = CustomItemStack.create(Material.ENCHANTED_BOOK,
+    private static final ItemStack DEFAULT_SELECTION_ITEM = CustomItemStack.create(MaterialCompat.safe(XMaterial.ENCHANTED_BOOK),
             "&5Enchant Selector", "", "&e> Click to rescan input slot <");
 
-    private static final ItemStack PROGRESS_ITEM = CustomItemStack.create(Material.EXPERIENCE_BOTTLE, "&aProgress");
+    private static final ItemStack PROGRESS_ITEM = CustomItemStack.create(MaterialCompat.safe(XMaterial.EXPERIENCE_BOTTLE), "&aProgress");
 
     public AdvancedAutoDisenchanter(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
@@ -115,7 +117,7 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
             @Override
             public int[] getSlotsAccessedByItemTransport(DirtyChestMenu menu, ItemTransportFlow flow, ItemStack item) {
                 if (flow == ItemTransportFlow.INSERT) {
-                    if (item.getType() == Material.BOOK) {
+                    if (item.getType() == MaterialCompat.safe(XMaterial.BOOK)) {
                         return new int[]{BOOK_SLOT};
                     } else {
                         return new int[]{ITEM_SLOT};
@@ -225,7 +227,7 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
         }
 
         // Build enchant book
-        ItemStack enchantedBook = new ItemStack(Material.ENCHANTED_BOOK);
+        ItemStack enchantedBook = new ItemStack(MaterialCompat.safe(XMaterial.ENCHANTED_BOOK));
         EnchantmentStorageMeta enchantedMeta = (EnchantmentStorageMeta) enchantedBook.getItemMeta();
         enchantedMeta.addStoredEnchant(outputEnchant, disenchants.get(outputEnchant), true);
         enchantedBook.setItemMeta(enchantedMeta);
@@ -290,7 +292,7 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
         }
 
         for (int i : BOOK_BORDER) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.YELLOW_STAINED_GLASS_PANE), " "), ChestMenuUtils.getEmptyClickHandler());
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE)), " "), ChestMenuUtils.getEmptyClickHandler());
         }
 
         for (int i : OUTPUT_BORDER) {
@@ -360,7 +362,7 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
     }
 
     private void setSelectionItem(BlockMenu menu, List<String> lore) {
-        ItemStack selectionItem = new ItemStack(Material.ENCHANTED_BOOK);
+        ItemStack selectionItem = new ItemStack(MaterialCompat.safe(XMaterial.ENCHANTED_BOOK));
         ItemMeta itemMeta = selectionItem.getItemMeta();
 
         itemMeta.setDisplayName(Utils.color("&5Enchant Selector"));

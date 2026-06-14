@@ -24,6 +24,8 @@ import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -74,7 +76,7 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
                 if (!BlockStorage.hasBlockInfo(b)
                         || BlockStorage.getLocationInfo(b.getLocation(), "enabled") == null
                         || BlockStorage.getLocationInfo(b.getLocation(), "enabled").equals(String.valueOf(false))) {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.GUNPOWDER, "&7Enabled: &4\u2718", "",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), "&7Enabled: &4\u2718", "",
                             "&e> Click to enable this Machine")
                     );
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
@@ -83,7 +85,7 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
                         return false;
                     });
                 } else {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.REDSTONE, "&7Enabled: &2\u2714",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.REDSTONE), "&7Enabled: &2\u2714",
                             "", "&e> Click to disable this Machine")
                     );
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
@@ -186,7 +188,7 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
                 public boolean onClick(InventoryClickEvent e, Player p, int slot, ItemStack cursor,
                                        ClickAction action) {
                     if (cursor == null) return true;
-                    return cursor.getType() == Material.AIR;
+                    return cursor.getType() == MaterialCompat.safe(XMaterial.AIR);
                 }
             });
         }
@@ -293,7 +295,7 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
         for (int j = 0; j < 9; j++) {
             ItemStack item = inv.getItemInSlot(getInputSlots()[j]);
 
-            if (item != null && item.getType() != Material.AIR) {
+            if (item != null && item.getType() != MaterialCompat.safe(XMaterial.AIR)) {
                 inv.consumeItem(getInputSlots()[j]);
             }
         }
@@ -303,17 +305,17 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
 
     static void borders(BlockMenuPreset preset, int[] border, int[] inputBorder, int[] outputBorder) {
         for (int i : border) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
 
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
 
         for (int i : outputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
     }

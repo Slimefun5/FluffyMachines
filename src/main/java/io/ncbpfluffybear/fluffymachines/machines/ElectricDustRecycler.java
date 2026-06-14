@@ -13,6 +13,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
@@ -71,7 +73,7 @@ public class ElectricDustRecycler extends AContainer implements RecipeDisplayIte
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.PISTON);
+        return new ItemStack(MaterialCompat.safe(XMaterial.PISTON));
     }
 
     @Override

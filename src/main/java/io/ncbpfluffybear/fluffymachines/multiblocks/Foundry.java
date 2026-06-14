@@ -10,6 +10,8 @@ import java.util.Objects;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -28,9 +30,9 @@ public class Foundry extends MultiBlockMachine {
 
     public Foundry(ItemGroup category, SlimefunItemStack item) {
         super(category, item, new ItemStack[] {
-            new ItemStack(Material.NETHERITE_BLOCK), FluffyItems.SUPERHEATED_FURNACE.item(), new ItemStack(Material.NETHERITE_BLOCK),
-            new ItemStack(Material.NETHERITE_BLOCK), new ItemStack(Material.GLASS), new ItemStack(Material.NETHERITE_BLOCK),
-            new ItemStack(Material.NETHERITE_BLOCK), new ItemStack(Material.CAULDRON), new ItemStack(Material.NETHERITE_BLOCK)
+            new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)), FluffyItems.SUPERHEATED_FURNACE.item(), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)),
+            new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)), new ItemStack(MaterialCompat.safe(XMaterial.GLASS)), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)),
+            new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)), new ItemStack(MaterialCompat.safe(XMaterial.CAULDRON)), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK))
         }, BlockFace.DOWN);
     }
 
@@ -45,9 +47,9 @@ public class Foundry extends MultiBlockMachine {
             BlockStorage.addBlockInfo(b, "accessible", "true");
             Utils.send(p, "&eFoundry has been registered. Right click the furnace with a lava bucket to heat.");
         } else if (BlockStorage.getLocationInfo(b.getLocation(), "ignited") == null) {
-            if (p.getInventory().getItemInMainHand().getType() == Material.LAVA_BUCKET) {
+            if (p.getInventory().getItemInMainHand().getType() == MaterialCompat.safe(XMaterial.LAVA_BUCKET)) {
 
-                p.getInventory().getItemInMainHand().setType(Material.BUCKET);
+                p.getInventory().getItemInMainHand().setType(MaterialCompat.safe(XMaterial.BUCKET));
                 ArmorStand lavaStand = (ArmorStand) p.getWorld().spawnEntity(b.getLocation().add(0.5, -3, 0.5),
                     EntityType.ARMOR_STAND);
                 lavaStand.getEquipment().setHelmet(SlimefunUtils.getCustomHead("b6965e6a58684c277d18717cec959f2833a72dfa95661019dbcdf3dbf66b048"));

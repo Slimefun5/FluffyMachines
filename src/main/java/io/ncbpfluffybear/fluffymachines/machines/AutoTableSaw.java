@@ -24,7 +24,9 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -59,14 +61,14 @@ public class AutoTableSaw extends SlimefunItem implements EnergyNetComponent {
     public AutoTableSaw(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
 
-        for (Material log : Tag.LOGS.getValues()) {
+        for (Material log : CompatUtils.tagValues("LOGS")) {
             Optional<Material> planks = getPlanks(log);
 
             planks.ifPresent(material -> tableSawRecipes.put(new ItemStack(log), new ItemStack(material, 8)));
         }
 
-        for (Material plank : Tag.PLANKS.getValues()) {
-            tableSawRecipes.put(new ItemStack(plank), new ItemStack(Material.STICK, 4));
+        for (Material plank : CompatUtils.tagValues("PLANKS")) {
+            tableSawRecipes.put(new ItemStack(plank), new ItemStack(MaterialCompat.safe(XMaterial.STICK), 4));
         }
 
         new BlockMenuPreset(getId(), "&6Auto Table Saw") {
@@ -81,7 +83,7 @@ public class AutoTableSaw extends SlimefunItem implements EnergyNetComponent {
                 if (!BlockStorage.hasBlockInfo(b)
                     || BlockStorage.getLocationInfo(b.getLocation(), "enabled") == null
                     || BlockStorage.getLocationInfo(b.getLocation(), "enabled").equals(String.valueOf(false))) {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.GUNPOWDER, "&7Enabled: &4\u2718",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), "&7Enabled: &4\u2718",
                         "", "&e> Click to enable this Machine")
                     );
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
@@ -90,7 +92,7 @@ public class AutoTableSaw extends SlimefunItem implements EnergyNetComponent {
                         return false;
                     });
                 } else {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.REDSTONE, "&7Enabled: &2\u2714",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.REDSTONE), "&7Enabled: &2\u2714",
                         "", "&e> Click to disable this Machine"));
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
                         BlockStorage.addBlockInfo(b, "enabled", String.valueOf(false));
@@ -162,7 +164,7 @@ public class AutoTableSaw extends SlimefunItem implements EnergyNetComponent {
     protected void constructMenu(BlockMenuPreset preset) {
 
         borders(preset, border, inputBorder, outputBorder);
-        preset.addItem(2, CustomItemStack.create(new ItemStack(Material.STONECUTTER), "&eRecipe", "",
+        preset.addItem(2, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.STONECUTTER)), "&eRecipe", "",
                 "&bPut in the Recipe you want to craft",
                 "&4Table Saw Recipes ONLY"
             ),
@@ -233,17 +235,17 @@ public class AutoTableSaw extends SlimefunItem implements EnergyNetComponent {
 
     static void borders(BlockMenuPreset preset, int[] border, int[] inputBorder, int[] outputBorder) {
         for (int i : border) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
 
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
 
         for (int i : outputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false);
         }
     }

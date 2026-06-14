@@ -14,6 +14,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -34,8 +36,8 @@ public class ElectricDustFabricator extends AContainer implements RecipeDisplayI
     public static final int CAPACITY = ENERGY_CONSUMPTION * 3;
     private OreWasher oreWasher;
     private final List<ItemStack> acceptableInputs = new ArrayList<>(Arrays.asList(
-        new ItemStack(Material.COBBLESTONE), new ItemStack(Material.ANDESITE),
-        new ItemStack(Material.DIORITE), new ItemStack(Material.GRANITE)
+        new ItemStack(MaterialCompat.safe(XMaterial.COBBLESTONE)), new ItemStack(MaterialCompat.safe(XMaterial.ANDESITE)),
+        new ItemStack(MaterialCompat.safe(XMaterial.DIORITE)), new ItemStack(MaterialCompat.safe(XMaterial.GRANITE))
     ));
 
     public ElectricDustFabricator(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
@@ -55,7 +57,7 @@ public class ElectricDustFabricator extends AContainer implements RecipeDisplayI
         List<ItemStack> displayRecipes = new ArrayList<>();
 
         for (SlimefunItemStack dust : Constants.dusts) {
-            displayRecipes.add(CustomItemStack.create(Material.COBBLESTONE,
+            displayRecipes.add(CustomItemStack.create(MaterialCompat.safe(XMaterial.COBBLESTONE),
                 "&fAny Cobblestone Variant", "&7Cobblestone", "&7Andesite", "&7Diorite", "&7Granite"
             ));
             displayRecipes.add(dust.item());
@@ -92,7 +94,7 @@ public class ElectricDustFabricator extends AContainer implements RecipeDisplayI
         for (int slot : getOutputSlots()) {
             ItemStack item = menu.getItemInSlot(slot);
 
-            if (item == null || item.getType() == Material.AIR) {
+            if (item == null || item.getType() == MaterialCompat.safe(XMaterial.AIR)) {
                 return true;
             }
         }
@@ -102,7 +104,7 @@ public class ElectricDustFabricator extends AContainer implements RecipeDisplayI
 
     @Override
     public ItemStack getProgressBar() {
-        return new ItemStack(Material.CAULDRON);
+        return new ItemStack(MaterialCompat.safe(XMaterial.CAULDRON));
     }
 
     @Nonnull

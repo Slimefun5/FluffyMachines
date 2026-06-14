@@ -48,6 +48,8 @@ import io.ncbpfluffybear.fluffymachines.multiblocks.Foundry;
 import io.ncbpfluffybear.fluffymachines.multiblocks.components.GeneratorCore;
 import io.ncbpfluffybear.fluffymachines.multiblocks.components.SuperheatedFurnace;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import javax.annotation.Nonnull;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
@@ -56,38 +58,38 @@ import org.bukkit.inventory.ItemStack;
 public final class FluffyItemSetup {
 
     private static final SlimefunItemStack advancedCircuitBoard = SlimefunItems.ADVANCED_CIRCUIT_BOARD;
-    private static final ItemStack orangeGlass = new ItemStack(Material.ORANGE_STAINED_GLASS);
-    private static final ItemStack brownGlass = new ItemStack(Material.BROWN_STAINED_GLASS);
+    private static final ItemStack orangeGlass = new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS));
+    private static final ItemStack brownGlass = new ItemStack(MaterialCompat.safe(XMaterial.BROWN_STAINED_GLASS));
 
     // ItemGroups
     private static final NestedItemGroup fluffymachines = new NestedItemGroup(
             new NamespacedKey("fluffymachines","fluffymachines"),
-            CustomItemStack.create(Material.SMOKER, "&6Fluffy Machines")
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.SMOKER), "&6Fluffy Machines")
     );
 
     private static final ItemGroup generators = new SubItemGroup(
             new NamespacedKey("fluffymachines","generators"), fluffymachines,
-            CustomItemStack.create(Material.BLAST_FURNACE, "&aGenerators"), 1
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.BLAST_FURNACE), "&aGenerators"), 1
     );
 
     private static final ItemGroup machines = new SubItemGroup(
             new NamespacedKey("fluffymachines","machines"), fluffymachines,
-            CustomItemStack.create(Material.SMOKER, "&9Machines"), 2
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.SMOKER), "&9Machines"), 2
     );
 
     private static final ItemGroup tools = new SubItemGroup(
             new NamespacedKey("fluffymachines","tools"), fluffymachines,
-            CustomItemStack.create(Material.IRON_PICKAXE, "&bTools"), 3
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.IRON_PICKAXE), "&bTools"), 3
     );
 
     private static final ItemGroup multiblocks = new SubItemGroup(
             new NamespacedKey("fluffymachines","multiblocks"), fluffymachines,
-            CustomItemStack.create(Material.BRICKS, "&cMultiblocks"), 4
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.BRICKS), "&cMultiblocks"), 4
     );
 
     private static final ItemGroup fluffybarrels = new SubItemGroup(
             new NamespacedKey("fluffymachines","barrels"), fluffymachines,
-            CustomItemStack.create(Material.BARREL, "&6Fluffy Barrels"), 5
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.BARREL), "&6Fluffy Barrels"), 5
     );
 
     private static final ItemGroup portableChargers = new SubItemGroup(
@@ -102,12 +104,12 @@ public final class FluffyItemSetup {
 
     private static final ItemGroup cargo = new SubItemGroup(
             new NamespacedKey("fluffymachines","cargo"), fluffymachines,
-            CustomItemStack.create(Material.CHEST, "&3Cargo"), 8
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.CHEST), "&3Cargo"), 8
     );
 
     private static final ItemGroup misc = new SubItemGroup(
             new NamespacedKey("fluffymachines","misc"), fluffymachines,
-            CustomItemStack.create(Material.HOPPER, "&8Misc"), 9
+            CustomItemStack.create(MaterialCompat.safe(XMaterial.HOPPER), "&8Misc"), 9
     );
 
     private FluffyItemSetup() {
@@ -116,12 +118,12 @@ public final class FluffyItemSetup {
     public static void setupBarrels(@Nonnull FluffyMachines plugin) {
 
         new MiniBarrel(fluffybarrels, FluffyItems.MINI_FLUFFY_BARREL, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.OAK_SLAB), new ItemStack(Material.BARREL), new ItemStack(Material.OAK_SLAB),
-                new ItemStack(Material.OAK_SLAB), new ItemStack(Material.BARREL), new ItemStack(Material.OAK_SLAB),
+                new ItemStack(MaterialCompat.safe(XMaterial.OAK_SLAB)), new ItemStack(MaterialCompat.safe(XMaterial.BARREL)), new ItemStack(MaterialCompat.safe(XMaterial.OAK_SLAB)),
+                new ItemStack(MaterialCompat.safe(XMaterial.OAK_SLAB)), new ItemStack(MaterialCompat.safe(XMaterial.BARREL)), new ItemStack(MaterialCompat.safe(XMaterial.OAK_SLAB)),
                 SlimefunItems.STEEL_PLATE.item(), SlimefunItems.STEEL_PLATE.item(), SlimefunItems.STEEL_PLATE.item()
         }).register(plugin);
 
-        ItemStack previousBarrel = new ItemStack(Material.BARREL);
+        ItemStack previousBarrel = new ItemStack(MaterialCompat.safe(XMaterial.BARREL));
 
         for (Barrel.BarrelType barrelType : Barrel.BarrelType.values()) {
 
@@ -152,7 +154,7 @@ public final class FluffyItemSetup {
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.COPPER_WIRE.item(), SlimefunItems.STEEL_INGOT.item(),
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.SMALL_CAPACITOR.item(), SlimefunItems.STEEL_INGOT.item(),
-                new ItemStack(Material.BRICK), SlimefunItems.STEEL_PLATE.item(), new ItemStack(Material.BRICK)},
+                new ItemStack(MaterialCompat.safe(XMaterial.BRICK)), SlimefunItems.STEEL_PLATE.item(), new ItemStack(MaterialCompat.safe(XMaterial.BRICK))},
                 PortableCharger.Type.SMALL.chargeCapacity, PortableCharger.Type.SMALL.chargeSpeed
         ).register(plugin);
 
@@ -160,7 +162,7 @@ public final class FluffyItemSetup {
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.COPPER_WIRE.item(), SlimefunItems.STEEL_INGOT.item(),
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.MEDIUM_CAPACITOR.item(), SlimefunItems.STEEL_INGOT.item(),
-                new ItemStack(Material.IRON_INGOT), SlimefunItems.STEEL_PLATE.item(), new ItemStack(Material.IRON_INGOT)},
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), SlimefunItems.STEEL_PLATE.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT))},
                 PortableCharger.Type.MEDIUM.chargeCapacity, PortableCharger.Type.MEDIUM.chargeSpeed
         ).register(plugin);
 
@@ -168,7 +170,7 @@ public final class FluffyItemSetup {
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.COPPER_WIRE.item(), SlimefunItems.STEEL_INGOT.item(),
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.BIG_CAPACITOR.item(), SlimefunItems.STEEL_INGOT.item(),
-                new ItemStack(Material.GOLD_INGOT), SlimefunItems.STEEL_PLATE.item(), new ItemStack(Material.GOLD_INGOT)},
+                new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT)), SlimefunItems.STEEL_PLATE.item(), new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT))},
                 PortableCharger.Type.BIG.chargeCapacity, PortableCharger.Type.BIG.chargeSpeed
         ).register(plugin);
 
@@ -176,7 +178,7 @@ public final class FluffyItemSetup {
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.COPPER_WIRE.item(), SlimefunItems.STEEL_INGOT.item(),
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.LARGE_CAPACITOR.item(), SlimefunItems.STEEL_INGOT.item(),
-                new ItemStack(Material.NETHER_BRICK), SlimefunItems.STEEL_PLATE.item(), new ItemStack(Material.NETHER_BRICK)},
+                new ItemStack(MaterialCompat.safe(XMaterial.NETHER_BRICK)), SlimefunItems.STEEL_PLATE.item(), new ItemStack(MaterialCompat.safe(XMaterial.NETHER_BRICK))},
                 PortableCharger.Type.LARGE.chargeCapacity, PortableCharger.Type.LARGE.chargeSpeed
         ).register(plugin);
 
@@ -184,8 +186,8 @@ public final class FluffyItemSetup {
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.COPPER_WIRE.item(), SlimefunItems.STEEL_INGOT.item(),
                 SlimefunItems.STEEL_INGOT.item(), SlimefunItems.CARBONADO_EDGED_CAPACITOR.item(), SlimefunItems.STEEL_INGOT.item(),
-                new ItemStack(Material.NETHERITE_INGOT), SlimefunItems.STEEL_PLATE.item(),
-                new ItemStack(Material.NETHERITE_INGOT)},
+                new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_INGOT)), SlimefunItems.STEEL_PLATE.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_INGOT))},
                 PortableCharger.Type.CARBONADO.chargeCapacity, PortableCharger.Type.CARBONADO.chargeSpeed
         ).register(plugin);
 
@@ -194,22 +196,22 @@ public final class FluffyItemSetup {
         new Foundry(multiblocks, FluffyItems.FOUNDRY).register(plugin);
         new ExpDispenser(multiblocks, FluffyItems.EXP_DISPENSER, new ItemStack[]{
                 null, null, null,
-                null, new ItemStack(Material.GRINDSTONE), null,
-                null, new ItemStack(Material.DISPENSER), null
+                null, new ItemStack(MaterialCompat.safe(XMaterial.GRINDSTONE)), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)), null
         }).register(plugin);
 
         // Tools
         new WateringCan(tools, FluffyItems.WATERING_CAN,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.IRON_INGOT), null, new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.BUCKET), new ItemStack(Material.IRON_INGOT),
-                null, new ItemStack(Material.IRON_INGOT), null
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), null, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.BUCKET)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                null, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), null
         }).register(plugin);
 
         new Scythe(tools, FluffyItems.SCYTHE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                null, new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT),
-                null, new ItemStack(Material.IRON_HOE), null,
-                null, new ItemStack(Material.STICK), null
+                null, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                null, new ItemStack(MaterialCompat.safe(XMaterial.IRON_HOE)), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.STICK)), null
         }).register(plugin);
 
         new FluffyWrench(wrenches, FluffyItems.FLUFFY_WRENCH,
@@ -235,45 +237,45 @@ public final class FluffyItemSetup {
 
         new UpgradedLumberAxe(tools, FluffyItems.UPGRADED_LUMBER_AXE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                null, new ItemStack(Material.DIAMOND), new ItemStack(Material.DIAMOND),
+                null, new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND)), new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND)),
                 null, SlimefunItems.LUMBER_AXE.item(), null,
-                null, new ItemStack(Material.OBSIDIAN), null
+                null, new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), null
         }).register(plugin);
 
         new UpgradedExplosivePickaxe(tools, FluffyItems.UPGRADED_EXPLOSIVE_PICKAXE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.SYNTHETIC_EMERALD.item(), SlimefunItems.SYNTHETIC_EMERALD.item(), SlimefunItems.SYNTHETIC_EMERALD.item(),
-                new ItemStack(Material.TNT), SlimefunItems.EXPLOSIVE_PICKAXE.item(), new ItemStack(Material.TNT),
-                null, new ItemStack(Material.OBSIDIAN), null
+                new ItemStack(MaterialCompat.safe(XMaterial.TNT)), SlimefunItems.EXPLOSIVE_PICKAXE.item(), new ItemStack(MaterialCompat.safe(XMaterial.TNT)),
+                null, new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), null
         }).register(plugin);
 
         new UpgradedExplosiveShovel(tools, FluffyItems.UPGRADED_EXPLOSIVE_SHOVEL,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.SYNTHETIC_EMERALD.item(), SlimefunItems.SYNTHETIC_EMERALD.item(), SlimefunItems.SYNTHETIC_EMERALD.item(),
-                new ItemStack(Material.TNT), SlimefunItems.EXPLOSIVE_SHOVEL.item(), new ItemStack(Material.TNT),
-                null, new ItemStack(Material.OBSIDIAN), null
+                new ItemStack(MaterialCompat.safe(XMaterial.TNT)), SlimefunItems.EXPLOSIVE_SHOVEL.item(), new ItemStack(MaterialCompat.safe(XMaterial.TNT)),
+                null, new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), null
         }).register(plugin);
 
         new Paxel(tools, FluffyItems.PAXEL,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(Material.DIAMOND_PICKAXE), SlimefunItems.SYNTHETIC_EMERALD.item(),
-                SlimefunItems.REINFORCED_ALLOY_INGOT.item(), new ItemStack(Material.DIAMOND_AXE), SlimefunItems.REINFORCED_ALLOY_INGOT.item(),
-                SlimefunItems.SYNTHETIC_DIAMOND.item(), new ItemStack(Material.DIAMOND_SHOVEL), SlimefunItems.SYNTHETIC_DIAMOND.item(),
+                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE)), SlimefunItems.SYNTHETIC_EMERALD.item(),
+                SlimefunItems.REINFORCED_ALLOY_INGOT.item(), new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_AXE)), SlimefunItems.REINFORCED_ALLOY_INGOT.item(),
+                SlimefunItems.SYNTHETIC_DIAMOND.item(), new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_SHOVEL)), SlimefunItems.SYNTHETIC_DIAMOND.item(),
         }).register(plugin);
 
         // Machines
         new WaterSprinkler(machines, FluffyItems.WATER_SPRINKER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.IRON_INGOT), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.BUCKET), new ItemStack(Material.DISPENSER), new ItemStack(Material.BUCKET),
-                new ItemStack(Material.IRON_INGOT), SlimefunItems.SMALL_CAPACITOR.item(), new ItemStack(Material.IRON_INGOT)
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                new ItemStack(MaterialCompat.safe(XMaterial.BUCKET)), new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)), new ItemStack(MaterialCompat.safe(XMaterial.BUCKET)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), SlimefunItems.SMALL_CAPACITOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT))
         }).register(plugin);
 
         new AutoCraftingTable(machines, FluffyItems.AUTO_CRAFTING_TABLE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.CRAFTING_TABLE), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), new ItemStack(Material.CRAFTING_TABLE),
+                new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)),
                 SlimefunItems.CARGO_MOTOR.item(), SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.CARGO_MOTOR.item(),
-                new ItemStack(Material.CRAFTING_TABLE), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.CRAFTING_TABLE)
+                new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE))
         }).register(plugin);
 
         new AutoAncientAltar(machines, FluffyItems.AUTO_ANCIENT_ALTAR,
@@ -285,32 +287,32 @@ public final class FluffyItemSetup {
 
         new AutoEnhancedCraftingTable(machines, FluffyItems.AUTO_ENHANCED_CRAFTING_TABLE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.CRAFTING_TABLE), advancedCircuitBoard.item(), new ItemStack(Material.CRAFTING_TABLE),
+                new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)), advancedCircuitBoard.item(), new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)),
                 SlimefunItems.CARGO_MOTOR.item(), SlimefunItems.BLISTERING_INGOT_3.item(), SlimefunItems.CARGO_MOTOR.item(),
-                new ItemStack(Material.CRAFTING_TABLE), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.CRAFTING_TABLE)
+                new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE))
         }).register(plugin);
 
         new AutoTableSaw(machines, FluffyItems.AUTO_TABLE_SAW,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 advancedCircuitBoard.item(), SlimefunItems.MEDIUM_CAPACITOR.item(), advancedCircuitBoard.item(),
-                new ItemStack(Material.SMOOTH_STONE_SLAB), new ItemStack(Material.STONECUTTER),
-                new ItemStack(Material.SMOOTH_STONE_SLAB),
-                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.IRON_BLOCK), SlimefunItems.ELECTRIC_MOTOR.item()
+                new ItemStack(MaterialCompat.safe(XMaterial.SMOOTH_STONE_SLAB)), new ItemStack(MaterialCompat.safe(XMaterial.STONECUTTER)),
+                new ItemStack(MaterialCompat.safe(XMaterial.SMOOTH_STONE_SLAB)),
+                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_BLOCK)), SlimefunItems.ELECTRIC_MOTOR.item()
         }).register(plugin);
 
         new AutoMagicWorkbench(machines, FluffyItems.AUTO_MAGIC_WORKBENCH,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.BOOKSHELF), advancedCircuitBoard.item(), new ItemStack(Material.BOOKSHELF),
-                new ItemStack(Material.BOOKSHELF), new ItemStack(Material.CRAFTING_TABLE),
-                new ItemStack(Material.DISPENSER),
-                new ItemStack(Material.BOOKSHELF), FluffyItems.AUTO_CRAFTING_TABLE.item(), new ItemStack(Material.BOOKSHELF)
+                new ItemStack(MaterialCompat.safe(XMaterial.BOOKSHELF)), advancedCircuitBoard.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOKSHELF)),
+                new ItemStack(MaterialCompat.safe(XMaterial.BOOKSHELF)), new ItemStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE)),
+                new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)),
+                new ItemStack(MaterialCompat.safe(XMaterial.BOOKSHELF)), FluffyItems.AUTO_CRAFTING_TABLE.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOKSHELF))
         }).register(plugin);
 
         new AutoArmorForge(machines, FluffyItems.AUTO_ARMOR_FORGE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.ANVIL), new ItemStack(Material.ANVIL), new ItemStack(Material.ANVIL),
-                advancedCircuitBoard.item(), new ItemStack(Material.DISPENSER), advancedCircuitBoard.item(),
-                new ItemStack(Material.ANVIL), FluffyItems.AUTO_CRAFTING_TABLE.item(), new ItemStack(Material.ANVIL)
+                new ItemStack(MaterialCompat.safe(XMaterial.ANVIL)), new ItemStack(MaterialCompat.safe(XMaterial.ANVIL)), new ItemStack(MaterialCompat.safe(XMaterial.ANVIL)),
+                advancedCircuitBoard.item(), new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)), advancedCircuitBoard.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.ANVIL)), FluffyItems.AUTO_CRAFTING_TABLE.item(), new ItemStack(MaterialCompat.safe(XMaterial.ANVIL))
         }).register(plugin);
 
         new AdvancedAutoDisenchanter(machines, FluffyItems.ADVANCED_AUTO_DISENCHANTER,
@@ -324,85 +326,85 @@ public final class FluffyItemSetup {
         new BackpackLoader(machines, FluffyItems.BACKPACK_LOADER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 orangeGlass, orangeGlass, orangeGlass,
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.HOPPER), new ItemStack(Material.IRON_INGOT),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.HOPPER)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
                 SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.BIG_CAPACITOR.item(), SlimefunItems.ELECTRIC_MOTOR.item()
         }).register(plugin);
 
         new BackpackUnloader(machines, FluffyItems.BACKPACK_UNLOADER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 brownGlass, brownGlass, brownGlass,
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.DISPENSER), new ItemStack(Material.IRON_INGOT),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
                 SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.BIG_CAPACITOR.item(), SlimefunItems.ELECTRIC_MOTOR.item()
         }).register(plugin);
 
         new GeneratorCore(generators, FluffyItems.GENERATOR_CORE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.IRON_INGOT), SlimefunItems.ELECTRO_MAGNET.item(), new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.IRON_INGOT), advancedCircuitBoard.item(), new ItemStack(Material.IRON_INGOT)
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), SlimefunItems.ELECTRO_MAGNET.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), advancedCircuitBoard.item(), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT))
         }).register(plugin);
 
         new SuperheatedFurnace(multiblocks, FluffyItems.SUPERHEATED_FURNACE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN),
-                new ItemStack(Material.LAVA_BUCKET), new ItemStack(Material.BLAST_FURNACE),
-                new ItemStack(Material.LAVA_BUCKET),
-                new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN)
+                new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)),
+                new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)), new ItemStack(MaterialCompat.safe(XMaterial.BLAST_FURNACE)),
+                new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)),
+                new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN))
         }).register(plugin);
 
         // Misc
         new HelicopterHat(misc, FluffyItems.HELICOPTER_HAT,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT),
-                advancedCircuitBoard.item(), new ItemStack(Material.LEATHER_HELMET), advancedCircuitBoard.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                advancedCircuitBoard.item(), new ItemStack(MaterialCompat.safe(XMaterial.LEATHER_HELMET)), advancedCircuitBoard.item(),
                 SlimefunItems.COMPRESSED_CARBON.item(), SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.COMPRESSED_CARBON.item()
         }).register(plugin);
 
         new FireproofRune(misc, FluffyItems.FIREPROOF_RUNE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(Material.NETHERITE_INGOT), SlimefunItems.SYNTHETIC_EMERALD.item(),
-                new ItemStack(Material.OBSIDIAN), SlimefunItems.FIRE_RUNE.item(), new ItemStack(Material.OBSIDIAN),
-                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(Material.OBSIDIAN), SlimefunItems.SYNTHETIC_EMERALD.item()
+                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_INGOT)), SlimefunItems.SYNTHETIC_EMERALD.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), SlimefunItems.FIRE_RUNE.item(), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)),
+                SlimefunItems.SYNTHETIC_EMERALD.item(), new ItemStack(MaterialCompat.safe(XMaterial.OBSIDIAN)), SlimefunItems.SYNTHETIC_EMERALD.item()
         }).register(plugin);
 
         new EnderChestInsertionNode(cargo, FluffyItems.ENDER_CHEST_INSERTION_NODE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.ENDER_LUMP_2.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ENDER_LUMP_2.item(),
-                new ItemStack(Material.DISPENSER), new ItemStack(Material.ENDER_PEARL), new ItemStack(Material.HOPPER),
+                new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_PEARL)), new ItemStack(MaterialCompat.safe(XMaterial.HOPPER)),
                 SlimefunItems.ENDER_LUMP_2.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ENDER_LUMP_2.item()
         }).register(plugin);
 
         new EnderChestExtractionNode(cargo, FluffyItems.ENDER_CHEST_EXTRACTION_NODE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 SlimefunItems.ENDER_LUMP_2.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ENDER_LUMP_2.item(),
-                new ItemStack(Material.HOPPER), new ItemStack(Material.ENDER_PEARL), new ItemStack(Material.DISPENSER),
+                new ItemStack(MaterialCompat.safe(XMaterial.HOPPER)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_PEARL)), new ItemStack(MaterialCompat.safe(XMaterial.DISPENSER)),
                 SlimefunItems.ENDER_LUMP_2.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.ENDER_LUMP_2.item()
         }).register(plugin);
 
         new Dolly(misc, FluffyItems.DOLLY, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.LEATHER), new ItemStack(Material.LEATHER), new ItemStack(Material.LEATHER),
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.MINECART), new ItemStack(Material.IRON_INGOT),
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT)
+                new ItemStack(MaterialCompat.safe(XMaterial.LEATHER)), new ItemStack(MaterialCompat.safe(XMaterial.LEATHER)), new ItemStack(MaterialCompat.safe(XMaterial.LEATHER)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.MINECART)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT))
         }).register(plugin);
 
         new SlimefunItem(misc, FluffyItems.ANCIENT_BOOK,
                 RecipeType.ANCIENT_ALTAR, new ItemStack[]{
-                new ItemStack(Material.BOOK), SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), new ItemStack(Material.BOOK),
+                new ItemStack(MaterialCompat.safe(XMaterial.BOOK)), SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOK)),
                 SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), SlimefunItems.ENCHANTMENT_RUNE.item(),
                 SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(),
-                new ItemStack(Material.BOOK), SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), new ItemStack(Material.BOOK)
+                new ItemStack(MaterialCompat.safe(XMaterial.BOOK)), SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOK))
         }).register(plugin);
 
         new WarpPad(misc, FluffyItems.WARP_PAD,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.ENDER_EYE), new ItemStack(Material.ENDER_EYE), new ItemStack(Material.ENDER_EYE),
-                new ItemStack(Material.ENDER_EYE), SlimefunItems.GPS_TELEPORTER_PYLON.item(), new ItemStack(Material.ENDER_EYE),
-                new ItemStack(Material.ENDER_EYE), new ItemStack(Material.ENDER_EYE), new ItemStack(Material.ENDER_EYE)
+                new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)),
+                new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), SlimefunItems.GPS_TELEPORTER_PYLON.item(), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)),
+                new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE))
         }).register(plugin);
 
         new WarpPadConfigurator(misc, FluffyItems.WARP_PAD_CONFIGURATOR,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                null, new ItemStack(Material.ENDER_EYE), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), null,
                 null, SlimefunItems.MAGNESIUM_INGOT.item(), null,
                 null, SlimefunItems.MAGNESIUM_INGOT.item(), null
         }).register(plugin);
@@ -417,16 +419,16 @@ public final class FluffyItemSetup {
 
         new ElectricDustRecycler(machines, FluffyItems.ELECTRIC_DUST_RECYCLER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.LAVA_BUCKET), new ItemStack(Material.PISTON), new ItemStack(Material.LAVA_BUCKET),
-                new ItemStack(Material.LAVA_BUCKET), SlimefunItems.ELECTRIFIED_CRUCIBLE_3.item(),
-                new ItemStack(Material.LAVA_BUCKET),
-                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.PISTON), SlimefunItems.ELECTRIC_MOTOR.item()
+                new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)), new ItemStack(MaterialCompat.safe(XMaterial.PISTON)), new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)),
+                new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)), SlimefunItems.ELECTRIFIED_CRUCIBLE_3.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)),
+                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.PISTON)), SlimefunItems.ELECTRIC_MOTOR.item()
         }).register(plugin);
 
         new AlternateElevatorPlate(misc, FluffyItems.ALTERNATE_ELEVATOR_PLATE,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                new ItemStack(Material.STONE_PRESSURE_PLATE), new ItemStack(Material.STONE_PRESSURE_PLATE), new ItemStack(Material.STONE_PRESSURE_PLATE),
-                new ItemStack(Material.PISTON), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.PISTON),
+                new ItemStack(MaterialCompat.safe(XMaterial.STONE_PRESSURE_PLATE)), new ItemStack(MaterialCompat.safe(XMaterial.STONE_PRESSURE_PLATE)), new ItemStack(MaterialCompat.safe(XMaterial.STONE_PRESSURE_PLATE)),
+                new ItemStack(MaterialCompat.safe(XMaterial.PISTON)), SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.PISTON)),
                 SlimefunItems.ALUMINUM_BRONZE_INGOT.item(), SlimefunItems.ALUMINUM_BRONZE_INGOT.item(),
                 SlimefunItems.ALUMINUM_BRONZE_INGOT.item()},
                 new org.bukkit.inventory.ItemStack(FluffyItems.ALTERNATE_ELEVATOR_PLATE.item().getType(), 2)
@@ -448,9 +450,9 @@ public final class FluffyItemSetup {
 
         new CargoManipulator(cargo, FluffyItems.CARGO_MANIPULATOR,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
-                SlimefunItems.CARGO_MOTOR.item(), new ItemStack(Material.ENDER_EYE), SlimefunItems.ELECTRIC_MOTOR.item(),
-                new ItemStack(Material.ENDER_EYE), new ItemStack(Material.COMPASS), new ItemStack(Material.ENDER_EYE),
-                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(Material.ENDER_EYE), SlimefunItems.CARGO_MOTOR.item()
+                SlimefunItems.CARGO_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), SlimefunItems.ELECTRIC_MOTOR.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.COMPASS)), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)),
+                SlimefunItems.ELECTRIC_MOTOR.item(), new ItemStack(MaterialCompat.safe(XMaterial.ENDER_EYE)), SlimefunItems.CARGO_MOTOR.item()
         }).register(plugin);
 
         new SmartFactory(machines, FluffyItems.SMART_FACTORY,

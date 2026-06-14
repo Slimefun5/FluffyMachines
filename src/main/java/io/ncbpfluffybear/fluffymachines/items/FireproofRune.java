@@ -10,15 +10,13 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.ncbpfluffybear.fluffymachines.compat.Pdc;
 import org.bukkit.Sound;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -43,7 +41,7 @@ import java.util.Optional;
 public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
 
     private static final double RANGE = 1.5;
-    private static final NamespacedKey FIREPROOF_KEY = new NamespacedKey(FluffyMachines.getInstance(), "fireproof");
+    private static final String FIREPROOF_KEY = "fluffymachines:fireproof";
     private static final String FIREPROOF_LORE = ChatColor.RED + "Fireproof";
 
 
@@ -124,9 +122,8 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
         if (item != null && item.getType() != Material.AIR) {
             boolean isFireproof = isFireproof(item);
             ItemMeta meta = item.getItemMeta();
-            PersistentDataContainer container = meta.getPersistentDataContainer();
             if (!isFireproof) {
-                container.set(FIREPROOF_KEY, PersistentDataType.BYTE, (byte) 1);
+                Pdc.setInt(meta, FIREPROOF_KEY, 1);
                 List<String> lore = meta.hasLore() ? meta.getLore() : new ArrayList<>();
                 lore.add(FIREPROOF_LORE);
                 meta.setLore(lore);
@@ -146,8 +143,7 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
 
     private static boolean hasFireproofFlag(@Nullable ItemMeta meta) {
         if (meta != null) {
-            PersistentDataContainer container = meta.getPersistentDataContainer();
-            return container.has(FIREPROOF_KEY, PersistentDataType.BYTE);
+            return (Pdc.getInt(meta, FIREPROOF_KEY, 0) == 1);
         }
         return false;
     }

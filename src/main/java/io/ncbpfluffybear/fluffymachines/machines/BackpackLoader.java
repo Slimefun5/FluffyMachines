@@ -21,7 +21,9 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -58,7 +60,7 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
                 buildBorder(this, PLAIN_BORDER, INPUT_BORDER, OUTPUT_BORDER);
 
                 for (int i : BACKPACK_BORDER) {
-                    this.addItem(i, CustomItemStack.create(new ItemStack(Material.YELLOW_STAINED_GLASS_PANE), " "),
+                    this.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE)), " "),
                         (p, slot, item, action) -> false
                     );
                 }
@@ -157,7 +159,7 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
         for (int inputSlot : getInputSlots()) {
             if (inv.getItemInSlot(inputSlot) != null
                 && !(SlimefunItem.getByItem(inv.getItemInSlot(inputSlot)) instanceof SlimefunBackpack)
-                && !Tag.SHULKER_BOXES.isTagged(inv.getItemInSlot(inputSlot).getType())) {
+                && !CompatUtils.isTagged("SHULKER_BOXES", inv.getItemInSlot(inputSlot).getType())) {
                 occupiedInputSlot = inputSlot;
                 break;
             } else if (inputSlot == getInputSlots()[13]) {
@@ -226,19 +228,19 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
 
     static void buildBorder(BlockMenuPreset preset, int[] plainBorder, int[] inputBorder, int[] outputBorder) {
         for (int i : plainBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false
             );
         }
 
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false
             );
         }
 
         for (int i : outputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE)), " "),
                 (p, slot, item, action) -> false
             );
         }

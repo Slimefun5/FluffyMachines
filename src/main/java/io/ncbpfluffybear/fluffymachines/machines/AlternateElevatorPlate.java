@@ -18,6 +18,8 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -133,7 +135,7 @@ public class AlternateElevatorPlate extends SimpleSlimefunItem<BlockUseHandler> 
 
         if (floors.size() < MAX_CHEST_INDEX) {
             for (int i = floors.size(); i <= MAX_CHEST_INDEX; i++) {
-                elevatorMenu.addItem(i, CustomItemStack.create(Material.LIGHT_GRAY_STAINED_GLASS_PANE, ""));
+                elevatorMenu.addItem(i, CustomItemStack.create(MaterialCompat.safe(XMaterial.LIGHT_GRAY_STAINED_GLASS_PANE), ""));
                 elevatorMenu.addMenuClickHandler(i, ChestMenuUtils.getEmptyClickHandler());
             }
         }
@@ -167,7 +169,7 @@ public class AlternateElevatorPlate extends SimpleSlimefunItem<BlockUseHandler> 
     public void openEditor(Player p, Block b) {
         ChestMenu menu = new ChestMenu("Elevator Settings");
 
-        menu.addItem(4, CustomItemStack.create(Material.NAME_TAG, "&7Floor Name &e(Click to edit)", "",
+        menu.addItem(4, CustomItemStack.create(MaterialCompat.safe(XMaterial.NAME_TAG), "&7Floor Name &e(Click to edit)", "",
             "&f" + ChatColors.color(BlockStorage.getLocationInfo(b.getLocation(), DATA_KEY))));
         menu.addMenuClickHandler(4, (pl, slot, item, action) -> {
             pl.closeInventory();
@@ -194,13 +196,13 @@ public class AlternateElevatorPlate extends SimpleSlimefunItem<BlockUseHandler> 
 
     private void addFloor(ChestMenu menu, int slot, Player p, String floor, Block b, Block destination) {
         if (destination.getY() == b.getY()) {
-            menu.addItem(slot, CustomItemStack.create(Material.LIME_STAINED_GLASS_PANE,
+            menu.addItem(slot, CustomItemStack.create(MaterialCompat.safe(XMaterial.LIME_STAINED_GLASS_PANE),
                 ChatColors.color(Slimefun.getLocalization().getMessage(p, "machines.ELEVATOR.current-floor")),
                 "", ChatColor.WHITE + floor, ""));
             menu.addMenuClickHandler(slot, ChestMenuUtils.getEmptyClickHandler());
 
         } else {
-            menu.addItem(slot, CustomItemStack.create(Material.GRAY_STAINED_GLASS_PANE,
+            menu.addItem(slot, CustomItemStack.create(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE),
                 ChatColors.color(Slimefun.getLocalization().getMessage(p,
                     "machines.ELEVATOR.click-to-teleport")), "", ChatColor.WHITE + floor, ""));
             menu.addMenuClickHandler(slot, (player, clickSlot, item, action) -> {
