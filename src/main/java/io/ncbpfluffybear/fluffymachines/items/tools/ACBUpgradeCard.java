@@ -12,7 +12,7 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.EquipmentSlot;
+import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -29,7 +29,7 @@ public class ACBUpgradeCard extends SimpleSlimefunItem<ItemHandler> {
     public ItemHandler getItemHandler() {
         return (ItemUseHandler) e -> {
             // Prevent offhand right clicks
-            if (e.getHand() != EquipmentSlot.HAND) {
+            if (!HandCompat.isMainHand(e)) {
                 return;
             }
 

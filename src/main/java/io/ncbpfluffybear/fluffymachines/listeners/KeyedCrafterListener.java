@@ -20,7 +20,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.inventory.EquipmentSlot;
+import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
@@ -34,7 +34,7 @@ public class KeyedCrafterListener implements Listener {
     private void onSmartFactoryInteract(PlayerRightClickEvent e) {
         Optional<Block> clickedBlock = e.getClickedBlock();
 
-        if (e.getHand() == EquipmentSlot.HAND && e.useBlock() != Event.Result.DENY && clickedBlock.isPresent() && e.getPlayer().isSneaking()) {
+        if (HandCompat.isMainHand(e) && e.useBlock() != Event.Result.DENY && clickedBlock.isPresent() && e.getPlayer().isSneaking()) {
             Optional<SlimefunItem> slimefunBlock = e.getSlimefunBlock();
 
             if (!slimefunBlock.isPresent()) {

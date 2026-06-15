@@ -11,6 +11,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunIte
 import io.github.thebusybiscuit.slimefun5.implementation.items.cargo.TrashCan;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
+import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -78,7 +79,7 @@ public class FluffyWrench extends SimpleSlimefunItem<ItemUseHandler> implements 
         Block block = e.getClickedBlock();
         // Check if player has wrench and is left clicking block
         // Can't use offhand because a player can offhand the wrench to escape the event
-        if (isItem(e.getItem()) && !isItem(p.getInventory().getItemInOffHand())
+        if (isItem(e.getItem()) && !isItem(HandCompat.offHandItem(p.getInventory()))
             && e.getAction().toString().endsWith("_BLOCK")
             && Slimefun.getProtectionManager().hasPermission(e.getPlayer(),
             block.getLocation(), Interaction.BREAK_BLOCK)
