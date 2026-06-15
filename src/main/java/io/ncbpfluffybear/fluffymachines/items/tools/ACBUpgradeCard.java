@@ -46,7 +46,7 @@ public class ACBUpgradeCard extends SimpleSlimefunItem<ItemHandler> {
             Block b = optB.get();
             SlimefunItem sfItem = BlockStorage.check(b);
             Player p = e.getPlayer();
-            ItemStack card = p.getInventory().getItemInMainHand();
+            ItemStack card = p.getInventory().getItemInHand();
 
             // Make sure the block is an ACB
             if (sfItem == null || sfItem != FluffyItems.ADVANCED_CHARGING_BENCH.getItem()) {

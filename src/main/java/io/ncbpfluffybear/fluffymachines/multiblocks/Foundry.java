@@ -47,9 +47,9 @@ public class Foundry extends MultiBlockMachine {
             BlockStorage.addBlockInfo(b, "accessible", "true");
             Utils.send(p, "&eFoundry has been registered. Right click the furnace with a lava bucket to heat.");
         } else if (BlockStorage.getLocationInfo(b.getLocation(), "ignited") == null) {
-            if (p.getInventory().getItemInMainHand().getType() == MaterialCompat.safe(XMaterial.LAVA_BUCKET)) {
+            if (p.getInventory().getItemInHand().getType() == MaterialCompat.safe(XMaterial.LAVA_BUCKET)) {
 
-                p.getInventory().getItemInMainHand().setType(MaterialCompat.safe(XMaterial.BUCKET));
+                p.getInventory().getItemInHand().setType(MaterialCompat.safe(XMaterial.BUCKET));
                 ArmorStand lavaStand = (ArmorStand) p.getWorld().spawnEntity(b.getLocation().add(0.5, -3, 0.5),
                     EntityType.ARMOR_STAND);
                 lavaStand.getEquipment().setHelmet(SlimefunUtils.getCustomHead("b6965e6a58684c277d18717cec959f2833a72dfa95661019dbcdf3dbf66b048"));

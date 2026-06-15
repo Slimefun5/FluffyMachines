@@ -132,10 +132,10 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
         switch (args[0].toUpperCase()) {
             case "META":
-                Utils.send(p, String.valueOf(p.getInventory().getItemInMainHand().getItemMeta()));
+                Utils.send(p, String.valueOf(p.getInventory().getItemInHand().getItemMeta()));
                 return true;
             case "RAWMETA":
-                p.sendMessage(String.valueOf(p.getInventory().getItemInMainHand().getItemMeta()).replace("\u00a7", "&"));
+                p.sendMessage(String.valueOf(p.getInventory().getItemInHand().getItemMeta()).replace("\u00a7", "&"));
                 return true;
             case "VERSION":
             case "V":

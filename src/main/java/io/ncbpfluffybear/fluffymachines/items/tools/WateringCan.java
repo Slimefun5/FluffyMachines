@@ -69,7 +69,7 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
         return e -> {
             Player p = e.getPlayer();
 
-            if (!isItem(p.getInventory().getItemInMainHand()))
+            if (!isItem(p.getInventory().getItemInHand()))
                 return;
 
             e.cancel();

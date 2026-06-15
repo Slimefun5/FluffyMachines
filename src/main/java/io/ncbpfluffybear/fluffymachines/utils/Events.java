@@ -56,7 +56,7 @@ public class Events implements Listener {
     @EventHandler(ignoreCancelled = true)
     public void onWateringCanSplash(PlayerInteractEntityEvent e) {
         Player p = e.getPlayer();
-        ItemStack item = p.getInventory().getItemInMainHand();
+        ItemStack item = p.getInventory().getItemInHand();
 
         // For some reason player interact events trigger twice, probably after a method returns false
         if (wateringCan.isItem(item)) {

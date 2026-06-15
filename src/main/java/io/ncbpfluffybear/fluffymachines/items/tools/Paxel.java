@@ -59,12 +59,12 @@ public class Paxel extends SlimefunItem implements Listener, NotPlaceable {
     @EventHandler(ignoreCancelled = true)
     private void onMine(BlockDamageEvent e) {
         Player p = e.getPlayer();
-        SlimefunItem sfItem = SlimefunItem.getByItem(p.getInventory().getItemInMainHand());
+        SlimefunItem sfItem = SlimefunItem.getByItem(p.getInventory().getItemInHand());
 
         if (sfItem != null && sfItem == FluffyItems.PAXEL.getItem()) {
             boolean netherite = false;
             Block b = e.getBlock();
-            ItemStack item = p.getInventory().getItemInMainHand();
+            ItemStack item = p.getInventory().getItemInHand();
 
             Material blockType = b.getType();
 
@@ -104,7 +104,7 @@ public class Paxel extends SlimefunItem implements Listener, NotPlaceable {
         }
 
         Player p = (Player) e.getDamager();
-        ItemStack item = p.getInventory().getItemInMainHand();
+        ItemStack item = p.getInventory().getItemInHand();
         SlimefunItem sfItem = SlimefunItem.getByItem(item);
 
         if (sfItem instanceof Paxel) {
