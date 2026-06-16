@@ -88,8 +88,8 @@ public class Events implements Listener {
     @EventHandler(ignoreCancelled = true)
     public void onNonClickableClick(InventoryClickEvent e) {
         ItemStack item = e.getCurrentItem();
-        if (item != null && item.getType() != Material.AIR && (item.getItemMeta().hasCustomModelData()
-                && item.getItemMeta().getCustomModelData() == 6969) || Utils.checkNonInteractable(item)) {
+        if (item != null && item.getType() != Material.AIR && (CompatUtils.hasCustomModelData(item.getItemMeta())
+                && CompatUtils.getCustomModelData(item.getItemMeta()) == 6969) || Utils.checkNonInteractable(item)) {
             e.setCancelled(true);
         }
     }

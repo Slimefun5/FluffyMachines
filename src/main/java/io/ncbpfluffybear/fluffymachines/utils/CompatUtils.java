@@ -40,6 +40,7 @@ public final class CompatUtils {
     private static final Method GET_CHOICE_LIST = method(ShapelessRecipe.class, "getChoiceList");
     private static final Method IS_AIR = method(Material.class, "isAir");
     private static final Method HAS_CUSTOM_MODEL_DATA = method(ItemMeta.class, "hasCustomModelData");
+    private static final Method GET_CUSTOM_MODEL_DATA = method(ItemMeta.class, "getCustomModelData");
 
     private CompatUtils() {}
 
@@ -134,6 +135,20 @@ public final class CompatUtils {
             return Boolean.TRUE.equals(HAS_CUSTOM_MODEL_DATA.invoke(meta));
         } catch (ReflectiveOperationException e) {
             return false;
+        }
+    }
+
+    /** Version-safe {@code ItemMeta#getCustomModelData()} (1.14+); returns 0 on older servers. */
+    public static int getCustomModelData(@Nullable ItemMeta meta) {
+        if (meta == null || GET_CUSTOM_MODEL_DATA == null) {
+            return 0;
+        }
+
+        try {
+            Object value = GET_CUSTOM_MODEL_DATA.invoke(meta);
+            return value instanceof Integer ? (Integer) value : 0;
+        } catch (ReflectiveOperationException e) {
+            return 0;
         }
     }
 

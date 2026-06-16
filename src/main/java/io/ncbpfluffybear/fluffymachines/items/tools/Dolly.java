@@ -286,8 +286,8 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
     private boolean isLockItem(@Nullable ItemStack lockItem) {
         return lockItem != null && (Utils.checkNonInteractable(lockItem)
-                || lockItem.getItemMeta().hasCustomModelData() // Remnants of when I didn't know what PDC was
-                && lockItem.getItemMeta().getCustomModelData() == 6969); // Leave in to maintain compatibility
+                || CompatUtils.hasCustomModelData(lockItem.getItemMeta()) // Remnants of when I didn't know what PDC was
+                && CompatUtils.getCustomModelData(lockItem.getItemMeta()) == 6969); // Leave in to maintain compatibility
     }
 
 }
