@@ -149,6 +149,8 @@ public final class FluffyItemSetup {
 
     public static void setup(@Nonnull FluffyMachines plugin) {
 
+        fluffymachines.setTheme("machines");
+
         // Chargers
         new PortableCharger(portableChargers, FluffyItems.SMALL_PORTABLE_CHARGER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
