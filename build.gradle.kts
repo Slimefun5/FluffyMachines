@@ -72,7 +72,7 @@ tasks {
     }
     shadowJar {
         relocate("org.bstats", "fluffymachines.libs.bstats")
-        archiveFileName.set("FluffyMachines v${project.version}.jar")
+        archiveFileName.set("FluffyMachines-1.0.0-UNOFFICIAL.jar")
                 relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
         exclude("META-INF/**")
     }
