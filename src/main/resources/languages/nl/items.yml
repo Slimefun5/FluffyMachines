@@ -1,0 +1,92 @@
+# Dutch item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
+
+MINI_FLUFFY_BARREL:
+  name: "&eMini Fluffy Vat"
+SMALL_PORTABLE_CHARGER:
+  name: "&eKleine Draagbare Oplader"
+MEDIUM_PORTABLE_CHARGER:
+  name: "&6Middelgrote Draagbare Oplader"
+BIG_PORTABLE_CHARGER:
+  name: "&aGrote Draagbare Oplader"
+LARGE_PORTABLE_CHARGER:
+  name: "&2Enorme Draagbare Oplader"
+CARBONADO_PORTABLE_CHARGER:
+  name: "&4Carbonado Draagbare Oplader"
+ANCIENT_BOOK:
+  name: "&6Oud Boek"
+HELICOPTER_HAT:
+  name: "&1Helikopterhoed"
+WATERING_CAN:
+  name: "&bGieter"
+ENDER_CHEST_EXTRACTION_NODE:
+  name: "&6Ender Kist Onttrekkingsknooppunt"
+ENDER_CHEST_INSERTION_NODE:
+  name: "&bEnder Kist Invoegknooppunt"
+AUTO_CRAFTING_TABLE:
+  name: "&6Automatische Werkbank"
+AUTO_ANCIENT_ALTAR:
+  name: "&5Auto Oud Altaar"
+AUTO_TABLE_SAW:
+  name: "&6Automatische Tafelzaag"
+WATER_SPRINKLER:
+  name: "&bWatersproeier"
+GENERATOR_CORE:
+  name: "&7Generatorkern"
+CRANK_GENERATOR:
+  name: "&7Slinger Generator"
+FOUNDRY:
+  name: "&cGieterij"
+BACKPACK_UNLOADER:
+  name: "&eRugzak Uitlader"
+BACKPACK_LOADER:
+  name: "&eRugzak Lader"
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: "&e&lVerbeterde Explosieve Houweel"
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: "&e&lVerbeterde Explosieve Schep"
+FIREPROOF_RUNE:
+  name: "&7Oude Rune &8&l[&c&lVuurbestendig&8&l]"
+SUPERHEATED_FURNACE:
+  name: "&cOververhitte Oven"
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: "&eAuto Verbeterde Werkbank"
+AUTO_MAGIC_WORKBENCH:
+  name: "&6Auto Magische Werkbank"
+AUTO_ARMOR_FORGE:
+  name: "&7Auto Wapenrusting Smederij"
+ADVANCED_AUTO_DISENCHANTER:
+  name: "&cGeavanceerde Auto-Onttoveraar"
+SCYTHE:
+  name: "&eZeis"
+UPGRADED_LUMBER_AXE:
+  name: "&6&lVerbeterde Houthakkersbijl"
+DOLLY:
+  name: "&bSteekwagen"
+WARP_PAD:
+  name: "&6Teleportatieplaat"
+WARP_PAD_CONFIGURATOR:
+  name: "&6Teleportatieplaat Configurator"
+ELECTRIC_DUST_FABRICATOR:
+  name: "&6Elektrische Stof Fabrikant"
+ELECTRIC_DUST_RECYCLER:
+  name: "&fElektrische Stof Recycler"
+ALTERNATE_ELEVATOR_PLATE:
+  name: "&3Alternatieve Liftplaat"
+FLUFFY_WRENCH:
+  name: "&6Fluffy Sleutel"
+REINFORCED_FLUFFY_WRENCH:
+  name: "&bVersterkte Fluffy Sleutel"
+CARBONADO_FLUFFY_WRENCH:
+  name: "&7Carbonado Fluffy Sleutel"
+PAXEL:
+  name: "&bPaxel"
+ADVANCED_CHARGING_BENCH:
+  name: "&cGeavanceerde Oplaadbank"
+ACB_UPGRADE_CARD:
+  name: "&6ACB Upgradekaart"
+CARGO_MANIPULATOR:
+  name: "&9Cargo Manipulator"
+EXP_DISPENSER:
+  name: "&aExp Verdeler"
+SMART_FACTORY:
+  name: "&cSlimme Fabriek"
