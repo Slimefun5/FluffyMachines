@@ -103,6 +103,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
             // Contribute this addon's per-language item translations (languages/<lang>/items.yml).
             Slimefun.getItemTranslationService().registerTranslations(this);
+            registerWiki();
 
             // Register Events Class
             getServer().getPluginManager().registerEvents(new Events(), this);
@@ -117,6 +118,21 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onDisable() {
         // Logic for disabling the plugin...
+    }
+
+    private void registerWiki() {
+        io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText wiki = io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getWikiText();
+        String topicId = "addon_fluffymachines";
+        wiki.registerTopic(new io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic(topicId, "Fluffy Machines", io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial.PISTON, "&7Quality-of-life machines"));
+        wiki.setMechanic(topicId, java.util.Arrays.asList(
+            "&7Quality-of-life machines.", "",
+            "&7Auto crafters, storage barrels, ender-chest", "&7links and handy utility machines that", "&7streamline your automation.", "",
+            "&7Click an item below for its recipe."));
+        java.util.List<String> items = new java.util.ArrayList<>();
+        for (io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem item : io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getRegistry().getEnabledSlimefunItems()) {
+            try { if (item.getAddon() == this) { items.add(item.getId()); } } catch (Exception | LinkageError ignored) { }
+        }
+        wiki.setTopicItems(topicId, items);
     }
 
     @Override
