@@ -1,0 +1,46 @@
+# German item translations for FluffyMachines. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+AUTO_CRAFTING_TABLE:
+  name: "&6Automatischer Werktisch"
+  lore:
+    - "&7Stellt automatisch &fVanilla-&7Rezepte her"
+
+AUTO_ANCIENT_ALTAR:
+  name: "&5Automatischer Alter Altar"
+  lore:
+    - "&7Stellt automatisch &5Alter-Altar-&7Rezepte her"
+
+AUTO_TABLE_SAW:
+  name: "&6Automatische Tischsäge"
+  lore:
+    - "&7Stellt automatisch &6Tischsägen-&7Rezepte her"
+
+GENERATOR_CORE:
+  name: "&7Generatorkern"
+  lore:
+    - "&7Multiblock-Komponente von Generatoren"
+
+FOUNDRY:
+  name: "&cGießerei"
+  lore:
+    - "&eSchmilzt und lagert Staub und Barren"
+    - "&7Lagert 138.240 Staub (40 Doppeltruhen)"
+
+SCYTHE:
+  name: "&eSense"
+  lore:
+    - "&7Erntet 5 Feldfrüchte auf einmal"
+
+UPGRADED_LUMBER_AXE:
+  name: "&6&lVerbesserte Holzfälleraxt"
+  lore:
+    - "&7Fällt einen ganzen Baum auf einmal"
+    - "&72 Blöcke Reichweite und funktioniert auch bei diagonalen Blöcken"
+
+WARP_PAD:
+  name: "&6Warp-Plattform"
+  lore:
+    - "&eGehe in die Hocke &7auf diesem Block, um zur"
+    - "&7verknüpften Ziel-Plattform zu teleportieren"
+    - "&7Nutze einen Warp-Plattform-Konfigurator, um Plattformen zu verknüpfen"

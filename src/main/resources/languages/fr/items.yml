@@ -1,0 +1,46 @@
+# French item translations for FluffyMachines. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+AUTO_CRAFTING_TABLE:
+  name: "&6Table de Fabrication Automatique"
+  lore:
+    - "&7Fabrique automatiquement les recettes &fvanilla"
+
+AUTO_ANCIENT_ALTAR:
+  name: "&5Autel Ancien Automatique"
+  lore:
+    - "&7Fabrique automatiquement les recettes de l'&5Autel Ancien"
+
+AUTO_TABLE_SAW:
+  name: "&6Scie sur Table Automatique"
+  lore:
+    - "&7Fabrique automatiquement les recettes de la &6Scie sur Table"
+
+GENERATOR_CORE:
+  name: "&7Noyau de Generateur"
+  lore:
+    - "&7Composant multibloc des generateurs"
+
+FOUNDRY:
+  name: "&cFonderie"
+  lore:
+    - "&eFait fondre et stocke poussieres et lingots"
+    - "&7Stocke 138 240 poussieres (40 doubles coffres)"
+
+SCYTHE:
+  name: "&eFaux"
+  lore:
+    - "&7Recolte 5 cultures a la fois"
+
+UPGRADED_LUMBER_AXE:
+  name: "&6&lHache de Bucheron Amelioree"
+  lore:
+    - "&7Abat un arbre entier d'un seul coup"
+    - "&7Portee de 2 blocs et fonctionne aussi en diagonale"
+
+WARP_PAD:
+  name: "&6Plateforme de Teleportation"
+  lore:
+    - "&eAccroupissez-vous &7sur ce bloc pour vous teleporter"
+    - "&7vers la plateforme de destination liee"
+    - "&7Utilisez un Configurateur de Plateforme pour les lier"

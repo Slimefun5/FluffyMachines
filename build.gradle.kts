@@ -33,7 +33,7 @@ dependencies {
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.1")
+    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.2")
     compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.1.149") {
         exclude(group = "org.jetbrains", module = "annotations")
         exclude(group = "com.sk89q.worldguard")

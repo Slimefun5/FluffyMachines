@@ -2,6 +2,7 @@ package io.ncbpfluffybear.fluffymachines;
 
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun5.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import io.ncbpfluffybear.fluffymachines.listeners.KeyedCrafterListener;
@@ -99,6 +100,9 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             // Registering Items
             FluffyItemSetup.setup(this);
             FluffyItemSetup.setupBarrels(this);
+
+            // Contribute this addon's per-language item translations (languages/<lang>/items.yml).
+            Slimefun.getItemTranslationService().registerTranslations(this);
 
             // Register Events Class
             getServer().getPluginManager().registerEvents(new Events(), this);

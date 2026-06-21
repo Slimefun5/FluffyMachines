@@ -1,0 +1,46 @@
+# Spanish item translations for FluffyMachines. Keyed by Slimefun item id.
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+AUTO_CRAFTING_TABLE:
+  name: "&6Mesa de Fabricacion Automatica"
+  lore:
+    - "&7Fabrica automaticamente recetas &fvanilla"
+
+AUTO_ANCIENT_ALTAR:
+  name: "&5Altar Antiguo Automatico"
+  lore:
+    - "&7Fabrica automaticamente recetas del &5Altar Antiguo"
+
+AUTO_TABLE_SAW:
+  name: "&6Sierra de Mesa Automatica"
+  lore:
+    - "&7Fabrica automaticamente recetas de la &6Sierra de Mesa"
+
+GENERATOR_CORE:
+  name: "&7Nucleo de Generador"
+  lore:
+    - "&7Componente multibloque de los generadores"
+
+FOUNDRY:
+  name: "&cFundicion"
+  lore:
+    - "&eDerrite y almacena polvos y lingotes"
+    - "&7Almacena 138.240 de polvo (40 cofres dobles)"
+
+SCYTHE:
+  name: "&eGuadana"
+  lore:
+    - "&7Cosecha 5 cultivos a la vez"
+
+UPGRADED_LUMBER_AXE:
+  name: "&6&lHacha de Lenador Mejorada"
+  lore:
+    - "&7Tala un arbol entero de una vez"
+    - "&7Alcance de 2 bloques y funciona tambien en diagonal"
+
+WARP_PAD:
+  name: "&6Plataforma de Teletransporte"
+  lore:
+    - "&eAgachate &7sobre este bloque para teletransportarte"
+    - "&7a la plataforma de destino vinculada"
+    - "&7Usa un Configurador de Plataforma para vincularlas"
