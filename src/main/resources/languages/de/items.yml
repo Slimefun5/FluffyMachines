@@ -90,3 +90,15 @@ EXP_DISPENSER:
   name: "&aErfahrungs-Spender"
 SMART_FACTORY:
   name: "&cIntelligente Fabrik"
+SMALL_FLUFFY_BARREL:
+  name: "&eKleines Fluffy Fass"
+MEDIUM_FLUFFY_BARREL:
+  name: "&6Mittleres Fluffy Fass"
+BIG_FLUFFY_BARREL:
+  name: "&bGroßes Fluffy Fass"
+LARGE_FLUFFY_BARREL:
+  name: "&aRiesiges Fluffy Fass"
+MASSIVE_FLUFFY_BARREL:
+  name: "&5Gewaltiges Fluffy Fass"
+BOTTOMLESS_FLUFFY_BARREL:
+  name: "&cBodenloses Fluffy Fass"
