@@ -99,7 +99,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
             // Register McMMO Events
             if (getServer().getPluginManager().isPluginEnabled("McMMO")) {
-                Bukkit.getLogger().log(Level.INFO, "McMMO found!");
+                getLogger().log(Level.INFO, "McMMO found!");
                 getServer().getPluginManager().registerEvents(new McMMOEvents(), this);
             }
 
@@ -570,7 +570,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
         }
 
         if (players > 0) {
-            Bukkit.getLogger().log(Level.INFO, "Auto-saved all player data for {0} player(s)!", players);
+            getLogger().log(Level.INFO, "Auto-saved all player data for {0} player(s)!", players);
         }
     }
 
