@@ -35,6 +35,8 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -59,7 +61,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
     private final int[] mockPedestalSlots = {19, 20, 21, 30, 39, 38, 37, 28};
     private final AncientAltar altarItem = (AncientAltar) SlimefunItems.ANCIENT_ALTAR.getItem();
 
-    private final ItemStack ironBars = new ItemStack(Material.IRON_BARS);
+    private final ItemStack ironBars = new ItemStack(MaterialCompat.safe(XMaterial.IRON_BARS));
     private final ItemStack earthRune = new SlimefunItemStack(SlimefunItems.EARTH_RUNE.getItemId(),
             SlimefunItems.EARTH_RUNE.item()).item();
     private final List<ItemStack> jarInputs = new ArrayList<>(Arrays.asList(ironBars, earthRune, ironBars, earthRune,
@@ -82,7 +84,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
                 if (!BlockStorage.hasBlockInfo(b)
                         || BlockStorage.getLocationInfo(b.getLocation(), "enabled") == null
                         || BlockStorage.getLocationInfo(b.getLocation(), "enabled").equals(String.valueOf(false))) {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.GUNPOWDER, "&7Enabled: &4\u2718", "",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), "&7Enabled: &4\u2718", "",
                             "&e> Click to enable this Machine")
                     );
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
@@ -91,7 +93,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
                         return false;
                     });
                 } else {
-                    menu.replaceExistingItem(6, CustomItemStack.create(Material.REDSTONE, "&7Enabled: &2\u2714",
+                    menu.replaceExistingItem(6, CustomItemStack.create(MaterialCompat.safe(XMaterial.REDSTONE), "&7Enabled: &2\u2714",
                             "", "&e> Click to disable this Machine")
                     );
                     menu.addMenuClickHandler(6, (p, slot, item, action) -> {
@@ -101,7 +103,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
                     });
                 }
 
-                menu.replaceExistingItem(7, CustomItemStack.create(Material.ENCHANTING_TABLE, "&cCraft Once",
+                menu.replaceExistingItem(7, CustomItemStack.create(MaterialCompat.safe(XMaterial.ENCHANTING_TABLE), "&cCraft Once",
                         "", "&e> Click to craft recipe once")
                 );
                 menu.addMenuClickHandler(7, (p, slot, item, action) -> {
@@ -209,12 +211,12 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
                                        ClickAction action) {
                     if (cursor == null)
                         return true;
-                    return cursor.getType() == Material.AIR;
+                    return cursor.getType() == MaterialCompat.safe(XMaterial.AIR);
                 }
             });
         }
 
-        preset.addItem(2, CustomItemStack.create(new ItemStack(Material.ENCHANTING_TABLE), "&eRecipe",
+        preset.addItem(2, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ENCHANTING_TABLE)), "&eRecipe",
                         "", "&bPut in the Recipe you want to craft", "&4Ancient Altar Recipes ONLY"
                 ),
                 (p, slot, item, action) -> false);
@@ -394,17 +396,17 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
 
     static void borders(BlockMenuPreset preset, int[] border, int[] inputBorder, int[] outputBorder) {
         for (int i : border) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.GRAY_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE)), " "),
                     (p, slot, item, action) -> false);
         }
 
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE)), " "),
                     (p, slot, item, action) -> false);
         }
 
         for (int i : outputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "),
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE)), " "),
                     (p, slot, item, action) -> false);
         }
     }

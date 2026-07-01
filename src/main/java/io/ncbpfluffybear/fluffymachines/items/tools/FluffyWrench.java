@@ -11,6 +11,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunIte
 import io.github.thebusybiscuit.slimefun5.implementation.items.cargo.TrashCan;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
+import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
@@ -18,6 +19,8 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import org.bukkit.Bukkit;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -76,7 +79,7 @@ public class FluffyWrench extends SimpleSlimefunItem<ItemUseHandler> implements 
         Block block = e.getClickedBlock();
         // Check if player has wrench and is left clicking block
         // Can't use offhand because a player can offhand the wrench to escape the event
-        if (isItem(e.getItem()) && !isItem(p.getInventory().getItemInOffHand())
+        if (isItem(e.getItem()) && !isItem(HandCompat.offHandItem(p.getInventory()))
             && e.getAction().toString().endsWith("_BLOCK")
             && Slimefun.getProtectionManager().hasPermission(e.getPlayer(),
             block.getLocation(), Interaction.BREAK_BLOCK)
@@ -108,7 +111,7 @@ public class FluffyWrench extends SimpleSlimefunItem<ItemUseHandler> implements 
         Bukkit.getPluginManager().callEvent(breakEvent);
         if (!breakEvent.isCancelled()) {
             BlockStorage.clearBlockInfo(block);
-            block.setType(Material.AIR);
+            block.setType(MaterialCompat.safe(XMaterial.AIR));
         }
     }
 
@@ -127,9 +130,9 @@ public class FluffyWrench extends SimpleSlimefunItem<ItemUseHandler> implements 
     }
 
     public enum Wrench {
-        DEFAULT(Material.GOLDEN_AXE, false, 0),
-        REINFORCED(Material.DIAMOND_AXE, false, 0),
-        CARBONADO(Material.NETHERITE_AXE, true, 5000);
+        DEFAULT(MaterialCompat.safe(XMaterial.GOLDEN_AXE), false, 0),
+        REINFORCED(MaterialCompat.safe(XMaterial.DIAMOND_AXE), false, 0),
+        CARBONADO(MaterialCompat.safe(XMaterial.NETHERITE_AXE), true, 5000);
 
         private final Material material;
         private final boolean isElectric;

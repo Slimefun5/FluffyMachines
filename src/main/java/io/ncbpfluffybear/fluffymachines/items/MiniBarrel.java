@@ -12,6 +12,8 @@ import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -37,7 +39,7 @@ public class MiniBarrel extends Barrel {
     @Override
     protected void buildMenu(BlockMenu menu, Block b) {
         super.buildMenu(menu, b);
-        menu.replaceExistingItem(13, CustomItemStack.create(Material.YELLOW_STAINED_GLASS_PANE,
+        menu.replaceExistingItem(13, CustomItemStack.create(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE),
                 "&eChange barrel size", "&7> Click to change max size", "&eCurrent size: " + getCapacity(b),
                 "&eSize limit: " + barrelCapacity.getValue()
         ));
@@ -59,7 +61,7 @@ public class MiniBarrel extends Barrel {
                 }
 
                 BlockStorage.addBlockInfo(b, "max-size", String.valueOf(renameSize));
-                menu.replaceExistingItem(13, CustomItemStack.create(Material.YELLOW_STAINED_GLASS_PANE,
+                menu.replaceExistingItem(13, CustomItemStack.create(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE),
                         "&eChange barrel size", "&7> Click to change max size", "&eCurrent size: " + renameSize,
                         "&eSize limit: " + barrelCapacity.getValue()
                 ));

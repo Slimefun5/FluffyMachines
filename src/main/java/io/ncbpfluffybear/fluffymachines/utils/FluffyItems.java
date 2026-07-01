@@ -24,7 +24,9 @@ import io.ncbpfluffybear.fluffymachines.machines.WaterSprinkler;
 import io.ncbpfluffybear.fluffymachines.multiblocks.CrankGenerator;
 import io.ncbpfluffybear.fluffymachines.objects.AutoCrafter;
 import org.bukkit.Color;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -40,7 +42,7 @@ public class FluffyItems {
 
     // Barrels
     public static final SlimefunItemStack MINI_FLUFFY_BARREL = new SlimefunItemStack("MINI_FLUFFY_BARREL",
-            Material.COMPOSTER,
+            MaterialCompat.safe(XMaterial.COMPOSTER),
             "&eMini Fluffy Barrel",
             "",
             "&7Stores a large amount of an item",
@@ -51,7 +53,7 @@ public class FluffyItems {
 
     // Portable Chargers
     public static final SlimefunItemStack SMALL_PORTABLE_CHARGER = new SlimefunItemStack("SMALL_PORTABLE_CHARGER",
-            Material.BRICK,
+            MaterialCompat.safe(XMaterial.BRICK),
             "&eSmall Portable Charger",
             "",
             "&7A handheld charger that holds a lot of power",
@@ -61,7 +63,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack MEDIUM_PORTABLE_CHARGER = new SlimefunItemStack("MEDIUM_PORTABLE_CHARGER",
-            Material.IRON_INGOT,
+            MaterialCompat.safe(XMaterial.IRON_INGOT),
             "&6Medium Portable Charger",
             "",
             "&7A handheld charger that holds a lot of power",
@@ -71,7 +73,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack BIG_PORTABLE_CHARGER = new SlimefunItemStack("BIG_PORTABLE_CHARGER",
-            Material.GOLD_INGOT,
+            MaterialCompat.safe(XMaterial.GOLD_INGOT),
             "&aBig Portable Charger",
             "",
             "&7A handheld charger that holds a lot of power",
@@ -81,7 +83,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack LARGE_PORTABLE_CHARGER = new SlimefunItemStack("LARGE_PORTABLE_CHARGER",
-            Material.NETHER_BRICK,
+            MaterialCompat.safe(XMaterial.NETHER_BRICK),
             "&2Large Portable Charger",
             "",
             "&7A handheld charger that holds a lot of power",
@@ -92,7 +94,7 @@ public class FluffyItems {
 
     public static final SlimefunItemStack CARBONADO_PORTABLE_CHARGER = new SlimefunItemStack(
             "CARBONADO_PORTABLE_CHARGER",
-            Material.NETHERITE_INGOT,
+            MaterialCompat.safe(XMaterial.NETHERITE_INGOT),
             "&4Carbonado Portable Charger",
             "",
             "&7A handheld charger that holds a lot of power",
@@ -103,7 +105,7 @@ public class FluffyItems {
 
     // Items
     public static final SlimefunItemStack ANCIENT_BOOK = new SlimefunItemStack("ANCIENT_BOOK",
-            Material.BOOK,
+            MaterialCompat.safe(XMaterial.BOOK),
             "&6Ancient Book",
             "",
             "&7Used in the &cAdvanced Auto Disenchanter",
@@ -111,7 +113,7 @@ public class FluffyItems {
             "&6&oContains concentrated amounts of power"
     );
     public static final SlimefunItemStack HELICOPTER_HAT = new SlimefunItemStack("HELICOPTER_HAT",
-            Material.LEATHER_HELMET, Color.AQUA,
+            MaterialCompat.safe(XMaterial.LEATHER_HELMET), Color.AQUA,
             "&1Helicopter Hat",
             "",
             "&7brrrrrrrrRRRRRRRR",
@@ -152,7 +154,7 @@ public class FluffyItems {
     );
     // Machines
     public static final SlimefunItemStack AUTO_CRAFTING_TABLE = new SlimefunItemStack("AUTO_CRAFTING_TABLE",
-            Material.CRAFTING_TABLE,
+            MaterialCompat.safe(XMaterial.CRAFTING_TABLE),
             "&6Auto Crafting Table",
             "",
             "&7Automatically crafts &fvanilla &7recipes",
@@ -161,7 +163,7 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(AutoCraftingTable.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack AUTO_ANCIENT_ALTAR = new SlimefunItemStack("AUTO_ANCIENT_ALTAR",
-            Material.ENCHANTING_TABLE,
+            MaterialCompat.safe(XMaterial.ENCHANTING_TABLE),
             "&5Auto Ancient Altar",
             "",
             "&7Automatically crafts &5Ancient Altar &7recipes",
@@ -170,7 +172,7 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(AutoAncientAltar.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack AUTO_TABLE_SAW = new SlimefunItemStack("AUTO_TABLE_SAW",
-            Material.STONECUTTER,
+            MaterialCompat.safe(XMaterial.STONECUTTER),
             "&6Auto Table Saw",
             "",
             "&7Automatically crafts &6Table Saw &7recipes",
@@ -188,13 +190,13 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(WaterSprinkler.ENERGY_CONSUMPTION) + " per crop"
     );
     public static final SlimefunItemStack GENERATOR_CORE = new SlimefunItemStack("GENERATOR_CORE",
-            Material.BLAST_FURNACE,
+            MaterialCompat.safe(XMaterial.BLAST_FURNACE),
             "&7Generator Core",
             "",
             "&7Multiblock component of generators"
     );
     public static final SlimefunItemStack CRANK_GENERATOR = new SlimefunItemStack("CRANK_GENERATOR",
-            Material.BLAST_FURNACE,
+            MaterialCompat.safe(XMaterial.BLAST_FURNACE),
             "&7Crank Generator",
             "",
             "&eRight click &7the lever to generate power",
@@ -206,7 +208,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack FOUNDRY = new SlimefunItemStack("FOUNDRY",
-            Material.BLAST_FURNACE,
+            MaterialCompat.safe(XMaterial.BLAST_FURNACE),
             "&cFoundry",
             "",
             "&eMelts and stores dusts and ingots",
@@ -216,7 +218,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack BACKPACK_UNLOADER = new SlimefunItemStack("BACKPACK_UNLOADER",
-            Material.BROWN_STAINED_GLASS,
+            MaterialCompat.safe(XMaterial.BROWN_STAINED_GLASS),
             "&eBackpack Unloader",
             "",
             "&7Empties the contents of backpacks",
@@ -225,7 +227,7 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(BackpackUnloader.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack BACKPACK_LOADER = new SlimefunItemStack("BACKPACK_LOADER",
-            Material.ORANGE_STAINED_GLASS,
+            MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS),
             "&eBackpack Loader",
             "",
             "&7Moves items from inventory to backpack",
@@ -235,13 +237,13 @@ public class FluffyItems {
     );
     public static final SlimefunItemStack UPGRADED_EXPLOSIVE_PICKAXE = new SlimefunItemStack(
             "UPGRADED_EXPLOSIVE_PICKAXE",
-            Material.DIAMOND_PICKAXE,
+            MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE),
             "&e&lUpgraded Explosive Pickaxe",
             "",
             "&7Breaks all mineable blocks in a 5x5 radius"
     );
     public static final SlimefunItemStack UPGRADED_EXPLOSIVE_SHOVEL = new SlimefunItemStack("UPGRADED_EXPLOSIVE_SHOVEL",
-            Material.DIAMOND_SHOVEL,
+            MaterialCompat.safe(XMaterial.DIAMOND_SHOVEL),
             "&e&lUpgraded Explosive Shovel",
             "",
             "&7Breaks all shovelable blocks in a 5x5 radius"
@@ -256,14 +258,14 @@ public class FluffyItems {
                     ""
             ));
     public static final SlimefunItemStack SUPERHEATED_FURNACE = new SlimefunItemStack("SUPERHEATED_FURNACE",
-            Material.BLAST_FURNACE,
+            MaterialCompat.safe(XMaterial.BLAST_FURNACE),
             "&cSuper Heated Furnace",
             "",
             "&7Multiblock component of the Foundry",
             "&cMust be used in the Foundry"
     );
     public static final SlimefunItemStack AUTO_ENHANCED_CRAFTING_TABLE = new SlimefunItemStack("AUTO_ENHANCED_CRAFTING_TABLE",
-            Material.CRAFTING_TABLE,
+            MaterialCompat.safe(XMaterial.CRAFTING_TABLE),
             "&eAuto Enhanced Crafting Table",
             "",
             "&7Automatically crafts &eEnhanced Crafting Table &7recipes",
@@ -272,7 +274,7 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(AutoCrafter.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack AUTO_MAGIC_WORKBENCH = new SlimefunItemStack("AUTO_MAGIC_WORKBENCH",
-            Material.BOOKSHELF,
+            MaterialCompat.safe(XMaterial.BOOKSHELF),
             "&6Auto Magic Workbench",
             "",
             "&7Automatically crafts &6Magic Workbench &7recipes",
@@ -281,7 +283,7 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(AutoCrafter.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack AUTO_ARMOR_FORGE = new SlimefunItemStack("AUTO_ARMOR_FORGE",
-            Material.SMITHING_TABLE,
+            MaterialCompat.safe(XMaterial.SMITHING_TABLE),
             "&7Auto Armor Forge",
             "",
             "&7Automatically crafts Armor Forge recipes",
@@ -291,7 +293,7 @@ public class FluffyItems {
     );
     public static final SlimefunItemStack ADVANCED_AUTO_DISENCHANTER = new SlimefunItemStack(
             "ADVANCED_AUTO_DISENCHANTER",
-            Material.ENCHANTING_TABLE,
+            MaterialCompat.safe(XMaterial.ENCHANTING_TABLE),
             "&cAdvanced Auto Disenchanter",
             "",
             "&7Removes one enchant from an item",
@@ -301,20 +303,20 @@ public class FluffyItems {
             LoreBuilderDynamic.powerPerTick(AdvancedAutoDisenchanter.ENERGY_CONSUMPTION)
     );
     public static final SlimefunItemStack SCYTHE = new SlimefunItemStack("SCYTHE",
-            Material.IRON_HOE,
+            MaterialCompat.safe(XMaterial.IRON_HOE),
             "&eScythe",
             "",
             "&7Breaks 5 crops at once"
     );
     public static final SlimefunItemStack UPGRADED_LUMBER_AXE = new SlimefunItemStack("UPGRADED_LUMBER_AXE",
-            Material.DIAMOND_AXE,
+            MaterialCompat.safe(XMaterial.DIAMOND_AXE),
             "&6&lUpgraded Lumber Axe",
             "",
             "&7Chops down an entire tree at once",
             "&72 block reach and works on diagonal blocks too"
     );
     public static final SlimefunItemStack DOLLY = new SlimefunItemStack("DOLLY",
-            Material.MINECART,
+            MaterialCompat.safe(XMaterial.MINECART),
             "&bDolly",
             "",
             "&7Right click a chest to pick it up",
@@ -323,7 +325,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack WARP_PAD = new SlimefunItemStack("WARP_PAD",
-            Material.SMOKER,
+            MaterialCompat.safe(XMaterial.SMOKER),
             "&6Warp Pad",
             "",
             "&eCrouch &7on this block to teleport to",
@@ -333,7 +335,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack WARP_PAD_CONFIGURATOR = new SlimefunItemStack("WARP_PAD_CONFIGURATOR",
-            Material.BLAZE_ROD,
+            MaterialCompat.safe(XMaterial.BLAZE_ROD),
             "&6Warp Pad Configurator",
             "",
             "&eSneak and Right Click &7on a Warp Pad to set the destination",
@@ -343,7 +345,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack ELECTRIC_DUST_FABRICATOR = new SlimefunItemStack("ELECTRIC_DUST_FABRICATOR",
-            Material.BLAST_FURNACE,
+            MaterialCompat.safe(XMaterial.BLAST_FURNACE),
             "&6Electric Dust Fabricator",
             "",
             "&7An all-in-one machine that grinds, pans, and washes",
@@ -354,7 +356,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack ELECTRIC_DUST_RECYCLER = new SlimefunItemStack("ELECTRIC_DUST_RECYCLER",
-            Material.IRON_BLOCK,
+            MaterialCompat.safe(XMaterial.IRON_BLOCK),
             "&fElectric Dust Recycler",
             "",
             "&7Recycles dust back into sifted ore",
@@ -365,7 +367,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack ALTERNATE_ELEVATOR_PLATE = new SlimefunItemStack("ALTERNATE_ELEVATOR_PLATE",
-            Material.POLISHED_BLACKSTONE_PRESSURE_PLATE,
+            MaterialCompat.safe(XMaterial.POLISHED_BLACKSTONE_PRESSURE_PLATE),
             "&3Alternate Elevator Plate",
             "",
             "&fPlace an Elevator Plate on every floor",
@@ -408,7 +410,7 @@ public class FluffyItems {
             );
 
     public static final SlimefunItemStack PAXEL = new SlimefunItemStack("PAXEL",
-            Material.DIAMOND_PICKAXE,
+            MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE),
             "&bPaxel",
             "",
             "&7A pickaxe, axe, and shovel in one tool!"
@@ -416,7 +418,7 @@ public class FluffyItems {
 
     public static final SlimefunItemStack ADVANCED_CHARGING_BENCH = new SlimefunItemStack(
             "ADVANCED_CHARGING_BENCH",
-            Material.SMITHING_TABLE,
+            MaterialCompat.safe(XMaterial.SMITHING_TABLE),
             "&cAdvanced Charging Bench",
             "",
             "&7Charges items",
@@ -425,7 +427,7 @@ public class FluffyItems {
 
     public static final SlimefunItemStack ACB_UPGRADE_CARD = new SlimefunItemStack(
             "ACB_UPGRADE_CARD",
-            Material.PAPER,
+            MaterialCompat.safe(XMaterial.PAPER),
             "&6ACB Upgrade Card",
             "",
             "&eRight Click &7onto an &cAdvanced Charging Bench",
@@ -436,7 +438,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack CARGO_MANIPULATOR = new SlimefunItemStack("CARGO_MANIPULATOR",
-            Material.SEA_PICKLE,
+            MaterialCompat.safe(XMaterial.SEA_PICKLE),
             "&9Cargo Manipulator",
             "",
             "&eRight Click &7to copy cargo node settings",
@@ -445,7 +447,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack EXP_DISPENSER = new SlimefunItemStack("EXP_DISPENSER",
-            Material.DISPENSER,
+            MaterialCompat.safe(XMaterial.DISPENSER),
             "&aExp Dispenser",
             "",
             "&7Right click to receive all exp",
@@ -456,7 +458,7 @@ public class FluffyItems {
     );
 
     public static final SlimefunItemStack SMART_FACTORY = new SlimefunItemStack("SMART_FACTORY",
-            Material.SMOKER,
+            MaterialCompat.safe(XMaterial.SMOKER),
             "&cSmart Factory",
             "",
             "&7An all-in-one machine that crafts",
@@ -478,7 +480,12 @@ public class FluffyItems {
     }
 
     private static void addGlow(ItemStack item) {
-        item.addUnsafeEnchantment(Enchantment.BINDING_CURSE, 1);
+        // BINDING_CURSE is 1.11+; resolve by name and fall back to a legacy enchant for the (hidden) glow.
+        Enchantment glow = Enchantment.getByName("BINDING_CURSE");
+        if (glow == null) {
+            glow = Enchantment.DURABILITY;
+        }
+        item.addUnsafeEnchantment(glow, 1);
         ItemMeta meta = item.getItemMeta();
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);

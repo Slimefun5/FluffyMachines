@@ -12,6 +12,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -27,7 +29,7 @@ public class CrankGenerator extends MultiBlockMachine {
     public static final int CAPACITY = 64;
 
     public CrankGenerator(ItemGroup category, SlimefunItemStack item) {
-        super(category, item, new ItemStack[] {null, null, null, null, new ItemStack(Material.LEVER), null, null,
+        super(category, item, new ItemStack[] {null, null, null, null, new ItemStack(MaterialCompat.safe(XMaterial.LEVER)), null, null,
             FluffyItems.GENERATOR_CORE.item(), null}, BlockFace.SELF);
     }
 

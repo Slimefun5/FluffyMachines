@@ -10,14 +10,13 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Axis;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.Orientable;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -47,7 +46,7 @@ public class UpgradedLumberAxe extends SimpleSlimefunItem<ItemUseHandler> implem
 
     private ToolUseHandler onBlockBreak() {
         return (e, tool, fortune, drops) -> {
-            if (Tag.LOGS.getValues().contains(e.getBlock().getType())) {
+            if (CompatUtils.tagValues("LOGS").contains(e.getBlock().getType())) {
 
                 // Prevent use on Slimefun blocks
                 if (BlockStorage.checkID(e.getBlock()) != null) {
@@ -58,7 +57,7 @@ public class UpgradedLumberAxe extends SimpleSlimefunItem<ItemUseHandler> implem
                     return;
                 }
 
-                List<Block> logs = find(e.getBlock(), MAX_BROKEN, b -> Tag.LOGS.isTagged(b.getType()));
+                List<Block> logs = find(e.getBlock(), MAX_BROKEN, b -> CompatUtils.isTagged("LOGS", b.getType()));
 
                 logs.remove(e.getBlock());
 
@@ -99,17 +98,22 @@ public class UpgradedLumberAxe extends SimpleSlimefunItem<ItemUseHandler> implem
     }
 
     private boolean isUnstrippedLog(Block block) {
-        return Tag.LOGS.isTagged(block.getType()) && !block.getType().name().startsWith("STRIPPED_");
+        return CompatUtils.isTagged("LOGS", block.getType()) && !block.getType().name().startsWith("STRIPPED_");
     }
 
     private void stripLog(Block b) {
+        // Log stripping relies on BlockData (1.13+); skip gracefully on legacy versions.
+        if (!CompatUtils.isBlockDataAvailable()) {
+            return;
+        }
+
         b.getWorld().playSound(b.getLocation(), Sound.ITEM_AXE_STRIP, 1, 1);
-        Axis axis = ((Orientable) b.getBlockData()).getAxis();
+        Axis axis = CompatUtils.getOrientableAxis(b);
         b.setType(Material.valueOf("STRIPPED_" + b.getType().name()));
 
-        Orientable orientable = (Orientable) b.getBlockData();
-        orientable.setAxis(axis);
-        b.setBlockData(orientable);
+        if (axis != null) {
+            CompatUtils.setOrientableAxis(b, axis);
+        }
     }
 
     public static List<Block> find(Block b, int limit, Predicate<Block> predicate) {

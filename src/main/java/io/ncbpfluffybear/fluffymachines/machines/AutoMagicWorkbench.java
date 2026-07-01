@@ -9,12 +9,14 @@ import java.util.List;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.inventory.ItemStack;
 
 public class AutoMagicWorkbench extends AutoCrafter {
 
     public AutoMagicWorkbench(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(category, item, recipeType, recipe, "&6Auto Magic Workbench", Material.BOOKSHELF, "&6Magic Workbench", RecipeType.MAGIC_WORKBENCH);
+        super(category, item, recipeType, recipe, "&6Auto Magic Workbench", MaterialCompat.safe(XMaterial.BOOKSHELF), "&6Magic Workbench", RecipeType.MAGIC_WORKBENCH);
     }
 
     /**

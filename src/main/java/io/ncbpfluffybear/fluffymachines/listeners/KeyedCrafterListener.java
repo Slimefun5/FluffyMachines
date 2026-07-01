@@ -13,12 +13,14 @@ import javax.annotation.Nullable;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.inventory.EquipmentSlot;
+import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
@@ -32,7 +34,7 @@ public class KeyedCrafterListener implements Listener {
     private void onSmartFactoryInteract(PlayerRightClickEvent e) {
         Optional<Block> clickedBlock = e.getClickedBlock();
 
-        if (e.getHand() == EquipmentSlot.HAND && e.useBlock() != Event.Result.DENY && clickedBlock.isPresent() && e.getPlayer().isSneaking()) {
+        if (HandCompat.isMainHand(e) && e.useBlock() != Event.Result.DENY && clickedBlock.isPresent() && e.getPlayer().isSneaking()) {
             Optional<SlimefunItem> slimefunBlock = e.getSlimefunBlock();
 
             if (!slimefunBlock.isPresent()) {
@@ -76,7 +78,7 @@ public class KeyedCrafterListener implements Listener {
                 }
                 e.cancel();
 
-                if (item.getType() == Material.AIR) {
+                if (item.getType() == MaterialCompat.safe(XMaterial.AIR)) {
                     Utils.send(p, "&cRight click the machine with an item to set the vanilla recipe");
                     return;
                 }

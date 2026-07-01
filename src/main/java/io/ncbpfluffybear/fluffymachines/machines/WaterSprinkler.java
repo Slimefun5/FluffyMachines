@@ -10,12 +10,13 @@ import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.Ageable;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -35,12 +36,12 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
     public static final int CAPACITY = 128;
     private static final int RADIUS = 2;
     private static final int PROGRESS_SLOT = 4;
-    private static final ItemStack noWaterItem = CustomItemStack.create(Material.BUCKET,
+    private static final ItemStack noWaterItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.BUCKET),
         "&cNo water found",
         "",
         "&cPlease place water under the sprinkler!"
     );
-    private static final ItemStack waterFoundItem = CustomItemStack.create(Material.WATER_BUCKET,
+    private static final ItemStack waterFoundItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.WATER_BUCKET),
         "&bWater detected"
     );
     private final ItemSetting<Boolean> particles = new ItemSetting<>(this, "particles", true);
@@ -91,7 +92,7 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
         final BlockMenu inv = BlockStorage.getInventory(b);
         boolean open = inv.hasViewer();
 
-        if (b.getRelative(BlockFace.DOWN).getType() == Material.WATER) {
+        if (b.getRelative(BlockFace.DOWN).getType() == MaterialCompat.safe(XMaterial.WATER)) {
             if (open) {
                 inv.replaceExistingItem(PROGRESS_SLOT, waterFoundItem);
             }
@@ -102,19 +103,22 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
             return;
         }
 
+        // Crop growth here relies on BlockData (1.13+); skip gracefully on legacy versions.
+        if (!CompatUtils.isBlockDataAvailable()) {
+            return;
+        }
+
         if (getCharge(b.getLocation()) >= getEnergyConsumption()) {
             for (int x = -getRadius(); x <= getRadius(); x++) {
                 for (int z = -getRadius(); z <= getRadius(); z++) {
                     final Block block = b.getRelative(x, 0, z);
 
                     if (particles.getValue()) {
-                        block.getWorld().spawnParticle(Particle.SPLASH, block.getLocation().add(0.5D, 0.5D,
+                        block.getWorld().spawnParticle(Particle.WATER_SPLASH, block.getLocation().add(0.5D, 0.5D,
                             0.5D), 4, 0.1F, 0.1F, 0.1F);
                     }
 
-                    BlockData blockData = block.getBlockData();
-
-                    if (blockData instanceof Ageable) {
+                    if (CompatUtils.isAgeable(block)) {
                         grow(block);
                         removeCharge(b.getLocation(), getEnergyConsumption());
                     }
@@ -127,24 +131,23 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
 
         final double random = ThreadLocalRandom.current().nextDouble();
         if (successChance.getValue() >= random) {
-            if (crop.getType() == Material.SUGAR_CANE) {
+            if (crop.getType() == MaterialCompat.safe(XMaterial.SUGAR_CANE)) {
                 for (int i = 1; i < 3; i++) {
                     final Block above = crop.getRelative(BlockFace.UP, i);
-                    if (above.getType().isAir()) {
-                        above.setType(Material.SUGAR_CANE);
+                    if (CompatUtils.isAir(above.getType())) {
+                        above.setType(MaterialCompat.safe(XMaterial.SUGAR_CANE));
                         break;
-                    } else if (above.getType() != Material.SUGAR_CANE) {
+                    } else if (above.getType() != MaterialCompat.safe(XMaterial.SUGAR_CANE)) {
                         return;
                     }
                 }
             } else {
-                final Ageable ageable = (Ageable) crop.getBlockData();
-                if (ageable.getAge() < ageable.getMaximumAge()) {
+                int age = CompatUtils.getAge(crop);
+                if (age >= 0 && age < CompatUtils.getMaximumAge(crop)) {
 
-                    ageable.setAge(ageable.getAge() + 1);
-                    crop.setBlockData(ageable);
+                    CompatUtils.setAge(crop, age + 1);
 
-                    crop.getWorld().spawnParticle(Particle.HAPPY_VILLAGER, crop.getLocation().add(0.5D, 0.5D, 0.5D),
+                    crop.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, crop.getLocation().add(0.5D, 0.5D, 0.5D),
                         4, 0.1F, 0.1F, 0.1F);
                 }
             }

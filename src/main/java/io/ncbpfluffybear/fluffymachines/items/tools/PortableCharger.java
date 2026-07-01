@@ -14,6 +14,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -70,9 +72,9 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
             // Create GUI Items
             Inventory inventory = Bukkit.createInventory(null, INV_SIZE, ChatColor.GOLD + "Portable Charger");
 
-            ItemStack backgroundItem = Utils.buildNonInteractable(Material.GRAY_STAINED_GLASS_PANE, null);
-            ItemStack borderItem = Utils.buildNonInteractable(Material.YELLOW_STAINED_GLASS_PANE, null);
-            ItemStack powerItem = Utils.buildNonInteractable(Material.GLOWSTONE, "\u00a74Power");
+            ItemStack backgroundItem = Utils.buildNonInteractable(MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE), null);
+            ItemStack borderItem = Utils.buildNonInteractable(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE), null);
+            ItemStack powerItem = Utils.buildNonInteractable(MaterialCompat.safe(XMaterial.GLOWSTONE), "\u00a74Power");
 
             // Build and open GUI
             for (int i = 0; i < INV_SIZE; i++)

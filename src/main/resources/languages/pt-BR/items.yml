@@ -1,0 +1,92 @@
+# Brazilian Portuguese item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
+
+MINI_FLUFFY_BARREL:
+  name: "&eMini Barril Fluffy"
+SMALL_PORTABLE_CHARGER:
+  name: "&ePequeno Carregador Portátil"
+MEDIUM_PORTABLE_CHARGER:
+  name: "&6Carregador Portátil Médio"
+BIG_PORTABLE_CHARGER:
+  name: "&aGrande Carregador Portátil"
+LARGE_PORTABLE_CHARGER:
+  name: "&2Carregador Portátil Enorme"
+CARBONADO_PORTABLE_CHARGER:
+  name: "&4Carregador Portátil Carbonado"
+ANCIENT_BOOK:
+  name: "&6Livro Antigo"
+HELICOPTER_HAT:
+  name: "&1Chapéu Helicóptero"
+WATERING_CAN:
+  name: "&bRegador"
+ENDER_CHEST_EXTRACTION_NODE:
+  name: "&6Nó de Extração do Baú do End"
+ENDER_CHEST_INSERTION_NODE:
+  name: "&bNó de Inserção do Baú do End"
+AUTO_CRAFTING_TABLE:
+  name: "&6Mesa de Trabalho Automática"
+AUTO_ANCIENT_ALTAR:
+  name: "&5Auto Altar Antigo"
+AUTO_TABLE_SAW:
+  name: "&6Serra de Mesa Automática"
+WATER_SPRINKLER:
+  name: "&bAspersor de Água"
+GENERATOR_CORE:
+  name: "&7Núcleo de Gerador"
+CRANK_GENERATOR:
+  name: "&7Gerador de Manivela"
+FOUNDRY:
+  name: "&cFundição"
+BACKPACK_UNLOADER:
+  name: "&eDescarregador de Mochilas"
+BACKPACK_LOADER:
+  name: "&eCarregador de Mochilas"
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: "&e&lPicareta Explosiva Aprimorada"
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: "&e&lPá Explosiva Aprimorada"
+FIREPROOF_RUNE:
+  name: "&7Runa Antiga &8&l[&c&lÀ Prova de Fogo&8&l]"
+SUPERHEATED_FURNACE:
+  name: "&cFornalha Superaquecida"
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: "&eAuto Mesa de Trabalho Aprimorada"
+AUTO_MAGIC_WORKBENCH:
+  name: "&6Auto Bancada Mágica"
+AUTO_ARMOR_FORGE:
+  name: "&7Auto Forja de Armaduras"
+ADVANCED_AUTO_DISENCHANTER:
+  name: "&cAuto-Desencantador Avançado"
+SCYTHE:
+  name: "&eFoice"
+UPGRADED_LUMBER_AXE:
+  name: "&6&lMachado de Lenhador Aprimorado"
+DOLLY:
+  name: "&bCarrinho de Carga"
+WARP_PAD:
+  name: "&6Plataforma de Teletransporte"
+WARP_PAD_CONFIGURATOR:
+  name: "&6Configurador de Plataforma de Teletransporte"
+ELECTRIC_DUST_FABRICATOR:
+  name: "&6Fabricador Elétrico de Pó"
+ELECTRIC_DUST_RECYCLER:
+  name: "&fReciclador Elétrico de Pó"
+ALTERNATE_ELEVATOR_PLATE:
+  name: "&3Placa de Elevador Alternativa"
+FLUFFY_WRENCH:
+  name: "&6Chave Fluffy"
+REINFORCED_FLUFFY_WRENCH:
+  name: "&bChave Fluffy Reforçada"
+CARBONADO_FLUFFY_WRENCH:
+  name: "&7Chave Fluffy Carbonado"
+PAXEL:
+  name: "&bPaxel"
+ADVANCED_CHARGING_BENCH:
+  name: "&cBancada de Carregamento Avançada"
+ACB_UPGRADE_CARD:
+  name: "&6Carta de Aprimoramento ACB"
+CARGO_MANIPULATOR:
+  name: "&9Manipulador de Cargo"
+EXP_DISPENSER:
+  name: "&aDispensador de Exp"
+SMART_FACTORY:
+  name: "&cFábrica Inteligente"

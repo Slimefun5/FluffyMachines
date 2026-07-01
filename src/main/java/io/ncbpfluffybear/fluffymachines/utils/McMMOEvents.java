@@ -11,7 +11,7 @@ public class McMMOEvents implements Listener {
     @EventHandler
     private void onAbility(McMMOPlayerAbilityActivateEvent e) {
         Player p = e.getPlayer();
-        SlimefunItem sfItem = SlimefunItem.getByItem(p.getInventory().getItemInMainHand());
+        SlimefunItem sfItem = SlimefunItem.getByItem(p.getInventory().getItemInHand());
         if (sfItem != null && sfItem.getId().equals(FluffyItems.PAXEL.getItemId())) {
             e.setCancelled(true);
         }

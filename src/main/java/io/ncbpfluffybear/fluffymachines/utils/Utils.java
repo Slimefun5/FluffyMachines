@@ -19,19 +19,18 @@ import org.apache.commons.lang.WordUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.ncbpfluffybear.fluffymachines.compat.Pdc;
 import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.scheduler.BukkitTask;
 
 public final class Utils {
 
-    private static final NamespacedKey fluffykey = new NamespacedKey(FluffyMachines.getInstance(), "fluffykey");
-    private static final NamespacedKey nonClickable = new NamespacedKey(FluffyMachines.getInstance(), "nonclickable");
+    private static final String fluffykey = "fluffymachines:fluffykey";
+    private static final String nonClickable = "fluffymachines:nonclickable";
 
     private final static TreeMap<Integer, String> map = new TreeMap<>();
 
@@ -91,7 +90,7 @@ public final class Utils {
             NCMeta.setLore(lines);
         }
 
-        NCMeta.getPersistentDataContainer().set(nonClickable, PersistentDataType.BYTE, (byte) 1);
+        Pdc.setInt(NCMeta, nonClickable, 1);
         nonClickableItem.setItemMeta(NCMeta);
         return nonClickableItem;
     }
@@ -102,7 +101,7 @@ public final class Utils {
             return false;
         }
 
-        return item.getItemMeta().getPersistentDataContainer().getOrDefault(nonClickable, PersistentDataType.BYTE, (byte) 0) == 1;
+        return (Pdc.getInt(item.getItemMeta(), nonClickable, 0) == 1);
     }
 
     public static void createBorder(ChestMenu menu, ItemStack backgroundItem, int[] slots) {
@@ -152,7 +151,7 @@ public final class Utils {
     public static ItemStack keyItem(ItemStack item) {
         ItemStack clone = item.clone();
         ItemMeta meta = clone.getItemMeta();
-        meta.getPersistentDataContainer().set(fluffykey, PersistentDataType.INTEGER, 1);
+        Pdc.setInt(meta, fluffykey, 1);
         clone.setItemMeta(meta);
         return clone;
     }
@@ -160,7 +159,7 @@ public final class Utils {
     public static ItemStack unKeyItem(ItemStack item) {
         ItemStack clone = item.clone();
         ItemMeta meta = clone.getItemMeta();
-        meta.getPersistentDataContainer().remove(fluffykey);
+        Pdc.remove(meta, fluffykey);
         clone.setItemMeta(meta);
         return clone;
     }

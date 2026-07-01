@@ -10,6 +10,8 @@ import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -54,7 +56,7 @@ public class Events implements Listener {
     @EventHandler(ignoreCancelled = true)
     public void onWateringCanSplash(PlayerInteractEntityEvent e) {
         Player p = e.getPlayer();
-        ItemStack item = p.getInventory().getItemInMainHand();
+        ItemStack item = p.getInventory().getItemInHand();
 
         // For some reason player interact events trigger twice, probably after a method returns false
         if (wateringCan.isItem(item)) {
@@ -63,7 +65,7 @@ public class Events implements Listener {
             if (target instanceof Player && WateringCan.updateUses(wateringCan, p, item, 3)) {
                 Utils.send(p, "&bSplash!");
                 Utils.send((Player) target, "&bYou were splashed by " + p.getDisplayName() + "!");
-                ((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 60, 1));
+                ((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 1));
             }
         }
     }
@@ -86,8 +88,8 @@ public class Events implements Listener {
     @EventHandler(ignoreCancelled = true)
     public void onNonClickableClick(InventoryClickEvent e) {
         ItemStack item = e.getCurrentItem();
-        if (item != null && item.getType() != Material.AIR && (item.getItemMeta().hasCustomModelData()
-                && item.getItemMeta().getCustomModelData() == 6969) || Utils.checkNonInteractable(item)) {
+        if (item != null && item.getType() != Material.AIR && (CompatUtils.hasCustomModelData(item.getItemMeta())
+                && CompatUtils.getCustomModelData(item.getItemMeta()) == 6969) || Utils.checkNonInteractable(item)) {
             e.setCancelled(true);
         }
     }
@@ -171,7 +173,7 @@ public class Events implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onExtractionNodePlace(BlockPlaceEvent e) {
-        if ((e.getBlock().getY() != e.getBlockAgainst().getY() || e.getBlockAgainst().getType() != Material.ENDER_CHEST)
+        if ((e.getBlock().getY() != e.getBlockAgainst().getY() || e.getBlockAgainst().getType() != MaterialCompat.safe(XMaterial.ENDER_CHEST))
                 && isExtractionNode(e.getItemInHand())) {
             Utils.send(e.getPlayer(), "&cYou can only place this on an Ender Chest!");
             e.setCancelled(true);

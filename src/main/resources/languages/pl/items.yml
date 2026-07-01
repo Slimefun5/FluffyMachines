@@ -1,0 +1,92 @@
+# Polish item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
+
+MINI_FLUFFY_BARREL:
+  name: "&eMini Beczka Fluffy"
+SMALL_PORTABLE_CHARGER:
+  name: "&eMała Przenośna Ładowarka"
+MEDIUM_PORTABLE_CHARGER:
+  name: "&6Średnia Przenośna Ładowarka"
+BIG_PORTABLE_CHARGER:
+  name: "&aDuża Przenośna Ładowarka"
+LARGE_PORTABLE_CHARGER:
+  name: "&2Ogromna Przenośna Ładowarka"
+CARBONADO_PORTABLE_CHARGER:
+  name: "&4Carbonado Przenośna Ładowarka"
+ANCIENT_BOOK:
+  name: "&6Starożytna Księga"
+HELICOPTER_HAT:
+  name: "&1Czapka Helikopter"
+WATERING_CAN:
+  name: "&bKonewka"
+ENDER_CHEST_EXTRACTION_NODE:
+  name: "&6Węzeł Pobierania ze Skrzyni Kresu"
+ENDER_CHEST_INSERTION_NODE:
+  name: "&bWęzeł Wkładania do Skrzyni Kresu"
+AUTO_CRAFTING_TABLE:
+  name: "&6Automatyczny Stół Rzemieślniczy"
+AUTO_ANCIENT_ALTAR:
+  name: "&5Auto Starożytny Ołtarz"
+AUTO_TABLE_SAW:
+  name: "&6Automatyczna Pilarka Stołowa"
+WATER_SPRINKLER:
+  name: "&bZraszacz"
+GENERATOR_CORE:
+  name: "&7Rdzeń Generatora"
+CRANK_GENERATOR:
+  name: "&7Generator Korbowy"
+FOUNDRY:
+  name: "&cOdlewnia"
+BACKPACK_UNLOADER:
+  name: "&eRozładowywacz Plecaków"
+BACKPACK_LOADER:
+  name: "&eŁadowacz Plecaków"
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: "&e&lUlepszony Wybuchowy Kilof"
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: "&e&lUlepszona Wybuchowa Łopata"
+FIREPROOF_RUNE:
+  name: "&7Starożytna Runa &8&l[&c&lOgnioodporna&8&l]"
+SUPERHEATED_FURNACE:
+  name: "&cPrzegrzany Piec"
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: "&eAuto Ulepszony Stół Rzemieślniczy"
+AUTO_MAGIC_WORKBENCH:
+  name: "&6Auto Magiczny Warsztat"
+AUTO_ARMOR_FORGE:
+  name: "&7Auto Kuźnia Zbroi"
+ADVANCED_AUTO_DISENCHANTER:
+  name: "&cZaawansowany Auto-Odczarowywacz"
+SCYTHE:
+  name: "&eKosa"
+UPGRADED_LUMBER_AXE:
+  name: "&6&lUlepszony Topór Drwala"
+DOLLY:
+  name: "&bWózek"
+WARP_PAD:
+  name: "&6Płyta Teleportacji"
+WARP_PAD_CONFIGURATOR:
+  name: "&6Konfigurator Płyty Teleportacji"
+ELECTRIC_DUST_FABRICATOR:
+  name: "&6Elektryczny Wytwórca Pyłu"
+ELECTRIC_DUST_RECYCLER:
+  name: "&fElektryczny Recykler Pyłu"
+ALTERNATE_ELEVATOR_PLATE:
+  name: "&3Alternatywna Płyta Windy"
+FLUFFY_WRENCH:
+  name: "&6Klucz Fluffy"
+REINFORCED_FLUFFY_WRENCH:
+  name: "&bWzmocniony Klucz Fluffy"
+CARBONADO_FLUFFY_WRENCH:
+  name: "&7Carbonado Klucz Fluffy"
+PAXEL:
+  name: "&bPaxel"
+ADVANCED_CHARGING_BENCH:
+  name: "&cZaawansowany Stół Ładujący"
+ACB_UPGRADE_CARD:
+  name: "&6Karta Ulepszenia ACB"
+CARGO_MANIPULATOR:
+  name: "&9Manipulator Cargo"
+EXP_DISPENSER:
+  name: "&aDozownik Doświadczenia"
+SMART_FACTORY:
+  name: "&cInteligentna Fabryka"

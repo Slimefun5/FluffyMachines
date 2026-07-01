@@ -5,7 +5,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 
 import java.util.ArrayList;
 import java.util.Arrays;

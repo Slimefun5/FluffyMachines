@@ -11,6 +11,8 @@ import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -35,7 +37,7 @@ import java.util.UUID;
  */
 public class EnderChestInsertionNode extends SlimefunItem {
 
-    private static final Material material = Material.ENDER_CHEST;
+    private static final Material material = MaterialCompat.safe(XMaterial.ENDER_CHEST);
 
     public EnderChestInsertionNode(ItemGroup category, SlimefunItemStack item, RecipeType recipeType,
                                    ItemStack[] recipe) {

@@ -8,10 +8,12 @@ import io.ncbpfluffybear.fluffymachines.items.Barrel;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Container;
-import org.bukkit.block.data.Directional;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -33,18 +35,18 @@ public class ExpDispenser extends MultiBlockMachine {
         int experience = 0;
 
         for (ItemStack bottle : container.getInventory().getContents()) {
-            if (bottle != null && bottle.getType() == Material.EXPERIENCE_BOTTLE) { // Search for xp bottles
+            if (bottle != null && bottle.getType() == MaterialCompat.safe(XMaterial.EXPERIENCE_BOTTLE)) { // Search for xp bottles
                 experience += EXP_PER_BOTTLE * bottle.getAmount(); // Collect experience from bottle
                 bottle.setAmount(0); // Delete bottle
             }
         }
 
-        Block barrel = dispenser.getRelative(((Directional) dispenser.getBlockData()).getFacing());
+        Block barrel = dispenser.getRelative(CompatUtils.getFacing(dispenser));
         SlimefunItem sfItem = BlockStorage.check(barrel);
 
         if (sfItem instanceof Barrel) {
             Barrel sfBarrel = (Barrel) sfItem;
-            if (sfBarrel.getStoredItem(barrel).getType() == Material.EXPERIENCE_BOTTLE) {
+            if (sfBarrel.getStoredItem(barrel).getType() == MaterialCompat.safe(XMaterial.EXPERIENCE_BOTTLE)) {
                 experience += sfBarrel.getStored(barrel) * EXP_PER_BOTTLE;
                 sfBarrel.setStored(barrel, 0);
                 sfBarrel.updateMenu(barrel, BlockStorage.getInventory(barrel), true, sfBarrel.getCapacity(b));

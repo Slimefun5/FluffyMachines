@@ -9,14 +9,15 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.DoubleChest;
-import org.bukkit.block.data.Directional;
-import org.bukkit.block.data.type.Chest;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
@@ -34,7 +35,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
     private static final ItemStack LOCK_ITEM = Utils.buildNonInteractable(
-            Material.DIRT, "&4&lDolly empty", "&cHow did you get in here?"
+            MaterialCompat.safe(XMaterial.DIRT), "&4&lDolly empty", "&cHow did you get in here?"
     );
 
     private static final int DELAY = 500; // 500ms
@@ -73,7 +74,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                 return;
             }
 
-            if (b.getType() == Material.CHEST && Slimefun.getProtectionManager().hasPermission(
+            if (b.getType() == MaterialCompat.safe(XMaterial.CHEST) && Slimefun.getProtectionManager().hasPermission(
                     e.getPlayer(), b.getLocation(), Interaction.BREAK_BLOCK)
             ) {
 
@@ -145,7 +146,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
             chestInventory.clear();
             PlayerProfile.getBackpack(dolly, PlayerBackpack::markDirty);
             validOperation.set(true);
-            dolly.setType(Material.CHEST_MINECART);
+            dolly.setType(MaterialCompat.safe(XMaterial.CHEST_MINECART));
         });
 
         // Deals with async problems
@@ -157,14 +158,14 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                 // Set other side of chest to air
                 if (((org.bukkit.block.Chest) doubleChest.getLeftSide()).getLocation().equals(chest.getLocation())
                 ) {
-                    ((org.bukkit.block.Chest) doubleChest.getRightSide()).getLocation().getBlock().setType(Material.AIR);
+                    ((org.bukkit.block.Chest) doubleChest.getRightSide()).getLocation().getBlock().setType(MaterialCompat.safe(XMaterial.AIR));
                 } else {
-                    ((org.bukkit.block.Chest) doubleChest.getLeftSide()).getLocation().getBlock().setType(Material.AIR);
+                    ((org.bukkit.block.Chest) doubleChest.getLeftSide()).getLocation().getBlock().setType(MaterialCompat.safe(XMaterial.AIR));
                 }
 
             }
 
-            chest.setType(Material.AIR);
+            chest.setType(MaterialCompat.safe(XMaterial.AIR));
 
             Utils.send(p, "&aYou have picked up this chest");
         }
@@ -209,7 +210,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                     }
 
                     ((InventoryHolder) chestBlock.getState()).getInventory().setStorageContents(bpContents[0]);
-                    dolly.setType(Material.MINECART);
+                    dolly.setType(MaterialCompat.safe(XMaterial.MINECART));
                     Utils.send(p, "&aChest has been placed");
                 }
             });
@@ -218,10 +219,10 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
     private boolean canChestFit(Block singleChestBlock, Player p, boolean singleChest) {
 
-        boolean fits = singleChestBlock.getType() == Material.AIR;
+        boolean fits = singleChestBlock.getType() == MaterialCompat.safe(XMaterial.AIR);
 
         if (!singleChest) {
-            fits = fits && getRightBlock(singleChestBlock, p.getFacing().getOppositeFace()).getType() == Material.AIR;
+            fits = fits && getRightBlock(singleChestBlock, p.getFacing().getOppositeFace()).getType() == MaterialCompat.safe(XMaterial.AIR);
         }
 
         return fits;
@@ -230,31 +231,30 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
     private void createChest(Block firstChest, Player p, boolean singleChest) {
         BlockFace chestFace = p.getFacing().getOppositeFace();
 
+        // Block-data based rotation/double-chest joining only exists on 1.13+; place a plain chest on legacy.
+        if (!CompatUtils.isBlockDataAvailable()) {
+            firstChest.setType(MaterialCompat.safe(XMaterial.CHEST));
+            if (!singleChest) {
+                getRightBlock(firstChest, chestFace).setType(MaterialCompat.safe(XMaterial.CHEST));
+            }
+            return;
+        }
+
         // Place chest and rotate
-        firstChest.setType(Material.CHEST);
-        Directional firstDirectional = ((Directional) firstChest.getBlockData());
-        firstDirectional.setFacing(chestFace);
-        firstChest.setBlockData(firstDirectional);
+        firstChest.setType(MaterialCompat.safe(XMaterial.CHEST));
+        CompatUtils.setDirectionalFacing(firstChest, chestFace);
 
         if (!singleChest) {
             // Get block on right (Previous cardinal)
             Block secondChest = getRightBlock(firstChest, chestFace);
 
             // Place chest and rotate
-            secondChest.setType(Material.CHEST);
-            Directional secondDirectional = ((Directional) secondChest.getBlockData());
-            secondDirectional.setFacing(chestFace);
-            secondChest.setBlockData(secondDirectional);
+            secondChest.setType(MaterialCompat.safe(XMaterial.CHEST));
+            CompatUtils.setDirectionalFacing(secondChest, chestFace);
 
             // Connect chests
-            Chest firstChestType = ((Chest) firstChest.getBlockData());
-            Chest secondChestType = ((Chest) secondChest.getBlockData());
-
-            firstChestType.setType(Chest.Type.RIGHT); // Don't know why these are flipped
-            secondChestType.setType(Chest.Type.LEFT);
-
-            firstChest.setBlockData(firstChestType);
-            secondChest.setBlockData(secondChestType);
+            CompatUtils.setChestType(firstChest, "RIGHT"); // Don't know why these are flipped
+            CompatUtils.setChestType(secondChest, "LEFT");
         }
     }
 
@@ -286,8 +286,8 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
     private boolean isLockItem(@Nullable ItemStack lockItem) {
         return lockItem != null && (Utils.checkNonInteractable(lockItem)
-                || lockItem.getItemMeta().hasCustomModelData() // Remnants of when I didn't know what PDC was
-                && lockItem.getItemMeta().getCustomModelData() == 6969); // Leave in to maintain compatibility
+                || CompatUtils.hasCustomModelData(lockItem.getItemMeta()) // Remnants of when I didn't know what PDC was
+                && CompatUtils.getCustomModelData(lockItem.getItemMeta()) == 6969); // Leave in to maintain compatibility
     }
 
 }

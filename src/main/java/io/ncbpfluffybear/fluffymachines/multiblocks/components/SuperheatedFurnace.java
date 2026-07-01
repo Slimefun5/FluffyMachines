@@ -25,6 +25,8 @@ import org.apache.commons.lang.WordUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
@@ -58,7 +60,7 @@ public class SuperheatedFurnace extends NonHopperableBlock {
     private static final int INGOT_INDICATOR = 7;
 
     private static final int MAX_STORAGE = 138240;
-    private static final Material netherite = Material.NETHERITE_BLOCK;
+    private static final Material netherite = MaterialCompat.safe(XMaterial.NETHERITE_BLOCK);
     private final int MAX_STACK_SIZE = 64;
 
     private static final SlimefunItemStack[] dusts = new SlimefunItemStack[] {
@@ -92,9 +94,9 @@ public class SuperheatedFurnace extends NonHopperableBlock {
             public void newInstance(@Nonnull BlockMenu menu, @Nonnull Block b) {
                 if (BlockStorage.getLocationInfo(b.getLocation(), "stored") == null) {
 
-                    menu.replaceExistingItem(4, CustomItemStack.create(Material.GUNPOWDER, "&6Dust Available: &e0", "&a> &eLeft Click &ahere to retrieve 1", "&a> &eLeft Click &ahere to retrieve 64"));
-                    menu.replaceExistingItem(7, CustomItemStack.create(Material.IRON_INGOT, "&6Ingots Available: &e0", "&a> &eRight Click &ahere to retrieve 1", "&a> &eLeft Click &ahere to retrieve 64"));
-                    menu.replaceExistingItem(1, CustomItemStack.create(Material.CHEST, "&6Melted Dust: &e0 &7(0%)", "&bType: None",  "&7Stacks: 0"));
+                    menu.replaceExistingItem(4, CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), "&6Dust Available: &e0", "&a> &eLeft Click &ahere to retrieve 1", "&a> &eLeft Click &ahere to retrieve 64"));
+                    menu.replaceExistingItem(7, CustomItemStack.create(MaterialCompat.safe(XMaterial.IRON_INGOT), "&6Ingots Available: &e0", "&a> &eRight Click &ahere to retrieve 1", "&a> &eLeft Click &ahere to retrieve 64"));
+                    menu.replaceExistingItem(1, CustomItemStack.create(MaterialCompat.safe(XMaterial.CHEST), "&6Melted Dust: &e0 &7(0%)", "&bType: None",  "&7Stacks: 0"));
 
                     BlockStorage.addBlockInfo(b, "stored", "0");
                 }
@@ -240,15 +242,15 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
     protected void constructMenu(BlockMenuPreset preset) {
         for (int i : dustOutputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.ORANGE_STAINED_GLASS_PANE), " "), (p, slot, item, action) -> false);
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE)), " "), (p, slot, item, action) -> false);
         }
 
         for (int i : inputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.CYAN_STAINED_GLASS_PANE), " "), (p, slot, item, action) -> false);
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE)), " "), (p, slot, item, action) -> false);
         }
 
         for (int i : ingotOutputBorder) {
-            preset.addItem(i, CustomItemStack.create(new ItemStack(Material.RED_STAINED_GLASS_PANE), " "), (p, slot, item, action) -> false);
+            preset.addItem(i, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.RED_STAINED_GLASS_PANE)), " "), (p, slot, item, action) -> false);
         }
 
 
@@ -311,8 +313,8 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
                         registerDust(b, "GOLD", amount);
                     }
-                } else if (inputItem.getType() == Material.IRON_INGOT
-                    && inputItem.getItemMeta().equals(new ItemStack(Material.IRON_INGOT).getItemMeta())
+                } else if (inputItem.getType() == MaterialCompat.safe(XMaterial.IRON_INGOT)
+                    && inputItem.getItemMeta().equals(new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)).getItemMeta())
                 ) {
                     inv.consumeItem(INPUT_SLOT, amount);
 
@@ -322,8 +324,8 @@ public class SuperheatedFurnace extends NonHopperableBlock {
             } else {
                 if (sfItem != null && ((sfItem.getId().equals(type + "_DUST") || sfItem.getId().equals(type + "_INGOT"))
                     || (type.equals("GOLD") && sfItem.getId().equals(SlimefunItems.GOLD_4K.getItemId())))
-                    || (type.equals("IRON") && inputItem.getType() == Material.IRON_INGOT
-                    && inputItem.getItemMeta().equals(new ItemStack(Material.IRON_INGOT).getItemMeta()))
+                    || (type.equals("IRON") && inputItem.getType() == MaterialCompat.safe(XMaterial.IRON_INGOT)
+                    && inputItem.getItemMeta().equals(new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)).getItemMeta()))
                     && stored + amount < MAX_STORAGE) {
                     inv.consumeItem(INPUT_SLOT, amount);
                     addDust(b, amount);
@@ -353,13 +355,13 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
         if (stored.equals("0")) {
             setBlockInfo(b, "type", null);
-            inv.replaceExistingItem(INPUT_INDICATOR, CustomItemStack.create(new ItemStack(Material.CHEST), "&6Melted Dust: &e0 &7(0%)", "&bType: None",  "&7Stacks: 0"));
+            inv.replaceExistingItem(INPUT_INDICATOR, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CHEST)), "&6Melted Dust: &e0 &7(0%)", "&bType: None",  "&7Stacks: 0"));
         } else {
-            inv.replaceExistingItem(INPUT_INDICATOR, CustomItemStack.create(new ItemStack(Material.CHEST), "&6Melted Dust: &e" + stored + " &7(" + Double.parseDouble(stored) / MAX_STORAGE * 100 + "%)", "&bType: " + type, "&7Stacks: " + Double.parseDouble(stored) / 64));
+            inv.replaceExistingItem(INPUT_INDICATOR, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.CHEST)), "&6Melted Dust: &e" + stored + " &7(" + Double.parseDouble(stored) / MAX_STORAGE * 100 + "%)", "&bType: " + type, "&7Stacks: " + Double.parseDouble(stored) / 64));
 
         }
-        inv.replaceExistingItem(DUST_INDICATOR, CustomItemStack.create(new ItemStack(Material.GUNPOWDER), "&6Dust Available: &e" + stored, "&a> &eLeft Click &ahere to retrieve 1", "&a> &eRight Click &ahere to retrieve 64"));
-        inv.replaceExistingItem(INGOT_INDICATOR, CustomItemStack.create(new ItemStack(Material.IRON_INGOT), "&6Ingots Available: &e" + stored, "&a> &eLeft Click &ahere to retrieve 1", "&a> &eRight Click &ahere to retrieve 64"));
+        inv.replaceExistingItem(DUST_INDICATOR, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), "&6Dust Available: &e" + stored, "&a> &eLeft Click &ahere to retrieve 1", "&a> &eRight Click &ahere to retrieve 64"));
+        inv.replaceExistingItem(INGOT_INDICATOR, CustomItemStack.create(new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), "&6Ingots Available: &e" + stored, "&a> &eLeft Click &ahere to retrieve 1", "&a> &eRight Click &ahere to retrieve 64"));
 
 
     }
@@ -425,7 +427,7 @@ public class SuperheatedFurnace extends NonHopperableBlock {
             if (type.equals("GOLD")) {
                 ingotItem = CustomItemStack.create(SlimefunItems.GOLD_4K.item().clone(), amount);
             } else if (type.equals("IRON")) {
-                ingotItem = new ItemStack(Material.IRON_INGOT, amount);
+                ingotItem = new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT), amount);
             } else {
                 ingotItem = SlimefunItem.getById(type + "_INGOT").getItem().clone(); ingotItem.setAmount(amount);
             }
@@ -460,8 +462,8 @@ public class SuperheatedFurnace extends NonHopperableBlock {
             && checkRite(relative.getRelative(0, -2, 0))
             && checkRite(b.getRelative(face.getOppositeFace()).getRelative(0, -1, 0))
             && checkRite(b.getRelative(face.getOppositeFace()).getRelative(0, -2, 0))
-            && b.getRelative(0, -1, 0).getType() == Material.GLASS
-            && b.getRelative(0, -2, 0).getType() == Material.CAULDRON;
+            && b.getRelative(0, -1, 0).getType() == MaterialCompat.safe(XMaterial.GLASS)
+            && b.getRelative(0, -2, 0).getType() == MaterialCompat.safe(XMaterial.CAULDRON);
     }
 
     private boolean checkRite(Block b) {

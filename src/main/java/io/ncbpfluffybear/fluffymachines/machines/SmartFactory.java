@@ -31,6 +31,8 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import org.bukkit.Material;
+import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -52,7 +54,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
     private static final int[] INPUT_SLOTS = new int[]{10, 11, 12, 19, 20, 21, 28, 29, 30, 37, 38, 39};
     private static final int PROGRESS_SLOT = 42;
     public static final int RECIPE_SLOT = 43;
-    private static final ItemStack PROGRESS_ITEM = CustomItemStack.create(Material.FLINT_AND_STEEL, "&aProgress");
+    private static final ItemStack PROGRESS_ITEM = CustomItemStack.create(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL), "&aProgress");
 
     private static final Map<BlockPosition, Integer> progress = new HashMap<>();
     private static final int PROCESS_TIME_TICKS = 10; // "Number of seconds", except 1 Slimefun "second" = 1.6 IRL seconds
@@ -90,8 +92,8 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
             ItemStack[] original = ITEM_RECIPES.get(alternative.getItem()).get(0);
             ItemStack[] variation = new ItemStack[original.length];
             for (int i = 0; i < original.length; i++) {
-                if (original[i].getType() == Material.NETHERRACK && original[i].getAmount() % 16 == 0) {
-                    variation[i] = new ItemStack(Material.MAGMA_BLOCK, original[i].getAmount() / 16);
+                if (original[i].getType() == MaterialCompat.safe(XMaterial.NETHERRACK) && original[i].getAmount() % 16 == 0) {
+                    variation[i] = new ItemStack(MaterialCompat.safe(XMaterial.MAGMA_BLOCK), original[i].getAmount() / 16);
                 } else {
                     variation[i] = original[i].clone();
                 }
@@ -113,10 +115,10 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                 Utils.createBorder(this, ChestMenuUtils.getInputSlotTexture(), BORDER_IN);
                 Utils.createBorder(this, ChestMenuUtils.getOutputSlotTexture(), BORDER_OUT);
                 this.addItem(PROGRESS_SLOT, PROGRESS_ITEM);
-                this.addItem(9, CustomItemStack.create(Material.BLACK_STAINED_GLASS_PANE, "&7Coal Slots",
+                this.addItem(9, CustomItemStack.create(MaterialCompat.safe(XMaterial.BLACK_STAINED_GLASS_PANE), "&7Coal Slots",
                         "&eThis row is reserved for coal for cargo."
                 ));
-                this.addItem(18, CustomItemStack.create(Material.YELLOW_STAINED_GLASS_PANE, "&bMisc Slots",
+                this.addItem(18, CustomItemStack.create(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE), "&bMisc Slots",
                         "&eThe remaining rows accept any item.", "&eCargo will fill stacks after",
                         "&eat least one of each recipe", "&erequirement has been inserted.",
                         "&eNeed to keep one more item in", "&eeach stack as template."
@@ -134,7 +136,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                 SlimefunItem recipe = SlimefunItem.getByItem(menu.getItemInSlot(RECIPE_SLOT));
 
                 if (recipe == null) {
-                    menu.replaceExistingItem(RECIPE_SLOT, CustomItemStack.create(Material.BARRIER, "&bRecipe",
+                    menu.replaceExistingItem(RECIPE_SLOT, CustomItemStack.create(MaterialCompat.safe(XMaterial.BARRIER), "&bRecipe",
                             "&cSneak and Right Click the", "&cfactory with a supported resource", "&cto set the recipe"
                     ));
                 } else {
@@ -154,7 +156,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                     return getOutputSlots();
                 }
 
-                if (item.getType() == Material.COAL) {
+                if (item.getType() == MaterialCompat.safe(XMaterial.COAL)) {
                     return COAL_SLOTS;
                 }
 
@@ -273,7 +275,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
 
                     // Match item and amount
                     if (slotItem != null && SlimefunUtils.isItemSimilar(recipeItem, slotItem, true, false)) {
-                        if (recipeItem.getType() == Material.COAL) {
+                        if (recipeItem.getType() == MaterialCompat.safe(XMaterial.COAL)) {
                             if (slotItem.getAmount() < recipeItem.getAmount()) {
                                 continue; // Don't leave 1 for coal
                             }
@@ -368,10 +370,10 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                             rawSlimefun.put(SlimefunItems.IRON_DUST.getItem(), rawSlimefun.getOrDefault(SlimefunItems.IRON_DUST.getItem(), 0) + item.getAmount());
                             break;
                         case QUARTZ_BLOCK:
-                            rawVanilla.put(Material.QUARTZ, rawVanilla.getOrDefault(Material.QUARTZ, 0) + item.getAmount() * 4);
+                            rawVanilla.put(MaterialCompat.safe(XMaterial.QUARTZ), rawVanilla.getOrDefault(MaterialCompat.safe(XMaterial.QUARTZ), 0) + item.getAmount() * 4);
                             break;
                         case REDSTONE_BLOCK:
-                            rawVanilla.put(Material.REDSTONE, rawVanilla.getOrDefault(Material.REDSTONE, 0) + item.getAmount() * 9);
+                            rawVanilla.put(MaterialCompat.safe(XMaterial.REDSTONE), rawVanilla.getOrDefault(MaterialCompat.safe(XMaterial.REDSTONE), 0) + item.getAmount() * 9);
                             break;
                         default:
                             rawVanilla.put(item.getType(), rawVanilla.getOrDefault(item.getType(), 0) + item.getAmount());
