@@ -1,0 +1,65 @@
+# Per-item balance scores (0-100) for FluffyMachines, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+scores:
+  # --- Fluffy Barrels: single-item storage, finite capacity progression ---
+  BOTTOMLESS_FLUFFY_BARREL: 64
+  MASSIVE_FLUFFY_BARREL: 58
+  LARGE_FLUFFY_BARREL: 52
+  BIG_FLUFFY_BARREL: 46
+  MEDIUM_FLUFFY_BARREL: 40
+  SMALL_FLUFFY_BARREL: 34
+  MINI_FLUFFY_BARREL: 26
+  # --- Portable Chargers: finite battery + charge-rate tiers ---
+  CARBONADO_PORTABLE_CHARGER: 60
+  LARGE_PORTABLE_CHARGER: 48
+  BIG_PORTABLE_CHARGER: 40
+  MEDIUM_PORTABLE_CHARGER: 34
+  SMALL_PORTABLE_CHARGER: 28
+  # --- Fluffy Wrenches: instant machine/cargo removal, tiered ---
+  CARBONADO_FLUFFY_WRENCH: 48
+  REINFORCED_FLUFFY_WRENCH: 34
+  FLUFFY_WRENCH: 24
+  # --- Auto machines: automate existing Slimefun stations ---
+  SMART_FACTORY: 62
+  AUTO_ANCIENT_ALTAR: 50
+  AUTO_ENHANCED_CRAFTING_TABLE: 48
+  ADVANCED_AUTO_DISENCHANTER: 46
+  AUTO_MAGIC_WORKBENCH: 42
+  AUTO_ARMOR_FORGE: 40
+  AUTO_CRAFTING_TABLE: 34
+  AUTO_TABLE_SAW: 30
+  # --- Charging bench + upgrade path ---
+  ADVANCED_CHARGING_BENCH: 46
+  ACB_UPGRADE_CARD: 34
+  # --- Processing / utility machines ---
+  FOUNDRY: 44
+  SUPERHEATED_FURNACE: 42
+  ENDER_CHEST_EXTRACTION_NODE: 38
+  ENDER_CHEST_INSERTION_NODE: 38
+  ELECTRIC_DUST_FABRICATOR: 36
+  WATER_SPRINKLER: 34
+  EXP_DISPENSER: 34
+  CARGO_MANIPULATOR: 32
+  BACKPACK_LOADER: 30
+  BACKPACK_UNLOADER: 30
+  ELECTRIC_DUST_RECYCLER: 26
+  ALTERNATE_ELEVATOR_PLATE: 20
+  # --- Generators: manual, deliberately weak ---
+  CRANK_GENERATOR: 14
+  GENERATOR_CORE: 12
+  # --- Tools / gadgets ---
+  UPGRADED_EXPLOSIVE_PICKAXE: 50
+  HELICOPTER_HAT: 50
+  UPGRADED_EXPLOSIVE_SHOVEL: 48
+  UPGRADED_LUMBER_AXE: 46
+  WARP_PAD: 46
+  PAXEL: 40
+  DOLLY: 34
+  SCYTHE: 32
+  WARP_PAD_CONFIGURATOR: 32
+  WATERING_CAN: 24
+  # --- Crafting components / consumables ---
+  ANCIENT_BOOK: 20
+  FIREPROOF_RUNE: 16
