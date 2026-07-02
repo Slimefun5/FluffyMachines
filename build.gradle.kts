@@ -99,8 +99,15 @@ tasks {
 >>>>>>> origin/experimental
 =======
         archiveFileName.set("FluffyMachines-$displayVersion.jar")
+<<<<<<< HEAD
 >>>>>>> origin/experimental
                 relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
+=======
+        relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
+        // Bundled ExtraUtils is compiled against upstream Slimefun4; repoint its API refs to our
+        // slimefun5 package (core provides slimefun5 at runtime).
+        relocate("io.github.thebusybiscuit.slimefun4", "io.github.thebusybiscuit.slimefun5")
+>>>>>>> origin/experimental
         exclude("META-INF/**")
     }
     build {
