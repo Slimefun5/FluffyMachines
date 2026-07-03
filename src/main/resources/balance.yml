@@ -2,64 +2,94 @@
 # Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
 #   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
 #   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+# Scores below are derived from the real constants in src/main/java (capacities, energy
+# consumption/tick, process speeds, radii, charge amounts), not from item-id guessing.
 scores:
-  # --- Fluffy Barrels: single-item storage, finite capacity progression ---
+  # --- Fluffy Barrels: single-item storage, capacity doubles per tier (Barrel.BarrelType) ---
+  # MINI=172,800 (adjustable cap) | SMALL=17.28M | MEDIUM=34.56M | BIG=69.12M | LARGE=138.24M
+  # MASSIVE=276.48M | BOTTOMLESS=1.728B (~80% of Integer.MAX_VALUE, effectively unlimited)
   BOTTOMLESS_FLUFFY_BARREL: 64
-  MASSIVE_FLUFFY_BARREL: 58
-  LARGE_FLUFFY_BARREL: 52
-  BIG_FLUFFY_BARREL: 46
-  MEDIUM_FLUFFY_BARREL: 40
-  SMALL_FLUFFY_BARREL: 34
-  MINI_FLUFFY_BARREL: 26
-  # --- Portable Chargers: finite battery + charge-rate tiers ---
-  CARBONADO_PORTABLE_CHARGER: 60
-  LARGE_PORTABLE_CHARGER: 48
-  BIG_PORTABLE_CHARGER: 40
-  MEDIUM_PORTABLE_CHARGER: 34
-  SMALL_PORTABLE_CHARGER: 28
-  # --- Fluffy Wrenches: instant machine/cargo removal, tiered ---
-  CARBONADO_FLUFFY_WRENCH: 48
-  REINFORCED_FLUFFY_WRENCH: 34
-  FLUFFY_WRENCH: 24
-  # --- Auto machines: automate existing Slimefun stations ---
-  SMART_FACTORY: 62
-  AUTO_ANCIENT_ALTAR: 50
-  AUTO_ENHANCED_CRAFTING_TABLE: 48
-  ADVANCED_AUTO_DISENCHANTER: 46
-  AUTO_MAGIC_WORKBENCH: 42
-  AUTO_ARMOR_FORGE: 40
-  AUTO_CRAFTING_TABLE: 34
+  MASSIVE_FLUFFY_BARREL: 56
+  LARGE_FLUFFY_BARREL: 50
+  BIG_FLUFFY_BARREL: 44
+  MEDIUM_FLUFFY_BARREL: 38
+  SMALL_FLUFFY_BARREL: 32
+  MINI_FLUFFY_BARREL: 20
+  # --- Portable Chargers: PortableCharger.Type(capacity, chargeSpeed/s) ---
+  # SMALL(128,8) MEDIUM(512,32) BIG(1024,64) LARGE(8192,512) CARBONADO(65526,4096)
+  CARBONADO_PORTABLE_CHARGER: 54
+  LARGE_PORTABLE_CHARGER: 42
+  BIG_PORTABLE_CHARGER: 32
+  MEDIUM_PORTABLE_CHARGER: 26
+  SMALL_PORTABLE_CHARGER: 18
+  # --- Fluffy Wrenches: instant machine/cargo-node removal ---
+  # DEFAULT/REINFORCED are durability-based; CARBONADO is Rechargeable (5000J, 1J/use = 5000 uses/charge)
+  CARBONADO_FLUFFY_WRENCH: 46
+  REINFORCED_FLUFFY_WRENCH: 32
+  FLUFFY_WRENCH: 22
+  # --- Auto machines: automate existing Slimefun crafting stations (AutoCrafter base: 128J/craft, 384J buffer) ---
+  # SmartFactory auto-crafts ~30 different endgame alloys/components in one block (1024J/craft, 3072J buffer, 16s/craft)
+  # AdvancedAutoDisenchanter selectively strips one chosen enchant per item (1024J/tick, 4096J buffer, 60 ticks/op)
+  # AutoAncientAltar/ArmorForge/EnhancedCraftingTable/MagicWorkbench share the 128J/384J AutoCrafter tier
+  # AutoCraftingTable/AutoTableSaw automate trivial vanilla crafting/stonecutting recipes, same 128J/384J tier
+  SMART_FACTORY: 64
+  ADVANCED_AUTO_DISENCHANTER: 52
+  AUTO_ANCIENT_ALTAR: 46
+  AUTO_ARMOR_FORGE: 44
+  AUTO_ENHANCED_CRAFTING_TABLE: 44
+  AUTO_MAGIC_WORKBENCH: 44
+  AUTO_CRAFTING_TABLE: 32
   AUTO_TABLE_SAW: 30
   # --- Charging bench + upgrade path ---
-  ADVANCED_CHARGING_BENCH: 46
-  ACB_UPGRADE_CARD: 34
+  # Base 128J buffer/10J consumption/5J charge-rate per item, scales +1 tier per card up to tier 100
+  # (tier 100 = 12,928J buffer / 1,010J consumption / 505J charge-rate)
+  ADVANCED_CHARGING_BENCH: 50
+  ACB_UPGRADE_CARD: 30
   # --- Processing / utility machines ---
+  # Foundry+SuperheatedFurnace: energy-free (lava powered), 138,240-unit dust/ingot buffer, instant dust<->ingot conversion
   FOUNDRY: 44
-  SUPERHEATED_FURNACE: 42
+  SUPERHEATED_FURNACE: 44
+  # ElectricDustFabricator: 256J/craft, 0.4s/craft, turns free cobblestone/andesite/diorite/granite into random ore dust
+  ELECTRIC_DUST_FABRICATOR: 42
+  # Ender Chest nodes: free 1 item/tick bridge between a player's (account-wide) ender chest and adjacent container
   ENDER_CHEST_EXTRACTION_NODE: 38
   ENDER_CHEST_INSERTION_NODE: 38
-  ELECTRIC_DUST_FABRICATOR: 36
-  WATER_SPRINKLER: 34
-  EXP_DISPENSER: 34
-  CARGO_MANIPULATOR: 32
-  BACKPACK_LOADER: 30
-  BACKPACK_UNLOADER: 30
-  ELECTRIC_DUST_RECYCLER: 26
-  ALTERNATE_ELEVATOR_PLATE: 20
-  # --- Generators: manual, deliberately weak ---
-  CRANK_GENERATOR: 14
-  GENERATOR_CORE: 12
+  # WaterSprinkler: 16J/tick, 5x5 (radius 2) crop-growth boost
+  WATER_SPRINKLER: 26
+  # CargoManipulator: copy/paste cargo-node config, pure QoL, no throughput change
+  CARGO_MANIPULATOR: 26
+  # BackpackLoader/Unloader: cheapest machine tier, 16J/tick auto (un)loading of player backpacks
+  BACKPACK_LOADER: 24
+  BACKPACK_UNLOADER: 24
+  # ExpDispenser: manual mass-consume of xp bottles into player XP, no automation
+  EXP_DISPENSER: 22
+  # ElectricDustRecycler: 32J/craft, converts 8 dust -> 1 Sifted Ore (low-value reverse conversion)
+  ELECTRIC_DUST_RECYCLER: 20
+  # AlternateElevatorPlate: free instant chest-GUI elevator, functionally equal to the vanilla Slimefun elevator
+  ALTERNATE_ELEVATOR_PLATE: 16
+  # --- Generators: deliberately weak, fully manual (CrankGenerator: 16J per player right-click, no passive output) ---
+  CRANK_GENERATOR: 8
+  GENERATOR_CORE: 6
   # --- Tools / gadgets ---
-  UPGRADED_EXPLOSIVE_PICKAXE: 50
-  HELICOPTER_HAT: 50
-  UPGRADED_EXPLOSIVE_SHOVEL: 48
-  UPGRADED_LUMBER_AXE: 46
-  WARP_PAD: 46
-  PAXEL: 40
-  DOLLY: 34
-  SCYTHE: 32
-  WARP_PAD_CONFIGURATOR: 32
-  WATERING_CAN: 24
+  # HelicopterHat: permanent Levitation IV while sneaking + full fall-damage immunity, no fuel/energy cost
+  HELICOPTER_HAT: 54
+  # Upgraded Explosive Pickaxe/Shovel: 5x5x5 (125-block) explosive mining radius, bigger than the base ExplosiveTool
+  UPGRADED_EXPLOSIVE_PICKAXE: 52
+  UPGRADED_EXPLOSIVE_SHOVEL: 50
+  # UpgradedLumberAxe: chops up to 200 connected logs and strips them in one interaction (instant tree-capitator)
+  UPGRADED_LUMBER_AXE: 44
+  # PAXEL: merges pickaxe/axe/shovel into one diamond/netherite-tier tool; pure inventory-slot convenience, no stat boost
+  PAXEL: 30
+  # WarpPad: same-world point-to-point teleport, but origin/destination must be linked within a 100-block default range
+  WARP_PAD: 26
+  # Dolly: picks up/places a single/double chest with contents, pure QoL
+  DOLLY: 22
+  # Scythe: harvests up to 5 adjacent fully-grown crops per break
+  SCYTHE: 22
+  # WarpPadConfigurator: the linking tool for Warp Pads, no power of its own
+  WARP_PAD_CONFIGURATOR: 18
+  # WateringCan: 30% default chance per use to advance one crop/sapling/sugarcane growth stage, limited uses per fill
+  WATERING_CAN: 16
   # --- Crafting components / consumables ---
-  ANCIENT_BOOK: 20
-  FIREPROOF_RUNE: 16
+  ANCIENT_BOOK: 14
+  FIREPROOF_RUNE: 14
