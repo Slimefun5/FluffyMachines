@@ -127,14 +127,7 @@ public final class FluffyItemSetup {
 
         for (Barrel.BarrelType barrelType : Barrel.BarrelType.values()) {
 
-            SlimefunItemStack barrelStack = new SlimefunItemStack(barrelType.getKey(),
-                    barrelType.getType(),
-                    barrelType.getDisplayName(),
-                    "",
-                    "&7Stores a large amount of an item",
-                    "",
-                    "&bCapacity: &e" + Barrel.getDisplayCapacity(barrelType) + " Items"
-            );
+            SlimefunItemStack barrelStack = new SlimefunItemStack(barrelType.getKey(), barrelType.getType());
 
             new Barrel(fluffybarrels, barrelStack, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                     barrelType.getBorder(), previousBarrel, barrelType.getBorder(),
