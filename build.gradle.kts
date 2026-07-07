@@ -1,57 +1,27 @@
-﻿plugins {
+plugins {
     java
     id("com.gradleup.shadow") version "9.3.2"
     id("io.github.intisy.github-gradle") version "1.8.2.1"
 }
 
-fun latestGitTagVersion(): String? = try {
-    val out = providers.exec { workingDir = rootDir; commandLine("git","describe","--tags","--abbrev=0"); isIgnoreExitValue = true }
-    if (out.result.get().exitValue == 0) out.standardOutput.asText.get().trim().removePrefix("gh-").removePrefix("v").takeIf { it.isNotBlank() } else null
-} catch (e: Exception) { null }
-
 group = "io.ncbpfluffybear"
-version = (project.findProperty("artifact_version") as String?)?.removePrefix("v")?.takeIf { it.isNotBlank() } ?: latestGitTagVersion() ?: "1.0.0"
-val versionSuffix: String = when {
-    !(project.findProperty("artifact_version") as String?).isNullOrBlank() -> ""
-    System.getenv("GITHUB_ACTIONS") == "true" -> "-EXPERIMENTAL"
-    else -> "-UNOFFICIAL"
-}
-val displayVersion = "${project.version}$versionSuffix"
 description = "FluffyMachines is a Slimefun addon that adds various machines, tools, and utilities."
 
-github {
-    accessToken = System.getenv("GITHUB_TOKEN") ?: ""
-    publish {
-        tag = System.getenv("GITHUB_REF_NAME")
-    }
-}
-
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(8))
-    }
-}
+// Shared Slimefun-addon build conventions (Java 8, spigot-api baseline, core dep, publish, shadow, version).
+apply(from = "https://raw.githubusercontent.com/Slimefun5/workflows/stable/slimefun-addon.gradle")
 
 repositories {
-    mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://repo.papermc.io/repository/maven-public/")
-    maven("https://repo.codemc.io/repository/maven-public/")
     maven("https://jitpack.io")
 }
 
 dependencies {
     githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
-    compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
-    compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.4.6")
     compileOnly("com.gmail.nossr50.mcMMO:mcMMO:2.1.149") {
         exclude(group = "org.jetbrains", module = "annotations")
         exclude(group = "com.sk89q.worldguard")
     }
-
-    // Shaded
-        implementation("com.github.Slimefun-Addon-Community:extrautils:73e76ac06c") {
+    // Shaded (compiled against upstream Slimefun4; repointed to slimefun5 below).
+    implementation("com.github.Slimefun-Addon-Community:extrautils:73e76ac06c") {
         isTransitive = false
     }
 
@@ -70,33 +40,12 @@ configurations.testImplementation {
 }
 
 tasks {
-    compileJava {
-        options.encoding = "UTF-8"
-    }
-    processResources {
-        filesMatching("plugin.yml") {
-            expand("version" to displayVersion)
-        }
-    }
-    jar {
-        enabled = false
-    }
     shadowJar {
         relocate("org.bstats", "fluffymachines.libs.bstats")
-        archiveFileName.set("FluffyMachines-$displayVersion.jar")
         relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
-        // Bundled ExtraUtils is compiled against upstream Slimefun4; repoint its API refs to our
-        // slimefun5 package (core provides slimefun5 at runtime).
+        // Bundled ExtraUtils is compiled against upstream Slimefun4; repoint its API refs to slimefun5.
         relocate("io.github.thebusybiscuit.slimefun4", "io.github.thebusybiscuit.slimefun5")
-        exclude("META-INF/**")
     }
-    build {
-        dependsOn(shadowJar)
-    }
-    compileTestJava {
-        enabled = false
-    }
-    test {
-        enabled = false
-    }
+    compileTestJava { enabled = false }
+    test { enabled = false }
 }
