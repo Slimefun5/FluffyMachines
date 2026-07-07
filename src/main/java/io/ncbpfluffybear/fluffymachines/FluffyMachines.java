@@ -168,9 +168,9 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             case "tools": return "Fluffy Machines: Tools";
             case "multiblocks": return "Fluffy Machines: Multiblocks";
             case "barrels": return "Fluffy Machines: Barrels";
-            case "portable_chargers": return "Portable Chargers";
+            case "portable_chargers": return "Fluffy Machines: Portable Chargers";
             case "wrenches": return "Fluffy Machines: Wrenches";
-            case "cargo": return "Cargo Utilities";
+            case "cargo": return "Fluffy Machines: Cargo Utilities";
             case "misc": return "Fluffy Machines: Miscellaneous";
             default: return "Fluffy Machines";
         }
