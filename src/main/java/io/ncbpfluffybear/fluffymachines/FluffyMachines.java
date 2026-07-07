@@ -163,15 +163,15 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
     private String categoryDisplayName(String groupKey) {
         switch (groupKey) {
-            case "generators": return "Fluffy Generators";
-            case "machines": return "Fluffy Machines";
-            case "tools": return "Fluffy Tools";
-            case "multiblocks": return "Fluffy Multiblocks";
-            case "barrels": return "Fluffy Barrels";
+            case "generators": return "Fluffy Machines: Generators";
+            case "machines": return "Fluffy Machines: Machines";
+            case "tools": return "Fluffy Machines: Tools";
+            case "multiblocks": return "Fluffy Machines: Multiblocks";
+            case "barrels": return "Fluffy Machines: Barrels";
             case "portable_chargers": return "Portable Chargers";
-            case "wrenches": return "Fluffy Wrenches";
+            case "wrenches": return "Fluffy Machines: Wrenches";
             case "cargo": return "Cargo Utilities";
-            case "misc": return "Fluffy Miscellaneous";
+            case "misc": return "Fluffy Machines: Miscellaneous";
             default: return "Fluffy Machines";
         }
     }
