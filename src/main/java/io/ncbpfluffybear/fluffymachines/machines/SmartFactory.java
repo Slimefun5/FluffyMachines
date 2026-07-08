@@ -83,13 +83,24 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
         super(itemGroup, item, recipeType, recipe);
 
         for (SlimefunItemStack sfItem : ACCEPTED_ITEMS) {
+            SlimefunItem resolved = sfItem.getItem();
+            if (resolved == null) {
+                // Not registered on this build (e.g. removed/renamed item); skip instead of crashing
+                continue;
+            }
+
             List<ItemStack[]> variationList = new ArrayList<>();
-            variationList.add(collectRawRecipe(sfItem.getItem()));
-            ITEM_RECIPES.put(sfItem.getItem(), variationList);
+            variationList.add(collectRawRecipe(resolved));
+            ITEM_RECIPES.put(resolved, variationList);
         }
 
         for (SlimefunItemStack alternative : MAGMA_ALTERNATIVES) {
-            ItemStack[] original = ITEM_RECIPES.get(alternative.getItem()).get(0);
+            SlimefunItem resolvedAlternative = alternative.getItem();
+            if (resolvedAlternative == null || !ITEM_RECIPES.containsKey(resolvedAlternative)) {
+                continue;
+            }
+
+            ItemStack[] original = ITEM_RECIPES.get(resolvedAlternative).get(0);
             ItemStack[] variation = new ItemStack[original.length];
             for (int i = 0; i < original.length; i++) {
                 if (original[i].getType() == MaterialCompat.safe(XMaterial.NETHERRACK) && original[i].getAmount() % 16 == 0) {
@@ -99,7 +110,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
                 }
             }
 
-            List<ItemStack[]> variations = ITEM_RECIPES.get(alternative.getItem());
+            List<ItemStack[]> variations = ITEM_RECIPES.get(resolvedAlternative);
             variations.add(variation);
         }
 
@@ -340,6 +351,10 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
     private Pair<HashMap<Material, Integer>, HashMap<SlimefunItem, Integer>> reduceRecipe(SlimefunItem key) {
         HashMap<Material, Integer> rawVanilla = new HashMap<>();
         HashMap<SlimefunItem, Integer> rawSlimefun = new HashMap<>();
+
+        if (key == null) {
+            return new Pair<>(rawVanilla, rawSlimefun);
+        }
 
         ItemStack[] recipe = key.getRecipe();
         if (key == SlimefunItems.COPPER_WIRE.getItem()) {

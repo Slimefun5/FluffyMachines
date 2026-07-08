@@ -1,0 +1,449 @@
+# English item lore for FluffyMachines. Block entries: name/type/description/stats/usage.
+# Composed at render time by LoreComposer in the order Type -> Description -> Stats -> Usage.
+
+MINI_FLUFFY_BARREL:
+  name: "&eMini Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+    - "&7Has a changeable capacity"
+  stats:
+    - "&bMax Capacity: &e172800 Items"
+
+SMALL_PORTABLE_CHARGER:
+  name: "&eSmall Portable Charger"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7A handheld charger that holds a lot of power"
+  stats:
+    - "&eCharge Speed: &78 J/s"
+
+MEDIUM_PORTABLE_CHARGER:
+  name: "&6Medium Portable Charger"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7A handheld charger that holds a lot of power"
+  stats:
+    - "&eCharge Speed: &732 J/s"
+
+BIG_PORTABLE_CHARGER:
+  name: "&aBig Portable Charger"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7A handheld charger that holds a lot of power"
+  stats:
+    - "&eCharge Speed: &764 J/s"
+
+LARGE_PORTABLE_CHARGER:
+  name: "&2Large Portable Charger"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7A handheld charger that holds a lot of power"
+  stats:
+    - "&eCharge Speed: &7512 J/s"
+
+CARBONADO_PORTABLE_CHARGER:
+  name: "&4Carbonado Portable Charger"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7A handheld charger that holds a lot of power"
+  stats:
+    - "&eCharge Speed: &74096 J/s"
+
+ANCIENT_BOOK:
+  name: "&6Ancient Book"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used in the &cAdvanced Auto Disenchanter"
+    - "&6&oContains concentrated amounts of power"
+
+HELICOPTER_HAT:
+  name: "&1Helicopter Hat"
+  type:
+    - "&7&oArmor"
+  description:
+    - "&7brrrrrrrrRRRRRRRR"
+  usage:
+    - "&eSneak &7to use"
+
+WATERING_CAN:
+  name: "&bWatering Can"
+  type:
+    - "&7&oTool"
+  description:
+    - "&fWaters Plants"
+  usage:
+    - "&7> &eRight Click &7a water to fill your watering can"
+    - "&7> &eRight Click &7a plant to speed up growth."
+    - "&7> &eRight Click &7a player to slow them down"
+
+ENDER_CHEST_EXTRACTION_NODE:
+  name: "&6Ender Chest Extraction Node"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Place this on the side of an &5Ender Chest &7to bind"
+    - "&7This will move items from the facing &5Ender Chest"
+    - "&7to the &6Container &7behind it"
+
+ENDER_CHEST_INSERTION_NODE:
+  name: "&bEnder Chest Insertion Node"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Place this on the side of an &5Ender Chest &7to bind"
+    - "&7This will move items to the facing &5Ender Chest"
+    - "&7from the &6Container &7behind it"
+
+AUTO_CRAFTING_TABLE:
+  name: "&6Auto Crafting Table"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts &fvanilla &7recipes"
+
+AUTO_ANCIENT_ALTAR:
+  name: "&5Auto Ancient Altar"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts &5Ancient Altar &7recipes"
+
+AUTO_TABLE_SAW:
+  name: "&6Auto Table Saw"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts &6Table Saw &7recipes"
+
+WATER_SPRINKLER:
+  name: "&bWater Sprinkler"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Sprinkly sprinkly"
+
+GENERATOR_CORE:
+  name: "&7Generator Core"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Multiblock component of generators"
+
+CRANK_GENERATOR:
+  name: "&7Crank Generator"
+  type:
+    - "&7&oGenerator"
+  description:
+    - "&cThis is a Multiblock machine!"
+  usage:
+    - "&eRight click &7the lever to generate power"
+
+FOUNDRY:
+  name: "&cFoundry"
+  type:
+    - "&7&oMultiblock"
+  description:
+    - "&eMelts and stores dusts and ingots"
+    - "&cThis is a Multiblock machine!"
+  stats:
+    - "&7Stores 138,240 dust (40 Double Chests)"
+
+BACKPACK_UNLOADER:
+  name: "&eBackpack Unloader"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Empties the contents of backpacks"
+
+BACKPACK_LOADER:
+  name: "&eBackpack Loader"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Moves items from inventory to backpack"
+
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: "&e&lUpgraded Explosive Pickaxe"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Breaks all mineable blocks in a 5x5 radius"
+
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: "&e&lUpgraded Explosive Shovel"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Breaks all shovelable blocks in a 5x5 radius"
+
+FIREPROOF_RUNE:
+  name: "&7Ancient Rune &8&l[&c&lFireproof&8&l]"
+  type:
+    - "&7&oMagical"
+  description:
+    - "&7Prevents a dropped item from burning in fire or lava"
+  usage:
+    - "&eDrop this rune onto a dropped item to"
+    - "&emake it &cfireproof"
+
+SUPERHEATED_FURNACE:
+  name: "&cSuper Heated Furnace"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Multiblock component of the Foundry"
+    - "&cMust be used in the Foundry"
+
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: "&eAuto Enhanced Crafting Table"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts &eEnhanced Crafting Table &7recipes"
+
+AUTO_MAGIC_WORKBENCH:
+  name: "&6Auto Magic Workbench"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts &6Magic Workbench &7recipes"
+
+AUTO_ARMOR_FORGE:
+  name: "&7Auto Armor Forge"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Automatically crafts Armor Forge recipes"
+
+ADVANCED_AUTO_DISENCHANTER:
+  name: "&cAdvanced Auto Disenchanter"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Removes one enchant from an item"
+    - "&7Requires an &6Ancient Book &7to operate"
+
+SCYTHE:
+  name: "&eScythe"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Breaks 5 crops at once"
+
+UPGRADED_LUMBER_AXE:
+  name: "&6&lUpgraded Lumber Axe"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Chops down an entire tree at once"
+    - "&72 block reach and works on diagonal blocks too"
+
+DOLLY:
+  name: "&bDolly"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7Picks up a placed chest along with its contents so you can carry and place it elsewhere"
+  usage:
+    - "&7Right click a chest to pick it up"
+
+WARP_PAD:
+  name: "&6Warp Pad"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Use a Warp Pad Configurator to link Warp Pads"
+  usage:
+    - "&eCrouch &7on this block to teleport to"
+    - "&7the linked destination pad"
+
+WARP_PAD_CONFIGURATOR:
+  name: "&6Warp Pad Configurator"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Links two Warp Pads together so you can teleport between them"
+  usage:
+    - "&eSneak and Right Click &7on a Warp Pad to set the destination"
+    - "&eRight Click &7on a Warp Pad to set the origin"
+
+ELECTRIC_DUST_FABRICATOR:
+  name: "&6Electric Dust Fabricator"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7An all-in-one machine that grinds, pans, and washes"
+  stats:
+    - "&8⇨ &b⚡ &7Speed: &b10.0x"
+
+ELECTRIC_DUST_RECYCLER:
+  name: "&fElectric Dust Recycler"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Recycles dust back into sifted ore"
+  stats:
+    - "&8⇨ &b⚡ &7Speed: &b1.0x"
+
+ALTERNATE_ELEVATOR_PLATE:
+  name: "&3Alternate Elevator Plate"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&fPlace an Elevator Plate on every floor"
+    - "&fand you will be able to teleport between them."
+  usage:
+    - "&eRight Click this Block &7to name it"
+    - "&7Uses a Chest GUI instead of a Book GUI"
+
+FLUFFY_WRENCH:
+  name: "&6Fluffy Wrench"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Used to quickly remove Slimefun cargo nodes"
+    - "&7and electricity components"
+  usage:
+    - "&eLeft&7/&eRight Click &7a compatible block to break it"
+
+REINFORCED_FLUFFY_WRENCH:
+  name: "&bReinforced Fluffy Wrench"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Used to quickly remove Slimefun cargo nodes"
+    - "&7and electricity components"
+  usage:
+    - "&eLeft&7/&eRight Click &7a compatible block to break it"
+
+CARBONADO_FLUFFY_WRENCH:
+  name: "&7Carbonado Fluffy Wrench"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Used to quickly remove Slimefun cargo nodes"
+    - "&7and electricity components"
+  usage:
+    - "&eLeft&7/&eRight Click &7a compatible block to break it"
+
+PAXEL:
+  name: "&bPaxel"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7A pickaxe, axe, and shovel in one tool!"
+
+ADVANCED_CHARGING_BENCH:
+  name: "&cAdvanced Charging Bench"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Charges items"
+    - "&7Can be upgraded using an &6ACB Upgrade Card"
+
+ACB_UPGRADE_CARD:
+  name: "&6ACB Upgrade Card"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Upgrades an Advanced Charging Bench, increasing its capacity and charge speed"
+  stats:
+    - "&6Charge Speed &a+5J"
+    - "&6Capacity &a+128J"
+    - "&6Energy Consumption &c+10J"
+  usage:
+    - "&eRight Click &7onto an &cAdvanced Charging Bench"
+
+CARGO_MANIPULATOR:
+  name: "&9Cargo Manipulator"
+  type:
+    - "&7&oTool"
+  description:
+    - "&7Copies and pastes cargo node settings between cargo nodes"
+  usage:
+    - "&eRight Click &7to copy cargo node settings"
+    - "&eLeft Click &7to paste cargo node settings"
+    - "&eSneak and Right Click &7to clear a cargo node"
+
+EXP_DISPENSER:
+  name: "&aExp Dispenser"
+  type:
+    - "&7&oMultiblock"
+  description:
+    - "&cThis is a Multiblock machine!"
+  usage:
+    - "&7Right click to receive all exp"
+    - "&7from exp bottles in the dispenser"
+    - "&7and barrel the dispenser is facing"
+
+SMART_FACTORY:
+  name: "&cSmart Factory"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7An all-in-one machine that crafts"
+    - "&7resources from raw materials"
+  stats:
+    - "&8⇨ &b⚡ &7Speed: &b1.0x"
+
+SMALL_FLUFFY_BARREL:
+  name: "&eSmall Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e17280000 Items"
+
+MEDIUM_FLUFFY_BARREL:
+  name: "&6Medium Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e34560000 Items"
+
+BIG_FLUFFY_BARREL:
+  name: "&bBig Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e69120000 Items"
+
+LARGE_FLUFFY_BARREL:
+  name: "&aLarge Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e138240000 Items"
+
+MASSIVE_FLUFFY_BARREL:
+  name: "&5Massive Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e276480000 Items"
+
+BOTTOMLESS_FLUFFY_BARREL:
+  name: "&cBottomless Fluffy Barrel"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7Stores a large amount of an item"
+  stats:
+    - "&bCapacity: &e1728000000 Items"
