@@ -104,7 +104,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:FluffyMachines:v1.22.2.3")
+    "githubCompileOnly"("Slimefun5:FluffyMachines:v1.22.2.4")
 }
 ```
 
