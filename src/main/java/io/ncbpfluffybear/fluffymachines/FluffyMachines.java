@@ -36,10 +36,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
-<<<<<<< HEAD
-=======
 import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
->>>>>>> origin/experimental
 import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.util.RayTraceResult;
 
@@ -118,11 +115,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             getServer().getPluginManager().registerEvents(new Events(), this);
             getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
 
-<<<<<<< HEAD
-            final         } catch (Exception e) {
-=======
             } catch (Exception e) {
->>>>>>> origin/experimental
             getLogger().log(Level.SEVERE, "An error occurred while enabling FluffyMachines", e);
             getServer().getPluginManager().disablePlugin(this);
         }
