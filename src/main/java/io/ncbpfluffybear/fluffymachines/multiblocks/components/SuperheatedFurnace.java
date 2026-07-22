@@ -79,6 +79,7 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
     public SuperheatedFurnace(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("machines");
 
         addItemHandler(onBreak());
         addItemSetting(breakOnlyWhenEmpty);

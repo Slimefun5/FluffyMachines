@@ -43,6 +43,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
     public Dolly(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("logistics");
         this.timeouts = new HashMap<>();
     }
 

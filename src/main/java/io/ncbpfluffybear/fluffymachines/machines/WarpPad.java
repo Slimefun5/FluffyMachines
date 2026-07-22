@@ -24,6 +24,7 @@ public class WarpPad extends NonHopperableBlock implements HologramOwner {
 
     public WarpPad(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("logistics");
 
         addItemHandler(onPlace(), onUse(), onBreak());
 

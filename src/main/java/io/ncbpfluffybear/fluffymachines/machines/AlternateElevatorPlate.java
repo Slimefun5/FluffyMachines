@@ -50,6 +50,7 @@ public class AlternateElevatorPlate extends SimpleSlimefunItem<BlockUseHandler> 
     public AlternateElevatorPlate(ItemGroup category, SlimefunItemStack item, RecipeType recipeType,
                                   ItemStack[] recipe, ItemStack recipeOutput) {
         super(category, item, recipeType, recipe, recipeOutput);
+        setGuideType("logistics");
 
         addItemHandler(onPlace());
     }

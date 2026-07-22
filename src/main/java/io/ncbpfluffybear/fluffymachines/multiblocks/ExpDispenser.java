@@ -12,7 +12,8 @@ import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.Container;
+import org.bukkit.block.BlockState;
+import org.bukkit.inventory.InventoryHolder;
 import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -26,12 +27,21 @@ public class ExpDispenser extends MultiBlockMachine {
 
     public ExpDispenser(ItemGroup itemGroup, SlimefunItemStack item, ItemStack[] recipe) {
         super(itemGroup, item, recipe, BlockFace.SELF);
+        setGuideType("machines");
     }
 
     @Override
     public void onInteract(Player p, Block b) {
         Block dispenser = b.getRelative(0, -1, 0);
-        Container container = (Container) dispenser.getState();
+        // org.bukkit.block.Container only exists on 1.14+; casting to it here NoClassDefFounds on 1.8-1.13.
+        // InventoryHolder is present on every version and every container BlockState implements it.
+        BlockState state = dispenser.getState();
+
+        if (!(state instanceof InventoryHolder)) {
+            return;
+        }
+
+        InventoryHolder container = (InventoryHolder) state;
         int experience = 0;
 
         for (ItemStack bottle : container.getInventory().getContents()) {

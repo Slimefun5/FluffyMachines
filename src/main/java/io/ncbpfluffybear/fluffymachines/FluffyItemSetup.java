@@ -388,7 +388,7 @@ public final class FluffyItemSetup {
                 SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), SlimefunItems.ENCHANTMENT_RUNE.item(),
                 SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(),
                 new ItemStack(MaterialCompat.safe(XMaterial.BOOK)), SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOK))
-        }).register(plugin);
+        }).setGuideType("resources").register(plugin);
 
         new WarpPad(misc, FluffyItems.WARP_PAD,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{

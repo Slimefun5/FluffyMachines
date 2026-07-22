@@ -51,6 +51,7 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
     public PortableCharger(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,
                            int chargeCapacity, int chargeSpeed) {
         super(category, item, recipeType, recipe);
+        setGuideType("energy_tech");
 
         this.CHARGE_CAPACITY = chargeCapacity;
         this.CHARGE_SPEED = chargeSpeed;

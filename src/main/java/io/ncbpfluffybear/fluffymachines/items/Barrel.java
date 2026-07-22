@@ -87,6 +87,7 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
     public Barrel(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe,
                   int MAX_STORAGE) {
         super(category, item, recipeType, recipe);
+        setGuideType("logistics");
 
         this.barrelCapacity = new IntRangeSetting(this, "capacity", 0, MAX_STORAGE, Integer.MAX_VALUE);
 

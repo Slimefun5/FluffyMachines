@@ -40,6 +40,7 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
 
     public WarpPadConfigurator(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("tools");
 
         Bukkit.getPluginManager().registerEvents(this, FluffyMachines.getInstance());
 

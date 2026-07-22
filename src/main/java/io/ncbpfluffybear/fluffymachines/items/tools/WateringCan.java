@@ -55,6 +55,7 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
 
     public WateringCan(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("tools");
 
         addItemSetting(maxUses);
         addItemSetting(sugarCaneSuccessChance);

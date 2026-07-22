@@ -47,6 +47,7 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
 
     public FireproofRune(ItemGroup category, SlimefunItemStack item, RecipeType type, ItemStack[] recipe) {
         super(category, item, type, recipe);
+        setGuideType("magic");
     }
 
     @Nonnull
