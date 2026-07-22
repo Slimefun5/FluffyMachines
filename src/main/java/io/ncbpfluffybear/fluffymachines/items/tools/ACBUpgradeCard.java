@@ -22,6 +22,7 @@ public class ACBUpgradeCard extends SimpleSlimefunItem<ItemHandler> {
 
     public ACBUpgradeCard(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("resources");
     }
 
     @Nonnull

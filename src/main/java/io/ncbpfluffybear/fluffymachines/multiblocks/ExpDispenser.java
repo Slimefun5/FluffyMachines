@@ -27,6 +27,7 @@ public class ExpDispenser extends MultiBlockMachine {
 
     public ExpDispenser(ItemGroup itemGroup, SlimefunItemStack item, ItemStack[] recipe) {
         super(itemGroup, item, recipe, BlockFace.SELF);
+        setGuideType("machines");
     }
 
     @Override

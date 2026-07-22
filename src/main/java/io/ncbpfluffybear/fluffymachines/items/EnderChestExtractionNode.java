@@ -44,6 +44,7 @@ public class EnderChestExtractionNode extends SlimefunItem {
 
     public EnderChestExtractionNode(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("logistics");
 
         addItemHandler(onPlace());
         addItemHandler(onInteract());

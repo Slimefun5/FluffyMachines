@@ -47,6 +47,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
     public CargoManipulator(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
+        setGuideType("logistics");
 
         Bukkit.getPluginManager().registerEvents(this, FluffyMachines.getInstance());
     }

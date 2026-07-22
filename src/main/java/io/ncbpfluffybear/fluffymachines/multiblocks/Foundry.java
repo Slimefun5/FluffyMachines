@@ -34,6 +34,7 @@ public class Foundry extends MultiBlockMachine {
             new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)), new ItemStack(MaterialCompat.safe(XMaterial.GLASS)), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)),
             new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK)), new ItemStack(MaterialCompat.safe(XMaterial.CAULDRON)), new ItemStack(MaterialCompat.safe(XMaterial.NETHERITE_BLOCK))
         }, BlockFace.DOWN);
+        setGuideType("machines");
     }
 
     @Override
