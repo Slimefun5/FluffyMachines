@@ -249,6 +249,10 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
         craftIfValid(block);
     }
 
+    /**
+     * @implNote Only executes the last possible shaped recipe, and is deliberately not triggerable by a
+     *           button in place of the default timer-based execution, to prevent abuse and auto-clickers.
+     */
     private void craftIfValid(Block block) {
         BlockMenu menu = BlockStorage.getInventory(block);
 
@@ -274,9 +278,6 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
                 return;
             }
         }
-        // we're only executing the last possible shaped recipe
-        // we don't want to allow this to be pressed instead of the default timer-based
-        // execution to prevent abuse and auto clickers
     }
 
     private boolean isCraftable(BlockMenu inv, ItemStack[] recipe) {

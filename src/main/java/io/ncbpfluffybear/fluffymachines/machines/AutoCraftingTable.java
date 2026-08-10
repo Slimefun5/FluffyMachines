@@ -352,9 +352,7 @@ public class AutoCraftingTable extends SlimefunItem implements EnergyNetComponen
 
         }
 
-        // New HashMap System
-        // This is semi-shapeless, since it reads left to right, top to bottom, and ignores empty spaces.
-        // However, this isn't a concern since we have the key item.
+        // Matching is semi-shapeless (left-to-right, top-to-bottom, empty slots ignored); the key item disambiguates.
 
         if (FluffyMachines.shapedVanillaRecipes.containsKey(keyItem)) {
 
