@@ -18,6 +18,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -127,7 +128,7 @@ public class BackpackUnloader extends SlimefunItem implements EnergyNetComponent
             if (sfItem instanceof SlimefunBackpack) {
 
                 // No ID
-                List<String> lore = inputItem.getItemMeta().getLore();
+                List<String> lore = Utils.loreOrEmpty(inputItem.getItemMeta());
                 for (String s : lore) {
                     if (s.equals(ChatColor.GRAY + "ID: <ID>")) {
                         rejectInput(inv);

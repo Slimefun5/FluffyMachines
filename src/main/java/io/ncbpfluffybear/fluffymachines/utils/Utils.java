@@ -8,6 +8,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction
 import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.TreeMap;
 import javax.annotation.Nonnull;
@@ -130,6 +131,46 @@ public final class Utils {
         for (ItemStack leftover : p.getInventory().addItem(toGive).values()) {
             p.getWorld().dropItemNaturally(p.getLocation(), leftover);
         }
+    }
+
+    /**
+     * @implNote Slimefun core no longer bakes lore onto fresh item templates (name/lore are resolved
+     *           per viewer at render time), so {@link ItemMeta#getLore()} returns null instead of an
+     *           empty list until something explicitly adds a line.
+     */
+    @Nonnull
+    public static List<String> loreOrEmpty(@Nullable ItemMeta meta) {
+        return meta != null && meta.hasLore() ? meta.getLore() : Collections.emptyList();
+    }
+
+    /**
+     * A mutable lore list to append to: the item's current lore, or a fresh empty list if it has none.
+     *
+     * @implNote See {@link #loreOrEmpty(ItemMeta)}; unlike that method this returns a modifiable list
+     *           since callers here are about to add lines to it.
+     */
+    @Nonnull
+    public static List<String> mutableLoreOf(@Nullable ItemMeta meta) {
+        List<String> lore = meta != null ? meta.getLore() : null;
+        return lore != null ? lore : new ArrayList<>();
+    }
+
+    /**
+     * Sets a single lore line at {@code index} and persists it onto {@code meta}, padding with blank
+     * lines first if the item has fewer lines than {@code index}.
+     *
+     * @implNote Since core no longer bakes a lore skeleton onto fresh item templates, {@code index} may
+     *           not exist yet where an addon's item used to always ship with it pre-filled.
+     */
+    public static void setLoreLine(@Nonnull ItemMeta meta, int index, @Nonnull String line) {
+        List<String> lore = mutableLoreOf(meta);
+
+        while (lore.size() <= index) {
+            lore.add("");
+        }
+
+        lore.set(index, line);
+        meta.setLore(lore);
     }
 
     public static String getViewableName(ItemStack item) {

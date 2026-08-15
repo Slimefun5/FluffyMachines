@@ -100,7 +100,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
     private void buildDolly(ItemStack dolly, Player p) {
         // Build backpack if new
         ItemMeta dollyMeta = dolly.getItemMeta();
-        for (String line : dollyMeta.getLore()) {
+        for (String line : Utils.loreOrEmpty(dollyMeta)) {
             if (line.contains("ID: <ID>")) {
                 PlayerProfile.get(p, profile -> {
                     int backpackId = profile.createBackpack(54).getId();

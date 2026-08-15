@@ -24,6 +24,7 @@ import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
+import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -135,7 +136,7 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
                 if (backpackItem != null && SlimefunItem.getByItem(backpackItem) instanceof SlimefunBackpack) {
 
                     // Make sure it has an ID
-                    List<String> lore = backpackItem.getItemMeta().getLore();
+                    List<String> lore = Utils.loreOrEmpty(backpackItem.getItemMeta());
                     for (String s : lore) {
                         if (s.equals(ChatColor.GRAY + "ID: <ID>")) {
                             invalidItem = true;

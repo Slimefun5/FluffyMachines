@@ -38,7 +38,6 @@ import org.bukkit.util.RayTraceResult;
 
 import javax.annotation.Nonnull;
 import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements CancelPlace {
@@ -199,7 +198,6 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
     public static boolean updateUses(WateringCan can, Player p, ItemStack item, int updateType) {
 
         ItemMeta meta = item.getItemMeta();
-        List<String> lore = meta.getLore();
         int usesLeft = Pdc.getInt(meta, usageKey, 0);
 
         if (updateType == 1) {
@@ -227,8 +225,7 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
             p.sendMessage("Error");
         }
 
-        lore.set(USE_INDEX, ChatColors.color("&aUses Left: &e" + usesLeft));
-        meta.setLore(lore);
+        Utils.setLoreLine(meta, USE_INDEX, ChatColors.color("&aUses Left: &e" + usesLeft));
         Pdc.setInt(meta, usageKey, usesLeft);
         item.setItemMeta(meta);
         //Utils.send(p, "&eYou have " + usesLeft + " uses left");
