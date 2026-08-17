@@ -1,5 +1,6 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
+import io.github.thebusybiscuit.slimefun5.api.player.PlayerBackpack;
 import io.github.thebusybiscuit.slimefun5.api.player.PlayerProfile;
 import io.github.thebusybiscuit.slimefun5.core.attributes.EnergyNetComponent;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
@@ -18,8 +19,6 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
-import io.ncbpfluffybear.fluffymachines.utils.Utils;
-import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -128,12 +127,9 @@ public class BackpackUnloader extends SlimefunItem implements EnergyNetComponent
             if (sfItem instanceof SlimefunBackpack) {
 
                 // No ID
-                List<String> lore = Utils.loreOrEmpty(inputItem.getItemMeta());
-                for (String s : lore) {
-                    if (s.equals(ChatColor.GRAY + "ID: <ID>")) {
-                        rejectInput(inv);
-                        return;
-                    }
+                if (!PlayerBackpack.readIdentity(inputItem).isPresent()) {
+                    rejectInput(inv);
+                    return;
                 }
 
                 PlayerProfile.getBackpack(inputItem, backpack -> {

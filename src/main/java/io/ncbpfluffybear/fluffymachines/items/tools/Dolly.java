@@ -22,7 +22,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import javax.annotation.Nonnull;
@@ -97,18 +96,21 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
         };
     }
 
+    /**
+     * @implNote A dolly used to be recognised as new by an un-replaced {@code "ID: <ID>"} lore placeholder.
+     *           Slimefun keeps backpack identity in persistent data and bakes no lore, so that placeholder no
+     *           longer exists and every dolly looked already-assigned - meaning none ever got a backpack.
+     */
     private void buildDolly(ItemStack dolly, Player p) {
-        // Build backpack if new
-        ItemMeta dollyMeta = dolly.getItemMeta();
-        for (String line : Utils.loreOrEmpty(dollyMeta)) {
-            if (line.contains("ID: <ID>")) {
-                PlayerProfile.get(p, profile -> {
-                    int backpackId = profile.createBackpack(54).getId();
-                    Slimefun.getBackpackListener().setBackpackId(p, dolly, 3, backpackId);
-                    PlayerProfile.getBackpack(dolly, backpack -> backpack.getInventory().setItem(0, LOCK_ITEM));
-                });
-            }
+        if (PlayerBackpack.readIdentity(dolly).isPresent()) {
+            return;
         }
+
+        PlayerProfile.get(p, profile -> {
+            int backpackId = profile.createBackpack(54).getId();
+            PlayerBackpack.writeIdentity(dolly, p.getUniqueId() + "#" + backpackId);
+            PlayerProfile.getBackpack(dolly, backpack -> backpack.getInventory().setItem(0, LOCK_ITEM));
+        });
     }
 
     private void pickupChest(ItemStack dolly, Block chest, Player p) {
