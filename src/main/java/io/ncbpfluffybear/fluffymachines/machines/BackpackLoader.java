@@ -1,5 +1,6 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
+import io.github.thebusybiscuit.slimefun5.api.player.PlayerBackpack;
 import io.github.thebusybiscuit.slimefun5.api.player.PlayerProfile;
 import io.github.thebusybiscuit.slimefun5.core.attributes.EnergyNetComponent;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockBreakHandler;
@@ -19,7 +20,6 @@ import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
@@ -126,7 +126,6 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
         }
 
         final BlockMenu inv = BlockStorage.getInventory(b);
-        boolean invalidItem = false;
 
         // If no backpack in backpack slot, search for one and if found move to BACKPACK_SLOT
         if (inv.getItemInSlot(BACKPACK_SLOT) == null) {
@@ -135,14 +134,7 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
                 if (backpackItem != null && SlimefunItem.getByItem(backpackItem) instanceof SlimefunBackpack) {
 
                     // Make sure it has an ID
-                    List<String> lore = backpackItem.getItemMeta().getLore();
-                    for (String s : lore) {
-                        if (s.equals(ChatColor.GRAY + "ID: <ID>")) {
-                            invalidItem = true;
-                            break;
-                        }
-                    }
-                    if (!invalidItem) {
+                    if (PlayerBackpack.readIdentity(backpackItem).isPresent()) {
                         moveItem(inv, inputSlot, BACKPACK_SLOT);
 
                     } else if (inv.getItemInSlot(getOutputSlots()[0]) == null) {

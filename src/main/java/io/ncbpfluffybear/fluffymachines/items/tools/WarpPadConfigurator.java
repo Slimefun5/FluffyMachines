@@ -26,8 +26,6 @@ import io.ncbpfluffybear.fluffymachines.utils.HandCompat;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.List;
-
 public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, Listener {
 
     private static final String xCoord = "fluffymachines:xcoordinate";
@@ -65,7 +63,6 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
 
                 ItemStack item = p.getInventory().getItemInHand();
                 ItemMeta meta = item.getItemMeta();
-                List<String> lore = meta.getLore();
 
                 if (e.getAction() == Action.RIGHT_CLICK_BLOCK) {
 
@@ -76,10 +73,9 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
                         Pdc.setInt(meta, xCoord, b.getX());
                         Pdc.setInt(meta, yCoord, b.getY());
                         Pdc.setInt(meta, zCoord, b.getZ());
-                        lore.set(LORE_COORDINATE_INDEX, ChatColor.translateAlternateColorCodes(
+                        Utils.setLoreLine(meta, LORE_COORDINATE_INDEX, ChatColor.translateAlternateColorCodes(
                             '&', "&eLinked Coordinates: &7" + b.getX() + ", " + b.getY() + ", " + b.getZ()));
 
-                        meta.setLore(lore);
                         item.setItemMeta(meta);
 
                         updateHologram(b, "&a&lDestination");

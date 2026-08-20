@@ -55,7 +55,6 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
         try {
             instance = this;
-            // Read something from your config.yml
             Config cfg = new Config(this);
 
             // Register ACT Recipes
@@ -68,7 +67,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
                     List<Object> rc = new ArrayList<>();
                     ItemStack key = new ItemStack(sr.getResult().getType(), 1);
 
-                    // Convert the recipe to a list (RecipeChoice access is reflective for 1.8 safety)
+                    // RecipeChoice access is reflective for 1.8 safety
                     for (Map.Entry<Character, Object> choice : CompatUtils.getChoiceMap(sr).entrySet()) {
                         if (choice.getValue() != null) {
                             rc.add(choice.getValue());
@@ -87,7 +86,6 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
                     ItemStack key = new ItemStack(slr.getResult().getType(), 1);
                     List<Object> rc = CompatUtils.getShapelessChoiceList(slr);
 
-                    // Key has a list of recipe options
                     if (!shapelessVanillaRecipes.containsKey(key)) {
                         shapelessVanillaRecipes.put(key,
                                 new ArrayList<>(Collections.singletonList(new Pair<>(slr.getResult(), rc))));
@@ -97,13 +95,11 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
                 }
             }
 
-            // Register McMMO Events
             if (getServer().getPluginManager().isPluginEnabled("McMMO")) {
                 getLogger().log(Level.INFO, "McMMO found!");
                 getServer().getPluginManager().registerEvents(new McMMOEvents(), this);
             }
 
-            // Registering Items
             FluffyItemSetup.setup(this);
             FluffyItemSetup.setupBarrels(this);
 
@@ -111,7 +107,6 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
             Slimefun.getItemTranslationService().registerTranslations(this);
             registerWiki();
 
-            // Register Events Class
             getServer().getPluginManager().registerEvents(new Events(), this);
             getServer().getPluginManager().registerEvents(new KeyedCrafterListener(), this);
 

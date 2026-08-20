@@ -416,7 +416,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
         ItemStack item = displayRecipes.get(ACCEPTED_ITEMS.indexOf(key.getItem())).clone(); // Get item with ingredients
         ItemMeta displayMeta = item.getItemMeta();
 
-        List<String> lore = displayMeta.getLore();
+        List<String> lore = Utils.mutableLoreOf(displayMeta);
         lore.add("");
         lore.add(Utils.color("&eSneak and Right Click the factory with a"));
         lore.add(Utils.color("&ecompatible resource to change the recipe"));
