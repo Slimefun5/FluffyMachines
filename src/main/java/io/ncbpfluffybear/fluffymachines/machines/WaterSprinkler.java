@@ -13,6 +13,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
@@ -49,7 +50,7 @@ public class WaterSprinkler extends AbstractGrowthAccelerator {
     public WaterSprinkler(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
 
-        createPreset(this, "&bWater Sprinkler",
+        createPreset(this, "&bWater Sprinkler", ChatColor.AQUA,
             blockMenuPreset -> {
                 for (int i = 0; i < 9; i++)
                     blockMenuPreset.addItem(i, ChestMenuUtils.getBackground(), ChestMenuUtils.getEmptyClickHandler());

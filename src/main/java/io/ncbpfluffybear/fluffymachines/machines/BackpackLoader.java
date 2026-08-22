@@ -20,6 +20,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
@@ -57,6 +58,7 @@ public class BackpackLoader extends SlimefunItem implements EnergyNetComponent {
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.YELLOW);
                 buildBorder(this, PLAIN_BORDER, INPUT_BORDER, OUTPUT_BORDER);
 
                 for (int i : BACKPACK_BORDER) {

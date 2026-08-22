@@ -22,6 +22,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.ncbpfluffybear.fluffymachines.multiblocks.Foundry;
 import org.apache.commons.lang.WordUtils;
+import org.bukkit.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -88,6 +89,7 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.RED);
                 constructMenu(this);
             }
 

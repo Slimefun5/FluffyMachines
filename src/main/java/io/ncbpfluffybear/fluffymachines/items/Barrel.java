@@ -97,6 +97,7 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 constructMenu(this);
             }
 

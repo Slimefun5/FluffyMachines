@@ -34,6 +34,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
@@ -74,6 +75,7 @@ public class AutoAncientAltar extends SlimefunItem implements EnergyNetComponent
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.DARK_PURPLE);
                 constructMenu(this);
             }
 

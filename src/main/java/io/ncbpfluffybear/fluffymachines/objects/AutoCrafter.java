@@ -68,6 +68,7 @@ public class AutoCrafter extends SlimefunItem implements EnergyNetComponent {
 
             @Override
             public void init() {
+                optOutOfHeaderItem();
                 constructMenu(this);
             }
 

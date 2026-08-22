@@ -19,6 +19,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -50,6 +51,7 @@ public class BackpackUnloader extends SlimefunItem implements EnergyNetComponent
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.YELLOW);
                 BackpackLoader.buildBorder(this, PLAIN_BORDER, INPUT_BORDER, OUTPUT_BORDER);
             }
 

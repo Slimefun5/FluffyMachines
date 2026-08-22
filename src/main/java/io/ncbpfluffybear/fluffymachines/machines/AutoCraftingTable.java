@@ -65,6 +65,7 @@ public class AutoCraftingTable extends SlimefunItem implements EnergyNetComponen
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.GOLD);
                 constructMenu(this);
             }
 

@@ -79,6 +79,7 @@ public class AdvancedAutoDisenchanter extends SlimefunItem implements EnergyNetC
 
             @Override
             public void init() {
+                optOutOfHeaderItem(ChatColor.RED);
                 constructMenu(this);
             }
 
