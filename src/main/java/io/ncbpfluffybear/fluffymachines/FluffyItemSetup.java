@@ -458,5 +458,22 @@ public final class FluffyItemSetup {
         }).register(plugin);
     }
 
+
+    /**
+     * Places this addon's items in the shared guide categories. One call per group is enough:
+     * the guide reads a group's category for every item in it (see ItemTypeClassifier), so items
+     * no longer fall back to Misc.
+     */
+    static {
+        generators.setCategory("energy_tech");
+        machines.setCategory("machines");
+        tools.setCategory("tools");
+        multiblocks.setCategory("machines");
+        fluffybarrels.setCategory("logistics");
+        portableChargers.setCategory("energy_tech");
+        wrenches.setCategory("tools");
+        cargo.setCategory("logistics");
+        misc.setCategory("misc");
+    }
 }
 
