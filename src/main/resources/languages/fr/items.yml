@@ -11,6 +11,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oMachine'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fPlacez une plaque d''ascenseur à chaque étage'
+  - '&fet vous pourrez vous téléporter entre eux.'
   name: '&3Plaque d''Ascenseur Alternative'
   type:
   - '&7&oMachine'
@@ -82,10 +85,14 @@ DOLLY:
   - '&7&oGadget'
 ELECTRIC_DUST_FABRICATOR:
   name: '&6Fabricateur Électrique de Poussière'
+  stats:
+  - '&8⇨ &b⚡ &7Vitesse : &b10.0x'
   type:
   - '&7&oMachine'
 ELECTRIC_DUST_RECYCLER:
   name: '&fRecycleur Électrique de Poussière'
+  stats:
+  - '&8⇨ &b⚡ &7Vitesse : &b1.0x'
   type:
   - '&7&oMachine'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -162,6 +169,8 @@ SMALL_PORTABLE_CHARGER:
   - '&7&oGadget'
 SMART_FACTORY:
   name: '&cUsine Intelligente'
+  stats:
+  - '&8⇨ &b⚡ &7Vitesse : &b1.0x'
   type:
   - '&7&oMachine'
 SUPERHEATED_FURNACE:

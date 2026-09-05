@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oМашина'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fРозмістіть ліфтову плиту на кожному поверсі'
+  - '&fі Ви зможете телепортуватись між ними.'
   type:
   - '&7&oМашина'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&oГаджет'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7Швидкість: &b10.0x'
   type:
   - '&7&oМашина'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7Швидкість: &b1.0x'
   type:
   - '&7&oМашина'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&oГаджет'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7Швидкість: &b1.0x'
   type:
   - '&7&oМашина'
 SUPERHEATED_FURNACE:

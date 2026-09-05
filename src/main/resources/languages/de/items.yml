@@ -11,6 +11,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oMaschine'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fPlatziere auf jeder Etage eine Aufzugsplatte,'
+  - '&fund du kannst zwischen ihnen teleportieren.'
   name: '&3Alternative Aufzugplatte'
   type:
   - '&7&oMaschine'
@@ -84,10 +87,14 @@ DOLLY:
   - '&7&oGadget'
 ELECTRIC_DUST_FABRICATOR:
   name: '&6Elektrischer Staub-Fabrikator'
+  stats:
+  - '&8⇨ &b⚡ &7Geschwindigkeit: &b10.0x'
   type:
   - '&7&oMaschine'
 ELECTRIC_DUST_RECYCLER:
   name: '&fElektrischer Staub-Recycler'
+  stats:
+  - '&8⇨ &b⚡ &7Geschwindigkeit: &b1.0x'
   type:
   - '&7&oMaschine'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -168,6 +175,8 @@ SMALL_PORTABLE_CHARGER:
   - '&7&oGadget'
 SMART_FACTORY:
   name: '&cIntelligente Fabrik'
+  stats:
+  - '&8⇨ &b⚡ &7Geschwindigkeit: &b1.0x'
   type:
   - '&7&oMaschine'
 SUPERHEATED_FURNACE:

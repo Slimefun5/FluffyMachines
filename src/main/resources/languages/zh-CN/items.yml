@@ -11,6 +11,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&o机器'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&f在每层楼放置一块电梯踏板,'
+  - '&f即可在它们之间传送。'
   name: '&3替代电梯踏板'
   type:
   - '&7&o机器'
@@ -82,10 +85,14 @@ DOLLY:
   - '&7&o装置'
 ELECTRIC_DUST_FABRICATOR:
   name: '&6电动粉尘制造机'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b10.0x'
   type:
   - '&7&o机器'
 ELECTRIC_DUST_RECYCLER:
   name: '&f电动粉尘回收机'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b1.0x'
   type:
   - '&7&o机器'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -162,6 +169,8 @@ SMALL_PORTABLE_CHARGER:
   - '&7&o装置'
 SMART_FACTORY:
   name: '&c智能工厂'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b1.0x'
   type:
   - '&7&o机器'
 SUPERHEATED_FURNACE:

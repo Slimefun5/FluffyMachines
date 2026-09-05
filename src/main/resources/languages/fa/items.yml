@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oماشین'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fدر هر طبقه یک صفحه آسانسور بگذارید'
+  - '&fتا بتوانید میان آنها جابه‌جا شوید.'
   type:
   - '&7&oماشین'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&oابزارک'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7سرعت: &b10.0x'
   type:
   - '&7&oماشین'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7سرعت: &b1.0x'
   type:
   - '&7&oماشین'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&oابزارک'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7سرعت: &b1.0x'
   type:
   - '&7&oماشین'
 SUPERHEATED_FURNACE:

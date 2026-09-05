@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&o機器'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&f在每層樓放置一塊電梯踏板，'
+  - '&f即可在它們之間互相傳送。'
   type:
   - '&7&o機器'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&o裝置'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7速度：&b10.0x'
   type:
   - '&7&o機器'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7速度：&b1.0x'
   type:
   - '&7&o機器'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&o裝置'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7速度：&b1.0x'
   type:
   - '&7&o機器'
 SUPERHEATED_FURNACE:

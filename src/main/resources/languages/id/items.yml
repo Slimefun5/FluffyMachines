@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oMesin'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fLetakkan Lempeng Elevator di setiap lantai'
+  - '&fdan anda akan dapat teleportasi di antara lantai tersebut.'
   type:
   - '&7&oMesin'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&oGadget'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7Kecepatan: &b10.0x'
   type:
   - '&7&oMesin'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7Kecepatan: &b1.0x'
   type:
   - '&7&oMesin'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&oGadget'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7Kecepatan: &b1.0x'
   type:
   - '&7&oMesin'
 SUPERHEATED_FURNACE:

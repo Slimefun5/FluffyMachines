@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oයන්ත්‍රය'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fසෑම තලයකම විදුලි සෝපාන තැටියක් තබා'
+  - '&fඒවා අතර ටෙලිපෝට් වීමට ඔබට හැකි වේ.'
   type:
   - '&7&oයන්ත්‍රය'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&oඋපාංගය'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7වේගය: &b10.0x'
   type:
   - '&7&oයන්ත්‍රය'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7වේගය: &b1.0x'
   type:
   - '&7&oයන්ත්‍රය'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&oඋපාංගය'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7වේගය: &b1.0x'
   type:
   - '&7&oයන්ත්‍රය'
 SUPERHEATED_FURNACE:

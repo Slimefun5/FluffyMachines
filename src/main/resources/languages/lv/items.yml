@@ -8,6 +8,9 @@ ADVANCED_CHARGING_BENCH:
   type:
   - '&7&oMašīna'
 ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fNovieto lifta plāksni katrā stāvā'
+  - '&fun varēsi teleportēties starp tām.'
   type:
   - '&7&oMašīna'
 ANCIENT_BOOK:
@@ -62,9 +65,13 @@ DOLLY:
   type:
   - '&7&oIerīce'
 ELECTRIC_DUST_FABRICATOR:
+  stats:
+  - '&8⇨ &b⚡ &7Ātrums: &b10.0x'
   type:
   - '&7&oMašīna'
 ELECTRIC_DUST_RECYCLER:
+  stats:
+  - '&8⇨ &b⚡ &7Ātrums: &b1.0x'
   type:
   - '&7&oMašīna'
 ENDER_CHEST_EXTRACTION_NODE:
@@ -125,6 +132,8 @@ SMALL_PORTABLE_CHARGER:
   type:
   - '&7&oIerīce'
 SMART_FACTORY:
+  stats:
+  - '&8⇨ &b⚡ &7Ātrums: &b1.0x'
   type:
   - '&7&oMašīna'
 SUPERHEATED_FURNACE:
