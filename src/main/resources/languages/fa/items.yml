@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oقطعه'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oماشین'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oماشین'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oماشین'
+ANCIENT_BOOK:
+  type:
+  - '&7&oقطعه'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oماشین'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oماشین'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oماشین'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oماشین'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oماشین'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oماشین'
+BACKPACK_LOADER:
+  type:
+  - '&7&oماشین'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oماشین'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oابزارک'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oابزار'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oابزارک'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oابزار'
+CRANK_GENERATOR:
+  type:
+  - '&7&oژنراتور'
+DOLLY:
+  type:
+  - '&7&oابزارک'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oماشین'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oماشین'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oماشین'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oماشین'
+EXP_DISPENSER:
+  type:
+  - '&7&oچندبلوکی'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oجادویی'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oابزار'
+FOUNDRY:
+  type:
+  - '&7&oچندبلوکی'
+GENERATOR_CORE:
+  type:
+  - '&7&oقطعه'
+HELICOPTER_HAT:
+  type:
+  - '&7&oزره'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oابزارک'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oابزارک'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+PAXEL:
+  type:
+  - '&7&oابزار'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oابزار'
+SCYTHE:
+  type:
+  - '&7&oابزار'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oمتفرقه'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oابزارک'
+SMART_FACTORY:
+  type:
+  - '&7&oماشین'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oقطعه'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oابزار'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oابزار'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oابزار'
+WARP_PAD:
+  type:
+  - '&7&oماشین'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oابزار'
+WATERING_CAN:
+  type:
+  - '&7&oابزار'
+WATER_SPRINKLER:
+  type:
+  - '&7&oماشین'

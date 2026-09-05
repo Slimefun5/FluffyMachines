@@ -1,92 +1,198 @@
-# Russian item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
-
-MINI_FLUFFY_BARREL:
-  name: "&eМини Fluffy Бочка"
-SMALL_PORTABLE_CHARGER:
-  name: "&eМаленькое Портативное Зарядное Устройство"
-MEDIUM_PORTABLE_CHARGER:
-  name: "&6Среднее Портативное Зарядное Устройство"
-BIG_PORTABLE_CHARGER:
-  name: "&aБольшое Портативное Зарядное Устройство"
-LARGE_PORTABLE_CHARGER:
-  name: "&2Огромное Портативное Зарядное Устройство"
-CARBONADO_PORTABLE_CHARGER:
-  name: "&4Карбонадо Портативное Зарядное Устройство"
-ANCIENT_BOOK:
-  name: "&6Древняя Книга"
-HELICOPTER_HAT:
-  name: "&1Шляпа-Вертолёт"
-WATERING_CAN:
-  name: "&bЛейка"
-ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6Узел Извлечения из Эндер-Сундука"
-ENDER_CHEST_INSERTION_NODE:
-  name: "&bУзел Вставки в Эндер-Сундук"
-AUTO_CRAFTING_TABLE:
-  name: "&6Автоматический Верстак"
-AUTO_ANCIENT_ALTAR:
-  name: "&5Auto Древний Алтарь"
-AUTO_TABLE_SAW:
-  name: "&6Автоматическая Настольная Пила"
-WATER_SPRINKLER:
-  name: "&bВодяной Распылитель"
-GENERATOR_CORE:
-  name: "&7Ядро Генератора"
-CRANK_GENERATOR:
-  name: "&7Ручной Генератор"
-FOUNDRY:
-  name: "&cЛитейный Цех"
-BACKPACK_UNLOADER:
-  name: "&eРазгрузчик Рюкзаков"
-BACKPACK_LOADER:
-  name: "&eЗагрузчик Рюкзаков"
-UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&lУлучшенная Взрывная Кирка"
-UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&lУлучшенная Взрывная Лопата"
-FIREPROOF_RUNE:
-  name: "&7Древняя Руна &8&l[&c&lОгнеупорная&8&l]"
-SUPERHEATED_FURNACE:
-  name: "&cПерегретая Печь"
-AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto Улучшенный Верстак"
-AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto Магический Верстак"
-AUTO_ARMOR_FORGE:
-  name: "&7Auto Кузница Брони"
-ADVANCED_AUTO_DISENCHANTER:
-  name: "&cПродвинутый Авто-Разочарователь"
-SCYTHE:
-  name: "&eКоса"
-UPGRADED_LUMBER_AXE:
-  name: "&6&lУлучшенный Лесорубный Топор"
-DOLLY:
-  name: "&bТележка"
-WARP_PAD:
-  name: "&6Телепорт-Платформа"
-WARP_PAD_CONFIGURATOR:
-  name: "&6Конфигуратор Телепорт-Платформы"
-ELECTRIC_DUST_FABRICATOR:
-  name: "&6Электрический Фабрикатор Пыли"
-ELECTRIC_DUST_RECYCLER:
-  name: "&fЭлектрический Переработчик Пыли"
-ALTERNATE_ELEVATOR_PLATE:
-  name: "&3Альтернативная Плита Лифта"
-FLUFFY_WRENCH:
-  name: "&6Fluffy Гаечный ключ"
-REINFORCED_FLUFFY_WRENCH:
-  name: "&bУсиленный Fluffy Гаечный ключ"
-CARBONADO_FLUFFY_WRENCH:
-  name: "&7Карбонадо Fluffy Гаечный ключ"
-PAXEL:
-  name: "&bПаксель"
-ADVANCED_CHARGING_BENCH:
-  name: "&cПродвинутая Зарядная Станция"
 ACB_UPGRADE_CARD:
-  name: "&6Карта Улучшения ACB"
+  name: '&6Карта Улучшения ACB'
+  type:
+  - '&7&oКомпонент'
+ADVANCED_AUTO_DISENCHANTER:
+  name: '&cПродвинутый Авто-Разочарователь'
+  type:
+  - '&7&oМашина'
+ADVANCED_CHARGING_BENCH:
+  name: '&cПродвинутая Зарядная Станция'
+  type:
+  - '&7&oМашина'
+ALTERNATE_ELEVATOR_PLATE:
+  name: '&3Альтернативная Плита Лифта'
+  type:
+  - '&7&oМашина'
+ANCIENT_BOOK:
+  name: '&6Древняя Книга'
+  type:
+  - '&7&oКомпонент'
+AUTO_ANCIENT_ALTAR:
+  name: '&5Auto Древний Алтарь'
+  type:
+  - '&7&oМашина'
+AUTO_ARMOR_FORGE:
+  name: '&7Auto Кузница Брони'
+  type:
+  - '&7&oМашина'
+AUTO_CRAFTING_TABLE:
+  name: '&6Автоматический Верстак'
+  type:
+  - '&7&oМашина'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: '&eAuto Улучшенный Верстак'
+  type:
+  - '&7&oМашина'
+AUTO_MAGIC_WORKBENCH:
+  name: '&6Auto Магический Верстак'
+  type:
+  - '&7&oМашина'
+AUTO_TABLE_SAW:
+  name: '&6Автоматическая Настольная Пила'
+  type:
+  - '&7&oМашина'
+BACKPACK_LOADER:
+  name: '&eЗагрузчик Рюкзаков'
+  type:
+  - '&7&oМашина'
+BACKPACK_UNLOADER:
+  name: '&eРазгрузчик Рюкзаков'
+  type:
+  - '&7&oМашина'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+BIG_PORTABLE_CHARGER:
+  name: '&aБольшое Портативное Зарядное Устройство'
+  type:
+  - '&7&oГаджет'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+CARBONADO_FLUFFY_WRENCH:
+  name: '&7Карбонадо Fluffy Гаечный ключ'
+  type:
+  - '&7&oИнструмент'
+CARBONADO_PORTABLE_CHARGER:
+  name: '&4Карбонадо Портативное Зарядное Устройство'
+  type:
+  - '&7&oГаджет'
 CARGO_MANIPULATOR:
-  name: "&9Cargo Манипулятор"
+  name: '&9Cargo Манипулятор'
+  type:
+  - '&7&oИнструмент'
+CRANK_GENERATOR:
+  name: '&7Ручной Генератор'
+  type:
+  - '&7&oГенератор'
+DOLLY:
+  name: '&bТележка'
+  type:
+  - '&7&oГаджет'
+ELECTRIC_DUST_FABRICATOR:
+  name: '&6Электрический Фабрикатор Пыли'
+  type:
+  - '&7&oМашина'
+ELECTRIC_DUST_RECYCLER:
+  name: '&fЭлектрический Переработчик Пыли'
+  type:
+  - '&7&oМашина'
+ENDER_CHEST_EXTRACTION_NODE:
+  name: '&6Узел Извлечения из Эндер-Сундука'
+  type:
+  - '&7&oМашина'
+ENDER_CHEST_INSERTION_NODE:
+  name: '&bУзел Вставки в Эндер-Сундук'
+  type:
+  - '&7&oМашина'
 EXP_DISPENSER:
-  name: "&aРаздатчик Опыта"
+  name: '&aРаздатчик Опыта'
+  type:
+  - '&7&oМультиблок'
+FIREPROOF_RUNE:
+  name: '&7Древняя Руна &8&l[&c&lОгнеупорная&8&l]'
+  type:
+  - '&7&oМагия'
+FLUFFY_WRENCH:
+  name: '&6Fluffy Гаечный ключ'
+  type:
+  - '&7&oИнструмент'
+FOUNDRY:
+  name: '&cЛитейный Цех'
+  type:
+  - '&7&oМультиблок'
+GENERATOR_CORE:
+  name: '&7Ядро Генератора'
+  type:
+  - '&7&oКомпонент'
+HELICOPTER_HAT:
+  name: '&1Шляпа-Вертолёт'
+  type:
+  - '&7&oБроня'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+LARGE_PORTABLE_CHARGER:
+  name: '&2Огромное Портативное Зарядное Устройство'
+  type:
+  - '&7&oГаджет'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+MEDIUM_PORTABLE_CHARGER:
+  name: '&6Среднее Портативное Зарядное Устройство'
+  type:
+  - '&7&oГаджет'
+MINI_FLUFFY_BARREL:
+  name: '&eМини Fluffy Бочка'
+  type:
+  - '&7&oРазное'
+PAXEL:
+  name: '&bПаксель'
+  type:
+  - '&7&oИнструмент'
+REINFORCED_FLUFFY_WRENCH:
+  name: '&bУсиленный Fluffy Гаечный ключ'
+  type:
+  - '&7&oИнструмент'
+SCYTHE:
+  name: '&eКоса'
+  type:
+  - '&7&oИнструмент'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oРазное'
+SMALL_PORTABLE_CHARGER:
+  name: '&eМаленькое Портативное Зарядное Устройство'
+  type:
+  - '&7&oГаджет'
 SMART_FACTORY:
-  name: "&cУмная Фабрика"
+  name: '&cУмная Фабрика'
+  type:
+  - '&7&oМашина'
+SUPERHEATED_FURNACE:
+  name: '&cПерегретая Печь'
+  type:
+  - '&7&oКомпонент'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: '&e&lУлучшенная Взрывная Кирка'
+  type:
+  - '&7&oИнструмент'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: '&e&lУлучшенная Взрывная Лопата'
+  type:
+  - '&7&oИнструмент'
+UPGRADED_LUMBER_AXE:
+  name: '&6&lУлучшенный Лесорубный Топор'
+  type:
+  - '&7&oИнструмент'
+WARP_PAD:
+  name: '&6Телепорт-Платформа'
+  type:
+  - '&7&oМашина'
+WARP_PAD_CONFIGURATOR:
+  name: '&6Конфигуратор Телепорт-Платформы'
+  type:
+  - '&7&oИнструмент'
+WATERING_CAN:
+  name: '&bЛейка'
+  type:
+  - '&7&oИнструмент'
+WATER_SPRINKLER:
+  name: '&bВодяной Распылитель'
+  type:
+  - '&7&oМашина'

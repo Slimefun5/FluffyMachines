@@ -1,198 +1,153 @@
 ACB_UPGRADE_CARD:
-  name: '&6Carta de Aprimoramento ACB'
   type:
   - '&7&oComponente'
 ADVANCED_AUTO_DISENCHANTER:
-  name: '&cAuto-Desencantador Avançado'
   type:
   - '&7&oMáquina'
 ADVANCED_CHARGING_BENCH:
-  name: '&cBancada de Carregamento Avançada'
   type:
   - '&7&oMáquina'
 ALTERNATE_ELEVATOR_PLATE:
-  name: '&3Placa de Elevador Alternativa'
   type:
   - '&7&oMáquina'
 ANCIENT_BOOK:
-  name: '&6Livro Antigo'
   type:
   - '&7&oComponente'
 AUTO_ANCIENT_ALTAR:
-  name: '&5Auto Altar Antigo'
   type:
   - '&7&oMáquina'
 AUTO_ARMOR_FORGE:
-  name: '&7Auto Forja de Armaduras'
   type:
   - '&7&oMáquina'
 AUTO_CRAFTING_TABLE:
-  name: '&6Mesa de Trabalho Automática'
   type:
   - '&7&oMáquina'
 AUTO_ENHANCED_CRAFTING_TABLE:
-  name: '&eAuto Mesa de Trabalho Aprimorada'
   type:
   - '&7&oMáquina'
 AUTO_MAGIC_WORKBENCH:
-  name: '&6Auto Bancada Mágica'
   type:
   - '&7&oMáquina'
 AUTO_TABLE_SAW:
-  name: '&6Serra de Mesa Automática'
   type:
   - '&7&oMáquina'
 BACKPACK_LOADER:
-  name: '&eCarregador de Mochilas'
   type:
   - '&7&oMáquina'
 BACKPACK_UNLOADER:
-  name: '&eDescarregador de Mochilas'
   type:
   - '&7&oMáquina'
 BIG_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 BIG_PORTABLE_CHARGER:
-  name: '&aGrande Carregador Portátil'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 BOTTOMLESS_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 CARBONADO_FLUFFY_WRENCH:
-  name: '&7Chave Fluffy Carbonado'
   type:
   - '&7&oFerramenta'
 CARBONADO_PORTABLE_CHARGER:
-  name: '&4Carregador Portátil Carbonado'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 CARGO_MANIPULATOR:
-  name: '&9Manipulador de Cargo'
   type:
   - '&7&oFerramenta'
 CRANK_GENERATOR:
-  name: '&7Gerador de Manivela'
   type:
   - '&7&oGerador'
 DOLLY:
-  name: '&bCarrinho de Carga'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 ELECTRIC_DUST_FABRICATOR:
-  name: '&6Fabricador Elétrico de Pó'
   type:
   - '&7&oMáquina'
 ELECTRIC_DUST_RECYCLER:
-  name: '&fReciclador Elétrico de Pó'
   type:
   - '&7&oMáquina'
 ENDER_CHEST_EXTRACTION_NODE:
-  name: '&6Nó de Extração do Baú do End'
   type:
   - '&7&oMáquina'
 ENDER_CHEST_INSERTION_NODE:
-  name: '&bNó de Inserção do Baú do End'
   type:
   - '&7&oMáquina'
 EXP_DISPENSER:
-  name: '&aDispensador de Exp'
   type:
   - '&7&oMultibloco'
 FIREPROOF_RUNE:
-  name: '&7Runa Antiga &8&l[&c&lÀ Prova de Fogo&8&l]'
   type:
   - '&7&oMágico'
 FLUFFY_WRENCH:
-  name: '&6Chave Fluffy'
   type:
   - '&7&oFerramenta'
 FOUNDRY:
-  name: '&cFundição'
   type:
   - '&7&oMultibloco'
 GENERATOR_CORE:
-  name: '&7Núcleo de Gerador'
   type:
   - '&7&oComponente'
 HELICOPTER_HAT:
-  name: '&1Chapéu Helicóptero'
   type:
   - '&7&oArmadura'
 LARGE_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 LARGE_PORTABLE_CHARGER:
-  name: '&2Carregador Portátil Enorme'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 MASSIVE_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 MEDIUM_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 MEDIUM_PORTABLE_CHARGER:
-  name: '&6Carregador Portátil Médio'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 MINI_FLUFFY_BARREL:
-  name: '&eMini Barril Fluffy'
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 PAXEL:
-  name: '&bPaxel'
   type:
   - '&7&oFerramenta'
 REINFORCED_FLUFFY_WRENCH:
-  name: '&bChave Fluffy Reforçada'
   type:
   - '&7&oFerramenta'
 SCYTHE:
-  name: '&eFoice'
   type:
   - '&7&oFerramenta'
 SMALL_FLUFFY_BARREL:
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 SMALL_PORTABLE_CHARGER:
-  name: '&ePequeno Carregador Portátil'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 SMART_FACTORY:
-  name: '&cFábrica Inteligente'
   type:
   - '&7&oMáquina'
 SUPERHEATED_FURNACE:
-  name: '&cFornalha Superaquecida'
   type:
   - '&7&oComponente'
 UPGRADED_EXPLOSIVE_PICKAXE:
-  name: '&e&lPicareta Explosiva Aprimorada'
   type:
   - '&7&oFerramenta'
 UPGRADED_EXPLOSIVE_SHOVEL:
-  name: '&e&lPá Explosiva Aprimorada'
   type:
   - '&7&oFerramenta'
 UPGRADED_LUMBER_AXE:
-  name: '&6&lMachado de Lenhador Aprimorado'
   type:
   - '&7&oFerramenta'
 WARP_PAD:
-  name: '&6Plataforma de Teletransporte'
   type:
   - '&7&oMáquina'
 WARP_PAD_CONFIGURATOR:
-  name: '&6Configurador de Plataforma de Teletransporte'
   type:
   - '&7&oFerramenta'
 WATERING_CAN:
-  name: '&bRegador'
   type:
   - '&7&oFerramenta'
 WATER_SPRINKLER:
-  name: '&bAspersor de Água'
   type:
   - '&7&oMáquina'

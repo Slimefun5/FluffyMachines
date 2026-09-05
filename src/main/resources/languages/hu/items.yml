@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oAlkatrész'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oGép'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oGép'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oGép'
+ANCIENT_BOOK:
+  type:
+  - '&7&oAlkatrész'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oGép'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oGép'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oGép'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oGép'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oGép'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oGép'
+BACKPACK_LOADER:
+  type:
+  - '&7&oGép'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oGép'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oKütyü'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oEszköz'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oKütyü'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oEszköz'
+CRANK_GENERATOR:
+  type:
+  - '&7&oGenerátor'
+DOLLY:
+  type:
+  - '&7&oKütyü'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oGép'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oGép'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oGép'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oGép'
+EXP_DISPENSER:
+  type:
+  - '&7&oMultiblock'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oVarázslatos'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oEszköz'
+FOUNDRY:
+  type:
+  - '&7&oMultiblock'
+GENERATOR_CORE:
+  type:
+  - '&7&oAlkatrész'
+HELICOPTER_HAT:
+  type:
+  - '&7&oPáncél'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oKütyü'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oKütyü'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+PAXEL:
+  type:
+  - '&7&oEszköz'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oEszköz'
+SCYTHE:
+  type:
+  - '&7&oEszköz'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oEgyéb'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oKütyü'
+SMART_FACTORY:
+  type:
+  - '&7&oGép'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oAlkatrész'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oEszköz'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oEszköz'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oEszköz'
+WARP_PAD:
+  type:
+  - '&7&oGép'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oEszköz'
+WATERING_CAN:
+  type:
+  - '&7&oEszköz'
+WATER_SPRINKLER:
+  type:
+  - '&7&oGép'

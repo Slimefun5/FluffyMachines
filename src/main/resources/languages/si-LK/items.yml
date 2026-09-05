@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oසංරචකය'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oයන්ත්‍රය'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oයන්ත්‍රය'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oයන්ත්‍රය'
+ANCIENT_BOOK:
+  type:
+  - '&7&oසංරචකය'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oයන්ත්‍රය'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oයන්ත්‍රය'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oයන්ත්‍රය'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oයන්ත්‍රය'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oයන්ත්‍රය'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oයන්ත්‍රය'
+BACKPACK_LOADER:
+  type:
+  - '&7&oයන්ත්‍රය'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oයන්ත්‍රය'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oඋපාංගය'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oමෙවලම'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oඋපාංගය'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oමෙවලම'
+CRANK_GENERATOR:
+  type:
+  - '&7&oජනකය'
+DOLLY:
+  type:
+  - '&7&oඋපාංගය'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oයන්ත්‍රය'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oයන්ත්‍රය'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oයන්ත්‍රය'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oයන්ත්‍රය'
+EXP_DISPENSER:
+  type:
+  - '&7&oබහුකැටය'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oමායාකාරී'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oමෙවලම'
+FOUNDRY:
+  type:
+  - '&7&oබහුකැටය'
+GENERATOR_CORE:
+  type:
+  - '&7&oසංරචකය'
+HELICOPTER_HAT:
+  type:
+  - '&7&oසන්නාහය'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oඋපාංගය'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oඋපාංගය'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+PAXEL:
+  type:
+  - '&7&oමෙවලම'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oමෙවලම'
+SCYTHE:
+  type:
+  - '&7&oමෙවලම'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oවිවිධ'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oඋපාංගය'
+SMART_FACTORY:
+  type:
+  - '&7&oයන්ත්‍රය'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oසංරචකය'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oමෙවලම'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oමෙවලම'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oමෙවලම'
+WARP_PAD:
+  type:
+  - '&7&oයන්ත්‍රය'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oමෙවලම'
+WATERING_CAN:
+  type:
+  - '&7&oමෙවලම'
+WATER_SPRINKLER:
+  type:
+  - '&7&oයන්ත්‍රය'

@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oComponentă'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oMașină'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oMașină'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oMașină'
+ANCIENT_BOOK:
+  type:
+  - '&7&oComponentă'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oMașină'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oMașină'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oMașină'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oMașină'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oMașină'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oMașină'
+BACKPACK_LOADER:
+  type:
+  - '&7&oMașină'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oMașină'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oGadget'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oUnealtă'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oGadget'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oUnealtă'
+CRANK_GENERATOR:
+  type:
+  - '&7&oGenerator'
+DOLLY:
+  type:
+  - '&7&oGadget'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oMașină'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oMașină'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oMașină'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oMașină'
+EXP_DISPENSER:
+  type:
+  - '&7&oMultibloc'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oMagic'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oUnealtă'
+FOUNDRY:
+  type:
+  - '&7&oMultibloc'
+GENERATOR_CORE:
+  type:
+  - '&7&oComponentă'
+HELICOPTER_HAT:
+  type:
+  - '&7&oArmură'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oGadget'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oGadget'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+PAXEL:
+  type:
+  - '&7&oUnealtă'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oUnealtă'
+SCYTHE:
+  type:
+  - '&7&oUnealtă'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oDiverse'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oGadget'
+SMART_FACTORY:
+  type:
+  - '&7&oMașină'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oComponentă'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oUnealtă'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oUnealtă'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oUnealtă'
+WARP_PAD:
+  type:
+  - '&7&oMașină'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oUnealtă'
+WATERING_CAN:
+  type:
+  - '&7&oUnealtă'
+WATER_SPRINKLER:
+  type:
+  - '&7&oMașină'

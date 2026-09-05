@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oКампанент'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oМашына'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oМашына'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oМашына'
+ANCIENT_BOOK:
+  type:
+  - '&7&oКампанент'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oМашына'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oМашына'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oМашына'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oМашына'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oМашына'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oМашына'
+BACKPACK_LOADER:
+  type:
+  - '&7&oМашына'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oМашына'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oПрылада'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oІнструмент'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oПрылада'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oІнструмент'
+CRANK_GENERATOR:
+  type:
+  - '&7&oГенератар'
+DOLLY:
+  type:
+  - '&7&oПрылада'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oМашына'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oМашына'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oМашына'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oМашына'
+EXP_DISPENSER:
+  type:
+  - '&7&oМультыблок'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oМагічнае'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oІнструмент'
+FOUNDRY:
+  type:
+  - '&7&oМультыблок'
+GENERATOR_CORE:
+  type:
+  - '&7&oКампанент'
+HELICOPTER_HAT:
+  type:
+  - '&7&oБраня'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oПрылада'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oПрылада'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+PAXEL:
+  type:
+  - '&7&oІнструмент'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oІнструмент'
+SCYTHE:
+  type:
+  - '&7&oІнструмент'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oРознае'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oПрылада'
+SMART_FACTORY:
+  type:
+  - '&7&oМашына'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oКампанент'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oІнструмент'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oІнструмент'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oІнструмент'
+WARP_PAD:
+  type:
+  - '&7&oМашына'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oІнструмент'
+WATERING_CAN:
+  type:
+  - '&7&oІнструмент'
+WATER_SPRINKLER:
+  type:
+  - '&7&oМашына'

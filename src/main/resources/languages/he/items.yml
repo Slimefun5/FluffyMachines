@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oרכיב'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oמכונה'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oמכונה'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oמכונה'
+ANCIENT_BOOK:
+  type:
+  - '&7&oרכיב'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oמכונה'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oמכונה'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oמכונה'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oמכונה'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oמכונה'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oמכונה'
+BACKPACK_LOADER:
+  type:
+  - '&7&oמכונה'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oמכונה'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oגאדג׳ט'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oכלי'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oגאדג׳ט'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oכלי'
+CRANK_GENERATOR:
+  type:
+  - '&7&oגנרטור'
+DOLLY:
+  type:
+  - '&7&oגאדג׳ט'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oמכונה'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oמכונה'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oמכונה'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oמכונה'
+EXP_DISPENSER:
+  type:
+  - '&7&oרב בלוק'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oקסום'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oכלי'
+FOUNDRY:
+  type:
+  - '&7&oרב בלוק'
+GENERATOR_CORE:
+  type:
+  - '&7&oרכיב'
+HELICOPTER_HAT:
+  type:
+  - '&7&oשריון'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oגאדג׳ט'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oגאדג׳ט'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+PAXEL:
+  type:
+  - '&7&oכלי'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oכלי'
+SCYTHE:
+  type:
+  - '&7&oכלי'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oשונות'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oגאדג׳ט'
+SMART_FACTORY:
+  type:
+  - '&7&oמכונה'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oרכיב'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oכלי'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oכלי'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oכלי'
+WARP_PAD:
+  type:
+  - '&7&oמכונה'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oכלי'
+WATERING_CAN:
+  type:
+  - '&7&oכלי'
+WATER_SPRINKLER:
+  type:
+  - '&7&oמכונה'

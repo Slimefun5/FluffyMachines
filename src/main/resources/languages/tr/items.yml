@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oBileşen'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oMakine'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oMakine'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oMakine'
+ANCIENT_BOOK:
+  type:
+  - '&7&oBileşen'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oMakine'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oMakine'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oMakine'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oMakine'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oMakine'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oMakine'
+BACKPACK_LOADER:
+  type:
+  - '&7&oMakine'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oMakine'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oCihaz'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oAlet'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oCihaz'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oAlet'
+CRANK_GENERATOR:
+  type:
+  - '&7&oJeneratör'
+DOLLY:
+  type:
+  - '&7&oCihaz'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oMakine'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oMakine'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oMakine'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oMakine'
+EXP_DISPENSER:
+  type:
+  - '&7&oYapı'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oSihirli'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oAlet'
+FOUNDRY:
+  type:
+  - '&7&oYapı'
+GENERATOR_CORE:
+  type:
+  - '&7&oBileşen'
+HELICOPTER_HAT:
+  type:
+  - '&7&oZırh'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oCihaz'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oCihaz'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+PAXEL:
+  type:
+  - '&7&oAlet'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oAlet'
+SCYTHE:
+  type:
+  - '&7&oAlet'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oÇeşitli'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oCihaz'
+SMART_FACTORY:
+  type:
+  - '&7&oMakine'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oBileşen'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oAlet'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oAlet'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oAlet'
+WARP_PAD:
+  type:
+  - '&7&oMakine'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oAlet'
+WATERING_CAN:
+  type:
+  - '&7&oAlet'
+WATER_SPRINKLER:
+  type:
+  - '&7&oMakine'

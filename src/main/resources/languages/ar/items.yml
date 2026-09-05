@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oمكون'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oآلة'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oآلة'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oآلة'
+ANCIENT_BOOK:
+  type:
+  - '&7&oمكون'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oآلة'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oآلة'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oآلة'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oآلة'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oآلة'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oآلة'
+BACKPACK_LOADER:
+  type:
+  - '&7&oآلة'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oآلة'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oجهاز'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oأداة'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oجهاز'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oأداة'
+CRANK_GENERATOR:
+  type:
+  - '&7&oمولد'
+DOLLY:
+  type:
+  - '&7&oجهاز'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oآلة'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oآلة'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oآلة'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oآلة'
+EXP_DISPENSER:
+  type:
+  - '&7&oبنية مركبة'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oسحري'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oأداة'
+FOUNDRY:
+  type:
+  - '&7&oبنية مركبة'
+GENERATOR_CORE:
+  type:
+  - '&7&oمكون'
+HELICOPTER_HAT:
+  type:
+  - '&7&oدرع'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oجهاز'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oجهاز'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+PAXEL:
+  type:
+  - '&7&oأداة'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oأداة'
+SCYTHE:
+  type:
+  - '&7&oأداة'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oمتنوع'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oجهاز'
+SMART_FACTORY:
+  type:
+  - '&7&oآلة'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oمكون'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oأداة'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oأداة'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oأداة'
+WARP_PAD:
+  type:
+  - '&7&oآلة'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oأداة'
+WATERING_CAN:
+  type:
+  - '&7&oأداة'
+WATER_SPRINKLER:
+  type:
+  - '&7&oآلة'

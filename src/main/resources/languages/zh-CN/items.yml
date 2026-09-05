@@ -1,92 +1,198 @@
-# Simplified Chinese item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
-
-MINI_FLUFFY_BARREL:
-  name: "&e迷你 Fluffy 桶"
-SMALL_PORTABLE_CHARGER:
-  name: "&e小型便携充电器"
-MEDIUM_PORTABLE_CHARGER:
-  name: "&6中型便携充电器"
-BIG_PORTABLE_CHARGER:
-  name: "&a大型便携充电器"
-LARGE_PORTABLE_CHARGER:
-  name: "&2巨型便携充电器"
-CARBONADO_PORTABLE_CHARGER:
-  name: "&4黑金刚石便携充电器"
-ANCIENT_BOOK:
-  name: "&6远古之书"
-HELICOPTER_HAT:
-  name: "&1直升机帽"
-WATERING_CAN:
-  name: "&b洒水壶"
-ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6末影箱提取节点"
-ENDER_CHEST_INSERTION_NODE:
-  name: "&b末影箱插入节点"
-AUTO_CRAFTING_TABLE:
-  name: "&6自动工作台"
-AUTO_ANCIENT_ALTAR:
-  name: "&5Auto 远古祭坛"
-AUTO_TABLE_SAW:
-  name: "&6自动台锯"
-WATER_SPRINKLER:
-  name: "&b洒水器"
-GENERATOR_CORE:
-  name: "&7发电机核心"
-CRANK_GENERATOR:
-  name: "&7手摇发电机"
-FOUNDRY:
-  name: "&c铸造厂"
-BACKPACK_UNLOADER:
-  name: "&e背包卸载器"
-BACKPACK_LOADER:
-  name: "&e背包装载器"
-UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&l升级版爆炸镐"
-UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&l升级版爆炸锹"
-FIREPROOF_RUNE:
-  name: "&7远古符文 &8&l[&c&l防火&8&l]"
-SUPERHEATED_FURNACE:
-  name: "&c超热熔炉"
-AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto 强化工作台"
-AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto 魔法工作台"
-AUTO_ARMOR_FORGE:
-  name: "&7Auto 盔甲锻造台"
-ADVANCED_AUTO_DISENCHANTER:
-  name: "&c高级自动去魔机"
-SCYTHE:
-  name: "&e镰刀"
-UPGRADED_LUMBER_AXE:
-  name: "&6&l升级版伐木斧"
-DOLLY:
-  name: "&b手推车"
-WARP_PAD:
-  name: "&6传送踏板"
-WARP_PAD_CONFIGURATOR:
-  name: "&6传送踏板配置器"
-ELECTRIC_DUST_FABRICATOR:
-  name: "&6电动粉尘制造机"
-ELECTRIC_DUST_RECYCLER:
-  name: "&f电动粉尘回收机"
-ALTERNATE_ELEVATOR_PLATE:
-  name: "&3替代电梯踏板"
-FLUFFY_WRENCH:
-  name: "&6Fluffy 扳手"
-REINFORCED_FLUFFY_WRENCH:
-  name: "&b强化 Fluffy 扳手"
-CARBONADO_FLUFFY_WRENCH:
-  name: "&7黑金刚石 Fluffy 扳手"
-PAXEL:
-  name: "&b多用镐"
-ADVANCED_CHARGING_BENCH:
-  name: "&c高级充电台"
 ACB_UPGRADE_CARD:
-  name: "&6ACB 升级卡"
+  name: '&6ACB 升级卡'
+  type:
+  - '&7&o组件'
+ADVANCED_AUTO_DISENCHANTER:
+  name: '&c高级自动去魔机'
+  type:
+  - '&7&o机器'
+ADVANCED_CHARGING_BENCH:
+  name: '&c高级充电台'
+  type:
+  - '&7&o机器'
+ALTERNATE_ELEVATOR_PLATE:
+  name: '&3替代电梯踏板'
+  type:
+  - '&7&o机器'
+ANCIENT_BOOK:
+  name: '&6远古之书'
+  type:
+  - '&7&o组件'
+AUTO_ANCIENT_ALTAR:
+  name: '&5Auto 远古祭坛'
+  type:
+  - '&7&o机器'
+AUTO_ARMOR_FORGE:
+  name: '&7Auto 盔甲锻造台'
+  type:
+  - '&7&o机器'
+AUTO_CRAFTING_TABLE:
+  name: '&6自动工作台'
+  type:
+  - '&7&o机器'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: '&eAuto 强化工作台'
+  type:
+  - '&7&o机器'
+AUTO_MAGIC_WORKBENCH:
+  name: '&6Auto 魔法工作台'
+  type:
+  - '&7&o机器'
+AUTO_TABLE_SAW:
+  name: '&6自动台锯'
+  type:
+  - '&7&o机器'
+BACKPACK_LOADER:
+  name: '&e背包装载器'
+  type:
+  - '&7&o机器'
+BACKPACK_UNLOADER:
+  name: '&e背包卸载器'
+  type:
+  - '&7&o机器'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+BIG_PORTABLE_CHARGER:
+  name: '&a大型便携充电器'
+  type:
+  - '&7&o装置'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+CARBONADO_FLUFFY_WRENCH:
+  name: '&7黑金刚石 Fluffy 扳手'
+  type:
+  - '&7&o工具'
+CARBONADO_PORTABLE_CHARGER:
+  name: '&4黑金刚石便携充电器'
+  type:
+  - '&7&o装置'
 CARGO_MANIPULATOR:
-  name: "&9Cargo 操纵器"
+  name: '&9Cargo 操纵器'
+  type:
+  - '&7&o工具'
+CRANK_GENERATOR:
+  name: '&7手摇发电机'
+  type:
+  - '&7&o发电机'
+DOLLY:
+  name: '&b手推车'
+  type:
+  - '&7&o装置'
+ELECTRIC_DUST_FABRICATOR:
+  name: '&6电动粉尘制造机'
+  type:
+  - '&7&o机器'
+ELECTRIC_DUST_RECYCLER:
+  name: '&f电动粉尘回收机'
+  type:
+  - '&7&o机器'
+ENDER_CHEST_EXTRACTION_NODE:
+  name: '&6末影箱提取节点'
+  type:
+  - '&7&o机器'
+ENDER_CHEST_INSERTION_NODE:
+  name: '&b末影箱插入节点'
+  type:
+  - '&7&o机器'
 EXP_DISPENSER:
-  name: "&a经验发射器"
+  name: '&a经验发射器'
+  type:
+  - '&7&o多方块'
+FIREPROOF_RUNE:
+  name: '&7远古符文 &8&l[&c&l防火&8&l]'
+  type:
+  - '&7&o魔法'
+FLUFFY_WRENCH:
+  name: '&6Fluffy 扳手'
+  type:
+  - '&7&o工具'
+FOUNDRY:
+  name: '&c铸造厂'
+  type:
+  - '&7&o多方块'
+GENERATOR_CORE:
+  name: '&7发电机核心'
+  type:
+  - '&7&o组件'
+HELICOPTER_HAT:
+  name: '&1直升机帽'
+  type:
+  - '&7&o护甲'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+LARGE_PORTABLE_CHARGER:
+  name: '&2巨型便携充电器'
+  type:
+  - '&7&o装置'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+MEDIUM_PORTABLE_CHARGER:
+  name: '&6中型便携充电器'
+  type:
+  - '&7&o装置'
+MINI_FLUFFY_BARREL:
+  name: '&e迷你 Fluffy 桶'
+  type:
+  - '&7&o杂项'
+PAXEL:
+  name: '&b多用镐'
+  type:
+  - '&7&o工具'
+REINFORCED_FLUFFY_WRENCH:
+  name: '&b强化 Fluffy 扳手'
+  type:
+  - '&7&o工具'
+SCYTHE:
+  name: '&e镰刀'
+  type:
+  - '&7&o工具'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&o杂项'
+SMALL_PORTABLE_CHARGER:
+  name: '&e小型便携充电器'
+  type:
+  - '&7&o装置'
 SMART_FACTORY:
-  name: "&c智能工厂"
+  name: '&c智能工厂'
+  type:
+  - '&7&o机器'
+SUPERHEATED_FURNACE:
+  name: '&c超热熔炉'
+  type:
+  - '&7&o组件'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: '&e&l升级版爆炸镐'
+  type:
+  - '&7&o工具'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: '&e&l升级版爆炸锹'
+  type:
+  - '&7&o工具'
+UPGRADED_LUMBER_AXE:
+  name: '&6&l升级版伐木斧'
+  type:
+  - '&7&o工具'
+WARP_PAD:
+  name: '&6传送踏板'
+  type:
+  - '&7&o机器'
+WARP_PAD_CONFIGURATOR:
+  name: '&6传送踏板配置器'
+  type:
+  - '&7&o工具'
+WATERING_CAN:
+  name: '&b洒水壶'
+  type:
+  - '&7&o工具'
+WATER_SPRINKLER:
+  name: '&b洒水器'
+  type:
+  - '&7&o机器'

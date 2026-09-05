@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oКомпонента'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oМашина'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oМашина'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oМашина'
+ANCIENT_BOOK:
+  type:
+  - '&7&oКомпонента'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oМашина'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oМашина'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oМашина'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oМашина'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oМашина'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oМашина'
+BACKPACK_LOADER:
+  type:
+  - '&7&oМашина'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oМашина'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oСправа'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oАлат'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oСправа'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oАлат'
+CRANK_GENERATOR:
+  type:
+  - '&7&oГенератор'
+DOLLY:
+  type:
+  - '&7&oСправа'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oМашина'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oМашина'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oМашина'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oМашина'
+EXP_DISPENSER:
+  type:
+  - '&7&oМултиблок'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oМагично'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oАлат'
+FOUNDRY:
+  type:
+  - '&7&oМултиблок'
+GENERATOR_CORE:
+  type:
+  - '&7&oКомпонента'
+HELICOPTER_HAT:
+  type:
+  - '&7&oОклоп'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oСправа'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oСправа'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+PAXEL:
+  type:
+  - '&7&oАлат'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oАлат'
+SCYTHE:
+  type:
+  - '&7&oАлат'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oРазно'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oСправа'
+SMART_FACTORY:
+  type:
+  - '&7&oМашина'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oКомпонента'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oАлат'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oАлат'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oАлат'
+WARP_PAD:
+  type:
+  - '&7&oМашина'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oАлат'
+WATERING_CAN:
+  type:
+  - '&7&oАлат'
+WATER_SPRINKLER:
+  type:
+  - '&7&oМашина'

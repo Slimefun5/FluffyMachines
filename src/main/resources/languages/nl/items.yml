@@ -1,92 +1,198 @@
-# Dutch item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
-
-MINI_FLUFFY_BARREL:
-  name: "&eMini Fluffy Vat"
-SMALL_PORTABLE_CHARGER:
-  name: "&eKleine Draagbare Oplader"
-MEDIUM_PORTABLE_CHARGER:
-  name: "&6Middelgrote Draagbare Oplader"
-BIG_PORTABLE_CHARGER:
-  name: "&aGrote Draagbare Oplader"
-LARGE_PORTABLE_CHARGER:
-  name: "&2Enorme Draagbare Oplader"
-CARBONADO_PORTABLE_CHARGER:
-  name: "&4Carbonado Draagbare Oplader"
-ANCIENT_BOOK:
-  name: "&6Oud Boek"
-HELICOPTER_HAT:
-  name: "&1Helikopterhoed"
-WATERING_CAN:
-  name: "&bGieter"
-ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6Ender Kist Onttrekkingsknooppunt"
-ENDER_CHEST_INSERTION_NODE:
-  name: "&bEnder Kist Invoegknooppunt"
-AUTO_CRAFTING_TABLE:
-  name: "&6Automatische Werkbank"
-AUTO_ANCIENT_ALTAR:
-  name: "&5Auto Oud Altaar"
-AUTO_TABLE_SAW:
-  name: "&6Automatische Tafelzaag"
-WATER_SPRINKLER:
-  name: "&bWatersproeier"
-GENERATOR_CORE:
-  name: "&7Generatorkern"
-CRANK_GENERATOR:
-  name: "&7Slinger Generator"
-FOUNDRY:
-  name: "&cGieterij"
-BACKPACK_UNLOADER:
-  name: "&eRugzak Uitlader"
-BACKPACK_LOADER:
-  name: "&eRugzak Lader"
-UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&lVerbeterde Explosieve Houweel"
-UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&lVerbeterde Explosieve Schep"
-FIREPROOF_RUNE:
-  name: "&7Oude Rune &8&l[&c&lVuurbestendig&8&l]"
-SUPERHEATED_FURNACE:
-  name: "&cOververhitte Oven"
-AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto Verbeterde Werkbank"
-AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto Magische Werkbank"
-AUTO_ARMOR_FORGE:
-  name: "&7Auto Wapenrusting Smederij"
-ADVANCED_AUTO_DISENCHANTER:
-  name: "&cGeavanceerde Auto-Onttoveraar"
-SCYTHE:
-  name: "&eZeis"
-UPGRADED_LUMBER_AXE:
-  name: "&6&lVerbeterde Houthakkersbijl"
-DOLLY:
-  name: "&bSteekwagen"
-WARP_PAD:
-  name: "&6Teleportatieplaat"
-WARP_PAD_CONFIGURATOR:
-  name: "&6Teleportatieplaat Configurator"
-ELECTRIC_DUST_FABRICATOR:
-  name: "&6Elektrische Stof Fabrikant"
-ELECTRIC_DUST_RECYCLER:
-  name: "&fElektrische Stof Recycler"
-ALTERNATE_ELEVATOR_PLATE:
-  name: "&3Alternatieve Liftplaat"
-FLUFFY_WRENCH:
-  name: "&6Fluffy Sleutel"
-REINFORCED_FLUFFY_WRENCH:
-  name: "&bVersterkte Fluffy Sleutel"
-CARBONADO_FLUFFY_WRENCH:
-  name: "&7Carbonado Fluffy Sleutel"
-PAXEL:
-  name: "&bPaxel"
-ADVANCED_CHARGING_BENCH:
-  name: "&cGeavanceerde Oplaadbank"
 ACB_UPGRADE_CARD:
-  name: "&6ACB Upgradekaart"
+  name: '&6ACB Upgradekaart'
+  type:
+  - '&7&oOnderdeel'
+ADVANCED_AUTO_DISENCHANTER:
+  name: '&cGeavanceerde Auto-Onttoveraar'
+  type:
+  - '&7&oMachine'
+ADVANCED_CHARGING_BENCH:
+  name: '&cGeavanceerde Oplaadbank'
+  type:
+  - '&7&oMachine'
+ALTERNATE_ELEVATOR_PLATE:
+  name: '&3Alternatieve Liftplaat'
+  type:
+  - '&7&oMachine'
+ANCIENT_BOOK:
+  name: '&6Oud Boek'
+  type:
+  - '&7&oOnderdeel'
+AUTO_ANCIENT_ALTAR:
+  name: '&5Auto Oud Altaar'
+  type:
+  - '&7&oMachine'
+AUTO_ARMOR_FORGE:
+  name: '&7Auto Wapenrusting Smederij'
+  type:
+  - '&7&oMachine'
+AUTO_CRAFTING_TABLE:
+  name: '&6Automatische Werkbank'
+  type:
+  - '&7&oMachine'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: '&eAuto Verbeterde Werkbank'
+  type:
+  - '&7&oMachine'
+AUTO_MAGIC_WORKBENCH:
+  name: '&6Auto Magische Werkbank'
+  type:
+  - '&7&oMachine'
+AUTO_TABLE_SAW:
+  name: '&6Automatische Tafelzaag'
+  type:
+  - '&7&oMachine'
+BACKPACK_LOADER:
+  name: '&eRugzak Lader'
+  type:
+  - '&7&oMachine'
+BACKPACK_UNLOADER:
+  name: '&eRugzak Uitlader'
+  type:
+  - '&7&oMachine'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+BIG_PORTABLE_CHARGER:
+  name: '&aGrote Draagbare Oplader'
+  type:
+  - '&7&oGadget'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+CARBONADO_FLUFFY_WRENCH:
+  name: '&7Carbonado Fluffy Sleutel'
+  type:
+  - '&7&oGereedschap'
+CARBONADO_PORTABLE_CHARGER:
+  name: '&4Carbonado Draagbare Oplader'
+  type:
+  - '&7&oGadget'
 CARGO_MANIPULATOR:
-  name: "&9Cargo Manipulator"
+  name: '&9Cargo Manipulator'
+  type:
+  - '&7&oGereedschap'
+CRANK_GENERATOR:
+  name: '&7Slinger Generator'
+  type:
+  - '&7&oGenerator'
+DOLLY:
+  name: '&bSteekwagen'
+  type:
+  - '&7&oGadget'
+ELECTRIC_DUST_FABRICATOR:
+  name: '&6Elektrische Stof Fabrikant'
+  type:
+  - '&7&oMachine'
+ELECTRIC_DUST_RECYCLER:
+  name: '&fElektrische Stof Recycler'
+  type:
+  - '&7&oMachine'
+ENDER_CHEST_EXTRACTION_NODE:
+  name: '&6Ender Kist Onttrekkingsknooppunt'
+  type:
+  - '&7&oMachine'
+ENDER_CHEST_INSERTION_NODE:
+  name: '&bEnder Kist Invoegknooppunt'
+  type:
+  - '&7&oMachine'
 EXP_DISPENSER:
-  name: "&aExp Verdeler"
+  name: '&aExp Verdeler'
+  type:
+  - '&7&oMultiblok'
+FIREPROOF_RUNE:
+  name: '&7Oude Rune &8&l[&c&lVuurbestendig&8&l]'
+  type:
+  - '&7&oMagisch'
+FLUFFY_WRENCH:
+  name: '&6Fluffy Sleutel'
+  type:
+  - '&7&oGereedschap'
+FOUNDRY:
+  name: '&cGieterij'
+  type:
+  - '&7&oMultiblok'
+GENERATOR_CORE:
+  name: '&7Generatorkern'
+  type:
+  - '&7&oOnderdeel'
+HELICOPTER_HAT:
+  name: '&1Helikopterhoed'
+  type:
+  - '&7&oWapenrusting'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+LARGE_PORTABLE_CHARGER:
+  name: '&2Enorme Draagbare Oplader'
+  type:
+  - '&7&oGadget'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+MEDIUM_PORTABLE_CHARGER:
+  name: '&6Middelgrote Draagbare Oplader'
+  type:
+  - '&7&oGadget'
+MINI_FLUFFY_BARREL:
+  name: '&eMini Fluffy Vat'
+  type:
+  - '&7&oOverig'
+PAXEL:
+  name: '&bPaxel'
+  type:
+  - '&7&oGereedschap'
+REINFORCED_FLUFFY_WRENCH:
+  name: '&bVersterkte Fluffy Sleutel'
+  type:
+  - '&7&oGereedschap'
+SCYTHE:
+  name: '&eZeis'
+  type:
+  - '&7&oGereedschap'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oOverig'
+SMALL_PORTABLE_CHARGER:
+  name: '&eKleine Draagbare Oplader'
+  type:
+  - '&7&oGadget'
 SMART_FACTORY:
-  name: "&cSlimme Fabriek"
+  name: '&cSlimme Fabriek'
+  type:
+  - '&7&oMachine'
+SUPERHEATED_FURNACE:
+  name: '&cOververhitte Oven'
+  type:
+  - '&7&oOnderdeel'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: '&e&lVerbeterde Explosieve Houweel'
+  type:
+  - '&7&oGereedschap'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: '&e&lVerbeterde Explosieve Schep'
+  type:
+  - '&7&oGereedschap'
+UPGRADED_LUMBER_AXE:
+  name: '&6&lVerbeterde Houthakkersbijl'
+  type:
+  - '&7&oGereedschap'
+WARP_PAD:
+  name: '&6Teleportatieplaat'
+  type:
+  - '&7&oMachine'
+WARP_PAD_CONFIGURATOR:
+  name: '&6Teleportatieplaat Configurator'
+  type:
+  - '&7&oGereedschap'
+WATERING_CAN:
+  name: '&bGieter'
+  type:
+  - '&7&oGereedschap'
+WATER_SPRINKLER:
+  name: '&bWatersproeier'
+  type:
+  - '&7&oMachine'

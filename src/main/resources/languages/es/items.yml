@@ -1,92 +1,198 @@
-# Spanish item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
-
-MINI_FLUFFY_BARREL:
-  name: "&eMini Barril Fluffy"
-SMALL_PORTABLE_CHARGER:
-  name: "&eCargador Portátil Pequeño"
-MEDIUM_PORTABLE_CHARGER:
-  name: "&6Cargador Portátil Mediano"
-BIG_PORTABLE_CHARGER:
-  name: "&aCargador Portátil Grande"
-LARGE_PORTABLE_CHARGER:
-  name: "&2Cargador Portátil Enorme"
-CARBONADO_PORTABLE_CHARGER:
-  name: "&4Cargador Portátil de Carbonado"
-ANCIENT_BOOK:
-  name: "&6Libro Antiguo"
-HELICOPTER_HAT:
-  name: "&1Sombrero Helicóptero"
-WATERING_CAN:
-  name: "&bRegadera"
-ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6Nodo de Extracción de Cofre del End"
-ENDER_CHEST_INSERTION_NODE:
-  name: "&bNodo de Inserción de Cofre del End"
-AUTO_CRAFTING_TABLE:
-  name: "&6Mesa de Crafteo Automática"
-AUTO_ANCIENT_ALTAR:
-  name: "&5Auto Altar Antiguo"
-AUTO_TABLE_SAW:
-  name: "&6Sierra de Mesa Automática"
-WATER_SPRINKLER:
-  name: "&bAspersor de Agua"
-GENERATOR_CORE:
-  name: "&7Núcleo de Generador"
-CRANK_GENERATOR:
-  name: "&7Generador de Manivela"
-FOUNDRY:
-  name: "&cFundición"
-BACKPACK_UNLOADER:
-  name: "&eDescargador de Mochilas"
-BACKPACK_LOADER:
-  name: "&eCargador de Mochilas"
-UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&lPico Explosivo Mejorado"
-UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&lPala Explosiva Mejorada"
-FIREPROOF_RUNE:
-  name: "&7Runa Antigua &8&l[&c&lIgnífuga&8&l]"
-SUPERHEATED_FURNACE:
-  name: "&cHorno Sobrecalentado"
-AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto Mesa de Crafteo Mejorada"
-AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto Banco de Trabajo Mágico"
-AUTO_ARMOR_FORGE:
-  name: "&7Auto Forja de Armaduras"
-ADVANCED_AUTO_DISENCHANTER:
-  name: "&cAuto-Desencantador Avanzado"
-SCYTHE:
-  name: "&eGuadaña"
-UPGRADED_LUMBER_AXE:
-  name: "&6&lHacha de Leñador Mejorada"
-DOLLY:
-  name: "&bCarretilla"
-WARP_PAD:
-  name: "&6Plataforma de Teletransporte"
-WARP_PAD_CONFIGURATOR:
-  name: "&6Configurador de Plataforma de Teletransporte"
-ELECTRIC_DUST_FABRICATOR:
-  name: "&6Fabricador Eléctrico de Polvo"
-ELECTRIC_DUST_RECYCLER:
-  name: "&fReciclador Eléctrico de Polvo"
-ALTERNATE_ELEVATOR_PLATE:
-  name: "&3Placa de Ascensor Alternativa"
-FLUFFY_WRENCH:
-  name: "&6Llave Fluffy"
-REINFORCED_FLUFFY_WRENCH:
-  name: "&bLlave Fluffy Reforzada"
-CARBONADO_FLUFFY_WRENCH:
-  name: "&7Llave Fluffy de Carbonado"
-PAXEL:
-  name: "&bPaxel"
-ADVANCED_CHARGING_BENCH:
-  name: "&cBanco de Carga Avanzado"
 ACB_UPGRADE_CARD:
-  name: "&6Tarjeta de Mejora ACB"
+  name: '&6Tarjeta de Mejora ACB'
+  type:
+  - '&7&oComponente'
+ADVANCED_AUTO_DISENCHANTER:
+  name: '&cAuto-Desencantador Avanzado'
+  type:
+  - '&7&oMáquina'
+ADVANCED_CHARGING_BENCH:
+  name: '&cBanco de Carga Avanzado'
+  type:
+  - '&7&oMáquina'
+ALTERNATE_ELEVATOR_PLATE:
+  name: '&3Placa de Ascensor Alternativa'
+  type:
+  - '&7&oMáquina'
+ANCIENT_BOOK:
+  name: '&6Libro Antiguo'
+  type:
+  - '&7&oComponente'
+AUTO_ANCIENT_ALTAR:
+  name: '&5Auto Altar Antiguo'
+  type:
+  - '&7&oMáquina'
+AUTO_ARMOR_FORGE:
+  name: '&7Auto Forja de Armaduras'
+  type:
+  - '&7&oMáquina'
+AUTO_CRAFTING_TABLE:
+  name: '&6Mesa de Crafteo Automática'
+  type:
+  - '&7&oMáquina'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: '&eAuto Mesa de Crafteo Mejorada'
+  type:
+  - '&7&oMáquina'
+AUTO_MAGIC_WORKBENCH:
+  name: '&6Auto Banco de Trabajo Mágico'
+  type:
+  - '&7&oMáquina'
+AUTO_TABLE_SAW:
+  name: '&6Sierra de Mesa Automática'
+  type:
+  - '&7&oMáquina'
+BACKPACK_LOADER:
+  name: '&eCargador de Mochilas'
+  type:
+  - '&7&oMáquina'
+BACKPACK_UNLOADER:
+  name: '&eDescargador de Mochilas'
+  type:
+  - '&7&oMáquina'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+BIG_PORTABLE_CHARGER:
+  name: '&aCargador Portátil Grande'
+  type:
+  - '&7&oAparato'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+CARBONADO_FLUFFY_WRENCH:
+  name: '&7Llave Fluffy de Carbonado'
+  type:
+  - '&7&oHerramienta'
+CARBONADO_PORTABLE_CHARGER:
+  name: '&4Cargador Portátil de Carbonado'
+  type:
+  - '&7&oAparato'
 CARGO_MANIPULATOR:
-  name: "&9Manipulador de Cargo"
+  name: '&9Manipulador de Cargo'
+  type:
+  - '&7&oHerramienta'
+CRANK_GENERATOR:
+  name: '&7Generador de Manivela'
+  type:
+  - '&7&oGenerador'
+DOLLY:
+  name: '&bCarretilla'
+  type:
+  - '&7&oAparato'
+ELECTRIC_DUST_FABRICATOR:
+  name: '&6Fabricador Eléctrico de Polvo'
+  type:
+  - '&7&oMáquina'
+ELECTRIC_DUST_RECYCLER:
+  name: '&fReciclador Eléctrico de Polvo'
+  type:
+  - '&7&oMáquina'
+ENDER_CHEST_EXTRACTION_NODE:
+  name: '&6Nodo de Extracción de Cofre del End'
+  type:
+  - '&7&oMáquina'
+ENDER_CHEST_INSERTION_NODE:
+  name: '&bNodo de Inserción de Cofre del End'
+  type:
+  - '&7&oMáquina'
 EXP_DISPENSER:
-  name: "&aDispensador de Exp"
+  name: '&aDispensador de Exp'
+  type:
+  - '&7&oMultibloque'
+FIREPROOF_RUNE:
+  name: '&7Runa Antigua &8&l[&c&lIgnífuga&8&l]'
+  type:
+  - '&7&oMágico'
+FLUFFY_WRENCH:
+  name: '&6Llave Fluffy'
+  type:
+  - '&7&oHerramienta'
+FOUNDRY:
+  name: '&cFundición'
+  type:
+  - '&7&oMultibloque'
+GENERATOR_CORE:
+  name: '&7Núcleo de Generador'
+  type:
+  - '&7&oComponente'
+HELICOPTER_HAT:
+  name: '&1Sombrero Helicóptero'
+  type:
+  - '&7&oArmadura'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+LARGE_PORTABLE_CHARGER:
+  name: '&2Cargador Portátil Enorme'
+  type:
+  - '&7&oAparato'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+MEDIUM_PORTABLE_CHARGER:
+  name: '&6Cargador Portátil Mediano'
+  type:
+  - '&7&oAparato'
+MINI_FLUFFY_BARREL:
+  name: '&eMini Barril Fluffy'
+  type:
+  - '&7&oVarios'
+PAXEL:
+  name: '&bPaxel'
+  type:
+  - '&7&oHerramienta'
+REINFORCED_FLUFFY_WRENCH:
+  name: '&bLlave Fluffy Reforzada'
+  type:
+  - '&7&oHerramienta'
+SCYTHE:
+  name: '&eGuadaña'
+  type:
+  - '&7&oHerramienta'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oVarios'
+SMALL_PORTABLE_CHARGER:
+  name: '&eCargador Portátil Pequeño'
+  type:
+  - '&7&oAparato'
 SMART_FACTORY:
-  name: "&cFábrica Inteligente"
+  name: '&cFábrica Inteligente'
+  type:
+  - '&7&oMáquina'
+SUPERHEATED_FURNACE:
+  name: '&cHorno Sobrecalentado'
+  type:
+  - '&7&oComponente'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: '&e&lPico Explosivo Mejorado'
+  type:
+  - '&7&oHerramienta'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: '&e&lPala Explosiva Mejorada'
+  type:
+  - '&7&oHerramienta'
+UPGRADED_LUMBER_AXE:
+  name: '&6&lHacha de Leñador Mejorada'
+  type:
+  - '&7&oHerramienta'
+WARP_PAD:
+  name: '&6Plataforma de Teletransporte'
+  type:
+  - '&7&oMáquina'
+WARP_PAD_CONFIGURATOR:
+  name: '&6Configurador de Plataforma de Teletransporte'
+  type:
+  - '&7&oHerramienta'
+WATERING_CAN:
+  name: '&bRegadera'
+  type:
+  - '&7&oHerramienta'
+WATER_SPRINKLER:
+  name: '&bAspersor de Agua'
+  type:
+  - '&7&oMáquina'

@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oส่วนประกอบ'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oเครื่องจักร'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oเครื่องจักร'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oเครื่องจักร'
+ANCIENT_BOOK:
+  type:
+  - '&7&oส่วนประกอบ'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oเครื่องจักร'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oเครื่องจักร'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oเครื่องจักร'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oเครื่องจักร'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oเครื่องจักร'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oเครื่องจักร'
+BACKPACK_LOADER:
+  type:
+  - '&7&oเครื่องจักร'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oเครื่องจักร'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oอุปกรณ์'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oเครื่องมือ'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oอุปกรณ์'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oเครื่องมือ'
+CRANK_GENERATOR:
+  type:
+  - '&7&oเครื่องกำเนิดไฟฟ้า'
+DOLLY:
+  type:
+  - '&7&oอุปกรณ์'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oเครื่องจักร'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oเครื่องจักร'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oเครื่องจักร'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oเครื่องจักร'
+EXP_DISPENSER:
+  type:
+  - '&7&oMultiblock'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oเวทมนตร์'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oเครื่องมือ'
+FOUNDRY:
+  type:
+  - '&7&oMultiblock'
+GENERATOR_CORE:
+  type:
+  - '&7&oส่วนประกอบ'
+HELICOPTER_HAT:
+  type:
+  - '&7&oเกราะ'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oอุปกรณ์'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oอุปกรณ์'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+PAXEL:
+  type:
+  - '&7&oเครื่องมือ'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oเครื่องมือ'
+SCYTHE:
+  type:
+  - '&7&oเครื่องมือ'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oอุปกรณ์'
+SMART_FACTORY:
+  type:
+  - '&7&oเครื่องจักร'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oส่วนประกอบ'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oเครื่องมือ'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oเครื่องมือ'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oเครื่องมือ'
+WARP_PAD:
+  type:
+  - '&7&oเครื่องจักร'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oเครื่องมือ'
+WATERING_CAN:
+  type:
+  - '&7&oเครื่องมือ'
+WATER_SPRINKLER:
+  type:
+  - '&7&oเครื่องจักร'

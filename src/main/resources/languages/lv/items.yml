@@ -1,0 +1,153 @@
+ACB_UPGRADE_CARD:
+  type:
+  - '&7&oSastāvdaļa'
+ADVANCED_AUTO_DISENCHANTER:
+  type:
+  - '&7&oMašīna'
+ADVANCED_CHARGING_BENCH:
+  type:
+  - '&7&oMašīna'
+ALTERNATE_ELEVATOR_PLATE:
+  type:
+  - '&7&oMašīna'
+ANCIENT_BOOK:
+  type:
+  - '&7&oSastāvdaļa'
+AUTO_ANCIENT_ALTAR:
+  type:
+  - '&7&oMašīna'
+AUTO_ARMOR_FORGE:
+  type:
+  - '&7&oMašīna'
+AUTO_CRAFTING_TABLE:
+  type:
+  - '&7&oMašīna'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  type:
+  - '&7&oMašīna'
+AUTO_MAGIC_WORKBENCH:
+  type:
+  - '&7&oMašīna'
+AUTO_TABLE_SAW:
+  type:
+  - '&7&oMašīna'
+BACKPACK_LOADER:
+  type:
+  - '&7&oMašīna'
+BACKPACK_UNLOADER:
+  type:
+  - '&7&oMašīna'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+BIG_PORTABLE_CHARGER:
+  type:
+  - '&7&oIerīce'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+CARBONADO_FLUFFY_WRENCH:
+  type:
+  - '&7&oRīks'
+CARBONADO_PORTABLE_CHARGER:
+  type:
+  - '&7&oIerīce'
+CARGO_MANIPULATOR:
+  type:
+  - '&7&oRīks'
+CRANK_GENERATOR:
+  type:
+  - '&7&oĢenerators'
+DOLLY:
+  type:
+  - '&7&oIerīce'
+ELECTRIC_DUST_FABRICATOR:
+  type:
+  - '&7&oMašīna'
+ELECTRIC_DUST_RECYCLER:
+  type:
+  - '&7&oMašīna'
+ENDER_CHEST_EXTRACTION_NODE:
+  type:
+  - '&7&oMašīna'
+ENDER_CHEST_INSERTION_NODE:
+  type:
+  - '&7&oMašīna'
+EXP_DISPENSER:
+  type:
+  - '&7&oDaudzbloks'
+FIREPROOF_RUNE:
+  type:
+  - '&7&oMaģisks'
+FLUFFY_WRENCH:
+  type:
+  - '&7&oRīks'
+FOUNDRY:
+  type:
+  - '&7&oDaudzbloks'
+GENERATOR_CORE:
+  type:
+  - '&7&oSastāvdaļa'
+HELICOPTER_HAT:
+  type:
+  - '&7&oBruņas'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+LARGE_PORTABLE_CHARGER:
+  type:
+  - '&7&oIerīce'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+MEDIUM_PORTABLE_CHARGER:
+  type:
+  - '&7&oIerīce'
+MINI_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+PAXEL:
+  type:
+  - '&7&oRīks'
+REINFORCED_FLUFFY_WRENCH:
+  type:
+  - '&7&oRīks'
+SCYTHE:
+  type:
+  - '&7&oRīks'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oDažādi'
+SMALL_PORTABLE_CHARGER:
+  type:
+  - '&7&oIerīce'
+SMART_FACTORY:
+  type:
+  - '&7&oMašīna'
+SUPERHEATED_FURNACE:
+  type:
+  - '&7&oSastāvdaļa'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  type:
+  - '&7&oRīks'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  type:
+  - '&7&oRīks'
+UPGRADED_LUMBER_AXE:
+  type:
+  - '&7&oRīks'
+WARP_PAD:
+  type:
+  - '&7&oMašīna'
+WARP_PAD_CONFIGURATOR:
+  type:
+  - '&7&oRīks'
+WATERING_CAN:
+  type:
+  - '&7&oRīks'
+WATER_SPRINKLER:
+  type:
+  - '&7&oMašīna'

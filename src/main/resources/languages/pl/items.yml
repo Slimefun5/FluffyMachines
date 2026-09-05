@@ -1,92 +1,198 @@
-# Polish item translations for FluffyMachines. Keyed by Slimefun item id. name only; '&' colour codes preserved.
-
-MINI_FLUFFY_BARREL:
-  name: "&eMini Beczka Fluffy"
-SMALL_PORTABLE_CHARGER:
-  name: "&eMała Przenośna Ładowarka"
-MEDIUM_PORTABLE_CHARGER:
-  name: "&6Średnia Przenośna Ładowarka"
-BIG_PORTABLE_CHARGER:
-  name: "&aDuża Przenośna Ładowarka"
-LARGE_PORTABLE_CHARGER:
-  name: "&2Ogromna Przenośna Ładowarka"
-CARBONADO_PORTABLE_CHARGER:
-  name: "&4Carbonado Przenośna Ładowarka"
-ANCIENT_BOOK:
-  name: "&6Starożytna Księga"
-HELICOPTER_HAT:
-  name: "&1Czapka Helikopter"
-WATERING_CAN:
-  name: "&bKonewka"
-ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6Węzeł Pobierania ze Skrzyni Kresu"
-ENDER_CHEST_INSERTION_NODE:
-  name: "&bWęzeł Wkładania do Skrzyni Kresu"
-AUTO_CRAFTING_TABLE:
-  name: "&6Automatyczny Stół Rzemieślniczy"
-AUTO_ANCIENT_ALTAR:
-  name: "&5Auto Starożytny Ołtarz"
-AUTO_TABLE_SAW:
-  name: "&6Automatyczna Pilarka Stołowa"
-WATER_SPRINKLER:
-  name: "&bZraszacz"
-GENERATOR_CORE:
-  name: "&7Rdzeń Generatora"
-CRANK_GENERATOR:
-  name: "&7Generator Korbowy"
-FOUNDRY:
-  name: "&cOdlewnia"
-BACKPACK_UNLOADER:
-  name: "&eRozładowywacz Plecaków"
-BACKPACK_LOADER:
-  name: "&eŁadowacz Plecaków"
-UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&lUlepszony Wybuchowy Kilof"
-UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&lUlepszona Wybuchowa Łopata"
-FIREPROOF_RUNE:
-  name: "&7Starożytna Runa &8&l[&c&lOgnioodporna&8&l]"
-SUPERHEATED_FURNACE:
-  name: "&cPrzegrzany Piec"
-AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto Ulepszony Stół Rzemieślniczy"
-AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto Magiczny Warsztat"
-AUTO_ARMOR_FORGE:
-  name: "&7Auto Kuźnia Zbroi"
-ADVANCED_AUTO_DISENCHANTER:
-  name: "&cZaawansowany Auto-Odczarowywacz"
-SCYTHE:
-  name: "&eKosa"
-UPGRADED_LUMBER_AXE:
-  name: "&6&lUlepszony Topór Drwala"
-DOLLY:
-  name: "&bWózek"
-WARP_PAD:
-  name: "&6Płyta Teleportacji"
-WARP_PAD_CONFIGURATOR:
-  name: "&6Konfigurator Płyty Teleportacji"
-ELECTRIC_DUST_FABRICATOR:
-  name: "&6Elektryczny Wytwórca Pyłu"
-ELECTRIC_DUST_RECYCLER:
-  name: "&fElektryczny Recykler Pyłu"
-ALTERNATE_ELEVATOR_PLATE:
-  name: "&3Alternatywna Płyta Windy"
-FLUFFY_WRENCH:
-  name: "&6Klucz Fluffy"
-REINFORCED_FLUFFY_WRENCH:
-  name: "&bWzmocniony Klucz Fluffy"
-CARBONADO_FLUFFY_WRENCH:
-  name: "&7Carbonado Klucz Fluffy"
-PAXEL:
-  name: "&bPaxel"
-ADVANCED_CHARGING_BENCH:
-  name: "&cZaawansowany Stół Ładujący"
 ACB_UPGRADE_CARD:
-  name: "&6Karta Ulepszenia ACB"
+  name: '&6Karta Ulepszenia ACB'
+  type:
+  - '&7&oKomponent'
+ADVANCED_AUTO_DISENCHANTER:
+  name: '&cZaawansowany Auto-Odczarowywacz'
+  type:
+  - '&7&oMaszyna'
+ADVANCED_CHARGING_BENCH:
+  name: '&cZaawansowany Stół Ładujący'
+  type:
+  - '&7&oMaszyna'
+ALTERNATE_ELEVATOR_PLATE:
+  name: '&3Alternatywna Płyta Windy'
+  type:
+  - '&7&oMaszyna'
+ANCIENT_BOOK:
+  name: '&6Starożytna Księga'
+  type:
+  - '&7&oKomponent'
+AUTO_ANCIENT_ALTAR:
+  name: '&5Auto Starożytny Ołtarz'
+  type:
+  - '&7&oMaszyna'
+AUTO_ARMOR_FORGE:
+  name: '&7Auto Kuźnia Zbroi'
+  type:
+  - '&7&oMaszyna'
+AUTO_CRAFTING_TABLE:
+  name: '&6Automatyczny Stół Rzemieślniczy'
+  type:
+  - '&7&oMaszyna'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  name: '&eAuto Ulepszony Stół Rzemieślniczy'
+  type:
+  - '&7&oMaszyna'
+AUTO_MAGIC_WORKBENCH:
+  name: '&6Auto Magiczny Warsztat'
+  type:
+  - '&7&oMaszyna'
+AUTO_TABLE_SAW:
+  name: '&6Automatyczna Pilarka Stołowa'
+  type:
+  - '&7&oMaszyna'
+BACKPACK_LOADER:
+  name: '&eŁadowacz Plecaków'
+  type:
+  - '&7&oMaszyna'
+BACKPACK_UNLOADER:
+  name: '&eRozładowywacz Plecaków'
+  type:
+  - '&7&oMaszyna'
+BIG_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+BIG_PORTABLE_CHARGER:
+  name: '&aDuża Przenośna Ładowarka'
+  type:
+  - '&7&oGadżet'
+BOTTOMLESS_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+CARBONADO_FLUFFY_WRENCH:
+  name: '&7Carbonado Klucz Fluffy'
+  type:
+  - '&7&oNarzędzie'
+CARBONADO_PORTABLE_CHARGER:
+  name: '&4Carbonado Przenośna Ładowarka'
+  type:
+  - '&7&oGadżet'
 CARGO_MANIPULATOR:
-  name: "&9Manipulator Cargo"
+  name: '&9Manipulator Cargo'
+  type:
+  - '&7&oNarzędzie'
+CRANK_GENERATOR:
+  name: '&7Generator Korbowy'
+  type:
+  - '&7&oGenerator'
+DOLLY:
+  name: '&bWózek'
+  type:
+  - '&7&oGadżet'
+ELECTRIC_DUST_FABRICATOR:
+  name: '&6Elektryczny Wytwórca Pyłu'
+  type:
+  - '&7&oMaszyna'
+ELECTRIC_DUST_RECYCLER:
+  name: '&fElektryczny Recykler Pyłu'
+  type:
+  - '&7&oMaszyna'
+ENDER_CHEST_EXTRACTION_NODE:
+  name: '&6Węzeł Pobierania ze Skrzyni Kresu'
+  type:
+  - '&7&oMaszyna'
+ENDER_CHEST_INSERTION_NODE:
+  name: '&bWęzeł Wkładania do Skrzyni Kresu'
+  type:
+  - '&7&oMaszyna'
 EXP_DISPENSER:
-  name: "&aDozownik Doświadczenia"
+  name: '&aDozownik Doświadczenia'
+  type:
+  - '&7&oMultiblok'
+FIREPROOF_RUNE:
+  name: '&7Starożytna Runa &8&l[&c&lOgnioodporna&8&l]'
+  type:
+  - '&7&oMagiczny'
+FLUFFY_WRENCH:
+  name: '&6Klucz Fluffy'
+  type:
+  - '&7&oNarzędzie'
+FOUNDRY:
+  name: '&cOdlewnia'
+  type:
+  - '&7&oMultiblok'
+GENERATOR_CORE:
+  name: '&7Rdzeń Generatora'
+  type:
+  - '&7&oKomponent'
+HELICOPTER_HAT:
+  name: '&1Czapka Helikopter'
+  type:
+  - '&7&oZbroja'
+LARGE_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+LARGE_PORTABLE_CHARGER:
+  name: '&2Ogromna Przenośna Ładowarka'
+  type:
+  - '&7&oGadżet'
+MASSIVE_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+MEDIUM_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+MEDIUM_PORTABLE_CHARGER:
+  name: '&6Średnia Przenośna Ładowarka'
+  type:
+  - '&7&oGadżet'
+MINI_FLUFFY_BARREL:
+  name: '&eMini Beczka Fluffy'
+  type:
+  - '&7&oRóżne'
+PAXEL:
+  name: '&bPaxel'
+  type:
+  - '&7&oNarzędzie'
+REINFORCED_FLUFFY_WRENCH:
+  name: '&bWzmocniony Klucz Fluffy'
+  type:
+  - '&7&oNarzędzie'
+SCYTHE:
+  name: '&eKosa'
+  type:
+  - '&7&oNarzędzie'
+SMALL_FLUFFY_BARREL:
+  type:
+  - '&7&oRóżne'
+SMALL_PORTABLE_CHARGER:
+  name: '&eMała Przenośna Ładowarka'
+  type:
+  - '&7&oGadżet'
 SMART_FACTORY:
-  name: "&cInteligentna Fabryka"
+  name: '&cInteligentna Fabryka'
+  type:
+  - '&7&oMaszyna'
+SUPERHEATED_FURNACE:
+  name: '&cPrzegrzany Piec'
+  type:
+  - '&7&oKomponent'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  name: '&e&lUlepszony Wybuchowy Kilof'
+  type:
+  - '&7&oNarzędzie'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  name: '&e&lUlepszona Wybuchowa Łopata'
+  type:
+  - '&7&oNarzędzie'
+UPGRADED_LUMBER_AXE:
+  name: '&6&lUlepszony Topór Drwala'
+  type:
+  - '&7&oNarzędzie'
+WARP_PAD:
+  name: '&6Płyta Teleportacji'
+  type:
+  - '&7&oMaszyna'
+WARP_PAD_CONFIGURATOR:
+  name: '&6Konfigurator Płyty Teleportacji'
+  type:
+  - '&7&oNarzędzie'
+WATERING_CAN:
+  name: '&bKonewka'
+  type:
+  - '&7&oNarzędzie'
+WATER_SPRINKLER:
+  name: '&bZraszacz'
+  type:
+  - '&7&oMaszyna'
