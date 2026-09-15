@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Vylepší Pokročilý nabíjecí stůl a zvýší jeho kapacitu i rychlost nabíjení'
+  name: '&6Vylepšovací karta ACB'
+  stats:
+  - '&6Rychlost nabíjení &a+5J'
+  - '&6Kapacita &a+128J'
+  - '&6Spotřeba energie &c+10J'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&ePravý klik &7na &cPokročilý nabíjecí stůl'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Odstraní z předmětu jedno očarování'
+  - '&7K provozu potřebuje &6Starodávnou knihu&7.'
+  name: '&cPokročilý automatický odčarovávač'
   type:
   - '&7&oStroj'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Nabíjí předměty'
+  - '&7Dá se vylepšit pomocí &6Vylepšovací karty ACB'
+  name: '&cPokročilý nabíjecí stůl'
   type:
   - '&7&oStroj'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fUmísti výtahovou desku na každé patro'
   - '&fa budeš se mezi nimi moct teleportovat.'
+  name: '&3Alternativní výtahová deska'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePravým klikem na tento blok &7ho pojmenuješ'
+  - '&7Používá rozhraní truhly místo rozhraní knihy'
 ANCIENT_BOOK:
+  description:
+  - '&7Používá se v &cPokročilém automatickém odčarovávači'
+  - '&6&oObsahuje soustředěné množství energie'
+  name: '&6Starodávná kniha'
   type:
   - '&7&oKomponenta'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Automaticky vyrábí recepty &5Starodávného oltáře&7.'
+  name: '&5Automatický starodávný oltář'
   type:
   - '&7&oStroj'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Automaticky vyrábí recepty Kovárny brnění'
+  name: '&7Automatická kovárna brnění'
   type:
   - '&7&oStroj'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Automaticky vyrábí &fvanilla &7recepty'
+  name: '&6Automatický pracovní stůl'
   type:
   - '&7&oStroj'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Automaticky vyrábí recepty &eVylepšeného pracovního stolu&7.'
+  name: '&eAutomatický vylepšený pracovní stůl'
   type:
   - '&7&oStroj'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Automaticky vyrábí recepty &6Magického pracovního stolu&7.'
+  name: '&6Automatický magický pracovní stůl'
   type:
   - '&7&oStroj'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Automaticky vyrábí recepty &6Stolní pily&7.'
+  name: '&6Automatická stolní pila'
   type:
   - '&7&oStroj'
 BACKPACK_LOADER:
+  description:
+  - '&7Přesouvá předměty z inventáře do batohu'
+  name: '&eNakladač batohů'
   type:
   - '&7&oStroj'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Vyprazdňuje obsah batohů'
+  name: '&eVykladač batohů'
   type:
   - '&7&oStroj'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&bVelký nadýchaný sud'
+  stats:
+  - '&bKapacita: &e69120000 předmětů'
   type:
   - '&7&oRůzné'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Ruční nabíječka, která pojme spoustu energie'
+  name: '&aVelká přenosná nabíječka'
+  stats:
+  - '&eRychlost nabíjení: &764 J/s'
   type:
   - '&7&oPomůcka'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&cBezedný nadýchaný sud'
+  stats:
+  - '&bKapacita: &e1728000000 předmětů'
   type:
   - '&7&oRůzné'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Slouží k rychlému odstranění nákladních uzlů Slimefun'
+  - '&7a elektrických součástek'
+  name: '&7Nadýchaný klíč z Carbonada'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&eLevým&7/&epravým klikem &7na kompatibilní blok ho rozbiješ'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Ruční nabíječka, která pojme spoustu energie'
+  name: '&4Přenosná nabíječka z Carbonada'
+  stats:
+  - '&eRychlost nabíjení: &74096 J/s'
   type:
   - '&7&oPomůcka'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Kopíruje a vkládá nastavení mezi nákladními uzly'
+  name: '&9Manipulátor nákladu'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePravým klikem &7zkopíruješ nastavení nákladního uzlu'
+  - '&eLevým klikem &7vložíš nastavení nákladního uzlu'
+  - '&ePřikrčením a pravým klikem &7vymažeš nákladní uzel'
 CRANK_GENERATOR:
+  description:
+  - '&cToto je multiblokový stroj!'
+  name: '&7Klikový generátor'
   type:
   - '&7&oGenerátor'
+  usage:
+  - '&ePravým klikem &7na páku vyrobíš energii'
 DOLLY:
+  description:
+  - '&7Zvedne položenou truhlu i s obsahem, takže ji můžeš přenést a postavit jinde'
+  name: '&bRudl'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&7Pravým klikem na truhlu ji zvedneš'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Stroj vše v jednom, který drtí, rýžuje a promývá'
+  name: '&6Elektrický výrobník prachu'
   stats:
   - '&8⇨ &b⚡ &7Rychlost: &b10.0x'
   type:
   - '&7&oStroj'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Recykluje prach zpět na prosetou rudu'
+  name: '&fElektrický recyklátor prachu'
   stats:
   - '&8⇨ &b⚡ &7Rychlost: &b1.0x'
   type:
   - '&7&oStroj'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Umísti ho na stranu &5Ender truhly &7pro propojení'
+  - '&7Bude přesouvat předměty z protilehlé &5Ender truhly'
+  - '&7do &6kontejneru &7za ním'
+  name: '&6Extrakční uzel Ender truhly'
   type:
   - '&7&oStroj'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Umísti ho na stranu &5Ender truhly &7pro propojení'
+  - '&7Bude přesouvat předměty do protilehlé &5Ender truhly'
+  - '&7z &6kontejneru &7za ním'
+  name: '&bVkládací uzel Ender truhly'
   type:
   - '&7&oStroj'
 EXP_DISPENSER:
+  description:
+  - '&cToto je multiblokový stroj!'
+  name: '&aDávkovač zkušeností'
   type:
   - '&7&oMultiblok'
+  usage:
+  - '&7Pravým klikem získáš všechny zkušenosti'
+  - '&7z lahviček v dávkovači'
+  - '&7a v sudu, na který dávkovač míří'
 FIREPROOF_RUNE:
+  description:
+  - '&7Zabrání odhozenému předmětu shořet v ohni nebo lávě'
+  name: '&7Starodávná runa &8&l[&c&lOhnivzdorná&8&l]'
   type:
   - '&7&oMagické'
+  usage:
+  - '&eHoď tuto runu na odhozený předmět a'
+  - '&euděláš ho &cohnivzdorným'
 FLUFFY_WRENCH:
+  description:
+  - '&7Slouží k rychlému odstranění nákladních uzlů Slimefun'
+  - '&7a elektrických součástek'
+  name: '&6Nadýchaný klíč'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&eLevým&7/&epravým klikem &7na kompatibilní blok ho rozbiješ'
 FOUNDRY:
+  description:
+  - '&eTaví a ukládá prachy a ingoty'
+  - '&cToto je multiblokový stroj!'
+  name: '&cSlévárna'
+  stats:
+  - '&7Ukládá 138,240 prachu (40 dvojitých truhel)'
   type:
   - '&7&oMultiblok'
 GENERATOR_CORE:
+  description:
+  - '&7Multibloková součástka generátorů'
+  name: '&7Jádro generátoru'
   type:
   - '&7&oKomponenta'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Vrtulníková čepice'
   type:
   - '&7&oBrnění'
+  usage:
+  - '&ePřikrčením &7ji použiješ'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&aObrovský nadýchaný sud'
+  stats:
+  - '&bKapacita: &e138240000 předmětů'
   type:
   - '&7&oRůzné'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Ruční nabíječka, která pojme spoustu energie'
+  name: '&2Obrovská přenosná nabíječka'
+  stats:
+  - '&eRychlost nabíjení: &7512 J/s'
   type:
   - '&7&oPomůcka'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&5Masivní nadýchaný sud'
+  stats:
+  - '&bKapacita: &e276480000 předmětů'
   type:
   - '&7&oRůzné'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&6Střední nadýchaný sud'
+  stats:
+  - '&bKapacita: &e34560000 předmětů'
   type:
   - '&7&oRůzné'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Ruční nabíječka, která pojme spoustu energie'
+  name: '&6Střední přenosná nabíječka'
+  stats:
+  - '&eRychlost nabíjení: &732 J/s'
   type:
   - '&7&oPomůcka'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  - '&7Má měnitelnou kapacitu'
+  name: '&eMini nadýchaný sud'
+  stats:
+  - '&bMax. kapacita: &e172800 předmětů'
   type:
   - '&7&oRůzné'
 PAXEL:
+  description:
+  - '&7Krumpáč, sekera a lopata v jednom nástroji!'
+  name: '&bPaxel'
   type:
   - '&7&oNástroj'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Slouží k rychlému odstranění nákladních uzlů Slimefun'
+  - '&7a elektrických součástek'
+  name: '&bZesílený nadýchaný klíč'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&eLevým&7/&epravým klikem &7na kompatibilní blok ho rozbiješ'
 SCYTHE:
+  description:
+  - '&7Sklidí 5 plodin naráz'
+  name: '&eKosa'
   type:
   - '&7&oNástroj'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Ukládá velké množství jednoho předmětu'
+  name: '&eMalý nadýchaný sud'
+  stats:
+  - '&bKapacita: &e17280000 předmětů'
   type:
   - '&7&oRůzné'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Ruční nabíječka, která pojme spoustu energie'
+  name: '&eMalá přenosná nabíječka'
+  stats:
+  - '&eRychlost nabíjení: &78 J/s'
   type:
   - '&7&oPomůcka'
 SMART_FACTORY:
+  description:
+  - '&7Stroj vše v jednom, který vyrábí'
+  - '&7suroviny ze surových materiálů'
+  name: '&cChytrá továrna'
   stats:
   - '&8⇨ &b⚡ &7Rychlost: &b1.0x'
   type:
   - '&7&oStroj'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Multibloková součástka Slévárny'
+  - '&cMusí se použít ve Slévárně'
+  name: '&cSuper rozžhavená pec'
   type:
   - '&7&oKomponenta'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Rozbije všechny těžitelné bloky v okruhu 5x5'
+  name: '&e&lVylepšený výbušný krumpáč'
   type:
   - '&7&oNástroj'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Rozbije všechny kopatelné bloky v okruhu 5x5'
+  name: '&e&lVylepšená výbušná lopata'
   type:
   - '&7&oNástroj'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Pokácí celý strom naráz'
+  - '&7Dosah 2 bloky a funguje i na bloky po diagonále'
+  name: '&6&lVylepšená dřevorubecká sekera'
   type:
   - '&7&oNástroj'
 WARP_PAD:
+  description:
+  - '&7K propojení podložek použij Konfigurátor teleportačních podložek'
+  name: '&6Teleportační podložka'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePřikrči se &7na tomto bloku a teleportuješ se'
+  - '&7na propojenou cílovou podložku'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Propojí dvě teleportační podložky, abys mezi nimi mohl cestovat'
+  name: '&6Konfigurátor teleportačních podložek'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&ePřikrčení a pravý klik &7na podložku nastaví cíl'
+  - '&ePravý klik &7na podložku nastaví výchozí bod'
 WATERING_CAN:
+  description:
+  - '&fZalévá rostliny'
+  name: '&bKonev'
   type:
   - '&7&oNástroj'
+  usage:
+  - '&7> &ePravým klikem &7na vodu konev naplníš'
+  - '&7> &ePravým klikem &7na rostlinu zrychlíš její růst.'
+  - '&7> &ePravým klikem &7na hráče ho zpomalíš'
 WATER_SPRINKLER:
+  description:
+  - '&7Kropí a kropí'
+  name: '&bVodní rozprašovač'
   type:
   - '&7&oStroj'
