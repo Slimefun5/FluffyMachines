@@ -55,7 +55,7 @@ AUTO_ARMOR_FORGE:
   - '&7&oMašina'
 AUTO_CRAFTING_TABLE:
   description:
-  - '&7Automatiškai gamina &fvanilinius &7receptus'
+  - '&7Automatiškai gamina &fstandartinius &7receptus'
   name: '&6Automatinis gaminimo stalas'
   type:
   - '&7&oMašina'
