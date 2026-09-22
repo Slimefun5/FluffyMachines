@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Uppgraderar en avancerad laddningsbänk och ökar dess kapacitet och laddningshastighet'
+  name: '&6ACB-uppgraderingskort'
+  stats:
+  - '&6Laddningshastighet &a+5J'
+  - '&6Kapacitet &a+128J'
+  - '&6Energiförbrukning &c+10J'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eHögerklicka &7på en &cAvancerad laddningsbänk'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Tar bort en förtrollning från ett föremål'
+  - '&7Kräver en &6Uråldrig bok &7för att fungera'
+  name: '&cAvancerad autoförtrollningsborttagare'
   type:
   - '&7&oMaskin'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Laddar föremål'
+  - '&7Kan uppgraderas med ett &6ACB-uppgraderingskort'
+  name: '&cAvancerad laddningsbänk'
   type:
   - '&7&oMaskin'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fPlacera en Hissplatta på varje våning'
   - '&foch så kan du teleportera mellan dem.'
+  name: '&3Alternativ hissplatta'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eHögerklicka på detta block &7för att namnge det'
+  - '&7Använder ett kistgränssnitt i stället för ett boksgränssnitt'
 ANCIENT_BOOK:
+  description:
+  - '&7Används i den &cAvancerade autoförtrollningsborttagaren'
+  - '&6&oInnehåller koncentrerade mängder kraft'
+  name: '&6Uråldrig bok'
   type:
   - '&7&oKomponent'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Tillverkar automatiskt recept från &5Uråldrigt altare&7'
+  name: '&5Automatiskt uråldrigt altare'
   type:
   - '&7&oMaskin'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Tillverkar automatiskt recept från rustningssmedjan'
+  name: '&7Automatisk rustningssmedja'
   type:
   - '&7&oMaskin'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Tillverkar automatiskt recept från &fvanilla&7'
+  name: '&6Automatisk arbetsbänk'
   type:
   - '&7&oMaskin'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Tillverkar automatiskt recept från &eFörbättrad arbetsbänk&7'
+  name: '&eAutomatisk förbättrad arbetsbänk'
   type:
   - '&7&oMaskin'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Tillverkar automatiskt recept från &6Magisk arbetsbänk&7'
+  name: '&6Automatisk magisk arbetsbänk'
   type:
   - '&7&oMaskin'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Tillverkar automatiskt recept från &6Bordssåg&7'
+  name: '&6Automatisk bordssåg'
   type:
   - '&7&oMaskin'
 BACKPACK_LOADER:
+  description:
+  - '&7Flyttar föremål från inventariet till ryggsäcken'
+  name: '&eRyggsäckslastare'
   type:
   - '&7&oMaskin'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Tömmer innehållet i ryggsäckar'
+  name: '&eRyggsäcksurlastare'
   type:
   - '&7&oMaskin'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&bStor fluffig tunna'
+  stats:
+  - '&bKapacitet: &e69120000 föremål'
   type:
   - '&7&oDiverse'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7En handhållen laddare som rymmer mycket kraft'
+  name: '&aStor bärbar laddare'
+  stats:
+  - '&eLaddningshastighet: &764 J/s'
   type:
   - '&7&oPryl'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&cBottenlös fluffig tunna'
+  stats:
+  - '&bKapacitet: &e1728000000 föremål'
   type:
   - '&7&oDiverse'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Används för att snabbt ta bort Slimefuns lastnoder'
+  - '&7och elkomponenter'
+  name: '&7Carbonado fluffig skiftnyckel'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eVänster&7-/&ehögerklicka &7på ett kompatibelt block för att bryta det'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7En handhållen laddare som rymmer mycket kraft'
+  name: '&4Carbonado bärbar laddare'
+  stats:
+  - '&eLaddningshastighet: &74096 J/s'
   type:
   - '&7&oPryl'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Kopierar och klistrar in lastnodsinställningar mellan lastnoder'
+  name: '&9Lastmanipulator'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eHögerklicka &7för att kopiera lastnodsinställningar'
+  - '&eVänsterklicka &7för att klistra in lastnodsinställningar'
+  - '&eSmyg och högerklicka &7för att rensa en lastnod'
 CRANK_GENERATOR:
+  description:
+  - '&cDetta är en multiblockmaskin!'
+  name: '&7Vevgenerator'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eHögerklicka &7på spaken för att generera kraft'
 DOLLY:
+  description:
+  - '&7Plockar upp en placerad kista med allt innehåll så att du kan bära den och ställa den någon annanstans'
+  name: '&bSäckkärra'
   type:
   - '&7&oPryl'
+  usage:
+  - '&7Högerklicka på en kista för att plocka upp den'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7En allt-i-ett-maskin som maler, vaskar och tvättar'
+  name: '&6Elektrisk dammfabrikator'
   stats:
   - '&8⇨ &b⚡ &7Hastighet: &b10.0x'
   type:
   - '&7&oMaskin'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Återvinner damm tillbaka till siktad malm'
+  name: '&fElektrisk dammåtervinnare'
   stats:
   - '&8⇨ &b⚡ &7Hastighet: &b1.0x'
   type:
   - '&7&oMaskin'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Placera denna på sidan av en &5Enderkista &7för att binda'
+  - '&7Denna flyttar föremål från den riktade &5Enderkistan'
+  - '&7till &6behållaren &7bakom den'
+  name: '&6Uttagsnod för enderkista'
   type:
   - '&7&oMaskin'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Placera denna på sidan av en &5Enderkista &7för att binda'
+  - '&7Denna flyttar föremål till den riktade &5Enderkistan'
+  - '&7från &6behållaren &7bakom den'
+  name: '&bInsättningsnod för enderkista'
   type:
   - '&7&oMaskin'
 EXP_DISPENSER:
+  description:
+  - '&cDetta är en multiblockmaskin!'
+  name: '&aXP-dispenser'
   type:
   - '&7&oMultiblock'
+  usage:
+  - '&7Högerklicka för att få all XP'
+  - '&7från XP-flaskorna i dispensern'
+  - '&7och tunnan som dispensern är riktad mot'
 FIREPROOF_RUNE:
+  description:
+  - '&7Hindrar ett tappat föremål från att brinna upp i eld eller lava'
+  name: '&7Uråldrig runa &8&l[&c&lEldsäker&8&l]'
   type:
   - '&7&oMagiskt'
+  usage:
+  - '&eSläpp denna runa på ett tappat föremål för att'
+  - '&egöra det &celdsäkert'
 FLUFFY_WRENCH:
+  description:
+  - '&7Används för att snabbt ta bort Slimefuns lastnoder'
+  - '&7och elkomponenter'
+  name: '&6Fluffig skiftnyckel'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eVänster&7-/&ehögerklicka &7på ett kompatibelt block för att bryta det'
 FOUNDRY:
+  description:
+  - '&eSmälter och lagrar damm och tackor'
+  - '&cDetta är en multiblockmaskin!'
+  name: '&cGjuteri'
+  stats:
+  - '&7Lagrar 138,240 damm (40 dubbelkistor)'
   type:
   - '&7&oMultiblock'
 GENERATOR_CORE:
+  description:
+  - '&7Multiblockkomponent till generatorer'
+  name: '&7Generatorkärna'
   type:
   - '&7&oKomponent'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Helikopterhatt'
   type:
   - '&7&oRustning'
+  usage:
+  - '&eSmyg &7för att använda'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&aVäldig fluffig tunna'
+  stats:
+  - '&bKapacitet: &e138240000 föremål'
   type:
   - '&7&oDiverse'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7En handhållen laddare som rymmer mycket kraft'
+  name: '&2Väldig bärbar laddare'
+  stats:
+  - '&eLaddningshastighet: &7512 J/s'
   type:
   - '&7&oPryl'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&5Massiv fluffig tunna'
+  stats:
+  - '&bKapacitet: &e276480000 föremål'
   type:
   - '&7&oDiverse'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&6Medelstor fluffig tunna'
+  stats:
+  - '&bKapacitet: &e34560000 föremål'
   type:
   - '&7&oDiverse'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7En handhållen laddare som rymmer mycket kraft'
+  name: '&6Medelstor bärbar laddare'
+  stats:
+  - '&eLaddningshastighet: &732 J/s'
   type:
   - '&7&oPryl'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  - '&7Har en ändringsbar kapacitet'
+  name: '&eFluffig minitunna'
+  stats:
+  - '&bMax kapacitet: &e172800 föremål'
   type:
   - '&7&oDiverse'
 PAXEL:
+  description:
+  - '&7En hacka, yxa och spade i ett enda verktyg!'
+  name: '&bPaxel'
   type:
   - '&7&oVerktyg'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Används för att snabbt ta bort Slimefuns lastnoder'
+  - '&7och elkomponenter'
+  name: '&bFörstärkt fluffig skiftnyckel'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eVänster&7-/&ehögerklicka &7på ett kompatibelt block för att bryta det'
 SCYTHE:
+  description:
+  - '&7Skördar 5 grödor på en gång'
+  name: '&eLie'
   type:
   - '&7&oVerktyg'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Lagrar en stor mängd av ett föremål'
+  name: '&eLiten fluffig tunna'
+  stats:
+  - '&bKapacitet: &e17280000 föremål'
   type:
   - '&7&oDiverse'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7En handhållen laddare som rymmer mycket kraft'
+  name: '&eLiten bärbar laddare'
+  stats:
+  - '&eLaddningshastighet: &78 J/s'
   type:
   - '&7&oPryl'
 SMART_FACTORY:
+  description:
+  - '&7En allt-i-ett-maskin som tillverkar'
+  - '&7resurser av råmaterial'
+  name: '&cSmart fabrik'
   stats:
   - '&8⇨ &b⚡ &7Hastighet: &b1.0x'
   type:
   - '&7&oMaskin'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Multiblockkomponent till gjuteriet'
+  - '&cMåste användas i gjuteriet'
+  name: '&cSuperupphettad ugn'
   type:
   - '&7&oKomponent'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Bryter alla brytbara block i en 5x5-radie'
+  name: '&e&lUppgraderad explosiv hacka'
   type:
   - '&7&oVerktyg'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Bryter alla skyffelbara block i en 5x5-radie'
+  name: '&e&lUppgraderad explosiv spade'
   type:
   - '&7&oVerktyg'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Fäller ett helt träd på en gång'
+  - '&72 blocks räckvidd och fungerar även på diagonala block'
+  name: '&6&lUppgraderad timmeryxa'
   type:
   - '&7&oVerktyg'
 WARP_PAD:
+  description:
+  - '&7Använd en teleportplattskonfigurator för att länka teleportplattor'
+  name: '&6Teleportplatta'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eSmyg &7på detta block för att teleportera till'
+  - '&7den länkade målplattan'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Länkar samman två teleportplattor så att du kan teleportera mellan dem'
+  name: '&6Teleportplattskonfigurator'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&eSmyg och högerklicka &7på en teleportplatta för att ställa in målet'
+  - '&eHögerklicka &7på en teleportplatta för att ställa in startpunkten'
 WATERING_CAN:
+  description:
+  - '&fVattnar växter'
+  name: '&bVattenkanna'
   type:
   - '&7&oVerktyg'
+  usage:
+  - '&7> &eHögerklicka &7på vatten för att fylla din vattenkanna'
+  - '&7> &eHögerklicka &7på en växt för att snabba på tillväxten.'
+  - '&7> &eHögerklicka &7på en spelare för att sakta ner denne'
 WATER_SPRINKLER:
+  description:
+  - '&7Sprutt sprutt'
+  name: '&bVattenspridare'
   type:
   - '&7&oMaskin'
