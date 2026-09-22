@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Meningkatkan Meja Pengisian Daya Canggih, menambah kapasitas dan kecepatan isi dayanya'
+  name: '&6Kartu Peningkatan ACB'
+  stats:
+  - '&6Kecepatan Isi Daya &a+5J'
+  - '&6Kapasitas &a+128J'
+  - '&6Konsumsi Energi &c+10J'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kanan &7pada &cMeja Pengisian Daya Canggih'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Menghapus satu mantra dari sebuah item'
+  - '&7Memerlukan &6Buku Kuno &7untuk beroperasi'
+  name: '&cPelepas Mantra Otomatis Canggih'
   type:
   - '&7&oMesin'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Mengisi daya item'
+  - '&7Bisa ditingkatkan memakai &6Kartu Peningkatan ACB'
+  name: '&cMeja Pengisian Daya Canggih'
   type:
   - '&7&oMesin'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fLetakkan Lempeng Elevator di setiap lantai'
   - '&fdan anda akan dapat teleportasi di antara lantai tersebut.'
+  name: '&3Pelat Lift Alternatif'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan Blok ini &7untuk menamainya'
+  - '&7Memakai antarmuka Peti alih-alih antarmuka Buku'
 ANCIENT_BOOK:
+  description:
+  - '&7Digunakan pada &cPelepas Mantra Otomatis Canggih'
+  - '&6&oBerisi daya dalam jumlah terpusat'
+  name: '&6Buku Kuno'
   type:
   - '&7&oKomponen'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Otomatis membuat resep &5Altar Kuno&7'
+  name: '&5Altar Kuno Otomatis'
   type:
   - '&7&oMesin'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Otomatis membuat resep Tempa Zirah'
+  name: '&7Tempa Zirah Otomatis'
   type:
   - '&7&oMesin'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Otomatis membuat resep &fvanilla&7'
+  name: '&6Meja Kerajinan Otomatis'
   type:
   - '&7&oMesin'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Otomatis membuat resep &eMeja Kerajinan Tingkat Lanjut&7'
+  name: '&eMeja Kerajinan Tingkat Lanjut Otomatis'
   type:
   - '&7&oMesin'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Otomatis membuat resep &6Meja Kerja Sihir&7'
+  name: '&6Meja Kerja Sihir Otomatis'
   type:
   - '&7&oMesin'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Otomatis membuat resep &6Gergaji Meja&7'
+  name: '&6Gergaji Meja Otomatis'
   type:
   - '&7&oMesin'
 BACKPACK_LOADER:
+  description:
+  - '&7Memindahkan item dari inventaris ke ransel'
+  name: '&ePemuat Ransel'
   type:
   - '&7&oMesin'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Mengosongkan isi ransel'
+  name: '&ePembongkar Ransel'
   type:
   - '&7&oMesin'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&bTong Lembut Besar'
+  stats:
+  - '&bKapasitas: &e69120000 Item'
   type:
   - '&7&oLainnya'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Pengisi daya genggam yang menampung banyak daya'
+  name: '&aPengisi Daya Portabel Besar'
+  stats:
+  - '&eKecepatan Isi Daya: &764 J/s'
   type:
   - '&7&oGadget'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&cTong Lembut Tanpa Dasar'
+  stats:
+  - '&bKapasitas: &e1728000000 Item'
   type:
   - '&7&oLainnya'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Digunakan untuk melepas simpul kargo Slimefun dengan cepat'
+  - '&7dan komponen kelistrikan'
+  name: '&7Kunci Pas Lembut Carbonado'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kiri&7/&eKanan &7blok yang cocok untuk menghancurkannya'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Pengisi daya genggam yang menampung banyak daya'
+  name: '&4Pengisi Daya Portabel Carbonado'
+  stats:
+  - '&eKecepatan Isi Daya: &74096 J/s'
   type:
   - '&7&oGadget'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Menyalin dan menempelkan pengaturan simpul kargo antar simpul kargo'
+  name: '&9Pemanipulasi Kargo'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan &7untuk menyalin pengaturan simpul kargo'
+  - '&eKlik Kiri &7untuk menempelkan pengaturan simpul kargo'
+  - '&eMenyelinap dan Klik Kanan &7untuk membersihkan simpul kargo'
 CRANK_GENERATOR:
+  description:
+  - '&cIni adalah Mesin Multiblok!'
+  name: '&7Generator Engkol'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eKlik kanan &7tuas untuk menghasilkan daya'
 DOLLY:
+  description:
+  - '&7Mengangkat peti yang terpasang beserta isinya agar bisa Anda bawa dan letakkan di tempat lain'
+  name: '&bTroli'
   type:
   - '&7&oGadget'
+  usage:
+  - '&7Klik kanan peti untuk mengangkatnya'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Mesin serbaguna yang menggerus, mendulang, dan mencuci'
+  name: '&6Pembuat Serbuk Listrik'
   stats:
   - '&8⇨ &b⚡ &7Kecepatan: &b10.0x'
   type:
   - '&7&oMesin'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Mendaur ulang serbuk kembali menjadi bijih ayakan'
+  name: '&fPendaur Ulang Serbuk Listrik'
   stats:
   - '&8⇨ &b⚡ &7Kecepatan: &b1.0x'
   type:
   - '&7&oMesin'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Letakkan ini di sisi &5Peti Ender &7untuk mengikatnya'
+  - '&7Ini memindahkan item dari &5Peti Ender yang dihadapinya'
+  - '&7ke &6Wadah &7di belakangnya'
+  name: '&6Simpul Pengambil Peti Ender'
   type:
   - '&7&oMesin'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Letakkan ini di sisi &5Peti Ender &7untuk mengikatnya'
+  - '&7Ini memindahkan item ke &5Peti Ender yang dihadapinya'
+  - '&7dari &6Wadah &7di belakangnya'
+  name: '&bSimpul Pemasok Peti Ender'
   type:
   - '&7&oMesin'
 EXP_DISPENSER:
+  description:
+  - '&cIni adalah Mesin Multiblok!'
+  name: '&aPembagi Pengalaman'
   type:
   - '&7&oMultiblock'
+  usage:
+  - '&7Klik kanan untuk menerima semua pengalaman'
+  - '&7dari botol pengalaman di dalam dispenser'
+  - '&7dan tong yang dihadapi dispenser'
 FIREPROOF_RUNE:
+  description:
+  - '&7Mencegah item yang terjatuh terbakar di api atau lava'
+  name: '&7Rune Kuno &8&l[&c&lTahan Api&8&l]'
   type:
   - '&7&oSihir'
+  usage:
+  - '&eJatuhkan rune ini ke atas item yang terjatuh untuk'
+  - '&emembuatnya &ctahan api'
 FLUFFY_WRENCH:
+  description:
+  - '&7Digunakan untuk melepas simpul kargo Slimefun dengan cepat'
+  - '&7dan komponen kelistrikan'
+  name: '&6Kunci Pas Lembut'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kiri&7/&eKanan &7blok yang cocok untuk menghancurkannya'
 FOUNDRY:
+  description:
+  - '&eMelelehkan dan menyimpan serbuk dan batangan'
+  - '&cIni adalah Mesin Multiblok!'
+  name: '&cPengecoran'
+  stats:
+  - '&7Menyimpan 138,240 serbuk (40 Peti Ganda)'
   type:
   - '&7&oMultiblock'
 GENERATOR_CORE:
+  description:
+  - '&7Komponen multiblok dari generator'
+  name: '&7Inti Generator'
   type:
   - '&7&oKomponen'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Topi Helikopter'
   type:
   - '&7&oBaju Zirah'
+  usage:
+  - '&eMenyelinap &7untuk menggunakannya'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&aTong Lembut Sangat Besar'
+  stats:
+  - '&bKapasitas: &e138240000 Item'
   type:
   - '&7&oLainnya'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Pengisi daya genggam yang menampung banyak daya'
+  name: '&2Pengisi Daya Portabel Sangat Besar'
+  stats:
+  - '&eKecepatan Isi Daya: &7512 J/s'
   type:
   - '&7&oGadget'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&5Tong Lembut Raksasa'
+  stats:
+  - '&bKapasitas: &e276480000 Item'
   type:
   - '&7&oLainnya'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&6Tong Lembut Sedang'
+  stats:
+  - '&bKapasitas: &e34560000 Item'
   type:
   - '&7&oLainnya'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Pengisi daya genggam yang menampung banyak daya'
+  name: '&6Pengisi Daya Portabel Sedang'
+  stats:
+  - '&eKecepatan Isi Daya: &732 J/s'
   type:
   - '&7&oGadget'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  - '&7Kapasitasnya dapat diubah'
+  name: '&eTong Lembut Mini'
+  stats:
+  - '&bKapasitas Maks: &e172800 Item'
   type:
   - '&7&oLainnya'
 PAXEL:
+  description:
+  - '&7Beliung, kapak, dan sekop dalam satu alat!'
+  name: '&bPaxel'
   type:
   - '&7&oAlat'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Digunakan untuk melepas simpul kargo Slimefun dengan cepat'
+  - '&7dan komponen kelistrikan'
+  name: '&bKunci Pas Lembut Diperkuat'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kiri&7/&eKanan &7blok yang cocok untuk menghancurkannya'
 SCYTHE:
+  description:
+  - '&7Menghancurkan 5 tanaman panen sekaligus'
+  name: '&eSabit'
   type:
   - '&7&oAlat'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Menyimpan item dalam jumlah besar'
+  name: '&eTong Lembut Kecil'
+  stats:
+  - '&bKapasitas: &e17280000 Item'
   type:
   - '&7&oLainnya'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Pengisi daya genggam yang menampung banyak daya'
+  name: '&ePengisi Daya Portabel Kecil'
+  stats:
+  - '&eKecepatan Isi Daya: &78 J/s'
   type:
   - '&7&oGadget'
 SMART_FACTORY:
+  description:
+  - '&7Mesin serbaguna yang membuat'
+  - '&7sumber daya dari bahan mentah'
+  name: '&cPabrik Cerdas'
   stats:
   - '&8⇨ &b⚡ &7Kecepatan: &b1.0x'
   type:
   - '&7&oMesin'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Komponen multiblok dari Pengecoran'
+  - '&cHarus digunakan di dalam Pengecoran'
+  name: '&cTungku Super Panas'
   type:
   - '&7&oKomponen'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Menghancurkan semua blok yang bisa ditambang dalam radius 5x5'
+  name: '&e&lBeliung Peledak Ditingkatkan'
   type:
   - '&7&oAlat'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Menghancurkan semua blok yang bisa disekop dalam radius 5x5'
+  name: '&e&lSekop Peledak Ditingkatkan'
   type:
   - '&7&oAlat'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Menebang seluruh pohon sekaligus'
+  - '&7Jangkauan 2 blok dan bekerja pada blok diagonal juga'
+  name: '&6&lKapak Kayu Ditingkatkan'
   type:
   - '&7&oAlat'
 WARP_PAD:
+  description:
+  - '&7Gunakan Pengatur Landasan Lompat untuk menautkan Landasan Lompat'
+  name: '&6Landasan Lompat'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eJongkok &7di blok ini untuk berteleportasi ke'
+  - '&7landasan tujuan yang tertaut'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Menautkan dua Landasan Lompat agar Anda bisa berteleportasi di antaranya'
+  name: '&6Pengatur Landasan Lompat'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eMenyelinap dan Klik Kanan &7pada Landasan Lompat untuk menetapkan tujuan'
+  - '&eKlik Kanan &7pada Landasan Lompat untuk menetapkan asal'
 WATERING_CAN:
+  description:
+  - '&fMenyirami tanaman'
+  name: '&bPenyiram Tanaman'
   type:
   - '&7&oAlat'
+  usage:
+  - '&7> &eKlik Kanan &7air untuk mengisi penyiram tanaman Anda'
+  - '&7> &eKlik Kanan &7tanaman untuk mempercepat pertumbuhan.'
+  - '&7> &eKlik Kanan &7pemain untuk memperlambatnya'
 WATER_SPRINKLER:
+  description:
+  - '&7Cipratan cipratan'
+  name: '&bPemercik Air'
   type:
   - '&7&oMesin'
