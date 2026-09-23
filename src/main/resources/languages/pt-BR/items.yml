@@ -1,12 +1,26 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Melhora uma Bancada de Carregamento Avançada, aumentando sua capacidade e velocidade de carga'
   name: '&6Carta de Aprimoramento ACB'
+  stats:
+  - '&6Velocidade de Carga &a+5J'
+  - '&6Capacidade &a+128J'
+  - '&6Consumo de Energia &c+10J'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Direito &7em uma &cBancada de Carregamento Avançada'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Remove um encantamento de um item'
+  - '&7Precisa de um &6Livro Antigo &7para funcionar'
   name: '&cAuto-Desencantador Avançado'
   type:
   - '&7&oMáquina'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Carrega itens'
+  - '&7Pode ser melhorada com um &6Cartão de Melhoria ACB'
   name: '&cBancada de Carregamento Avançada'
   type:
   - '&7&oMáquina'
@@ -17,191 +31,366 @@ ALTERNATE_ELEVATOR_PLATE:
   name: '&3Placa de Elevador Alternativa'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito neste Bloco &7para nomeá-lo'
+  - '&7Usa uma interface de baú em vez de uma interface de livro'
 ANCIENT_BOOK:
+  description:
+  - '&7Usado no &cDesencantador Automático Avançado'
+  - '&6&oContém quantidades concentradas de energia'
   name: '&6Livro Antigo'
   type:
   - '&7&oComponente'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Fabrica automaticamente receitas do &5Altar Antigo&7'
   name: '&5Auto Altar Antigo'
   type:
   - '&7&oMáquina'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Fabrica automaticamente receitas da Forja de Armadura'
   name: '&7Auto Forja de Armaduras'
   type:
   - '&7&oMáquina'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Fabrica automaticamente receitas &fvanilla&7'
   name: '&6Mesa de Trabalho Automática'
   type:
   - '&7&oMáquina'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Fabrica automaticamente receitas da &eBancada de Trabalho Aprimorada&7'
   name: '&eAuto Mesa de Trabalho Aprimorada'
   type:
   - '&7&oMáquina'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Fabrica automaticamente receitas da &6Bancada Mágica&7'
   name: '&6Auto Bancada Mágica'
   type:
   - '&7&oMáquina'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Fabrica automaticamente receitas da &6Serra de Bancada&7'
   name: '&6Serra de Mesa Automática'
   type:
   - '&7&oMáquina'
 BACKPACK_LOADER:
+  description:
+  - '&7Move itens do inventário para a mochila'
   name: '&eCarregador de Mochilas'
   type:
   - '&7&oMáquina'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Esvazia o conteúdo das mochilas'
   name: '&eDescarregador de Mochilas'
   type:
   - '&7&oMáquina'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&bBarril Fofinho Grande'
+  stats:
+  - '&bCapacidade: &e69120000 Itens'
   type:
   - '&7&oDiversos'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Um carregador de mão que guarda muita energia'
   name: '&aGrande Carregador Portátil'
+  stats:
+  - '&eVelocidade de Carga: &764 J/s'
   type:
   - '&7&oUtensílio'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&cBarril Fofinho Sem Fundo'
+  stats:
+  - '&bCapacidade: &e1728000000 Itens'
   type:
   - '&7&oDiversos'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Usada para remover rapidamente nós de carga do Slimefun'
+  - '&7e componentes de eletricidade'
   name: '&7Chave Fluffy Carbonado'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Esquerdo&7/&eDireito &7em um bloco compatível para quebrá-lo'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Um carregador de mão que guarda muita energia'
   name: '&4Carregador Portátil Carbonado'
+  stats:
+  - '&eVelocidade de Carga: &74096 J/s'
   type:
   - '&7&oUtensílio'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Copia e cola as configurações entre nós de carga'
   name: '&9Manipulador de Cargo'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito &7para copiar as configurações do nó de carga'
+  - '&eClique Esquerdo &7para colar as configurações do nó de carga'
+  - '&eAgache e Clique Direito &7para limpar um nó de carga'
 CRANK_GENERATOR:
+  description:
+  - '&cEsta é uma máquina Multibloco!'
   name: '&7Gerador de Manivela'
   type:
   - '&7&oGerador'
+  usage:
+  - '&eClique direito &7na alavanca para gerar energia'
 DOLLY:
+  description:
+  - '&7Pega um baú colocado junto com o conteúdo para você carregar e colocar em outro lugar'
   name: '&bCarrinho de Carga'
   type:
   - '&7&oUtensílio'
+  usage:
+  - '&7Clique direito em um baú para pegá-lo'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Uma máquina tudo-em-um que mói, peneira e lava'
   name: '&6Fabricador Elétrico de Pó'
   stats:
   - '&8⇨ &b⚡ &7Velocidade: &b10.0x'
   type:
   - '&7&oMáquina'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Recicla pó de volta em minério peneirado'
   name: '&fReciclador Elétrico de Pó'
   stats:
   - '&8⇨ &b⚡ &7Velocidade: &b1.0x'
   type:
   - '&7&oMáquina'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Coloque isto na lateral de um &5Baú do Ender &7para vincular'
+  - '&7Isto vai mover itens do &5Baú do Ender à frente'
+  - '&7para o &6Recipiente &7atrás dele'
   name: '&6Nó de Extração do Baú do End'
   type:
   - '&7&oMáquina'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Coloque isto na lateral de um &5Baú do Ender &7para vincular'
+  - '&7Isto vai mover itens para o &5Baú do Ender à frente'
+  - '&7a partir do &6Recipiente &7atrás dele'
   name: '&bNó de Inserção do Baú do End'
   type:
   - '&7&oMáquina'
 EXP_DISPENSER:
+  description:
+  - '&cEsta é uma máquina Multibloco!'
   name: '&aDispensador de Exp'
   type:
   - '&7&oMultibloco'
+  usage:
+  - '&7Clique direito para receber todo o exp'
+  - '&7das garrafas de exp no dispensador'
+  - '&7e no barril para o qual o dispensador aponta'
 FIREPROOF_RUNE:
+  description:
+  - '&7Impede que um item no chão queime no fogo ou na lava'
   name: '&7Runa Antiga &8&l[&c&lÀ Prova de Fogo&8&l]'
   type:
   - '&7&oMágico'
+  usage:
+  - '&eJogue esta runa sobre um item no chão para'
+  - '&etorná-lo &cà prova de fogo'
 FLUFFY_WRENCH:
+  description:
+  - '&7Usada para remover rapidamente nós de carga do Slimefun'
+  - '&7e componentes de eletricidade'
   name: '&6Chave Fluffy'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Esquerdo&7/&eDireito &7em um bloco compatível para quebrá-lo'
 FOUNDRY:
+  description:
+  - '&eDerrete e armazena pós e lingotes'
+  - '&cEsta é uma máquina Multibloco!'
   name: '&cFundição'
+  stats:
+  - '&7Armazena 138,240 de pó (40 Baús Duplos)'
   type:
   - '&7&oMultibloco'
 GENERATOR_CORE:
+  description:
+  - '&7Componente multibloco de geradores'
   name: '&7Núcleo de Gerador'
   type:
   - '&7&oComponente'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
   name: '&1Chapéu Helicóptero'
   type:
   - '&7&oArmadura'
+  usage:
+  - '&eAgache &7para usar'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&aBarril Fofinho Enorme'
+  stats:
+  - '&bCapacidade: &e138240000 Itens'
   type:
   - '&7&oDiversos'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Um carregador de mão que guarda muita energia'
   name: '&2Carregador Portátil Enorme'
+  stats:
+  - '&eVelocidade de Carga: &7512 J/s'
   type:
   - '&7&oUtensílio'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&5Barril Fofinho Colossal'
+  stats:
+  - '&bCapacidade: &e276480000 Itens'
   type:
   - '&7&oDiversos'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&6Barril Fofinho Médio'
+  stats:
+  - '&bCapacidade: &e34560000 Itens'
   type:
   - '&7&oDiversos'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Um carregador de mão que guarda muita energia'
   name: '&6Carregador Portátil Médio'
+  stats:
+  - '&eVelocidade de Carga: &732 J/s'
   type:
   - '&7&oUtensílio'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  - '&7Tem uma capacidade ajustável'
   name: '&eMini Barril Fluffy'
+  stats:
+  - '&bCapacidade Máx: &e172800 Itens'
   type:
   - '&7&oDiversos'
 PAXEL:
+  description:
+  - '&7Uma picareta, um machado e uma pá em uma só ferramenta!'
   name: '&bPaxel'
   type:
   - '&7&oFerramenta'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Usada para remover rapidamente nós de carga do Slimefun'
+  - '&7e componentes de eletricidade'
   name: '&bChave Fluffy Reforçada'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Esquerdo&7/&eDireito &7em um bloco compatível para quebrá-lo'
 SCYTHE:
+  description:
+  - '&7Quebra 5 plantações de uma vez'
   name: '&eFoice'
   type:
   - '&7&oFerramenta'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Armazena uma grande quantidade de um item'
+  name: '&eBarril Fofinho Pequeno'
+  stats:
+  - '&bCapacidade: &e17280000 Itens'
   type:
   - '&7&oDiversos'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Um carregador de mão que guarda muita energia'
   name: '&ePequeno Carregador Portátil'
+  stats:
+  - '&eVelocidade de Carga: &78 J/s'
   type:
   - '&7&oUtensílio'
 SMART_FACTORY:
+  description:
+  - '&7Uma máquina tudo-em-um que fabrica'
+  - '&7recursos a partir de matérias-primas'
   name: '&cFábrica Inteligente'
   stats:
   - '&8⇨ &b⚡ &7Velocidade: &b1.0x'
   type:
   - '&7&oMáquina'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Componente multibloco da Fundição'
+  - '&cDeve ser usado na Fundição'
   name: '&cFornalha Superaquecida'
   type:
   - '&7&oComponente'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Quebra todos os blocos mineráveis num raio 5x5'
   name: '&e&lPicareta Explosiva Aprimorada'
   type:
   - '&7&oFerramenta'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Quebra todos os blocos escaváveis num raio 5x5'
   name: '&e&lPá Explosiva Aprimorada'
   type:
   - '&7&oFerramenta'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Derruba uma árvore inteira de uma vez'
+  - '&72 blocos de alcance e funciona em blocos diagonais também'
   name: '&6&lMachado de Lenhador Aprimorado'
   type:
   - '&7&oFerramenta'
 WARP_PAD:
+  description:
+  - '&7Use um Configurador de Plataforma de Salto para vincular Plataformas de Salto'
   name: '&6Plataforma de Teletransporte'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eAgache &7neste bloco para se teletransportar'
+  - '&7até a plataforma de destino vinculada'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Vincula duas Plataformas de Salto para você se teletransportar entre elas'
   name: '&6Configurador de Plataforma de Teletransporte'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eAgache e Clique Direito &7em uma Plataforma de Salto para definir o destino'
+  - '&eClique Direito &7em uma Plataforma de Salto para definir a origem'
 WATERING_CAN:
+  description:
+  - '&fRega Plantas'
   name: '&bRegador'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&7> &eClique Direito &7na água para encher seu regador'
+  - '&7> &eClique Direito &7em uma planta para acelerar o crescimento.'
+  - '&7> &eClique Direito &7em um jogador para deixá-lo mais lento'
 WATER_SPRINKLER:
+  description:
+  - '&7Borrifa borrifa'
   name: '&bAspersor de Água'
   type:
   - '&7&oMáquina'
