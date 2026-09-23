@@ -1,12 +1,26 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Upgradet een Geavanceerde Laadbank en verhoogt de capaciteit en oplaadsnelheid'
   name: '&6ACB Upgradekaart'
+  stats:
+  - '&6Oplaadsnelheid &a+5J'
+  - '&6Capaciteit &a+128J'
+  - '&6Energieverbruik &c+10J'
   type:
   - '&7&oOnderdeel'
+  usage:
+  - '&eRechtsklik &7op een &cGeavanceerde Laadbank'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Verwijdert een betovering van een item'
+  - '&7Vereist een &6Oeroud Boek &7om te werken'
   name: '&cGeavanceerde Auto-Onttoveraar'
   type:
   - '&7&oMachine'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Laadt items op'
+  - '&7Kan geüpgraded worden met een &6ACB-upgradekaart'
   name: '&cGeavanceerde Oplaadbank'
   type:
   - '&7&oMachine'
@@ -17,191 +31,366 @@ ALTERNATE_ELEVATOR_PLATE:
   name: '&3Alternatieve Liftplaat'
   type:
   - '&7&oMachine'
+  usage:
+  - '&eRechtsklik op dit Blok &7om het een naam te geven'
+  - '&7Gebruikt een Kist-GUI in plaats van een Boek-GUI'
 ANCIENT_BOOK:
+  description:
+  - '&7Gebruikt in de &cGeavanceerde Automatische Onttoveraar'
+  - '&6&oBevat geconcentreerde hoeveelheden stroom'
   name: '&6Oud Boek'
   type:
   - '&7&oOnderdeel'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Vervaardigt automatisch &5Oeroud Altaar&7-recepten'
   name: '&5Auto Oud Altaar'
   type:
   - '&7&oMachine'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Vervaardigt automatisch Harnassmederij-recepten'
   name: '&7Auto Wapenrusting Smederij'
   type:
   - '&7&oMachine'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Vervaardigt automatisch &fvanilla&7-recepten'
   name: '&6Automatische Werkbank'
   type:
   - '&7&oMachine'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Vervaardigt automatisch &eVerbeterde Werkbank&7-recepten'
   name: '&eAuto Verbeterde Werkbank'
   type:
   - '&7&oMachine'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Vervaardigt automatisch &6Magische Werkbank&7-recepten'
   name: '&6Auto Magische Werkbank'
   type:
   - '&7&oMachine'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Vervaardigt automatisch &6Tafelzaag&7-recepten'
   name: '&6Automatische Tafelzaag'
   type:
   - '&7&oMachine'
 BACKPACK_LOADER:
+  description:
+  - '&7Verplaatst items van inventaris naar rugzak'
   name: '&eRugzak Lader'
   type:
   - '&7&oMachine'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Leegt de inhoud van rugzakken'
   name: '&eRugzak Uitlader'
   type:
   - '&7&oMachine'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&bGrote Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e69120000 Items'
   type:
   - '&7&oOverig'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Een handzame lader die veel stroom bevat'
   name: '&aGrote Draagbare Oplader'
+  stats:
+  - '&eOplaadsnelheid: &764 J/s'
   type:
   - '&7&oGadget'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&cBodemloze Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e1728000000 Items'
   type:
   - '&7&oOverig'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Gebruikt om Slimefun-vrachtknooppunten snel te verwijderen'
+  - '&7en elektriciteitscomponenten'
   name: '&7Carbonado Fluffy Sleutel'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&eLinks&7/&eRechtsklik &7op een compatibel blok om het te breken'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Een handzame lader die veel stroom bevat'
   name: '&4Carbonado Draagbare Oplader'
+  stats:
+  - '&eOplaadsnelheid: &74096 J/s'
   type:
   - '&7&oGadget'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Kopieert en plakt instellingen tussen vrachtknooppunten'
   name: '&9Cargo Manipulator'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&eRechtsklik &7om instellingen van een vrachtknooppunt te kopiëren'
+  - '&eLinksklik &7om instellingen van een vrachtknooppunt te plakken'
+  - '&eSluip en rechtsklik &7om een vrachtknooppunt te wissen'
 CRANK_GENERATOR:
+  description:
+  - '&cDit is een Multiblockmachine!'
   name: '&7Slinger Generator'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eRechtsklik &7op de hendel om stroom op te wekken'
 DOLLY:
+  description:
+  - '&7Pakt een geplaatste kist met inhoud op zodat je hem kunt dragen en elders plaatsen'
   name: '&bSteekwagen'
   type:
   - '&7&oGadget'
+  usage:
+  - '&7Rechtsklik op een kist om hem op te pakken'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Een alles-in-een machine die maalt, pant en wast'
   name: '&6Elektrische Stof Fabrikant'
   stats:
   - '&8⇨ &b⚡ &7Snelheid: &b10.0x'
   type:
   - '&7&oMachine'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Recyclet poeder terug tot gezeefd erts'
   name: '&fElektrische Stof Recycler'
   stats:
   - '&8⇨ &b⚡ &7Snelheid: &b1.0x'
   type:
   - '&7&oMachine'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Plaats dit op de zijkant van een &5Enderkist &7om te binden'
+  - '&7Dit verplaatst items uit de tegenoverliggende &5Enderkist'
+  - '&7naar de &6Container &7erachter'
   name: '&6Ender Kist Onttrekkingsknooppunt'
   type:
   - '&7&oMachine'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Plaats dit op de zijkant van een &5Enderkist &7om te binden'
+  - '&7Dit verplaatst items naar de tegenoverliggende &5Enderkist'
+  - '&7uit de &6Container &7erachter'
   name: '&bEnder Kist Invoegknooppunt'
   type:
   - '&7&oMachine'
 EXP_DISPENSER:
+  description:
+  - '&cDit is een Multiblockmachine!'
   name: '&aExp Verdeler'
   type:
   - '&7&oMultiblok'
+  usage:
+  - '&7Rechtsklik om alle XP te ontvangen'
+  - '&7uit XP-flessen in de dispenser'
+  - '&7en de ton waar de dispenser naar wijst'
 FIREPROOF_RUNE:
+  description:
+  - '&7Voorkomt dat een gevallen item verbrandt in vuur of lava'
   name: '&7Oude Rune &8&l[&c&lVuurbestendig&8&l]'
   type:
   - '&7&oMagisch'
+  usage:
+  - '&eLaat deze rune op een gevallen item vallen om'
+  - '&ehet &cvuurbestendig te maken'
 FLUFFY_WRENCH:
+  description:
+  - '&7Gebruikt om Slimefun-vrachtknooppunten snel te verwijderen'
+  - '&7en elektriciteitscomponenten'
   name: '&6Fluffy Sleutel'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&eLinks&7/&eRechtsklik &7op een compatibel blok om het te breken'
 FOUNDRY:
+  description:
+  - '&eSmelt en slaat poeders en staven op'
+  - '&cDit is een Multiblockmachine!'
   name: '&cGieterij'
+  stats:
+  - '&7Slaat 138,240 poeder op (40 Dubbele Kisten)'
   type:
   - '&7&oMultiblok'
 GENERATOR_CORE:
+  description:
+  - '&7Multiblockcomponent van generatoren'
   name: '&7Generatorkern'
   type:
   - '&7&oOnderdeel'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
   name: '&1Helikopterhoed'
   type:
   - '&7&oWapenrusting'
+  usage:
+  - '&eSluipen &7om te gebruiken'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&aZeer Grote Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e138240000 Items'
   type:
   - '&7&oOverig'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Een handzame lader die veel stroom bevat'
   name: '&2Enorme Draagbare Oplader'
+  stats:
+  - '&eOplaadsnelheid: &7512 J/s'
   type:
   - '&7&oGadget'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&5Enorme Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e276480000 Items'
   type:
   - '&7&oOverig'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&6Middelgrote Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e34560000 Items'
   type:
   - '&7&oOverig'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Een handzame lader die veel stroom bevat'
   name: '&6Middelgrote Draagbare Oplader'
+  stats:
+  - '&eOplaadsnelheid: &732 J/s'
   type:
   - '&7&oGadget'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  - '&7Heeft een instelbare capaciteit'
   name: '&eMini Fluffy Vat'
+  stats:
+  - '&bMax capaciteit: &e172800 Items'
   type:
   - '&7&oOverig'
 PAXEL:
+  description:
+  - '&7Een houweel, bijl en schep in een gereedschap!'
   name: '&bPaxel'
   type:
   - '&7&oGereedschap'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Gebruikt om Slimefun-vrachtknooppunten snel te verwijderen'
+  - '&7en elektriciteitscomponenten'
   name: '&bVersterkte Fluffy Sleutel'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&eLinks&7/&eRechtsklik &7op een compatibel blok om het te breken'
 SCYTHE:
+  description:
+  - '&7Breekt 5 gewassen tegelijk'
   name: '&eZeis'
   type:
   - '&7&oGereedschap'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Slaat een grote hoeveelheid van een item op'
+  name: '&eKleine Pluizige Ton'
+  stats:
+  - '&bCapaciteit: &e17280000 Items'
   type:
   - '&7&oOverig'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Een handzame lader die veel stroom bevat'
   name: '&eKleine Draagbare Oplader'
+  stats:
+  - '&eOplaadsnelheid: &78 J/s'
   type:
   - '&7&oGadget'
 SMART_FACTORY:
+  description:
+  - '&7Een alles-in-een machine die grondstoffen'
+  - '&7uit ruwe materialen vervaardigt'
   name: '&cSlimme Fabriek'
   stats:
   - '&8⇨ &b⚡ &7Snelheid: &b1.0x'
   type:
   - '&7&oMachine'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Multiblockcomponent van de Gieterij'
+  - '&cMoet in de Gieterij gebruikt worden'
   name: '&cOververhitte Oven'
   type:
   - '&7&oOnderdeel'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Breekt alle delfbare blokken in een straal van 5x5'
   name: '&e&lVerbeterde Explosieve Houweel'
   type:
   - '&7&oGereedschap'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Breekt alle schepbare blokken in een straal van 5x5'
   name: '&e&lVerbeterde Explosieve Schep'
   type:
   - '&7&oGereedschap'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Velt een hele boom in een keer'
+  - '&72 blokken bereik en werkt ook op diagonale blokken'
   name: '&6&lVerbeterde Houthakkersbijl'
   type:
   - '&7&oGereedschap'
 WARP_PAD:
+  description:
+  - '&7Gebruik een Warpplatformconfigurator om Warpplatforms te koppelen'
   name: '&6Teleportatieplaat'
   type:
   - '&7&oMachine'
+  usage:
+  - '&eSluip &7op dit blok om te teleporteren naar'
+  - '&7het gekoppelde bestemmingsplatform'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Koppelt twee Warpplatforms zodat je ertussen kunt teleporteren'
   name: '&6Teleportatieplaat Configurator'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&eSluip en rechtsklik &7op een Warpplatform om de bestemming in te stellen'
+  - '&eRechtsklik &7op een Warpplatform om het vertrekpunt in te stellen'
 WATERING_CAN:
+  description:
+  - '&fGeeft planten water'
   name: '&bGieter'
   type:
   - '&7&oGereedschap'
+  usage:
+  - '&7> &eRechtsklik &7op water om je gieter te vullen'
+  - '&7> &eRechtsklik &7op een plant om de groei te versnellen.'
+  - '&7> &eRechtsklik &7op een speler om hem te vertragen'
 WATER_SPRINKLER:
+  description:
+  - '&7Sproei sproei'
   name: '&bWatersproeier'
   type:
   - '&7&oMachine'
