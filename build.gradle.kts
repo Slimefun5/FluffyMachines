@@ -7,7 +7,7 @@ plugins {
 group = "io.ncbpfluffybear"
 description = "FluffyMachines is a Slimefun addon that adds various machines, tools, and utilities."
 
-apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/stable/slimefun-addon.gradle")
+apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/main/slimefun-addon.gradle")
 
 dependencies {
     githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
