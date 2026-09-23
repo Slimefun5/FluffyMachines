@@ -1,12 +1,26 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7升级高级充电台, 提升其容量与充电速度'
   name: '&6ACB 升级卡'
+  stats:
+  - '&6充电速度 &a+5J'
+  - '&6容量 &a+128J'
+  - '&6能量消耗 &c+10J'
   type:
   - '&7&o组件'
+  usage:
+  - '&e右键点击 &7到&c高级充电台上'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7从物品上移除一项附魔'
+  - '&7需要&6远古之书&7才能运作'
   name: '&c高级自动去魔机'
   type:
   - '&7&o机器'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7为物品充电'
+  - '&7可使用&6ACB 升级卡进行升级'
   name: '&c高级充电台'
   type:
   - '&7&o机器'
@@ -17,191 +31,366 @@ ALTERNATE_ELEVATOR_PLATE:
   name: '&3替代电梯踏板'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击此方块 &7即可为其命名'
+  - '&7使用箱子界面而非书本界面'
 ANCIENT_BOOK:
+  description:
+  - '&7用于&c高级自动去魔机'
+  - '&6&o包含浓缩的大量电力'
   name: '&6远古之书'
   type:
   - '&7&o组件'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7自动合成&5远古祭坛&7配方'
   name: '&5Auto 远古祭坛'
   type:
   - '&7&o机器'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7自动合成盔甲锻造台配方'
   name: '&7Auto 盔甲锻造台'
   type:
   - '&7&o机器'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7自动合成&f原版&7配方'
   name: '&6自动工作台'
   type:
   - '&7&o机器'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7自动合成&e强化工作台&7配方'
   name: '&eAuto 强化工作台'
   type:
   - '&7&o机器'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7自动合成&6魔法工作台&7配方'
   name: '&6Auto 魔法工作台'
   type:
   - '&7&o机器'
 AUTO_TABLE_SAW:
+  description:
+  - '&7自动合成&6台锯&7配方'
   name: '&6自动台锯'
   type:
   - '&7&o机器'
 BACKPACK_LOADER:
+  description:
+  - '&7把物品从物品栏移入背包'
   name: '&e背包装载器'
   type:
   - '&7&o机器'
 BACKPACK_UNLOADER:
+  description:
+  - '&7清空背包中的物品'
   name: '&e背包卸载器'
   type:
   - '&7&o机器'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&b大型蓬松木桶'
+  stats:
+  - '&b容量: &e69120000 个物品'
   type:
   - '&7&o杂项'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7一款手持充电器, 可储存大量电力'
   name: '&a大型便携充电器'
+  stats:
+  - '&e充电速度: &764 J/s'
   type:
   - '&7&o装置'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&c无底蓬松木桶'
+  stats:
+  - '&b容量: &e1728000000 个物品'
   type:
   - '&7&o杂项'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7用于快速移除 Slimefun 的货运节点'
+  - '&7和电力组件'
   name: '&7黑金刚石 Fluffy 扳手'
   type:
   - '&7&o工具'
+  usage:
+  - '&e左键&7/&e右键点击 &7兼容的方块即可将其破坏'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7一款手持充电器, 可储存大量电力'
   name: '&4黑金刚石便携充电器'
+  stats:
+  - '&e充电速度: &74096 J/s'
   type:
   - '&7&o装置'
 CARGO_MANIPULATOR:
+  description:
+  - '&7在货运节点之间复制和粘贴货运节点设置'
   name: '&9Cargo 操纵器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击 &7复制货运节点设置'
+  - '&e左键点击 &7粘贴货运节点设置'
+  - '&e潜行并右键点击 &7清除货运节点'
 CRANK_GENERATOR:
+  description:
+  - '&c这是一台多方块机器!'
   name: '&7手摇发电机'
   type:
   - '&7&o发电机'
+  usage:
+  - '&e右键点击 &7拉杆即可发电'
 DOLLY:
+  description:
+  - '&7连同内容物一起拾取已放置的箱子, 让你可以带走并放到别处'
   name: '&b手推车'
   type:
   - '&7&o装置'
+  usage:
+  - '&7右键点击箱子即可拾取'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7一台集研磨、淘洗与清洗于一体的机器'
   name: '&6电动粉尘制造机'
   stats:
   - '&8⇨ &b⚡ &7速度: &b10.0x'
   type:
   - '&7&o机器'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7把粉末回收成筛选后的矿石'
   name: '&f电动粉尘回收机'
   stats:
   - '&8⇨ &b⚡ &7速度: &b1.0x'
   type:
   - '&7&o机器'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7把它放在&5末影箱&7侧面即可绑定'
+  - '&7它会把物品从所朝向的&5末影箱'
+  - '&7移动到其背后的&6容器&7中'
   name: '&6末影箱提取节点'
   type:
   - '&7&o机器'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7把它放在&5末影箱&7侧面即可绑定'
+  - '&7它会把物品移动到所朝向的&5末影箱'
+  - '&7来源是其背后的&6容器&7'
   name: '&b末影箱插入节点'
   type:
   - '&7&o机器'
 EXP_DISPENSER:
+  description:
+  - '&c这是一台多方块机器!'
   name: '&a经验发射器'
   type:
   - '&7&o多方块'
+  usage:
+  - '&7右键点击即可获得发射器中'
+  - '&7以及发射器所朝向的木桶中'
+  - '&7所有附魔之瓶的经验'
 FIREPROOF_RUNE:
+  description:
+  - '&7防止掉落的物品在火焰或岩浆中烧毁'
   name: '&7远古符文 &8&l[&c&l防火&8&l]'
   type:
   - '&7&o魔法'
+  usage:
+  - '&e将此符文丢到掉落的物品上, 即可'
+  - '&e使其&c防火'
 FLUFFY_WRENCH:
+  description:
+  - '&7用于快速移除 Slimefun 的货运节点'
+  - '&7和电力组件'
   name: '&6Fluffy 扳手'
   type:
   - '&7&o工具'
+  usage:
+  - '&e左键&7/&e右键点击 &7兼容的方块即可将其破坏'
 FOUNDRY:
+  description:
+  - '&e熔化并存储粉末与锭'
+  - '&c这是一台多方块机器!'
   name: '&c铸造厂'
+  stats:
+  - '&7存储 138,240 份粉末 (40 个大箱子)'
   type:
   - '&7&o多方块'
 GENERATOR_CORE:
+  description:
+  - '&7发电机的多方块结构组件'
   name: '&7发电机核心'
   type:
   - '&7&o组件'
 HELICOPTER_HAT:
+  description:
+  - '&7嗡嗡嗡嗡嗡嗡嗡嗡嗡'
   name: '&1直升机帽'
   type:
   - '&7&o护甲'
+  usage:
+  - '&e潜行&7即可使用'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&a特大蓬松木桶'
+  stats:
+  - '&b容量: &e138240000 个物品'
   type:
   - '&7&o杂项'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7一款手持充电器, 可储存大量电力'
   name: '&2巨型便携充电器'
+  stats:
+  - '&e充电速度: &7512 J/s'
   type:
   - '&7&o装置'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&5巨型蓬松木桶'
+  stats:
+  - '&b容量: &e276480000 个物品'
   type:
   - '&7&o杂项'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&6中型蓬松木桶'
+  stats:
+  - '&b容量: &e34560000 个物品'
   type:
   - '&7&o杂项'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7一款手持充电器, 可储存大量电力'
   name: '&6中型便携充电器'
+  stats:
+  - '&e充电速度: &732 J/s'
   type:
   - '&7&o装置'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  - '&7容量可以调整'
   name: '&e迷你 Fluffy 桶'
+  stats:
+  - '&b最大容量: &e172800 个物品'
   type:
   - '&7&o杂项'
 PAXEL:
+  description:
+  - '&7镐、斧、锹三合一的工具!'
   name: '&b多用镐'
   type:
   - '&7&o工具'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7用于快速移除 Slimefun 的货运节点'
+  - '&7和电力组件'
   name: '&b强化 Fluffy 扳手'
   type:
   - '&7&o工具'
+  usage:
+  - '&e左键&7/&e右键点击 &7兼容的方块即可将其破坏'
 SCYTHE:
+  description:
+  - '&7一次破坏 5 株作物'
   name: '&e镰刀'
   type:
   - '&7&o工具'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7存储大量的某一种物品'
+  name: '&e小型蓬松木桶'
+  stats:
+  - '&b容量: &e17280000 个物品'
   type:
   - '&7&o杂项'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7一款手持充电器, 可储存大量电力'
   name: '&e小型便携充电器'
+  stats:
+  - '&e充电速度: &78 J/s'
   type:
   - '&7&o装置'
 SMART_FACTORY:
+  description:
+  - '&7一台一体化机器, 可用原材料'
+  - '&7合成各种资源'
   name: '&c智能工厂'
   stats:
   - '&8⇨ &b⚡ &7速度: &b1.0x'
   type:
   - '&7&o机器'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7铸造厂的多方块结构组件'
+  - '&c必须在铸造厂中使用'
   name: '&c超热熔炉'
   type:
   - '&7&o组件'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7破坏 5x5 范围内所有可采掘的方块'
   name: '&e&l升级版爆炸镐'
   type:
   - '&7&o工具'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7破坏 5x5 范围内所有可用锹挖的方块'
   name: '&e&l升级版爆炸锹'
   type:
   - '&7&o工具'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7一次砍倒整棵树'
+  - '&72 格范围, 对斜向方块同样有效'
   name: '&6&l升级版伐木斧'
   type:
   - '&7&o工具'
 WARP_PAD:
+  description:
+  - '&7使用传送台配置器来链接传送台'
   name: '&6传送踏板'
   type:
   - '&7&o机器'
+  usage:
+  - '&e在此方块上潜行&7即可传送到'
+  - '&7已链接的目标传送台'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7把两座传送台链接起来, 让你可以在它们之间传送'
   name: '&6传送踏板配置器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e潜行并右键点击 &7传送台即可设定目的地'
+  - '&e右键点击 &7传送台即可设定起点'
 WATERING_CAN:
+  description:
+  - '&f为植物浇水'
   name: '&b洒水壶'
   type:
   - '&7&o工具'
+  usage:
+  - '&7> &e右键点击 &7水即可装满洒水壶'
+  - '&7> &e右键点击 &7植物即可加速生长。'
+  - '&7> &e右键点击 &7玩家即可让其减速'
 WATER_SPRINKLER:
+  description:
+  - '&7洒呀洒呀'
   name: '&b洒水器'
   type:
   - '&7&o机器'
