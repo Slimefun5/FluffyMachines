@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Fejleszt egy Fejlett Töltőpadot, növelve a kapacitását és töltési sebességét'
+  name: '&6ACB Fejlesztő Kártya'
+  stats:
+  - '&6Töltési Sebesség &a+5J'
+  - '&6Kapacitás &a+128J'
+  - '&6Energiafogyasztás &c+10J'
   type:
   - '&7&oAlkatrész'
+  usage:
+  - '&eJobb Klikk &7egy &cFejlett Töltőpadra'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Eltávolít egy varázslatot egy tárgyról'
+  - '&7A működéshez &6Ősi Könyv &7szükséges'
+  name: '&cFejlett Automata Varázslateltávolító'
   type:
   - '&7&oGép'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Tárgyakat tölt'
+  - '&7Fejleszthető egy &6ACB Fejlesztő Kártyával'
+  name: '&cFejlett Töltőpad'
   type:
   - '&7&oGép'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fHelyezz el egy Liftlapot minden emeleten,'
   - '&fés teleportálhatsz majd közöttük.'
+  name: '&3Alternatív Lift Lemez'
   type:
   - '&7&oGép'
+  usage:
+  - '&eJobb Klikk erre a Blokkra &7az elnevezéséhez'
+  - '&7Láda GUI-t használ Könyv GUI helyett'
 ANCIENT_BOOK:
+  description:
+  - '&7Használatos a &cFejlett Automata Varázslateltávolítóban'
+  - '&6&oKoncentrált mennyiségű áramot tartalmaz'
+  name: '&6Ősi Könyv'
   type:
   - '&7&oAlkatrész'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Automatikusan barkácsol &5Ősi Oltár &7recepteket'
+  name: '&5Automata Ősi Oltár'
   type:
   - '&7&oGép'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Automatikusan barkácsol Páncélkohó recepteket'
+  name: '&7Automata Páncélkohó'
   type:
   - '&7&oGép'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Automatikusan barkácsol &fvanilla &7recepteket'
+  name: '&6Automata Barkácsasztal'
   type:
   - '&7&oGép'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Automatikusan barkácsol &eFejlesztett Barkácsasztal &7recepteket'
+  name: '&eAutomata Fejlesztett Barkácsasztal'
   type:
   - '&7&oGép'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Automatikusan barkácsol &6Mágia Munkaasztal &7recepteket'
+  name: '&6Automata Mágia Munkaasztal'
   type:
   - '&7&oGép'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Automatikusan barkácsol &6Asztali Körfűrész &7recepteket'
+  name: '&6Automata Asztali Körfűrész'
   type:
   - '&7&oGép'
 BACKPACK_LOADER:
+  description:
+  - '&7Tárgyakat mozgat a leltárból a hátizsákba'
+  name: '&eHátizsák Berakó'
   type:
   - '&7&oGép'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Kiüríti a hátizsákok tartalmát'
+  name: '&eHátizsák Kirakó'
   type:
   - '&7&oGép'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&bNagy Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e69120000 Tárgy'
   type:
   - '&7&oEgyéb'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Egy kézi töltő, amely sok áramot tárol'
+  name: '&aNagy Hordozható Töltő'
+  stats:
+  - '&eTöltési Sebesség: &764 J/s'
   type:
   - '&7&oKütyü'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&cFeneketlen Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e1728000000 Tárgy'
   type:
   - '&7&oEgyéb'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun teher csomópontok gyors eltávolítására használatos'
+  - '&7és elektromos alkatrészek'
+  name: '&7Carbonado Bolyhos Csavarkulcs'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eBal&7/&eJobb Klikk &7egy kompatibilis blokkra a kitöréséhez'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Egy kézi töltő, amely sok áramot tárol'
+  name: '&4Carbonado Hordozható Töltő'
+  stats:
+  - '&eTöltési Sebesség: &74096 J/s'
   type:
   - '&7&oKütyü'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Teher csomópontok beállításait másolja és illeszti be csomópontok között'
+  name: '&9Teher Manipulátor'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eJobb Klikk &7a teher csomópont beállításainak másolásához'
+  - '&eBal Klikk &7a teher csomópont beállításainak beillesztéséhez'
+  - '&eGuggolás és Jobb Klikk &7egy teher csomópont törléséhez'
 CRANK_GENERATOR:
+  description:
+  - '&cEz egy Multiblokk Gép!'
+  name: '&7Hajtókaros Generátor'
   type:
   - '&7&oGenerátor'
+  usage:
+  - '&eJobb klikk &7a karra az áram generálásához'
 DOLLY:
+  description:
+  - '&7Felvesz egy lehelyezett ládát a tartalmával együtt, hogy elvihesd és máshol lehelyezhesd'
+  name: '&bKézikocsi'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&7Jobb klikk egy ládára a felvételéhez'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Egy mindent egyben gép, amely őröl, mos és iszapol'
+  name: '&6Elektromos Por Fabrikátor'
   stats:
   - '&8⇨ &b⚡ &7Sebesség: &b10.0x'
   type:
   - '&7&oGép'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7A port szitált érccé hasznosítja újra'
+  name: '&fElektromos Por Újrahasznosító'
   stats:
   - '&8⇨ &b⚡ &7Sebesség: &b1.0x'
   type:
   - '&7&oGép'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Helyezd ezt egy &5Enderláda &7oldalára az összekapcsoláshoz'
+  - '&7Ez a tárgyakat átviszi a szemközti &5Enderládából'
+  - '&7a mögötte lévő &6Tárolóba&7'
+  name: '&6Enderláda Kivételi Csomópont'
   type:
   - '&7&oGép'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Helyezd ezt egy &5Enderláda &7oldalára az összekapcsoláshoz'
+  - '&7Ez a tárgyakat átviszi a szemközti &5Enderládába'
+  - '&7a mögötte lévő &6Tárolóból&7'
+  name: '&bEnderláda Behelyezési Csomópont'
   type:
   - '&7&oGép'
 EXP_DISPENSER:
+  description:
+  - '&cEz egy Multiblokk Gép!'
+  name: '&aXP Adagoló'
   type:
   - '&7&oMultiblock'
+  usage:
+  - '&7Jobb klikk az összes XP megszerzéséhez'
+  - '&7az adagolóban lévő XP-palackokból'
+  - '&7és a szemközti hordóból'
 FIREPROOF_RUNE:
+  description:
+  - '&7Megvédi az eldobott tárgyat a tűzben vagy lávában való elégéstől'
+  name: '&7Ősi Rúna &8&l[&c&lTűzálló&8&l]'
   type:
   - '&7&oVarázslatos'
+  usage:
+  - '&eDobd ezt a rúnát egy eldobott tárgyra, hogy'
+  - '&eez &ctűzállóvá váljon'
 FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun teher csomópontok gyors eltávolítására használatos'
+  - '&7és elektromos alkatrészek'
+  name: '&6Bolyhos Csavarkulcs'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eBal&7/&eJobb Klikk &7egy kompatibilis blokkra a kitöréséhez'
 FOUNDRY:
+  description:
+  - '&ePorokat és rudakat olvaszt és tárol'
+  - '&cEz egy Multiblokk Gép!'
+  name: '&cÖntöde'
+  stats:
+  - '&7Tárol 138,240 port (40 Dupla Láda)'
   type:
   - '&7&oMultiblock'
 GENERATOR_CORE:
+  description:
+  - '&7A generátorok multiblokk alkatrésze'
+  name: '&7Generátor Mag'
   type:
   - '&7&oAlkatrész'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Helikopter Sapka'
   type:
   - '&7&oPáncél'
+  usage:
+  - '&eGuggolj &7a használathoz'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&aHatalmas Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e138240000 Tárgy'
   type:
   - '&7&oEgyéb'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Egy kézi töltő, amely sok áramot tárol'
+  name: '&2Hatalmas Hordozható Töltő'
+  stats:
+  - '&eTöltési Sebesség: &7512 J/s'
   type:
   - '&7&oKütyü'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&5Óriási Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e276480000 Tárgy'
   type:
   - '&7&oEgyéb'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&6Közepes Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e34560000 Tárgy'
   type:
   - '&7&oEgyéb'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Egy kézi töltő, amely sok áramot tárol'
+  name: '&6Közepes Hordozható Töltő'
+  stats:
+  - '&eTöltési Sebesség: &732 J/s'
   type:
   - '&7&oKütyü'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  - '&7Változtatható kapacitással'
+  name: '&eMini Bolyhos Hordó'
+  stats:
+  - '&bMax. Kapacitás: &e172800 Tárgy'
   type:
   - '&7&oEgyéb'
 PAXEL:
+  description:
+  - '&7Csákány, fejsze és lapát egy szerszámban!'
+  name: '&bPaxel'
   type:
   - '&7&oEszköz'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun teher csomópontok gyors eltávolítására használatos'
+  - '&7és elektromos alkatrészek'
+  name: '&bMegerősített Bolyhos Csavarkulcs'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eBal&7/&eJobb Klikk &7egy kompatibilis blokkra a kitöréséhez'
 SCYTHE:
+  description:
+  - '&7Egyszerre 5 terményt tör le'
+  name: '&eKasza'
   type:
   - '&7&oEszköz'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Nagy mennyiséget tárol egy tárgyból'
+  name: '&eKicsi Bolyhos Hordó'
+  stats:
+  - '&bKapacitás: &e17280000 Tárgy'
   type:
   - '&7&oEgyéb'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Egy kézi töltő, amely sok áramot tárol'
+  name: '&eKicsi Hordozható Töltő'
+  stats:
+  - '&eTöltési Sebesség: &78 J/s'
   type:
   - '&7&oKütyü'
 SMART_FACTORY:
+  description:
+  - '&7Egy mindent egyben gép, amely'
+  - '&7nyersanyagokat készít alapanyagokból'
+  name: '&cOkos Gyár'
   stats:
   - '&8⇨ &b⚡ &7Sebesség: &b1.0x'
   type:
   - '&7&oGép'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Az Öntöde multiblokk alkatrésze'
+  - '&cAz Öntödében kell használni'
+  name: '&cSzuper Felfűtött Kemence'
   type:
   - '&7&oAlkatrész'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Minden bányászható blokkot kitör 5x5 sugarú körben'
+  name: '&e&lFejlesztett Robbanó Csákány'
   type:
   - '&7&oEszköz'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Minden lapátolható blokkot kitör 5x5 sugarú körben'
+  name: '&e&lFejlesztett Robbanó Lapát'
   type:
   - '&7&oEszköz'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Egyszerre kivág egy egész fát'
+  - '&72 blokk hatótávolság, és átlós blokkokon is működik'
+  name: '&6&lFejlesztett Favágó Fejsze'
   type:
   - '&7&oEszköz'
 WARP_PAD:
+  description:
+  - '&7Használj Ugrólap Konfigurátort az Ugrólapok összekapcsolásához'
+  name: '&6Ugrólap'
   type:
   - '&7&oGép'
+  usage:
+  - '&eGuggolj &7ezen a blokkon, hogy az'
+  - '&7összekapcsolt cél lapra teleportálj'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Összekapcsol két Ugrólapot, hogy teleportálhass közöttük'
+  name: '&6Ugrólap Konfigurátor'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&eGuggolás és Jobb Klikk &7egy Ugrólapon a cél beállításához'
+  - '&eJobb Klikk &7egy Ugrólapon a kiindulópont beállításához'
 WATERING_CAN:
+  description:
+  - '&fNövényeket öntöz'
+  name: '&bÖntözőkanna'
   type:
   - '&7&oEszköz'
+  usage:
+  - '&7> &eJobb Klikk &7a vízre az öntözőkanna feltöltéséhez'
+  - '&7> &eJobb Klikk &7egy növényre a növekedés gyorsításához.'
+  - '&7> &eJobb Klikk &7egy játékosra a lassításához'
 WATER_SPRINKLER:
+  description:
+  - '&7Spriccel spriccel'
+  name: '&bVíz Szórófej'
   type:
   - '&7&oGép'
