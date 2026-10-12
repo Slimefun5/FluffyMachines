@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Nâng cấp một Bàn Sạc Nâng cao, tăng dung lượng và tốc độ sạc của nó'
+  name: '&6Thẻ Nâng cấp ACB'
+  stats:
+  - '&6Tốc độ Sạc &a+5J'
+  - '&6Dung lượng &a+128J'
+  - '&6Tiêu thụ Năng lượng &c+10J'
   type:
   - '&7&oThành Phần'
+  usage:
+  - '&eChuột phải &7lên một &cBàn Sạc Nâng cao'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Gỡ một phù phép khỏi vật phẩm'
+  - '&7Cần một &6Sách Cổ đại &7để hoạt động'
+  name: '&cMáy Tự động Gỡ phù phép Nâng cao'
   type:
   - '&7&oMáy Móc'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Sạc vật phẩm'
+  - '&7Có thể nâng cấp bằng &6Thẻ Nâng cấp ACB'
+  name: '&cBàn Sạc Nâng cao'
   type:
   - '&7&oMáy Móc'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fĐặt một Tấm Thang Máy trên mỗi tầng'
   - '&fvà bạn sẽ có thể dịch chuyển giữa chúng.'
+  name: '&3Tấm Thang máy Thay thế'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eChuột phải vào Khối này &7để đặt tên cho nó'
+  - '&7Dùng giao diện Hòm thay vì giao diện Sách'
 ANCIENT_BOOK:
+  description:
+  - '&7Dùng trong &cMáy Tự động Gỡ phù phép Nâng cao'
+  - '&6&oChứa một lượng điện năng cô đặc'
+  name: '&6Sách Cổ đại'
   type:
   - '&7&oThành Phần'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Tự động chế tạo công thức &5Bàn thờ Cổ đại&7'
+  name: '&5Bàn thờ Cổ đại Tự động'
   type:
   - '&7&oMáy Móc'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Tự động chế tạo công thức Lò rèn Giáp'
+  name: '&7Lò rèn Giáp Tự động'
   type:
   - '&7&oMáy Móc'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Tự động chế tạo công thức &fnguyên bản&7'
+  name: '&6Bàn chế tạo Tự động'
   type:
   - '&7&oMáy Móc'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Tự động chế tạo công thức &eBàn chế tạo Cường hóa&7'
+  name: '&eBàn chế tạo Cường hóa Tự động'
   type:
   - '&7&oMáy Móc'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Tự động chế tạo công thức &6Bàn chế tạo Ma thuật&7'
+  name: '&6Bàn chế tạo Ma thuật Tự động'
   type:
   - '&7&oMáy Móc'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Tự động chế tạo công thức &6Máy cưa Bàn&7'
+  name: '&6Máy cưa Bàn Tự động'
   type:
   - '&7&oMáy Móc'
 BACKPACK_LOADER:
+  description:
+  - '&7Chuyển vật phẩm từ túi đồ sang ba lô'
+  name: '&eMáy nạp Ba lô'
   type:
   - '&7&oMáy Móc'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Trút hết nội dung của ba lô'
+  name: '&eMáy dỡ Ba lô'
   type:
   - '&7&oMáy Móc'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&bThùng Bông xù To'
+  stats:
+  - '&bDung lượng: &e69120000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Một bộ sạc cầm tay chứa rất nhiều điện năng'
+  name: '&aBộ sạc Di động To'
+  stats:
+  - '&eTốc độ Sạc: &764 J/s'
   type:
   - '&7&oThiết Bị'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&cThùng Bông xù Không đáy'
+  stats:
+  - '&bDung lượng: &e1728000000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Dùng để nhanh chóng gỡ các nút hàng hóa Slimefun'
+  - '&7và các thành phần điện'
+  name: '&7Mỏ lết Bông xù Carbonado'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột trái&7/&ephải &7vào khối tương thích để phá nó'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Một bộ sạc cầm tay chứa rất nhiều điện năng'
+  name: '&4Bộ sạc Di động Carbonado'
+  stats:
+  - '&eTốc độ Sạc: &74096 J/s'
   type:
   - '&7&oThiết Bị'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Sao chép và dán thiết lập nút hàng hóa giữa các nút hàng hóa'
+  name: '&9Máy điều phối Hàng hóa'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột phải &7để sao chép thiết lập nút hàng hóa'
+  - '&eChuột trái &7để dán thiết lập nút hàng hóa'
+  - '&eNgồi và Chuột phải &7để xóa một nút hàng hóa'
 CRANK_GENERATOR:
+  description:
+  - '&cĐây là một Máy Đa khối!'
+  name: '&7Máy phát điện Tay quay'
   type:
   - '&7&oMáy Phát Điện'
+  usage:
+  - '&eChuột phải &7vào cần gạt để tạo ra điện năng'
 DOLLY:
+  description:
+  - '&7Nhấc một chiếc hòm đã đặt cùng toàn bộ nội dung để bạn mang đi và đặt ở nơi khác'
+  name: '&bXe đẩy'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&7Chuột phải vào một chiếc hòm để nhấc nó lên'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Một cỗ máy tất cả trong một biết nghiền, sàng và rửa'
+  name: '&6Máy chế tạo Bột Điện'
   stats:
   - '&8⇨ &b⚡ &7Tốc Độ: &b10.0x'
   type:
   - '&7&oMáy Móc'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Tái chế bột trở lại thành quặng đã sàng'
+  name: '&fMáy tái chế Bột Điện'
   stats:
   - '&8⇨ &b⚡ &7Tốc Độ: &b1.0x'
   type:
   - '&7&oMáy Móc'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Đặt cái này bên cạnh một &5Hòm Ender &7để liên kết'
+  - '&7Nó sẽ chuyển vật phẩm từ &5Hòm Ender đối diện'
+  - '&7vào &6Thùng chứa &7phía sau nó'
+  name: '&6Nút Rút từ Hòm Ender'
   type:
   - '&7&oMáy Móc'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Đặt cái này bên cạnh một &5Hòm Ender &7để liên kết'
+  - '&7Nó sẽ chuyển vật phẩm tới &5Hòm Ender đối diện'
+  - '&7từ &6Thùng chứa &7phía sau nó'
+  name: '&bNút Nạp vào Hòm Ender'
   type:
   - '&7&oMáy Móc'
 EXP_DISPENSER:
+  description:
+  - '&cĐây là một Máy Đa khối!'
+  name: '&aMáy nhả Kinh nghiệm'
   type:
   - '&7&oĐa khối'
+  usage:
+  - '&7Chuột phải để nhận toàn bộ kinh nghiệm'
+  - '&7từ các bình kinh nghiệm trong máy nhả'
+  - '&7và thùng mà máy nhả đang hướng tới'
 FIREPROOF_RUNE:
+  description:
+  - '&7Ngăn vật phẩm đã rơi bị cháy trong lửa hoặc dung nham'
+  name: '&7Phù văn Cổ đại &8&l[&c&lChống cháy&8&l]'
   type:
   - '&7&oMa Thuật'
+  usage:
+  - '&eThả phù văn này lên một vật phẩm đã rơi để'
+  - '&elàm nó &cchống cháy'
 FLUFFY_WRENCH:
+  description:
+  - '&7Dùng để nhanh chóng gỡ các nút hàng hóa Slimefun'
+  - '&7và các thành phần điện'
+  name: '&6Mỏ lết Bông xù'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột trái&7/&ephải &7vào khối tương thích để phá nó'
 FOUNDRY:
+  description:
+  - '&eNung chảy và lưu trữ bột cùng thỏi'
+  - '&cĐây là một Máy Đa khối!'
+  name: '&cLò luyện'
+  stats:
+  - '&7Lưu trữ 138,240 bột (40 Hòm Đôi)'
   type:
   - '&7&oĐa khối'
 GENERATOR_CORE:
+  description:
+  - '&7Thành phần đa khối của máy phát điện'
+  name: '&7Lõi Máy phát điện'
   type:
   - '&7&oThành Phần'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Mũ Trực thăng'
   type:
   - '&7&oGiáp'
+  usage:
+  - '&eNgồi &7để dùng'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&aThùng Bông xù Lớn'
+  stats:
+  - '&bDung lượng: &e138240000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Một bộ sạc cầm tay chứa rất nhiều điện năng'
+  name: '&2Bộ sạc Di động Lớn'
+  stats:
+  - '&eTốc độ Sạc: &7512 J/s'
   type:
   - '&7&oThiết Bị'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&5Thùng Bông xù Khổng lồ'
+  stats:
+  - '&bDung lượng: &e276480000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&6Thùng Bông xù Trung bình'
+  stats:
+  - '&bDung lượng: &e34560000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Một bộ sạc cầm tay chứa rất nhiều điện năng'
+  name: '&6Bộ sạc Di động Trung bình'
+  stats:
+  - '&eTốc độ Sạc: &732 J/s'
   type:
   - '&7&oThiết Bị'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  - '&7Có dung lượng thay đổi được'
+  name: '&eThùng Bông xù Tí hon'
+  stats:
+  - '&bDung lượng Tối đa: &e172800 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 PAXEL:
+  description:
+  - '&7Cúp, rìu và xẻng trong cùng một công cụ!'
+  name: '&bPaxel'
   type:
   - '&7&oDụng Cụ'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Dùng để nhanh chóng gỡ các nút hàng hóa Slimefun'
+  - '&7và các thành phần điện'
+  name: '&bMỏ lết Bông xù Gia cố'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eChuột trái&7/&ephải &7vào khối tương thích để phá nó'
 SCYTHE:
+  description:
+  - '&7Phá 5 hoa màu cùng lúc'
+  name: '&eLưỡi hái'
   type:
   - '&7&oDụng Cụ'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Lưu trữ một lượng lớn của một vật phẩm'
+  name: '&eThùng Bông xù Nhỏ'
+  stats:
+  - '&bDung lượng: &e17280000 Vật phẩm'
   type:
   - '&7&oLinh Tinh'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Một bộ sạc cầm tay chứa rất nhiều điện năng'
+  name: '&eBộ sạc Di động Nhỏ'
+  stats:
+  - '&eTốc độ Sạc: &78 J/s'
   type:
   - '&7&oThiết Bị'
 SMART_FACTORY:
+  description:
+  - '&7Một cỗ máy tất cả trong một chế tạo'
+  - '&7tài nguyên từ nguyên liệu thô'
+  name: '&cNhà máy Thông minh'
   stats:
   - '&8⇨ &b⚡ &7Tốc Độ: &b1.0x'
   type:
   - '&7&oMáy Móc'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Thành phần đa khối của Lò luyện'
+  - '&cCần phải dùng trong Lò luyện'
+  name: '&cLò Siêu nhiệt'
   type:
   - '&7&oThành Phần'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Phá mọi khối đào được trong bán kính 5x5'
+  name: '&e&lCúp Nổ Nâng cấp'
   type:
   - '&7&oDụng Cụ'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Phá mọi khối xúc được trong bán kính 5x5'
+  name: '&e&lXẻng Nổ Nâng cấp'
   type:
   - '&7&oDụng Cụ'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Đốn hạ cả một cây cùng lúc'
+  - '&7Tầm 2 khối và cũng tác dụng với khối chéo'
+  name: '&6&lRìu Đốn gỗ Nâng cấp'
   type:
   - '&7&oDụng Cụ'
 WARP_PAD:
+  description:
+  - '&7Dùng Máy cấu hình Bệ Dịch chuyển để liên kết các Bệ Dịch chuyển'
+  name: '&6Bệ Dịch chuyển'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eNgồi &7trên khối này để dịch chuyển tới'
+  - '&7bệ đích đã được liên kết'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Liên kết hai Bệ Dịch chuyển với nhau để bạn dịch chuyển qua lại giữa chúng'
+  name: '&6Máy cấu hình Bệ Dịch chuyển'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&eNgồi và Chuột phải &7lên một Bệ Dịch chuyển để đặt điểm đích'
+  - '&eChuột phải &7lên một Bệ Dịch chuyển để đặt điểm khởi hành'
 WATERING_CAN:
+  description:
+  - '&fTưới nước cho Cây trồng'
+  name: '&bBình tưới nước'
   type:
   - '&7&oDụng Cụ'
+  usage:
+  - '&7> &eChuột phải &7vào nước để đổ đầy bình tưới'
+  - '&7> &eChuột phải &7vào cây trồng để tăng tốc tăng trưởng.'
+  - '&7> &eChuột phải &7vào người chơi để làm họ chậm lại'
 WATER_SPRINKLER:
+  description:
+  - '&7Phun phun tưới tưới'
+  name: '&bVòi phun Nước'
   type:
   - '&7&oMáy Móc'
