@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7고급 충전대를 업그레이드해 용량과 충전 속도를 올립니다'
+  name: '&6고급 충전대 업그레이드 카드'
+  stats:
+  - '&6충전 속도 &a+5J'
+  - '&6용량 &a+128J'
+  - '&6에너지 소모 &c+10J'
   type:
   - '&7&o부품'
+  usage:
+  - '&e우클릭&7으로 적용: &c고급 충전대'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7아이템에서 마법부여 하나를 제거합니다'
+  - '&7작동하려면 &6고대 책&7이 필요합니다'
+  name: '&c고급 자동 마법부여 해제기'
   type:
   - '&7&o기계'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7아이템을 충전합니다'
+  - '&7업그레이드하려면 필요: &6고급 충전대 업그레이드 카드'
+  name: '&c고급 충전대'
   type:
   - '&7&o기계'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&f각 층마다 엘리베이터 판을 설치하면'
   - '&f그 사이를 순간이동할 수 있습니다.'
+  name: '&3대체 엘리베이터 판'
   type:
   - '&7&o기계'
+  usage:
+  - '&e이 블록을 우클릭&7하여 이름을 지정합니다'
+  - '&7책 화면 대신 상자 화면을 사용합니다'
 ANCIENT_BOOK:
+  description:
+  - '&7다음에 사용: &c고급 자동 마법부여 해제기'
+  - '&6&o농축된 전력이 담겨 있습니다'
+  name: '&6고대 책'
   type:
   - '&7&o부품'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7자동으로 &5고대 제단 &7조합법을 제작합니다'
+  name: '&5자동 고대 제단'
   type:
   - '&7&o기계'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7자동으로 방어구 제작소 조합법을 제작합니다'
+  name: '&7자동 방어구 제작소'
   type:
   - '&7&o기계'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7자동으로 &f바닐라 &7조합법을 제작합니다'
+  name: '&6자동 제작대'
   type:
   - '&7&o기계'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7자동으로 &e강화 제작대 &7조합법을 제작합니다'
+  name: '&e자동 강화 제작대'
   type:
   - '&7&o기계'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7자동으로 &6마법 작업대 &7조합법을 제작합니다'
+  name: '&6자동 마법 작업대'
   type:
   - '&7&o기계'
 AUTO_TABLE_SAW:
+  description:
+  - '&7자동으로 &6테이블 톱 &7조합법을 제작합니다'
+  name: '&6자동 테이블 톱'
   type:
   - '&7&o기계'
 BACKPACK_LOADER:
+  description:
+  - '&7인벤토리에서 배낭으로 아이템을 옮깁니다'
+  name: '&e배낭 적재기'
   type:
   - '&7&o기계'
 BACKPACK_UNLOADER:
+  description:
+  - '&7배낭의 내용물을 비웁니다'
+  name: '&e배낭 하역기'
   type:
   - '&7&o기계'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&b대형 푹신한 통'
+  stats:
+  - '&b용량: &e69120000 아이템'
   type:
   - '&7&o기타'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7많은 전력을 담는 핸드헬드 충전기'
+  name: '&a대형 휴대용 충전기'
+  stats:
+  - '&e충전 속도: &764 J/s'
   type:
   - '&7&o장치'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&c바닥없는 푹신한 통'
+  stats:
+  - '&b용량: &e1728000000 아이템'
   type:
   - '&7&o기타'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun 화물 노드와 전기 부품을'
+  - '&7빠르게 제거하는 데 사용합니다'
+  name: '&7카보나도 푹신한 렌치'
   type:
   - '&7&o도구'
+  usage:
+  - '&e좌&7/&e우클릭&7으로 호환되는 블록을 파괴합니다'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7많은 전력을 담는 핸드헬드 충전기'
+  name: '&4카보나도 휴대용 충전기'
+  stats:
+  - '&e충전 속도: &74096 J/s'
   type:
   - '&7&o장치'
 CARGO_MANIPULATOR:
+  description:
+  - '&7화물 노드 사이에서 설정을 복사하고 붙여 넣습니다'
+  name: '&9화물 조작기'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7으로 화물 노드 설정 복사'
+  - '&e좌클릭&7으로 화물 노드 설정 붙여 넣기'
+  - '&e웅크리고 우클릭&7으로 화물 노드 초기화'
 CRANK_GENERATOR:
+  description:
+  - '&c멀티블록 기계입니다!'
+  name: '&7크랭크 발전기'
   type:
   - '&7&o발전기'
+  usage:
+  - '&e우클릭&7으로 레버를 당겨 전력을 생성'
 DOLLY:
+  description:
+  - '&7설치된 상자를 내용물째로 들어 올려 다른 곳으로 옮겨 설치할 수 있습니다'
+  name: '&b운반 수레'
   type:
   - '&7&o장치'
+  usage:
+  - '&7상자를 우클릭하면 집어 듭니다'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7갈고 선별하고 세척하는 일체형 기계'
+  name: '&6전기 가루 제조기'
   stats:
   - '&8⇨ &b⚡ &7속도: &b10.0배'
   type:
   - '&7&o기계'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7가루를 체질한 광석으로 되돌립니다'
+  name: '&f전기 가루 재활용기'
   stats:
   - '&8⇨ &b⚡ &7속도: &b1.0배'
   type:
   - '&7&o기계'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7이것을 &5엔더 상자 &7측면에 설치해 연결하세요'
+  - '&7아이템을 가져올 곳은 바라보는 &5엔더 상자'
+  - '&7뒤쪽의 &6저장고&7로 옮깁니다'
+  name: '&6엔더 상자 추출 노드'
   type:
   - '&7&o기계'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7이것을 &5엔더 상자 &7측면에 설치해 연결하세요'
+  - '&7아이템을 넣을 곳은 바라보는 &5엔더 상자'
+  - '&7뒤쪽의 &6저장고&7에서 가져옵니다'
+  name: '&b엔더 상자 삽입 노드'
   type:
   - '&7&o기계'
 EXP_DISPENSER:
+  description:
+  - '&c멀티블록 기계입니다!'
+  name: '&a경험치 공급기'
   type:
   - '&7&o멀티블록'
+  usage:
+  - '&7우클릭하면 발사기와 발사기가 바라보는'
+  - '&7통에 들어 있는 경험치 병의 경험치를'
+  - '&7모두 받습니다'
 FIREPROOF_RUNE:
+  description:
+  - '&7떨어진 아이템이 불이나 용암에 타지 않게 합니다'
+  name: '&7고대 룬 &8&l[&c&l내화&8&l]'
   type:
   - '&7&o마법'
+  usage:
+  - '&e이 룬을 떨어진 아이템 위에 던지면'
+  - '&e그 아이템이 &c내화 상태가 됩니다'
 FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun 화물 노드와 전기 부품을'
+  - '&7빠르게 제거하는 데 사용합니다'
+  name: '&6푹신한 렌치'
   type:
   - '&7&o도구'
+  usage:
+  - '&e좌&7/&e우클릭&7으로 호환되는 블록을 파괴합니다'
 FOUNDRY:
+  description:
+  - '&e가루와 주괴를 녹여 저장합니다'
+  - '&c멀티블록 기계입니다!'
+  name: '&c주조소'
+  stats:
+  - '&7가루 138,240개 저장 (큰 상자 40개)'
   type:
   - '&7&o멀티블록'
 GENERATOR_CORE:
+  description:
+  - '&7발전기의 멀티블록 부품'
+  name: '&7발전기 코어'
   type:
   - '&7&o부품'
 HELICOPTER_HAT:
+  description:
+  - '&7브르르르르르르릉'
+  name: '&1헬리콥터 모자'
   type:
   - '&7&o갑옷'
+  usage:
+  - '&e웅크리기&7로 사용'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&a특대형 푹신한 통'
+  stats:
+  - '&b용량: &e138240000 아이템'
   type:
   - '&7&o기타'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7많은 전력을 담는 핸드헬드 충전기'
+  name: '&2특대형 휴대용 충전기'
+  stats:
+  - '&e충전 속도: &7512 J/s'
   type:
   - '&7&o장치'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&5거대 푹신한 통'
+  stats:
+  - '&b용량: &e276480000 아이템'
   type:
   - '&7&o기타'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&6중형 푹신한 통'
+  stats:
+  - '&b용량: &e34560000 아이템'
   type:
   - '&7&o기타'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7많은 전력을 담는 핸드헬드 충전기'
+  name: '&6중형 휴대용 충전기'
+  stats:
+  - '&e충전 속도: &732 J/s'
   type:
   - '&7&o장치'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  - '&7용량을 바꿀 수 있습니다'
+  name: '&e미니 푹신한 통'
+  stats:
+  - '&b최대 용량: &e172800 아이템'
   type:
   - '&7&o기타'
 PAXEL:
+  description:
+  - '&7곡괭이와 도끼, 삽을 하나로 합친 도구!'
+  name: '&b팩셀'
   type:
   - '&7&o도구'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefun 화물 노드와 전기 부품을'
+  - '&7빠르게 제거하는 데 사용합니다'
+  name: '&b강화 푹신한 렌치'
   type:
   - '&7&o도구'
+  usage:
+  - '&e좌&7/&e우클릭&7으로 호환되는 블록을 파괴합니다'
 SCYTHE:
+  description:
+  - '&7작물 5개를 한 번에 베어 냅니다'
+  name: '&e낫'
   type:
   - '&7&o도구'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7아이템을 많은 양으로 저장합니다'
+  name: '&e소형 푹신한 통'
+  stats:
+  - '&b용량: &e17280000 아이템'
   type:
   - '&7&o기타'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7많은 전력을 담는 핸드헬드 충전기'
+  name: '&e소형 휴대용 충전기'
+  stats:
+  - '&e충전 속도: &78 J/s'
   type:
   - '&7&o장치'
 SMART_FACTORY:
+  description:
+  - '&7원재료로 자원을 제작하는'
+  - '&7일체형 기계'
+  name: '&c스마트 공장'
   stats:
   - '&8⇨ &b⚡ &7속도: &b1.0배'
   type:
   - '&7&o기계'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7주조소의 멀티블록 부품'
+  - '&c반드시 주조소에서 사용해야 합니다'
+  name: '&c초고열 화로'
   type:
   - '&7&o부품'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&75x5 반경의 채굴 가능한 블록을 모두 파괴합니다'
+  name: '&e&l개량 폭발 곡괭이'
   type:
   - '&7&o도구'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&75x5 반경의 삽으로 캘 수 있는 블록을 모두 파괴합니다'
+  name: '&e&l개량 폭발 삽'
   type:
   - '&7&o도구'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7나무 한 그루를 한 번에 베어 냅니다'
+  - '&72블록 범위에서 대각선 블록도 처리합니다'
+  name: '&6&l개량 벌목 도끼'
   type:
   - '&7&o도구'
 WARP_PAD:
+  description:
+  - '&7순간이동 패드 설정기로 패드끼리 연결하세요'
+  name: '&6순간이동 패드'
   type:
   - '&7&o기계'
+  usage:
+  - '&e웅크리기&7로 이 블록에서 연결된'
+  - '&7목적지 패드로 이동합니다'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7순간이동 패드 두 개를 연결해 서로 오갈 수 있게 합니다'
+  name: '&6순간이동 패드 설정기'
   type:
   - '&7&o도구'
+  usage:
+  - '&e웅크리고 우클릭&7하여 순간이동 패드에 목적지를 설정합니다'
+  - '&e우클릭&7하여 순간이동 패드에 출발지를 설정합니다'
 WATERING_CAN:
+  description:
+  - '&f식물에 물을 줍니다'
+  name: '&b물뿌리개'
   type:
   - '&7&o도구'
+  usage:
+  - '&7> &e우클릭 &7물을 눌러 물뿌리개를 채웁니다'
+  - '&7> &e우클릭 &7식물을 눌러 성장을 빠르게 합니다.'
+  - '&7> &e우클릭 &7플레이어를 눌러 느리게 만듭니다'
 WATER_SPRINKLER:
+  description:
+  - '&7촉촉 촉촉'
+  name: '&b물 살포기'
   type:
   - '&7&o기계'
