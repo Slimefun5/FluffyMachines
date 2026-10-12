@@ -1,162 +1,396 @@
 ACB_UPGRADE_CARD:
+  description:
+  - '&7Pinapahusay ang Abanseng Bangkong Pangkarga, pinapataas ang kapasidad at bilis ng karga nito'
+  name: '&6Tarheta ng Pampahusay ng ACB'
+  stats:
+  - '&6Bilis ng Karga &a+5J'
+  - '&6Kapasidad &a+128J'
+  - '&6Pagkonsumo ng Enerhiya &c+10J'
   type:
   - '&7&oBahagi'
+  usage:
+  - '&eKanang Pindot &7sa isang &cAbanseng Bangkong Pangkarga'
 ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7Nag-aalis ng isang enkantasyon sa isang bagay'
+  - '&7Nangangailangan ng &6Sinaunang Libro &7upang gumana'
+  name: '&cAbanseng Awtomatikong Tagapagtanggal ng Enkantasyon'
   type:
   - '&7&oMakina'
 ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7Kinakarga ang mga bagay'
+  - '&7Mapapahusay gamit ang &6Tarheta ng Pampahusay ng ACB'
+  name: '&cAbanseng Bangkong Pangkarga'
   type:
   - '&7&oMakina'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fMaglagay ng Elevator Plate sa bawat palapag'
   - '&fat makakapag-teleport ka sa pagitan ng mga ito.'
+  name: '&3Alternatibong Plaka ng Elebeytor'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eKanang Pindot sa Blokeng ito &7upang pangalanan ito'
+  - '&7Gumagamit ng GUI ng Kaban sa halip na GUI ng Libro'
 ANCIENT_BOOK:
+  description:
+  - '&7Ginagamit sa &cAbanseng Awtomatikong Tagapagtanggal ng Enkantasyon'
+  - '&6&oNaglalaman ng nakapokus na dami ng lakas'
+  name: '&6Sinaunang Libro'
   type:
   - '&7&oBahagi'
 AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7Awtomatikong nililikha ang mga resipi ng &5Sinaunang Altar&7'
+  name: '&5Awtomatikong Sinaunang Altar'
   type:
   - '&7&oMakina'
 AUTO_ARMOR_FORGE:
+  description:
+  - '&7Awtomatikong nililikha ang mga resipi ng Pandayan ng Baluti'
+  name: '&7Awtomatikong Pandayan ng Baluti'
   type:
   - '&7&oMakina'
 AUTO_CRAFTING_TABLE:
+  description:
+  - '&7Awtomatikong nililikha ang mga &forihinal &7na resipi'
+  name: '&6Awtomatikong Mesa ng Paglikha'
   type:
   - '&7&oMakina'
 AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7Awtomatikong nililikha ang mga resipi ng &ePinahusay na Mesa ng Paglikha&7'
+  name: '&eAwtomatikong Pinahusay na Mesa ng Paglikha'
   type:
   - '&7&oMakina'
 AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7Awtomatikong nililikha ang mga resipi ng &6Mahikang Gawaan&7'
+  name: '&6Awtomatikong Mahikang Gawaan'
   type:
   - '&7&oMakina'
 AUTO_TABLE_SAW:
+  description:
+  - '&7Awtomatikong nililikha ang mga resipi ng &6Lagareng Mesa&7'
+  name: '&6Awtomatikong Lagareng Mesa'
   type:
   - '&7&oMakina'
 BACKPACK_LOADER:
+  description:
+  - '&7Inililipat ang mga bagay mula sa imbentaryo tungo sa supot-likod'
+  name: '&eTagapagkarga ng Supot-Likod'
   type:
   - '&7&oMakina'
 BACKPACK_UNLOADER:
+  description:
+  - '&7Inaalis ang nilalaman ng mga supot-likod'
+  name: '&eTagapaglabas ng Supot-Likod'
   type:
   - '&7&oMakina'
 BIG_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&bMalaking Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e69120000 Bagay'
   type:
   - '&7&oIba pa'
 BIG_PORTABLE_CHARGER:
+  description:
+  - '&7Hawak-kamay na tsarger na nagtataglay ng maraming lakas'
+  name: '&aMalaking Portable na Tsarger'
+  stats:
+  - '&eBilis ng Karga: &764 J/s'
   type:
   - '&7&oGadyet'
 BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&cWalang-Ilalim na Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e1728000000 Bagay'
   type:
   - '&7&oIba pa'
 CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Ginagamit upang agad maalis ang mga nodo ng kargamento ng Slimefun'
+  - '&7at mga sangkap ng kuryente'
+  name: '&7Carbonadong Mabalahibong Liyabe'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&eKaliwa&7/&eKanang Pindot &7sa katugmang bloke upang basagin ito'
 CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7Hawak-kamay na tsarger na nagtataglay ng maraming lakas'
+  name: '&4Carbonadong Portable na Tsarger'
+  stats:
+  - '&eBilis ng Karga: &74096 J/s'
   type:
   - '&7&oGadyet'
 CARGO_MANIPULATOR:
+  description:
+  - '&7Kinokopya at idinidikit ang mga setting ng nodo ng kargamento sa pagitan ng mga nodo ng kargamento'
+  name: '&9Tagahawak ng Kargamento'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&eKanang Pindot &7upang kopyahin ang mga setting ng nodo ng kargamento'
+  - '&eKaliwang Pindot &7upang idikit ang mga setting ng nodo ng kargamento'
+  - '&eYumuko at Kanang Pindot &7upang linisin ang nodo ng kargamento'
 CRANK_GENERATOR:
+  description:
+  - '&cIto ay isang Multiblokeng Makina!'
+  name: '&7Generadorang Pihitan'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eKanang pindot &7sa pingga upang bumuo ng lakas'
 DOLLY:
+  description:
+  - '&7Dinadampot ang nakalagay na kaban kasama ang nilalaman nito upang maidala at mailagay sa iba'
+  name: '&bKariton'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&7Kanang pindot sa kaban upang dampotin ito'
 ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7Isang makinang lahat-sa-isa na gumigiling, nagsasalok, at naghuhugas'
+  name: '&6Elektrikong Tagagawa ng Alikabok'
   stats:
   - '&8⇨ &b⚡ &7Bilis: &b10.0x'
   type:
   - '&7&oMakina'
 ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7Ipinapanibago ang alikabok tungo sa sinalang mineral'
+  name: '&fElektrikong Tagaresiklo ng Alikabok'
   stats:
   - '&8⇨ &b⚡ &7Bilis: &b1.0x'
   type:
   - '&7&oMakina'
 ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7Ilagay ito sa gilid ng &5Kaban ng Ender &7upang iugnay'
+  - '&7Ililipat nito ang mga bagay mula sa nakaharap na &5Kaban ng Ender'
+  - '&7tungo sa &6Lalagyan &7sa likod nito'
+  name: '&6Nodo ng Paghango sa Kaban ng Ender'
   type:
   - '&7&oMakina'
 ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7Ilagay ito sa gilid ng &5Kaban ng Ender &7upang iugnay'
+  - '&7Ililipat nito ang mga bagay sa nakaharap na &5Kaban ng Ender'
+  - '&7mula sa &6Lalagyan &7sa likod nito'
+  name: '&bNodo ng Pagpasok sa Kaban ng Ender'
   type:
   - '&7&oMakina'
 EXP_DISPENSER:
+  description:
+  - '&cIto ay isang Multiblokeng Makina!'
+  name: '&aTagapamigay ng Exp'
   type:
   - '&7&oMultiblock'
+  usage:
+  - '&7Kanang pindot upang matanggap ang lahat ng exp'
+  - '&7mula sa mga boteng exp sa dispenser'
+  - '&7at sa bariles na nakaharap sa dispenser'
 FIREPROOF_RUNE:
+  description:
+  - '&7Pinipigilan ang nabitawang bagay na masunog sa apoy o laba'
+  name: '&7Sinaunang Runa &8&l[&c&lHindi Masusunog&8&l]'
   type:
   - '&7&oMahikal'
+  usage:
+  - '&eIbitaw ang runang ito sa isang nabitawang bagay upang'
+  - '&egawin itong &chindi masusunog'
 FLUFFY_WRENCH:
+  description:
+  - '&7Ginagamit upang agad maalis ang mga nodo ng kargamento ng Slimefun'
+  - '&7at mga sangkap ng kuryente'
+  name: '&6Mabalahibong Liyabe'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&eKaliwa&7/&eKanang Pindot &7sa katugmang bloke upang basagin ito'
 FOUNDRY:
+  description:
+  - '&eTinutunaw at iniimbak ang mga alikabok at bareta'
+  - '&cIto ay isang Multiblokeng Makina!'
+  name: '&cPagawaan ng Metal'
+  stats:
+  - '&7Nag-iimbak ng 138,240 alikabok (40 Dobleng Kaban)'
   type:
   - '&7&oMultiblock'
 GENERATOR_CORE:
+  description:
+  - '&7Multiblokeng sangkap ng mga generador'
+  name: '&7Ubod ng Generador'
   type:
   - '&7&oBahagi'
 HELICOPTER_HAT:
+  description:
+  - '&7brrrrrrrrRRRRRRRR'
+  name: '&1Sombrerong Helikoptero'
   type:
   - '&7&oBaluti'
+  usage:
+  - '&eYumuko &7upang magamit'
 LARGE_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&aNapakalaking Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e138240000 Bagay'
   type:
   - '&7&oIba pa'
 LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7Hawak-kamay na tsarger na nagtataglay ng maraming lakas'
+  name: '&2Napakalaking Portable na Tsarger'
+  stats:
+  - '&eBilis ng Karga: &7512 J/s'
   type:
   - '&7&oGadyet'
 MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&5Dambuhalang Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e276480000 Bagay'
   type:
   - '&7&oIba pa'
 MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&6Katamtamang Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e34560000 Bagay'
   type:
   - '&7&oIba pa'
 MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7Hawak-kamay na tsarger na nagtataglay ng maraming lakas'
+  name: '&6Katamtamang Portable na Tsarger'
+  stats:
+  - '&eBilis ng Karga: &732 J/s'
   type:
   - '&7&oGadyet'
 MINI_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  - '&7May kapasidad na mababago'
+  name: '&eMunting Mabalahibong Bariles'
+  stats:
+  - '&bPinakamataas na Kapasidad: &e172800 Bagay'
   type:
   - '&7&oIba pa'
 PAXEL:
+  description:
+  - '&7Piko, palakol, at pala sa isang kasangkapan!'
+  name: '&bPaxel'
   type:
   - '&7&oKasangkapan'
 REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Ginagamit upang agad maalis ang mga nodo ng kargamento ng Slimefun'
+  - '&7at mga sangkap ng kuryente'
+  name: '&bPinatibay na Mabalahibong Liyabe'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&eKaliwa&7/&eKanang Pindot &7sa katugmang bloke upang basagin ito'
 SCYTHE:
+  description:
+  - '&7Binabasag ang 5 pananim sa isang hakbang'
+  name: '&eKarit'
   type:
   - '&7&oKasangkapan'
 SMALL_FLUFFY_BARREL:
+  description:
+  - '&7Nag-iimbak ng malaking dami ng isang bagay'
+  name: '&eMaliit na Mabalahibong Bariles'
+  stats:
+  - '&bKapasidad: &e17280000 Bagay'
   type:
   - '&7&oIba pa'
 SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7Hawak-kamay na tsarger na nagtataglay ng maraming lakas'
+  name: '&eMaliit na Portable na Tsarger'
+  stats:
+  - '&eBilis ng Karga: &78 J/s'
   type:
   - '&7&oGadyet'
 SMART_FACTORY:
+  description:
+  - '&7Isang makinang lahat-sa-isa na lumilikha ng'
+  - '&7mga yaman mula sa hilaw na materyal'
+  name: '&cMatalinong Pabrika'
   stats:
   - '&8⇨ &b⚡ &7Bilis: &b1.0x'
   type:
   - '&7&oMakina'
 SUPERHEATED_FURNACE:
+  description:
+  - '&7Multiblokeng sangkap ng Pagawaan ng Metal'
+  - '&cDapat gamitin sa Pagawaan ng Metal'
+  name: '&cSuper Pinainit na Hurno'
   type:
   - '&7&oBahagi'
 UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7Binabasag ang lahat ng minemina na bloke sa 5x5 na radyus'
+  name: '&e&lPinahusay na Pampasabog na Piko'
   type:
   - '&7&oKasangkapan'
 UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7Binabasag ang lahat ng bloke na kayang palahin sa 5x5 na radyus'
+  name: '&e&lPinahusay na Pampasabog na Pala'
   type:
   - '&7&oKasangkapan'
 UPGRADED_LUMBER_AXE:
+  description:
+  - '&7Pinapabagsak ang buong puno sa isang hakbang'
+  - '&72-blokeng abot at gumagana rin sa mga pahilis na bloke'
+  name: '&6&lPinahusay na Palakol sa Troso'
   type:
   - '&7&oKasangkapan'
 WARP_PAD:
+  description:
+  - '&7Gumamit ng Tagaayos ng Plataporma ng Paglipat upang iugnay ang mga Plataporma ng Paglipat'
+  name: '&6Plataporma ng Paglipat'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eYumuko &7sa blokeng ito upang maglipat tungo sa'
+  - '&7naka-ugnay na patutunguhang plataporma'
 WARP_PAD_CONFIGURATOR:
+  description:
+  - '&7Iniuugnay ang dalawang Plataporma ng Paglipat upang makalipat sa pagitan nila'
+  name: '&6Tagaayos ng Plataporma ng Paglipat'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&eYumuko at Kanang Pindot &7sa Plataporma ng Paglipat upang itakda ang patutunguhan'
+  - '&eKanang Pindot &7sa Plataporma ng Paglipat upang itakda ang pinagmulan'
 WATERING_CAN:
+  description:
+  - '&fDinidiligan ang mga Halaman'
+  name: '&bPandilig'
   type:
   - '&7&oKasangkapan'
+  usage:
+  - '&7> &eKanang Pindot &7sa tubig upang punuin ang pandilig'
+  - '&7> &eKanang Pindot &7sa halaman upang bilisan ang pagtubo.'
+  - '&7> &eKanang Pindot &7sa manlalaro upang pabagalin siya'
 WATER_SPRINKLER:
+  description:
+  - '&7Talsik talsik'
+  name: '&bPanalsik ng Tubig'
   type:
   - '&7&oMakina'
