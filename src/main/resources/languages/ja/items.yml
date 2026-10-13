@@ -1,0 +1,396 @@
+ACB_UPGRADE_CARD:
+  description:
+  - '&7アドバンストチャージングベンチをアップグレードし、容量と充電速度を増加させる'
+  name: '&6ACBアップグレードカード'
+  stats:
+  - '&6充電速度 &a+5J'
+  - '&6容量 &a+128J'
+  - '&6エネルギー消費 &c+10J'
+  type:
+  - '&7&oコンポーネント'
+  usage:
+  - '&e右クリック &7で&cアドバンストチャージングベンチに使用'
+ADVANCED_AUTO_DISENCHANTER:
+  description:
+  - '&7アイテムからエンチャントを1つ除去する'
+  - '&7動作には&6古代の書物&7が必要'
+  name: '&cアドバンスト自動エンチャント除去機'
+  type:
+  - '&7&oマシン'
+ADVANCED_CHARGING_BENCH:
+  description:
+  - '&7アイテムを充電する'
+  - '&7&6ACBアップグレードカードでアップグレード可能'
+  name: '&cアドバンストチャージングベンチ'
+  type:
+  - '&7&oマシン'
+ALTERNATE_ELEVATOR_PLATE:
+  description:
+  - '&fすべての階にエレベータープレートを設置すると'
+  - '&fそれらの間をテレポートできるようになる。'
+  name: '&3代替エレベータープレート'
+  type:
+  - '&7&oマシン'
+  usage:
+  - '&eこのブロックを右クリック &7して名前を付ける'
+  - '&7本のGUIではなくチェストGUIを使用する'
+ANCIENT_BOOK:
+  description:
+  - '&7&cアドバンスト自動エンチャント除去機で使用'
+  - '&6&o濃縮された力を大量に含んでいる'
+  name: '&6古代の書物'
+  type:
+  - '&7&oコンポーネント'
+AUTO_ANCIENT_ALTAR:
+  description:
+  - '&7&5古代の祭壇&7のレシピを自動でクラフトする'
+  name: '&5自動古代の祭壇'
+  type:
+  - '&7&oマシン'
+AUTO_ARMOR_FORGE:
+  description:
+  - '&7アーマーフォージのレシピを自動でクラフトする'
+  name: '&7自動アーマーフォージ'
+  type:
+  - '&7&oマシン'
+AUTO_CRAFTING_TABLE:
+  description:
+  - '&7&fバニラ&7のレシピを自動でクラフトする'
+  name: '&6自動作業台'
+  type:
+  - '&7&oマシン'
+AUTO_ENHANCED_CRAFTING_TABLE:
+  description:
+  - '&7&e強化作業台&7のレシピを自動でクラフトする'
+  name: '&e自動強化作業台'
+  type:
+  - '&7&oマシン'
+AUTO_MAGIC_WORKBENCH:
+  description:
+  - '&7&6魔法の作業台&7のレシピを自動でクラフトする'
+  name: '&6自動魔法の作業台'
+  type:
+  - '&7&oマシン'
+AUTO_TABLE_SAW:
+  description:
+  - '&7&6テーブルソー&7のレシピを自動でクラフトする'
+  name: '&6自動テーブルソー'
+  type:
+  - '&7&oマシン'
+BACKPACK_LOADER:
+  description:
+  - '&7インベントリからバックパックへアイテムを移動する'
+  name: '&eバックパックローダー'
+  type:
+  - '&7&oマシン'
+BACKPACK_UNLOADER:
+  description:
+  - '&7バックパックの中身を空にする'
+  name: '&eバックパックアンローダー'
+  type:
+  - '&7&oマシン'
+BIG_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&bビッグフラッフィーバレル'
+  stats:
+  - '&b容量: &e69120000個'
+  type:
+  - '&7&oその他'
+BIG_PORTABLE_CHARGER:
+  description:
+  - '&7大量の電力を蓄えられる携帯充電器'
+  name: '&aビッグポータブルチャージャー'
+  stats:
+  - '&e充電速度: &764 J/s'
+  type:
+  - '&7&oガジェット'
+BOTTOMLESS_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&cボトムレスフラッフィーバレル'
+  stats:
+  - '&b容量: &e1728000000個'
+  type:
+  - '&7&oその他'
+CARBONADO_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefunのカーゴノードを素早く取り外すために使用'
+  - '&7電力コンポーネントにも使用可能'
+  name: '&7カルボナードフラッフィーレンチ'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&e左&7/&e右クリック &7で対応するブロックを破壊する'
+CARBONADO_PORTABLE_CHARGER:
+  description:
+  - '&7大量の電力を蓄えられる携帯充電器'
+  name: '&4カルボナードポータブルチャージャー'
+  stats:
+  - '&e充電速度: &74096 J/s'
+  type:
+  - '&7&oガジェット'
+CARGO_MANIPULATOR:
+  description:
+  - '&7カーゴノード間で設定をコピーして貼り付ける'
+  name: '&9カーゴマニピュレーター'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&e右クリック &7でカーゴノードの設定をコピー'
+  - '&e左クリック &7でカーゴノードの設定を貼り付け'
+  - '&eスニークして右クリック &7でカーゴノードをクリア'
+CRANK_GENERATOR:
+  description:
+  - '&cこれはマルチブロックマシンだ！'
+  name: '&7クランク発電機'
+  type:
+  - '&7&o発電機'
+  usage:
+  - '&e右クリック &7でレバーを操作し発電する'
+DOLLY:
+  description:
+  - '&7設置されたチェストを中身ごと回収し、別の場所へ運んで設置できる'
+  name: '&bドーリー'
+  type:
+  - '&7&oガジェット'
+  usage:
+  - '&7チェストを右クリックして回収する'
+ELECTRIC_DUST_FABRICATOR:
+  description:
+  - '&7粉砕、選鉱、洗浄を1台でこなすオールインワンマシン'
+  name: '&6電動ダストファブリケーター'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b10.0倍'
+  type:
+  - '&7&oマシン'
+ELECTRIC_DUST_RECYCLER:
+  description:
+  - '&7ダストをふるい分けした鉱石に再変換する'
+  name: '&f電動ダストリサイクラー'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b1.0倍'
+  type:
+  - '&7&oマシン'
+ENDER_CHEST_EXTRACTION_NODE:
+  description:
+  - '&7&5エンダーチェスト&7の側面に設置して接続する'
+  - '&7向いている&5エンダーチェストからアイテムを移動し'
+  - '&7背後の&6コンテナ&7へ送る'
+  name: '&6エンダーチェスト抽出ノード'
+  type:
+  - '&7&oマシン'
+ENDER_CHEST_INSERTION_NODE:
+  description:
+  - '&7&5エンダーチェスト&7の側面に設置して接続する'
+  - '&7向いている&5エンダーチェストへアイテムを移動し'
+  - '&7背後の&6コンテナ&7から送る'
+  name: '&bエンダーチェスト挿入ノード'
+  type:
+  - '&7&oマシン'
+EXP_DISPENSER:
+  description:
+  - '&cこれはマルチブロックマシンだ！'
+  name: '&a経験値ディスペンサー'
+  type:
+  - '&7&oマルチブロック'
+  usage:
+  - '&7右クリックですべての経験値を受け取る'
+  - '&7ディスペンサー内の経験値瓶と'
+  - '&7ディスペンサーが向いている樽から'
+FIREPROOF_RUNE:
+  description:
+  - '&7ドロップしたアイテムが炎や溶岩で燃えるのを防ぐ'
+  name: '&7古代のルーン &8&l[&c&l耐火&8&l]'
+  type:
+  - '&7&o魔法'
+  usage:
+  - '&eこのルーンをドロップ済みアイテムに落として'
+  - '&eそれを&c耐火にする'
+FLUFFY_WRENCH:
+  description:
+  - '&7Slimefunのカーゴノードを素早く取り外すために使用'
+  - '&7電力コンポーネントにも使用可能'
+  name: '&6フラッフィーレンチ'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&e左&7/&e右クリック &7で対応するブロックを破壊する'
+FOUNDRY:
+  description:
+  - '&eダストとインゴットを溶解して保管する'
+  - '&cこれはマルチブロックマシンだ！'
+  name: '&cファウンドリー'
+  stats:
+  - '&7138,240個のダストを保管（ダブルチェスト40個分）'
+  type:
+  - '&7&oマルチブロック'
+GENERATOR_CORE:
+  description:
+  - '&7発電機のマルチブロックコンポーネント'
+  name: '&7発電機コア'
+  type:
+  - '&7&oコンポーネント'
+HELICOPTER_HAT:
+  description:
+  - '&7ブオオオオオオオン'
+  name: '&1ヘリコプターハット'
+  type:
+  - '&7&o防具'
+  usage:
+  - '&eスニーク &7で使用'
+LARGE_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&aラージフラッフィーバレル'
+  stats:
+  - '&b容量: &e138240000個'
+  type:
+  - '&7&oその他'
+LARGE_PORTABLE_CHARGER:
+  description:
+  - '&7大量の電力を蓄えられる携帯充電器'
+  name: '&2ラージポータブルチャージャー'
+  stats:
+  - '&e充電速度: &7512 J/s'
+  type:
+  - '&7&oガジェット'
+MASSIVE_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&5マッシブフラッフィーバレル'
+  stats:
+  - '&b容量: &e276480000個'
+  type:
+  - '&7&oその他'
+MEDIUM_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&6ミディアムフラッフィーバレル'
+  stats:
+  - '&b容量: &e34560000個'
+  type:
+  - '&7&oその他'
+MEDIUM_PORTABLE_CHARGER:
+  description:
+  - '&7大量の電力を蓄えられる携帯充電器'
+  name: '&6ミディアムポータブルチャージャー'
+  stats:
+  - '&e充電速度: &732 J/s'
+  type:
+  - '&7&oガジェット'
+MINI_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  - '&7容量を変更できる'
+  name: '&eミニフラッフィーバレル'
+  stats:
+  - '&b最大容量: &e172800個'
+  type:
+  - '&7&oその他'
+PAXEL:
+  description:
+  - '&7ツルハシ、斧、シャベルを1つにまとめた道具！'
+  name: '&bパクセル'
+  type:
+  - '&7&oツール'
+REINFORCED_FLUFFY_WRENCH:
+  description:
+  - '&7Slimefunのカーゴノードを素早く取り外すために使用'
+  - '&7電力コンポーネントにも使用可能'
+  name: '&b強化フラッフィーレンチ'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&e左&7/&e右クリック &7で対応するブロックを破壊する'
+SCYTHE:
+  description:
+  - '&7一度に5マスの作物を収穫する'
+  name: '&e大鎌'
+  type:
+  - '&7&oツール'
+SMALL_FLUFFY_BARREL:
+  description:
+  - '&7大量のアイテムを保管する'
+  name: '&eスモールフラッフィーバレル'
+  stats:
+  - '&b容量: &e17280000個'
+  type:
+  - '&7&oその他'
+SMALL_PORTABLE_CHARGER:
+  description:
+  - '&7大量の電力を蓄えられる携帯充電器'
+  name: '&eスモールポータブルチャージャー'
+  stats:
+  - '&e充電速度: &78 J/s'
+  type:
+  - '&7&oガジェット'
+SMART_FACTORY:
+  description:
+  - '&7原材料から資源を自動で'
+  - '&7クラフトするオールインワンマシン'
+  name: '&cスマートファクトリー'
+  stats:
+  - '&8⇨ &b⚡ &7速度: &b1.0倍'
+  type:
+  - '&7&oマシン'
+SUPERHEATED_FURNACE:
+  description:
+  - '&7ファウンドリーのマルチブロックコンポーネント'
+  - '&cファウンドリー内でのみ使用可能'
+  name: '&c超高熱炉'
+  type:
+  - '&7&oコンポーネント'
+UPGRADED_EXPLOSIVE_PICKAXE:
+  description:
+  - '&7半径5x5の採掘可能ブロックをすべて破壊する'
+  name: '&e&l強化爆発ツルハシ'
+  type:
+  - '&7&oツール'
+UPGRADED_EXPLOSIVE_SHOVEL:
+  description:
+  - '&7半径5x5のシャベル可能ブロックをすべて破壊する'
+  name: '&e&l強化爆発シャベル'
+  type:
+  - '&7&oツール'
+UPGRADED_LUMBER_AXE:
+  description:
+  - '&7木を一度にまるごと伐採する'
+  - '&7リーチ2ブロック、斜めのブロックにも対応'
+  name: '&6&l強化伐採斧'
+  type:
+  - '&7&oツール'
+WARP_PAD:
+  description:
+  - '&7ワープパッドコンフィギュレーターでワープパッドを連結する'
+  name: '&6ワープパッド'
+  type:
+  - '&7&oマシン'
+  usage:
+  - '&eしゃがむ &7とこのブロックの上で'
+  - '&7連結先のパッドへテレポートする'
+WARP_PAD_CONFIGURATOR:
+  description:
+  - '&72つのワープパッドを連結し、その間をテレポートできるようにする'
+  name: '&6ワープパッドコンフィギュレーター'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&eスニークして右クリック &7でワープパッドに目的地を設定'
+  - '&e右クリック &7でワープパッドに出発地を設定'
+WATERING_CAN:
+  description:
+  - '&f植物に水をやる'
+  name: '&bジョウロ'
+  type:
+  - '&7&oツール'
+  usage:
+  - '&7> &e右クリック &7で水源からジョウロに水を補充'
+  - '&7> &e右クリック &7で植物の成長を早める。'
+  - '&7> &e右クリック &7でプレイヤーの動きを遅くする'
+WATER_SPRINKLER:
+  description:
+  - '&7シュワシュワ'
+  name: '&bウォータースプリンクラー'
+  type:
+  - '&7&oマシン'
