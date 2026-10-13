@@ -13,7 +13,6 @@ import org.bukkit.inventory.ItemStack;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun5.libraries.commons.lang.WordUtils;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 
 /**
@@ -76,8 +75,7 @@ public final class Messages {
     /**
      * The same for a bare {@link ItemStack}, which may be a vanilla one.
      *
-     * @implNote A vanilla stack falls back to its humanised material name, which is the fork's
-     *           existing behaviour for vanilla items everywhere and not this addon's to change.
+     * @implNote A vanilla stack is named per viewer by the core vanilla translation service.
      */
     @Nonnull
     public static String itemName(@Nullable Player viewer, @Nullable ItemStack stack) {
@@ -88,7 +86,7 @@ public final class Messages {
         if (item != null) {
             return itemName(viewer, item);
         }
-        return WordUtils.capitalizeFully(stack.getType().name().replace("_", " "));
+        return Slimefun.getVanillaTranslationService().material(viewer, stack.getType());
     }
 
     /**
