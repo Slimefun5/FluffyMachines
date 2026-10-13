@@ -11,9 +11,11 @@ import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunIte
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.ncbpfluffybear.fluffymachines.utils.CompatUtils;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -55,7 +57,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
             Player p = e.getPlayer();
 
             if (timeouts.containsKey(p) && timeouts.get(p) + DELAY > System.currentTimeMillis()) {
-                Utils.send(p, "&cPlease wait before using the dolly again!");
+                Messages.send(p, ChatColor.RED, "dolly.cooldown", "Please wait before using the dolly again!");
                 return;
             }
 
@@ -127,7 +129,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
             // Dolly full/empty status determined by lock item in first slot
             // Make sure the dolly is empty
             if (!isLockItem(backpack.getInventory().getItem(0))) {
-                Utils.send(p, "&cThis dolly is already carrying a chest!");
+                Messages.send(p, ChatColor.RED, "dolly.already-carrying", "This dolly is already carrying a chest!");
                 return;
             }
 
@@ -170,7 +172,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
             chest.setType(MaterialCompat.safe(XMaterial.AIR));
 
-            Utils.send(p, "&aYou have picked up this chest");
+            Messages.send(p, ChatColor.GREEN, "dolly.picked-up", "You have picked up this chest");
         }
     }
 
@@ -190,13 +192,13 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
             final ItemStack[][] bpContents = {backpack.getInventory().getContents()};
 
             if (isLockItem(bpContents[0][0])) {
-                Utils.send(p, "&cYou must pick up a chest first!");
+                Messages.send(p, ChatColor.RED, "dolly.need-chest", "You must pick up a chest first!");
                 return;
             }
 
             boolean singleChest = isLockItem(bpContents[0][27]);
             if (!canChestFit(chestBlock, p, singleChest)) {
-                Utils.send(p, "&cYou can't fit your chest there!");
+                Messages.send(p, ChatColor.RED, "dolly.no-room", "You can't fit your chest there!");
                 return;
             }
 
@@ -214,7 +216,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
 
                     ((InventoryHolder) chestBlock.getState()).getInventory().setStorageContents(bpContents[0]);
                     dolly.setType(MaterialCompat.safe(XMaterial.MINECART));
-                    Utils.send(p, "&aChest has been placed");
+                    Messages.send(p, ChatColor.GREEN, "dolly.placed", "Chest has been placed");
                 }
             });
         });

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "This barrel can't be broken since it has items inside it!"
+  nearby-items: "Please remove nearby items before breaking this barrel!"
+  overflow: "There are more than %amount% items in this barrel! Dropping %amount% items instead!"
+  empty: "This barrel is empty!"
+
+cargo:
+  copied: "Your %item% has been copied."
+  nothing-copied: "You have not copied a cargo node yet."
+  wrong-node: "You copied a %copied% but you are trying to modify a %target%!"
+  missing-filter-item: "You do not have %item%. Skipping this item."
+  pasted: "Your %item% has been pasted."
+  cleared: "The selected Cargo Node has been cleared"
+
+charger:
+  cannot-charge-charger: "You can not charge a portable charger"
+  item-full: "This item is already full!"
+  not-enough-power: "Your charger does not have enough power!"
+  forgotten-item: "Hey! You left something in the charger! Dropping it now..."
+
+charging-bench:
+  wrong-target: "You can only use this card on an %item%"
+  maxed: "This %item% is maxed (Tier %max%)"
+  upgraded: "This %item% has been upgraded! %tier%"
+  tier: "Tier: %tier%"
+
+command:
+  invalid: "Invalid command"
+  no-console: "There are no console commands available"
+  version: "The current version is %version%"
+  specify-key-and-data: "Please specify the key and the data"
+  info-added: "Info has been added."
+  look-at-slimefun-block: "You must be looking at a Slimefun block"
+  not-found: "Command not found"
+
+crank-generator:
+  missing-core: "Missing generator core"
+
+dolly:
+  cooldown: "Please wait before using the dolly again!"
+  already-carrying: "This dolly is already carrying a chest!"
+  picked-up: "You have picked up this chest"
+  need-chest: "You must pick up a chest first!"
+  no-room: "You can't fit your chest there!"
+  placed: "Chest has been placed"
+
+ender-chest-node:
+  registered: "%item% registered to %player% %uuid%"
+  owner: "This %item% belongs to %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "You can only place this on an Ender Chest!"
+
+exp-dispenser:
+  empty: "There were no experience bottles in the dispenser!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Your item is now fireproof"
+  failed: "Your item could not be made fireproof"
+
+foundry:
+  registered: "Foundry has been registered. Right click the furnace with a lava bucket to heat."
+  needs-lava: "This foundry still needs to be filled with lava!"
+
+keyed-crafter:
+  no-vanilla-items: "You can not use vanilla items with this machine!"
+  recipe-set: "Target recipe set to %item%"
+  unsupported: "This item is not supported!"
+  right-click-hint: "Right click the machine with an item to set the vanilla recipe"
+
+mini-barrel:
+  enter-size: "Type the new size of the barrel. Max size: %max%"
+  out-of-range: "The new size must be between 0 and %max%"
+  remove-items: "Remove items from the barrel before changing it to this size!"
+  size-changed: "Max size has been changed to %size%"
+
+splash:
+  self: "Splash!"
+  target: "You were splashed by %player%!"
+
+superheated-furnace:
+  has-items: "This superheated furnace can't be broken since it has items inside it!"
+  nearby-items: "Please remove nearby items before breaking this superheated furnace!"
+  overflow: "There are more than %amount% items in this superheated furnace! Dropping %amount% items instead!"
+
+warp-pad:
+  marked-destination: "This pad has been marked as a %state% and bound to your configurator"
+  marked-origin: "This pad has been marked as an %state% and your configurator's settings have been pasted onto this pad"
+  destination: "Destination"
+  origin: "Origin"
+  too-far: "You can not link blocks more than %distance% blocks apart!"
+  instructions: "Sneak and right click on a %pad% to set the destination, then right click another %pad% to set the origin!"
+  needs-configurator: "Configure this %pad% using a %configurator%"
+  missing-destination: "Missing destination %pad%!"
+
+watering-can:
+  no-exotic-garden: "You can not water Exotic Garden plants!"
+  needs-refill: "You need to refill your %item%!"
+  filled: "You have filled your %item%"
+  error: "Error"

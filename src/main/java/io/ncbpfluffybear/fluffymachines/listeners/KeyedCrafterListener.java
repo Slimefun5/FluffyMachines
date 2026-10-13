@@ -7,11 +7,13 @@ import io.github.thebusybiscuit.slimefun5.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.ncbpfluffybear.fluffymachines.machines.AutoCraftingTable;
 import io.ncbpfluffybear.fluffymachines.machines.SmartFactory;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import java.util.Optional;
 import javax.annotation.Nullable;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.apache.commons.lang.WordUtils;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
@@ -56,7 +58,7 @@ public class KeyedCrafterListener implements Listener {
                 e.cancel();
 
                 if (key == null) {
-                    Utils.send(p, "&cYou can not use vanilla items with this machine!");
+                    Messages.send(p, ChatColor.RED, "keyed-crafter.no-vanilla-items", "You can not use vanilla items with this machine!");
                     return;
                 }
 
@@ -66,9 +68,10 @@ public class KeyedCrafterListener implements Listener {
                     BlockStorage.getInventory(b).replaceExistingItem(SmartFactory.RECIPE_SLOT,
                             SmartFactory.getDisplayItem(key, ((RecipeDisplayItem) sfBlock).getDisplayRecipes())
                     );
-                    Utils.send(p, "&aTarget recipe set to " + key.getItemName());
+                    Messages.send(p, ChatColor.GREEN, "keyed-crafter.recipe-set", "Target recipe set to %item%",
+                            line -> line.replace("%item%", Messages.itemName(p, key)));
                 } else {
-                    Utils.send(p, "&cThis item is not supported!");
+                    Messages.send(p, ChatColor.RED, "keyed-crafter.unsupported", "This item is not supported!");
                 }
 
             } else if (sfBlock instanceof AutoCraftingTable) {
@@ -79,7 +82,7 @@ public class KeyedCrafterListener implements Listener {
                 e.cancel();
 
                 if (item.getType() == MaterialCompat.safe(XMaterial.AIR)) {
-                    Utils.send(p, "&cRight click the machine with an item to set the vanilla recipe");
+                    Messages.send(p, ChatColor.RED, "keyed-crafter.right-click-hint", "Right click the machine with an item to set the vanilla recipe");
                     return;
                 }
 
@@ -87,9 +90,8 @@ public class KeyedCrafterListener implements Listener {
                         AutoCraftingTable.createKeyItem(item.getType())
                 );
 
-                Utils.send(p, "&aTarget recipe set to "
-                        + WordUtils.capitalizeFully(item.getType().name().replace("_", " "))
-                );
+                Messages.send(p, ChatColor.GREEN, "keyed-crafter.recipe-set", "Target recipe set to %item%",
+                        line -> line.replace("%item%", Messages.itemName(p, item)));
             }
         }
     }

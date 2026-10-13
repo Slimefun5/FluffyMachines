@@ -17,6 +17,7 @@ import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
 import io.github.thebusybiscuit.slimefun5.utils.itemstack.ItemStackWrapper;
 import io.ncbpfluffybear.fluffymachines.objects.DoubleHologramOwner;
 import io.ncbpfluffybear.fluffymachines.objects.NonHopperableBlock;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -153,7 +154,7 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
                     int itemCount = 0;
 
                     if (breakOnlyWhenEmpty.getValue() && stored != 0) {
-                        Utils.send(p, "&cThis barrel can't be broken since it has items inside it!");
+                        Messages.send(p, ChatColor.RED, "barrel.has-items", "This barrel can't be broken since it has items inside it!");
                         e.setCancelled(true);
                         return;
                     }
@@ -165,7 +166,7 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
                     }
 
                     if (itemCount > 5) {
-                        Utils.send(p, "&cPlease remove nearby items before breaking this barrel!");
+                        Messages.send(p, ChatColor.RED, "barrel.nearby-items", "Please remove nearby items before breaking this barrel!");
                         e.setCancelled(true);
                         return;
                     }
@@ -185,8 +186,9 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
 
                         if (stored > OVERFLOW_AMOUNT) {
 
-                            Utils.send(p, "&eThere are more than " + OVERFLOW_AMOUNT + " items in this barrel! " +
-                                    "Dropping " + OVERFLOW_AMOUNT + " items instead!");
+                            Messages.send(p, ChatColor.YELLOW, "barrel.overflow",
+                                    "There are more than %amount% items in this barrel! Dropping %amount% items instead!",
+                                    line -> line.replace("%amount%", String.valueOf(OVERFLOW_AMOUNT)));
                             int toRemove = OVERFLOW_AMOUNT;
                             while (toRemove >= stackSize) {
 
@@ -645,12 +647,12 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
                     }
                 }
             }
-            Utils.send(p, "&cThis barrel is empty!");
+            Messages.send(p, ChatColor.RED, "barrel.empty", "This barrel is empty!");
             return;
         }
 
         if (storedItem.getType() == MaterialCompat.safe(XMaterial.BARRIER)) {
-            Utils.send(p, "&cThis barrel is empty!");
+            Messages.send(p, ChatColor.RED, "barrel.empty", "This barrel is empty!");
             return;
         }
 

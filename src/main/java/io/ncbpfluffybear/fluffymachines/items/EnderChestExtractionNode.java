@@ -4,6 +4,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun5.core.handlers.BlockUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.items.magical.talismans.Talisman;
 import io.github.thebusybiscuit.slimefun5.libraries.paperlib.PaperLib;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
@@ -13,6 +14,7 @@ import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
@@ -157,8 +159,10 @@ public class EnderChestExtractionNode extends SlimefunItem {
                 if (!e.isCancelled()) {
                     BlockStorage.addBlockInfo(b, "owner", p.getUniqueId().toString());
                     BlockStorage.addBlockInfo(b, "playername", p.getDisplayName());
-                    Utils.send(p, "&aEnder Chest Extraction Node registered to " + p.getDisplayName()
-                        + " &7(UUID: " + p.getUniqueId() + ")");
+                    Messages.send(p, ChatColor.GREEN, "ender-chest-node.registered", "%item% registered to %player% %uuid%",
+                        line -> line.replace("%item%", Messages.itemName(p, EnderChestExtractionNode.this))
+                            .replace("%player%", p.getDisplayName())
+                            .replace("%uuid%", Messages.uuidTag(p, p.getUniqueId().toString())));
                 }
             }
         };
@@ -168,9 +172,10 @@ public class EnderChestExtractionNode extends SlimefunItem {
         return e -> {
             Player p = e.getPlayer();
             Block b = e.getClickedBlock().get();
-            Utils.send(p, "&eThis Ender Chest Extraction Node belongs to " +
-                BlockStorage.getLocationInfo(b.getLocation(), "playername")
-                + " &7(UUID: " + BlockStorage.getLocationInfo(b.getLocation(), "owner") + ")");
+            Messages.send(p, ChatColor.YELLOW, "ender-chest-node.owner", "This %item% belongs to %player% %uuid%",
+                line -> line.replace("%item%", Messages.itemName(p, EnderChestExtractionNode.this))
+                    .replace("%player%", BlockStorage.getLocationInfo(b.getLocation(), "playername"))
+                    .replace("%uuid%", Messages.uuidTag(p, BlockStorage.getLocationInfo(b.getLocation(), "owner"))));
         };
     }
 }

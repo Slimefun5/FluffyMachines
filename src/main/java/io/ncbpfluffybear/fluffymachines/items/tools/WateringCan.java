@@ -10,6 +10,8 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
+import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemSetting;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
@@ -17,6 +19,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunIte
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.Location;
@@ -162,7 +165,7 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
 
                         if (BlockStorage.hasBlockInfo(b)) {
                             if (exoticGardenSuccessChance.getValue() == 0) {
-                                Utils.send(p, "&cYou can not water Exotic Garden plants!");
+                                Messages.send(p, ChatColor.RED, "watering-can.no-exotic-garden", "You can not water Exotic Garden plants!");
                                 return;
                             }
                             if (random < exoticGardenSuccessChance.getValue()) {
@@ -203,7 +206,8 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
         if (updateType == 1) {
 
             if (usesLeft == 0) {
-                Utils.send(p, "&cYou need to refill your Watering Can!");
+                Messages.send(p, ChatColor.RED, "watering-can.needs-refill", "You need to refill your %item%!",
+                        line -> line.replace("%item%", Messages.itemName(p, FluffyItems.WATERING_CAN)));
                 return false;
             }
             p.playSound(p.getLocation(), Sound.ENTITY_DROWNED_AMBIENT_WATER, 0.5F, 1F);
@@ -211,18 +215,20 @@ public class WateringCan extends SimpleSlimefunItem<ItemUseHandler> implements C
 
         } else if (updateType == 2) {
             p.playSound(p.getLocation(), Sound.ENTITY_DROWNED_DEATH_WATER, 0.5F, 1F);
-            Utils.send(p, "&aYou have filled your Watering Can");
+            Messages.send(p, ChatColor.GREEN, "watering-can.filled", "You have filled your %item%",
+                    line -> line.replace("%item%", Messages.itemName(p, FluffyItems.WATERING_CAN)));
             usesLeft = can.getUses().getValue();
 
         } else if (updateType == 3) {
             if (usesLeft == 0) {
-                Utils.send(p, "&cYou need to refill your Watering Can!");
+                Messages.send(p, ChatColor.RED, "watering-can.needs-refill", "You need to refill your %item%!",
+                        line -> line.replace("%item%", Messages.itemName(p, FluffyItems.WATERING_CAN)));
                 return false;
             }
             usesLeft = 0;
             p.playSound(p.getLocation(), Sound.ITEM_BUCKET_EMPTY, 0.5F, 1F);
         } else {
-            p.sendMessage("Error");
+            Messages.send(p, ChatColor.RED, "watering-can.error", "Error");
         }
 
         Utils.setLoreLine(meta, USE_INDEX, ChatColors.color("&aUses Left: &e" + usesLeft));

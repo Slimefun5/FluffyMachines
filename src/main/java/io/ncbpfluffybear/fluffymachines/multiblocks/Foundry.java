@@ -4,6 +4,7 @@ import io.github.thebusybiscuit.slimefun5.core.multiblocks.MultiBlockMachine;
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import io.ncbpfluffybear.fluffymachines.multiblocks.components.SuperheatedFurnace;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import java.util.Objects;
@@ -12,6 +13,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -46,7 +48,8 @@ public class Foundry extends MultiBlockMachine {
 
         if (BlockStorage.getLocationInfo(b.getLocation(), "accessible") == null) {
             BlockStorage.addBlockInfo(b, "accessible", "true");
-            Utils.send(p, "&eFoundry has been registered. Right click the furnace with a lava bucket to heat.");
+            Messages.send(p, ChatColor.YELLOW, "foundry.registered",
+                "Foundry has been registered. Right click the furnace with a lava bucket to heat.");
         } else if (BlockStorage.getLocationInfo(b.getLocation(), "ignited") == null) {
             if (p.getInventory().getItemInHand().getType() == MaterialCompat.safe(XMaterial.LAVA_BUCKET)) {
 
@@ -66,7 +69,7 @@ public class Foundry extends MultiBlockMachine {
                 BlockStorage.addBlockInfo(b, "stand", String.valueOf(lavaStand.getUniqueId()));
                 BlockStorage.addBlockInfo(b, "ignited", "true");
             } else {
-                Utils.send(p, "&cThis foundry still needs to be filled with lava!");
+                Messages.send(p, ChatColor.RED, "foundry.needs-lava", "This foundry still needs to be filled with lava!");
             }
         } else if (BlockStorage.getLocationInfo(b.getLocation(), "ignited") != null) {
             // Reheat furnace (Cosmetic)

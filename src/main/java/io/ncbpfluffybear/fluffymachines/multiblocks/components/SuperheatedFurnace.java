@@ -6,6 +6,7 @@ import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.ncbpfluffybear.fluffymachines.objects.NonHopperableBlock;
 import io.ncbpfluffybear.fluffymachines.utils.Constants;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
@@ -161,7 +162,8 @@ public class SuperheatedFurnace extends NonHopperableBlock {
                     String type = getBlockInfo(b.getLocation(), "type");
 
                     if (breakOnlyWhenEmpty.getValue() && stored != 0) {
-                        Utils.send(p, "&cThis barrel can't be broken since it has items inside it!");
+                        Messages.send(p, ChatColor.RED, "superheated-furnace.has-items",
+                                "This superheated furnace can't be broken since it has items inside it!");
                         e.setCancelled(true);
                         return;
                     }
@@ -173,7 +175,8 @@ public class SuperheatedFurnace extends NonHopperableBlock {
                     }
 
                     if (itemCount > 5) {
-                        Utils.send(p, "&cPlease remove nearby items before breaking this superheated furnace!");
+                        Messages.send(p, ChatColor.RED, "superheated-furnace.nearby-items",
+                                "Please remove nearby items before breaking this superheated furnace!");
                         e.setCancelled(true);
                         return;
                     }
@@ -188,8 +191,9 @@ public class SuperheatedFurnace extends NonHopperableBlock {
 
                         if (stored > OVERFLOW_AMOUNT) {
 
-                            Utils.send(p, "&eThere are more than " + OVERFLOW_AMOUNT + " items in this superheated furnace! " +
-                                "Dropping " + OVERFLOW_AMOUNT + " items instead!");
+                            Messages.send(p, ChatColor.YELLOW, "superheated-furnace.overflow",
+                                    "There are more than %amount% items in this superheated furnace! Dropping %amount% items instead!",
+                                    line -> line.replace("%amount%", String.valueOf(OVERFLOW_AMOUNT)));
                             int toRemove = OVERFLOW_AMOUNT;
                             while (toRemove >= stackSize) {
 

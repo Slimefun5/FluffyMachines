@@ -8,12 +8,14 @@ import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.utils.ChatUtils;
 import io.github.thebusybiscuit.slimefun5.utils.NumberUtils;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -45,18 +47,20 @@ public class MiniBarrel extends Barrel {
         ));
         menu.addMenuClickHandler(13, (p, slot, item, action) -> {
             p.closeInventory();
-            Utils.send(p, "&eType the new size of the barrel. Max size: " + barrelCapacity.getValue());
+            Messages.send(p, ChatColor.YELLOW, "mini-barrel.enter-size", "Type the new size of the barrel. Max size: %max%",
+                    line -> line.replace("%max%", String.valueOf(barrelCapacity.getValue())));
             ChatUtils.awaitInput(p, message -> {
                 String cleanMsg = message.replaceAll("[^0-9]", "");
                 int renameSize = NumberUtils.getInt(cleanMsg, 0);
 
                 if (renameSize == 0 || renameSize > barrelCapacity.getValue()) {
-                    Utils.send(p, "&cThe new size must be between 0 and " + barrelCapacity.getValue());
+                    Messages.send(p, ChatColor.RED, "mini-barrel.out-of-range", "The new size must be between 0 and %max%",
+                            line -> line.replace("%max%", String.valueOf(barrelCapacity.getValue())));
                     return;
                 }
 
                 if (renameSize < getStored(b)) {
-                    Utils.send(p, "&cRemove items from the barrel before changing it to this size!");
+                    Messages.send(p, ChatColor.RED, "mini-barrel.remove-items", "Remove items from the barrel before changing it to this size!");
                     return;
                 }
 
@@ -65,7 +69,8 @@ public class MiniBarrel extends Barrel {
                         "&eChange barrel size", "&7> Click to change max size", "&eCurrent size: " + renameSize,
                         "&eSize limit: " + barrelCapacity.getValue()
                 ));
-                Utils.send(p, "&aMax size has been changed to " + renameSize);
+                Messages.send(p, ChatColor.GREEN, "mini-barrel.size-changed", "Max size has been changed to %size%",
+                        line -> line.replace("%size%", String.valueOf(renameSize)));
                 updateMenu(b, menu, true, renameSize);
             });
             return false;

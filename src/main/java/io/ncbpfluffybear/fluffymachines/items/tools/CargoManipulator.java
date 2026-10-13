@@ -15,10 +15,12 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
@@ -123,7 +125,8 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
         storedFilters.put(p, new Pair<>(nodeData, filterItems)); // Save cargo slots into map
 
-        Utils.send(p, "&aYour " + SlimefunItem.getById(nodeData.get("id").getAsString()).getItemName() + " &ahas been copied.");
+        Messages.send(p, ChatColor.GREEN, "cargo.copied", "Your %item% has been copied.",
+                line -> line.replace("%item%", Messages.itemName(p, SlimefunItem.getById(nodeData.get("id").getAsString()))));
         createParticle(parent, Color.fromRGB(255, 252, 51)); // Bright Yellow
     }
 
@@ -136,7 +139,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
         // No data saved yet
         if (nodeSettings == null) {
-            Utils.send(p, "&cYou have not copied a cargo node yet.");
+            Messages.send(p, ChatColor.RED, "cargo.nothing-copied", "You have not copied a cargo node yet.");
             return;
         }
 
@@ -145,8 +148,10 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
         ItemStack savedNodeType = SlimefunItem.getById(jsonData.get("id").getAsString()).getItem();
         if (!SlimefunUtils.isItemSimilar(savedNodeType, nodeType, false)) {
-            Utils.send(p, "&cYou copied a " + Utils.getViewableName(savedNodeType) +
-                    " &cbut you are trying to modify a " + Utils.getViewableName(nodeType) + "&c!");
+            Messages.send(p, ChatColor.RED, "cargo.wrong-node",
+                    "You copied a %copied% but you are trying to modify a %target%!",
+                    line -> line.replace("%copied%", Messages.itemName(p, savedNodeType))
+                            .replace("%target%", Messages.itemName(p, nodeType)));
             createParticle(child, Color.RED);
             return;
         }
@@ -178,7 +183,9 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
                 // Check if item not in inventory
                 if (!SlimefunUtils.containsSimilarItem(playerInventory, filterItems[i], true)) {
                     createParticle(child, Color.AQUA);
-                    Utils.send(p, "&cYou do not have " + Utils.getViewableName(filterItems[i]) + "&c. Skipping this item.");
+                    ItemStack missing = filterItems[i];
+                    Messages.send(p, ChatColor.RED, "cargo.missing-filter-item", "You do not have %item%. Skipping this item.",
+                            line -> line.replace("%item%", Messages.itemName(p, missing)));
                     continue;
                 }
 
@@ -197,7 +204,8 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
 
         // Force menu update
         BlockStorage.getStorage(child.getWorld()).reloadInventory(child.getLocation());
-        Utils.send(p, "&aYour " + Utils.getViewableName(savedNodeType) + " &ahas been pasted.");
+        Messages.send(p, ChatColor.GREEN, "cargo.pasted", "Your %item% has been pasted.",
+                line -> line.replace("%item%", Messages.itemName(p, savedNodeType)));
         createParticle(child, Color.LIME);
 
     }
@@ -230,7 +238,7 @@ public class CargoManipulator extends SimpleSlimefunItem<ItemUseHandler> impleme
             // Force update
             BlockStorage.getStorage(node.getWorld()).reloadInventory(node.getLocation());
 
-            Utils.send(p, "&aThe selected Cargo Node has been cleared");
+            Messages.send(p, ChatColor.GREEN, "cargo.cleared", "The selected Cargo Node has been cleared");
             createParticle(node, Color.fromRGB(255, 152, 56)); // Light orange
         }
     }

@@ -11,6 +11,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.FluffyItems;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Bukkit;
@@ -80,7 +81,10 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
 
                         updateHologram(b, "&a&lDestination");
                         BlockStorage.addBlockInfo(b, "type", "destination");
-                        Utils.send(p, "&3This pad has been marked as a &aDestination &3and bound to your configurator");
+                        Messages.send(p, ChatColor.DARK_AQUA, "warp-pad.marked-destination",
+                            "This pad has been marked as a %state% and bound to your configurator",
+                            line -> line.replace("%state%", ChatColor.GREEN
+                                + Messages.get(p, "warp-pad.destination", "Destination") + ChatColor.DARK_AQUA));
 
                     // Origin
                     } else if (b.getWorld().getName().equals(Pdc.getString(meta, world, ""))) {
@@ -91,27 +95,33 @@ public class WarpPadConfigurator extends SlimefunItem implements HologramOwner, 
                         if (Math.abs(x - b.getX()) > MAX_DISTANCE.getValue()
                             || Math.abs(z - b.getZ()) > MAX_DISTANCE.getValue()) {
 
-                            Utils.send(p, "&cYou can not link blocks more than "
-                                + MAX_DISTANCE.getValue() + " blocks apart!");
+                            Messages.send(p, ChatColor.RED, "warp-pad.too-far",
+                                "You can not link blocks more than %distance% blocks apart!",
+                                line -> line.replace("%distance%", String.valueOf(MAX_DISTANCE.getValue())));
 
                             return;
                         }
 
                         registerOrigin(b, x, y, z);
 
-                        Utils.send(p, "&3This pad has been marked as an &aOrigin &3and your configurator's settings " +
-                            "have been pasted onto this pad");
+                        Messages.send(p, ChatColor.DARK_AQUA, "warp-pad.marked-origin",
+                            "This pad has been marked as an %state% and your configurator's settings have been pasted onto this pad",
+                            line -> line.replace("%state%", ChatColor.GREEN
+                                + Messages.get(p, "warp-pad.origin", "Origin") + ChatColor.DARK_AQUA));
 
                     } else {
 
-                        Utils.send(p, "&cSneak and right click on a Warp Pad to set the destination, then right click" +
-                            " " + "another Warp Pad tp set the origin!");
+                        Messages.send(p, ChatColor.RED, "warp-pad.instructions",
+                            "Sneak and right click on a %pad% to set the destination, then right click another %pad% to set the origin!",
+                            line -> line.replace("%pad%", Messages.itemName(p, FluffyItems.WARP_PAD)));
                     }
 
                 }
 
             } else {
-                Utils.send(p, "&cConfigure this Warp Pad using a Warp Pad Configurator");
+                Messages.send(p, ChatColor.RED, "warp-pad.needs-configurator", "Configure this %pad% using a %configurator%",
+                    line -> line.replace("%pad%", Messages.itemName(p, FluffyItems.WARP_PAD))
+                        .replace("%configurator%", Messages.itemName(p, FluffyItems.WARP_PAD_CONFIGURATOR)));
             }
         }
     }

@@ -8,6 +8,7 @@ import io.ncbpfluffybear.fluffymachines.items.tools.WateringCan;
 import io.ncbpfluffybear.fluffymachines.machines.AlternateElevatorPlate;
 import javax.annotation.Nonnull;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
@@ -63,8 +64,9 @@ public class Events implements Listener {
             e.setCancelled(true);
             Entity target = e.getRightClicked();
             if (target instanceof Player && WateringCan.updateUses(wateringCan, p, item, 3)) {
-                Utils.send(p, "&bSplash!");
-                Utils.send((Player) target, "&bYou were splashed by " + p.getDisplayName() + "!");
+                Messages.send(p, ChatColor.AQUA, "splash.self", "Splash!");
+                Messages.send((Player) target, ChatColor.AQUA, "splash.target", "You were splashed by %player%!",
+                        line -> line.replace("%player%", p.getDisplayName()));
                 ((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 1));
             }
         }
@@ -151,7 +153,8 @@ public class Events implements Listener {
                     p.spawnParticle(Particle.DRAGON_BREATH, p.getLocation(), 10);
 
                 } else {
-                    Utils.send(p, "&cMissing destination Warp Pad!");
+                    Messages.send(p, ChatColor.RED, "warp-pad.missing-destination", "Missing destination %pad%!",
+                            line -> line.replace("%pad%", Messages.itemName(p, FluffyItems.WARP_PAD)));
 
                 }
             }
@@ -175,7 +178,7 @@ public class Events implements Listener {
     public void onExtractionNodePlace(BlockPlaceEvent e) {
         if ((e.getBlock().getY() != e.getBlockAgainst().getY() || e.getBlockAgainst().getType() != MaterialCompat.safe(XMaterial.ENDER_CHEST))
                 && isExtractionNode(e.getItemInHand())) {
-            Utils.send(e.getPlayer(), "&cYou can only place this on an Ender Chest!");
+            Messages.send(e.getPlayer(), ChatColor.RED, "ender-chest-node.place-on-ender-chest", "You can only place this on an Ender Chest!");
             e.setCancelled(true);
         }
     }

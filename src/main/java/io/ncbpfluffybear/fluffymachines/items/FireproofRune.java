@@ -3,6 +3,7 @@ package io.ncbpfluffybear.fluffymachines.items;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemDropHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -98,13 +99,13 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
                         setFireproof(itemStack);
                         l.getWorld().dropItemNaturally(l, itemStack);
 
-                        Utils.send(p, "&aYour item is now fireproof");
+                        Messages.send(p, ChatColor.GREEN, "fireproof-rune.success", "Your item is now fireproof");
                     } else {
-                        Utils.send(p, "&cYour item could not be made fireproof");
+                        Messages.send(p, ChatColor.RED, "fireproof-rune.failed", "Your item could not be made fireproof");
                     }
                 }, 10L);
             } else {
-                Utils.send(p, "&cYour item could not be made fireproof");
+                Messages.send(p, ChatColor.RED, "fireproof-rune.failed", "Your item could not be made fireproof");
             }
         }
     }

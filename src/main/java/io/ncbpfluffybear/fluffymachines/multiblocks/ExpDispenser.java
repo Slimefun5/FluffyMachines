@@ -5,8 +5,10 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.core.multiblocks.MultiBlockMachine;
 import io.ncbpfluffybear.fluffymachines.items.Barrel;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
@@ -64,10 +66,12 @@ public class ExpDispenser extends MultiBlockMachine {
         }
 
         if (experience == 0) {
-            Utils.send(p, "&cThere were no experience bottles in the dispenser!");
+            Messages.send(p, ChatColor.RED, "exp-dispenser.empty", "There were no experience bottles in the dispenser!");
         } else {
-            p.giveExp(experience);
-            Utils.send(p, "&a+" + experience + " XP");
+            int gained = experience;
+            p.giveExp(gained);
+            Messages.send(p, ChatColor.GREEN, "exp-dispenser.gained", "+%amount% XP",
+                    line -> line.replace("%amount%", String.valueOf(gained)));
         }
     }
 }

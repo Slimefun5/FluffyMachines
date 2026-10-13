@@ -6,6 +6,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.items.SimpleSlimefunItem;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.common.ChatColors;
 import io.ncbpfluffybear.fluffymachines.FluffyMachines;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -99,7 +100,7 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
 
                     if (sfItem instanceof PortableCharger) {
                         p.closeInventory();
-                        Utils.send(p, "&cYou can not charge a portable charger");
+                        Messages.send(p, ChatColor.RED, "charger.cannot-charge-charger", "You can not charge a portable charger");
                     }
 
                     if (sfItem instanceof Rechargeable) {
@@ -124,10 +125,10 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
                             }
 
                         } else if (neededCharge == 0) {
-                            Utils.send(p, "&cThis item is already full!");
+                            Messages.send(p, ChatColor.RED, "charger.item-full", "This item is already full!");
 
                         } else {
-                            Utils.send(p, "&cYour charger does not have enough power!");
+                            Messages.send(p, ChatColor.RED, "charger.not-enough-power", "Your charger does not have enough power!");
                         }
 
                         // The name of the powerItem NEEDS to be "Portable Charger" to cancel event
@@ -143,7 +144,7 @@ public class PortableCharger extends SimpleSlimefunItem<ItemUseHandler> implemen
 
                         // Check if player left an item inside
                         if (forgottenItem != null) {
-                            Utils.send(p, "&cHey! You left something in the charger! Dropping it now...");
+                            Messages.send(p, ChatColor.RED, "charger.forgotten-item", "Hey! You left something in the charger! Dropping it now...");
                             Utils.giveOrDropItem(p, forgottenItem);
                         }
                     }

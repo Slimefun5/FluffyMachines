@@ -10,10 +10,12 @@ import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.ncbpfluffybear.fluffymachines.utils.Messages;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.ncbpfluffybear.fluffymachines.utils.MaterialCompat;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -138,8 +140,10 @@ public class EnderChestInsertionNode extends SlimefunItem {
                 if (!e.isCancelled()) {
                     BlockStorage.addBlockInfo(b, "owner", p.getUniqueId().toString());
                     BlockStorage.addBlockInfo(b, "playername", p.getDisplayName());
-                    Utils.send(p, "&aEnder Chest Insertion Node registered to " + p.getDisplayName()
-                        + " &7(UUID: " + p.getUniqueId() + ")");
+                    Messages.send(p, ChatColor.GREEN, "ender-chest-node.registered", "%item% registered to %player% %uuid%",
+                        line -> line.replace("%item%", Messages.itemName(p, EnderChestInsertionNode.this))
+                            .replace("%player%", p.getDisplayName())
+                            .replace("%uuid%", Messages.uuidTag(p, p.getUniqueId().toString())));
                 }
             }
         };
@@ -149,9 +153,10 @@ public class EnderChestInsertionNode extends SlimefunItem {
         return e -> {
             Player p = e.getPlayer();
             Block b = e.getClickedBlock().get();
-            Utils.send(p, "&eThis Ender Chest Insertion Node belongs to " +
-                BlockStorage.getLocationInfo(b.getLocation(), "playername")
-                + " &7(UUID: " + BlockStorage.getLocationInfo(b.getLocation(), "owner") + ")");
+            Messages.send(p, ChatColor.YELLOW, "ender-chest-node.owner", "This %item% belongs to %player% %uuid%",
+                line -> line.replace("%item%", Messages.itemName(p, EnderChestInsertionNode.this))
+                    .replace("%player%", BlockStorage.getLocationInfo(b.getLocation(), "playername"))
+                    .replace("%uuid%", Messages.uuidTag(p, BlockStorage.getLocationInfo(b.getLocation(), "owner"))));
         };
     }
 }
