@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Ce baril ne peut pas être cassé car il contient encore des objets !"
+  nearby-items: "Veuillez retirer les objets proches avant de casser ce baril !"
+  overflow: "Il y a plus de %amount% objets dans ce baril ! %amount% objets seront lâchés à la place !"
+  empty: "Ce baril est vide !"
+
+cargo:
+  copied: "Votre %item% a été copié."
+  nothing-copied: "Vous n'avez pas encore copié de nœud de cargo."
+  wrong-node: "Vous avez copié un %copied% mais vous essayez de modifier un %target% !"
+  missing-filter-item: "Vous n'avez pas de %item%. Cet objet est ignoré."
+  pasted: "Votre %item% a été collé."
+  cleared: "Le nœud de cargo sélectionné a été vidé"
+
+charger:
+  cannot-charge-charger: "Vous ne pouvez pas recharger un chargeur portable"
+  item-full: "Cet objet est déjà plein !"
+  not-enough-power: "Votre chargeur n'a pas assez d'énergie !"
+  forgotten-item: "Hé ! Vous avez laissé quelque chose dans le chargeur ! Il est lâché maintenant..."
+
+charging-bench:
+  wrong-target: "Vous ne pouvez utiliser cette carte que sur un %item%"
+  maxed: "Ce %item% est au maximum (Palier %max%)"
+  upgraded: "Ce %item% a été amélioré ! %tier%"
+  tier: "Palier : %tier%"
+
+command:
+  invalid: "Commande invalide"
+  no-console: "Aucune commande n'est disponible depuis la console"
+  version: "La version actuelle est %version%"
+  specify-key-and-data: "Veuillez préciser la clé et la donnée"
+  info-added: "L'info a été ajoutée."
+  look-at-slimefun-block: "Vous devez viser un bloc Slimefun"
+  not-found: "Commande introuvable"
+
+crank-generator:
+  missing-core: "Noyau de générateur manquant"
+
+dolly:
+  cooldown: "Veuillez attendre avant de réutiliser le diable !"
+  already-carrying: "Ce diable porte déjà un coffre !"
+  picked-up: "Vous avez ramassé ce coffre"
+  need-chest: "Vous devez d'abord ramasser un coffre !"
+  no-room: "Votre coffre ne rentre pas là !"
+  placed: "Le coffre a été posé"
+
+ender-chest-node:
+  registered: "%item% enregistré au nom de %player% %uuid%"
+  owner: "Ce %item% appartient à %player% %uuid%"
+  uuid: "(UUID : %id%)"
+  place-on-ender-chest: "Vous ne pouvez poser ceci que sur un coffre de l'Ender !"
+
+exp-dispenser:
+  empty: "Il n'y avait aucune fiole d'expérience dans le distributeur !"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Votre objet est maintenant ignifugé"
+  failed: "Votre objet n'a pas pu être ignifugé"
+
+foundry:
+  registered: "La fonderie a été enregistrée. Faites un clic droit sur le four avec un seau de lave pour la chauffer."
+  needs-lava: "Cette fonderie doit encore être remplie de lave !"
+
+keyed-crafter:
+  no-vanilla-items: "Vous ne pouvez pas utiliser d'objets vanilla avec cette machine !"
+  recipe-set: "Recette cible réglée sur %item%"
+  unsupported: "Cet objet n'est pas pris en charge !"
+  right-click-hint: "Faites un clic droit sur la machine avec un objet pour définir la recette vanilla"
+
+mini-barrel:
+  enter-size: "Tapez la nouvelle taille du baril. Taille maximale : %max%"
+  out-of-range: "La nouvelle taille doit être comprise entre 0 et %max%"
+  remove-items: "Retirez des objets du baril avant de le passer à cette taille !"
+  size-changed: "La taille maximale a été changée en %size%"
+
+splash:
+  self: "Splash !"
+  target: "Vous avez été aspergé par %player% !"
+
+superheated-furnace:
+  has-items: "Ce four surchauffé ne peut pas être cassé car il contient encore des objets !"
+  nearby-items: "Veuillez retirer les objets proches avant de casser ce four surchauffé !"
+  overflow: "Il y a plus de %amount% objets dans ce four surchauffé ! %amount% objets seront lâchés à la place !"
+
+warp-pad:
+  marked-destination: "Cette plaque a été marquée comme %state% et liée à votre configurateur"
+  marked-origin: "Cette plaque a été marquée comme %state% et les réglages de votre configurateur y ont été collés"
+  destination: "Destination"
+  origin: "Origine"
+  too-far: "Vous ne pouvez pas relier des blocs séparés de plus de %distance% blocs !"
+  instructions: "Accroupissez-vous et faites un clic droit sur un %pad% pour définir la destination, puis un clic droit sur un autre %pad% pour définir l'origine !"
+  needs-configurator: "Configurez ce %pad% à l'aide d'un %configurator%"
+  missing-destination: "%pad% de destination manquant !"
+
+watering-can:
+  no-exotic-garden: "Vous ne pouvez pas arroser les plantes d'Exotic Garden !"
+  needs-refill: "Vous devez remplir votre %item% !"
+  filled: "Vous avez rempli votre %item%"
+  error: "Erreur"

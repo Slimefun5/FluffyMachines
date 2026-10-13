@@ -1,0 +1,100 @@
+barrel:
+  has-items: "这个桶里还有物品，无法破坏！"
+  nearby-items: "破坏这个桶之前，请先清理附近的物品！"
+  overflow: "这个桶里的物品超过 %amount% 个！将改为掉落 %amount% 个物品！"
+  empty: "这个桶是空的！"
+
+cargo:
+  copied: "已复制你的%item%。"
+  nothing-copied: "你还没有复制任何货运节点。"
+  wrong-node: "你复制的是%copied%，却想修改%target%！"
+  missing-filter-item: "你没有%item%，将跳过这个物品。"
+  pasted: "已粘贴你的%item%。"
+  cleared: "已清空所选的货运节点"
+
+charger:
+  cannot-charge-charger: "你无法给便携充电器充电"
+  item-full: "这个物品已经满了！"
+  not-enough-power: "你的充电器电量不足！"
+  forgotten-item: "嘿！你把东西忘在充电器里了！现在掉落出来……"
+
+charging-bench:
+  wrong-target: "这张卡只能用在%item%上"
+  maxed: "这个%item%已达上限（等级 %max%）"
+  upgraded: "这个%item%已升级！%tier%"
+  tier: "等级：%tier%"
+
+command:
+  invalid: "无效的指令"
+  no-console: "控制台没有可用的指令"
+  version: "当前版本是 %version%"
+  specify-key-and-data: "请指定键和数据"
+  info-added: "信息已添加。"
+  look-at-slimefun-block: "你必须看着一个 Slimefun 方块"
+  not-found: "未找到该指令"
+
+crank-generator:
+  missing-core: "缺少发电机核心"
+
+dolly:
+  cooldown: "请稍等再使用手推车！"
+  already-carrying: "这辆手推车已经载着一个箱子！"
+  picked-up: "你搬起了这个箱子"
+  need-chest: "你得先搬起一个箱子！"
+  no-room: "你的箱子放不下！"
+  placed: "箱子已放下"
+
+ender-chest-node:
+  registered: "%item%已登记给 %player% %uuid%"
+  owner: "这个%item%属于 %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "这个只能放在末影箱上！"
+
+exp-dispenser:
+  empty: "发射器里没有经验瓶！"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "你的物品现在防火了"
+  failed: "你的物品无法变成防火的"
+
+foundry:
+  registered: "铸造厂已登记。用岩浆桶右键熔炉即可加热。"
+  needs-lava: "这座铸造厂还需要装入岩浆！"
+
+keyed-crafter:
+  no-vanilla-items: "这台机器不能使用原版物品！"
+  recipe-set: "目标配方已设为%item%"
+  unsupported: "不支持这个物品！"
+  right-click-hint: "手持物品右键机器即可设置原版配方"
+
+mini-barrel:
+  enter-size: "请输入桶的新容量。最大容量：%max%"
+  out-of-range: "新容量必须在 0 和 %max% 之间"
+  remove-items: "改成这个容量之前，请先从桶里取出物品！"
+  size-changed: "最大容量已改为 %size%"
+
+splash:
+  self: "泼！"
+  target: "%player% 泼了你一身水！"
+
+superheated-furnace:
+  has-items: "这座过热熔炉里还有物品，无法破坏！"
+  nearby-items: "破坏这座过热熔炉之前，请先清理附近的物品！"
+  overflow: "这座过热熔炉里的物品超过 %amount% 个！将改为掉落 %amount% 个物品！"
+
+warp-pad:
+  marked-destination: "这块板已标记为%state%，并绑定到你的配置器"
+  marked-origin: "这块板已标记为%state%，你的配置器设置已粘贴到它上面"
+  destination: "终点"
+  origin: "起点"
+  too-far: "你无法连接相距超过 %distance% 格的方块！"
+  instructions: "潜行并右键一个%pad%设置终点，然后右键另一个%pad%设置起点！"
+  needs-configurator: "请用%configurator%配置这个%pad%"
+  missing-destination: "缺少终点%pad%！"
+
+watering-can:
+  no-exotic-garden: "你无法给 Exotic Garden 的植物浇水！"
+  needs-refill: "你需要给%item%重新装水！"
+  filled: "你装满了%item%"
+  error: "错误"

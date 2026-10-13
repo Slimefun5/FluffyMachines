@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Dieses Fass kann nicht abgebaut werden, weil noch Gegenstände darin sind!"
+  nearby-items: "Bitte entferne die Gegenstände in der Nähe, bevor du dieses Fass abbaust!"
+  overflow: "In diesem Fass sind mehr als %amount% Gegenstände! Es werden stattdessen %amount% Gegenstände fallen gelassen!"
+  empty: "Dieses Fass ist leer!"
+
+cargo:
+  copied: "Dein %item% wurde kopiert."
+  nothing-copied: "Du hast noch keinen Cargo-Knoten kopiert."
+  wrong-node: "Du hast einen %copied% kopiert, versuchst aber einen %target% zu ändern!"
+  missing-filter-item: "Du hast kein %item%. Dieser Gegenstand wird übersprungen."
+  pasted: "Dein %item% wurde eingefügt."
+  cleared: "Der ausgewählte Cargo-Knoten wurde geleert"
+
+charger:
+  cannot-charge-charger: "Du kannst keinen tragbaren Lader aufladen"
+  item-full: "Dieser Gegenstand ist schon voll!"
+  not-enough-power: "Dein Lader hat nicht genug Energie!"
+  forgotten-item: "Hey! Du hast etwas im Lader vergessen! Es wird jetzt fallen gelassen..."
+
+charging-bench:
+  wrong-target: "Du kannst diese Karte nur an einem %item% benutzen"
+  maxed: "Dieser %item% ist am Maximum (Stufe %max%)"
+  upgraded: "Dieser %item% wurde verbessert! %tier%"
+  tier: "Stufe: %tier%"
+
+command:
+  invalid: "Ungültiger Befehl"
+  no-console: "Es gibt keine Befehle für die Konsole"
+  version: "Die aktuelle Version ist %version%"
+  specify-key-and-data: "Bitte gib den Schlüssel und die Daten an"
+  info-added: "Die Info wurde hinzugefügt."
+  look-at-slimefun-block: "Du musst einen Slimefun-Block anvisieren"
+  not-found: "Befehl nicht gefunden"
+
+crank-generator:
+  missing-core: "Generatorkern fehlt"
+
+dolly:
+  cooldown: "Bitte warte, bevor du die Sackkarre wieder benutzt!"
+  already-carrying: "Diese Sackkarre trägt schon eine Kiste!"
+  picked-up: "Du hast diese Kiste aufgenommen"
+  need-chest: "Du musst zuerst eine Kiste aufnehmen!"
+  no-room: "Deine Kiste passt dort nicht hin!"
+  placed: "Die Kiste wurde abgesetzt"
+
+ender-chest-node:
+  registered: "%item% wurde auf %player% registriert %uuid%"
+  owner: "Dieser %item% gehört %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Du kannst das nur auf einer Endertruhe platzieren!"
+
+exp-dispenser:
+  empty: "Im Spender waren keine Erfahrungsflaschen!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Dein Gegenstand ist jetzt feuerfest"
+  failed: "Dein Gegenstand konnte nicht feuerfest gemacht werden"
+
+foundry:
+  registered: "Die Gießerei wurde registriert. Rechtsklicke den Ofen mit einem Lavaeimer, um sie zu erhitzen."
+  needs-lava: "Diese Gießerei muss noch mit Lava gefüllt werden!"
+
+keyed-crafter:
+  no-vanilla-items: "Du kannst mit dieser Maschine keine Vanilla-Gegenstände verwenden!"
+  recipe-set: "Zielrezept auf %item% gesetzt"
+  unsupported: "Dieser Gegenstand wird nicht unterstützt!"
+  right-click-hint: "Rechtsklicke die Maschine mit einem Gegenstand, um das Vanilla-Rezept zu setzen"
+
+mini-barrel:
+  enter-size: "Gib die neue Größe des Fasses ein. Maximale Größe: %max%"
+  out-of-range: "Die neue Größe muss zwischen 0 und %max% liegen"
+  remove-items: "Nimm Gegenstände aus dem Fass, bevor du es auf diese Größe änderst!"
+  size-changed: "Die maximale Größe wurde auf %size% geändert"
+
+splash:
+  self: "Platsch!"
+  target: "Du wurdest von %player% bespritzt!"
+
+superheated-furnace:
+  has-items: "Dieser überhitzte Ofen kann nicht abgebaut werden, weil noch Gegenstände darin sind!"
+  nearby-items: "Bitte entferne die Gegenstände in der Nähe, bevor du diesen überhitzten Ofen abbaust!"
+  overflow: "In diesem überhitzten Ofen sind mehr als %amount% Gegenstände! Es werden stattdessen %amount% Gegenstände fallen gelassen!"
+
+warp-pad:
+  marked-destination: "Dieses Feld wurde als %state% markiert und an deinen Konfigurator gebunden"
+  marked-origin: "Dieses Feld wurde als %state% markiert und die Einstellungen deines Konfigurators wurden darauf übertragen"
+  destination: "Ziel"
+  origin: "Ursprung"
+  too-far: "Du kannst keine Blöcke verbinden, die mehr als %distance% Blöcke auseinander liegen!"
+  instructions: "Schleiche und rechtsklicke ein %pad%, um das Ziel zu setzen, dann rechtsklicke ein weiteres %pad%, um den Ursprung zu setzen!"
+  needs-configurator: "Konfiguriere dieses %pad% mit einem %configurator%"
+  missing-destination: "Ziel-%pad% fehlt!"
+
+watering-can:
+  no-exotic-garden: "Du kannst Pflanzen von Exotic Garden nicht bewässern!"
+  needs-refill: "Du musst deine %item% nachfüllen!"
+  filled: "Du hast deine %item% gefüllt"
+  error: "Fehler"

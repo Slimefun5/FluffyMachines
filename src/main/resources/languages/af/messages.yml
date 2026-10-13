@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Hierdie vat kan nie gebreek word nie, want daar is nog items in!"
+  nearby-items: "Verwyder die items naby voordat jy hierdie vat breek!"
+  overflow: "Daar is meer as %amount% items in hierdie vat! In plaas daarvan word %amount% items laat val!"
+  empty: "Hierdie vat is leeg!"
+
+cargo:
+  copied: "Jou %item% is gekopieer."
+  nothing-copied: "Jy het nog geen vragknoop gekopieer nie."
+  wrong-node: "Jy het 'n %copied% gekopieer, maar jy probeer 'n %target% verander!"
+  missing-filter-item: "Jy het geen %item% nie. Hierdie item word oorgeslaan."
+  pasted: "Jou %item% is geplak."
+  cleared: "Die gekose vragknoop is skoongemaak"
+
+charger:
+  cannot-charge-charger: "Jy kan nie 'n draagbare laaier laai nie"
+  item-full: "Hierdie item is al vol!"
+  not-enough-power: "Jou laaier het nie genoeg krag nie!"
+  forgotten-item: "Haai! Jy het iets in die laaier gelaat! Dit word nou laat val..."
+
+charging-bench:
+  wrong-target: "Jy kan hierdie kaart net op 'n %item% gebruik"
+  maxed: "Hierdie %item% is op die maksimum (Vlak %max%)"
+  upgraded: "Hierdie %item% is opgegradeer! %tier%"
+  tier: "Vlak: %tier%"
+
+command:
+  invalid: "Ongeldige bevel"
+  no-console: "Daar is geen bevele vanaf die konsole beskikbaar nie"
+  version: "Die huidige weergawe is %version%"
+  specify-key-and-data: "Gee die sleutel en die data"
+  info-added: "Die inligting is bygevoeg."
+  look-at-slimefun-block: "Jy moet na 'n Slimefun-blok kyk"
+  not-found: "Bevel nie gevind nie"
+
+crank-generator:
+  missing-core: "Generatorkern ontbreek"
+
+dolly:
+  cooldown: "Wag voordat jy die stootkar weer gebruik!"
+  already-carrying: "Hierdie stootkar dra al 'n kis!"
+  picked-up: "Jy het hierdie kis opgetel"
+  need-chest: "Jy moet eers 'n kis optel!"
+  no-room: "Jou kis pas nie daar nie!"
+  placed: "Die kis is neergesit"
+
+ender-chest-node:
+  registered: "%item% is op %player% geregistreer %uuid%"
+  owner: "Hierdie %item% behoort aan %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Jy kan dit net op 'n enderkis plaas!"
+
+exp-dispenser:
+  empty: "Daar was geen ervaringsbottels in die verdeler nie!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Jou item is nou vuurvas"
+  failed: "Jou item kon nie vuurvas gemaak word nie"
+
+foundry:
+  registered: "Die gietery is geregistreer. Regskliek die oond met 'n emmer lawa om dit warm te maak."
+  needs-lava: "Hierdie gietery moet nog met lawa gevul word!"
+
+keyed-crafter:
+  no-vanilla-items: "Jy kan nie vanilla-items met hierdie masjien gebruik nie!"
+  recipe-set: "Teikenresep op %item% gestel"
+  unsupported: "Hierdie item word nie ondersteun nie!"
+  right-click-hint: "Regskliek die masjien met 'n item om die vanilla-resep te stel"
+
+mini-barrel:
+  enter-size: "Tik die vat se nuwe grootte. Maksimum grootte: %max%"
+  out-of-range: "Die nuwe grootte moet tussen 0 en %max% wees"
+  remove-items: "Haal items uit die vat voordat jy dit na hierdie grootte verander!"
+  size-changed: "Die maksimum grootte is na %size% verander"
+
+splash:
+  self: "Plons!"
+  target: "%player% het jou gespat!"
+
+superheated-furnace:
+  has-items: "Hierdie oorverhitte oond kan nie gebreek word nie, want daar is nog items in!"
+  nearby-items: "Verwyder die items naby voordat jy hierdie oorverhitte oond breek!"
+  overflow: "Daar is meer as %amount% items in hierdie oorverhitte oond! In plaas daarvan word %amount% items laat val!"
+
+warp-pad:
+  marked-destination: "Hierdie plaat is as %state% gemerk en aan jou konfigureerder gebind"
+  marked-origin: "Hierdie plaat is as %state% gemerk en jou konfigureerder se instellings is daarop geplak"
+  destination: "Bestemming"
+  origin: "Oorsprong"
+  too-far: "Jy kan nie blokke verbind wat meer as %distance% blokke van mekaar is nie!"
+  instructions: "Sluip en regskliek 'n %pad% om die bestemming te stel, regskliek dan 'n ander %pad% om die oorsprong te stel!"
+  needs-configurator: "Stel hierdie %pad% op met 'n %configurator%"
+  missing-destination: "Bestemming-%pad% ontbreek!"
+
+watering-can:
+  no-exotic-garden: "Jy kan nie Exotic Garden se plante natmaak nie!"
+  needs-refill: "Jy moet jou %item% hervul!"
+  filled: "Jy het jou %item% gevul"
+  error: "Fout"

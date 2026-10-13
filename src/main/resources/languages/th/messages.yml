@@ -1,0 +1,100 @@
+barrel:
+  has-items: "ถังนี้ทำลายไม่ได้เพราะยังมีไอเทมอยู่ข้างใน!"
+  nearby-items: "เอาไอเทมที่อยู่ใกล้ออกก่อนทำลายถังนี้!"
+  overflow: "ในถังนี้มีไอเทมมากกว่า %amount% ชิ้น! จะปล่อยไอเทม %amount% ชิ้นแทน!"
+  empty: "ถังนี้ว่างเปล่า!"
+
+cargo:
+  copied: "คัดลอก %item% ของคุณแล้ว"
+  nothing-copied: "คุณยังไม่ได้คัดลอกโหนดขนส่งใด"
+  wrong-node: "คุณคัดลอก %copied% แต่กำลังพยายามแก้ %target%!"
+  missing-filter-item: "คุณไม่มี %item% ไอเทมนี้จะถูกข้าม"
+  pasted: "วาง %item% ของคุณแล้ว"
+  cleared: "ล้างโหนดขนส่งที่เลือกแล้ว"
+
+charger:
+  cannot-charge-charger: "คุณชาร์จที่ชาร์จพาหะไม่ได้"
+  item-full: "ไอเทมนี้เต็มแล้ว!"
+  not-enough-power: "ที่ชาร์จของคุณมีพลังงานไม่พอ!"
+  forgotten-item: "เฮ้! คุณลืมของไว้ในที่ชาร์จ! กำลังปล่อยลงพื้น..."
+
+charging-bench:
+  wrong-target: "คุณใช้การ์ดนี้ได้กับ %item% เท่านั้น"
+  maxed: "%item% นี้อยู่ที่ระดับสูงสุดแล้ว (ระดับ %max%)"
+  upgraded: "%item% นี้ได้รับการอัปเกรดแล้ว! %tier%"
+  tier: "ระดับ: %tier%"
+
+command:
+  invalid: "คำสั่งไม่ถูกต้อง"
+  no-console: "ไม่มีคำสั่งที่ใช้ได้จากคอนโซล"
+  version: "เวอร์ชันปัจจุบันคือ %version%"
+  specify-key-and-data: "โปรดระบุคีย์และข้อมูล"
+  info-added: "เพิ่มข้อมูลแล้ว"
+  look-at-slimefun-block: "คุณต้องมองไปที่บล็อกของ Slimefun"
+  not-found: "ไม่พบคำสั่ง"
+
+crank-generator:
+  missing-core: "ขาดแกนเครื่องปั่นไฟ"
+
+dolly:
+  cooldown: "โปรดรอก่อนใช้รถเข็นอีกครั้ง!"
+  already-carrying: "รถเข็นนี้บรรทุกหีบอยู่แล้ว!"
+  picked-up: "คุณยกหีบนี้ขึ้นแล้ว"
+  need-chest: "คุณต้องยกหีบขึ้นก่อน!"
+  no-room: "หีบของคุณใส่ตรงนั้นไม่ได้!"
+  placed: "วางหีบแล้ว"
+
+ender-chest-node:
+  registered: "ลงทะเบียน %item% ให้ %player% แล้ว %uuid%"
+  owner: "%item% นี้เป็นของ %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "คุณวางสิ่งนี้ได้บนหีบเอนเดอร์เท่านั้น!"
+
+exp-dispenser:
+  empty: "ไม่มีขวดประสบการณ์ในเครื่องจ่าย!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "ไอเทมของคุณทนไฟแล้ว"
+  failed: "ไม่สามารถทำให้ไอเทมของคุณทนไฟได้"
+
+foundry:
+  registered: "ลงทะเบียนโรงหล่อแล้ว คลิกขวาที่เตาด้วยถังลาวาเพื่อให้ความร้อน"
+  needs-lava: "โรงหล่อนี้ยังต้องเติมลาวา!"
+
+keyed-crafter:
+  no-vanilla-items: "คุณใช้ไอเทมดั้งเดิมของเกมกับเครื่องนี้ไม่ได้!"
+  recipe-set: "ตั้งสูตรเป้าหมายเป็น %item%"
+  unsupported: "ไอเทมนี้ไม่รองรับ!"
+  right-click-hint: "คลิกขวาที่เครื่องพร้อมถือไอเทมเพื่อตั้งสูตรดั้งเดิมของเกม"
+
+mini-barrel:
+  enter-size: "พิมพ์ขนาดใหม่ของถัง ขนาดสูงสุด: %max%"
+  out-of-range: "ขนาดใหม่ต้องอยู่ระหว่าง 0 ถึง %max%"
+  remove-items: "เอาไอเทมออกจากถังก่อนเปลี่ยนเป็นขนาดนี้!"
+  size-changed: "เปลี่ยนขนาดสูงสุดเป็น %size% แล้ว"
+
+splash:
+  self: "ซ่า!"
+  target: "%player% สาดน้ำใส่คุณ!"
+
+superheated-furnace:
+  has-items: "เตาร้อนจัดนี้ทำลายไม่ได้เพราะยังมีไอเทมอยู่ข้างใน!"
+  nearby-items: "เอาไอเทมที่อยู่ใกล้ออกก่อนทำลายเตาร้อนจัดนี้!"
+  overflow: "ในเตาร้อนจัดนี้มีไอเทมมากกว่า %amount% ชิ้น! จะปล่อยไอเทม %amount% ชิ้นแทน!"
+
+warp-pad:
+  marked-destination: "แผ่นนี้ถูกทำเครื่องหมายเป็น %state% และผูกกับตัวตั้งค่าของคุณแล้ว"
+  marked-origin: "แผ่นนี้ถูกทำเครื่องหมายเป็น %state% และวางการตั้งค่าจากตัวตั้งค่าของคุณลงไปแล้ว"
+  destination: "จุดหมาย"
+  origin: "จุดเริ่ม"
+  too-far: "คุณเชื่อมบล็อกที่ห่างกันเกิน %distance% บล็อกไม่ได้!"
+  instructions: "ย่อตัวแล้วคลิกขวาที่ %pad% เพื่อตั้งจุดหมาย จากนั้นคลิกขวาที่ %pad% อีกอันเพื่อตั้งจุดเริ่ม!"
+  needs-configurator: "ตั้งค่า %pad% นี้ด้วย %configurator%"
+  missing-destination: "ขาด %pad% จุดหมาย!"
+
+watering-can:
+  no-exotic-garden: "คุณรดน้ำพืชของ Exotic Garden ไม่ได้!"
+  needs-refill: "คุณต้องเติม %item% ของคุณ!"
+  filled: "คุณเติม %item% ของคุณแล้ว"
+  error: "ข้อผิดพลาด"

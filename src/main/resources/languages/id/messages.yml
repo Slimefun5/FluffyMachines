@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tong ini tidak bisa dihancurkan karena masih ada barang di dalamnya!"
+  nearby-items: "Pindahkan barang di sekitar sebelum menghancurkan tong ini!"
+  overflow: "Ada lebih dari %amount% barang di tong ini! Sebagai gantinya %amount% barang akan dijatuhkan!"
+  empty: "Tong ini kosong!"
+
+cargo:
+  copied: "%item% milikmu telah disalin."
+  nothing-copied: "Kamu belum menyalin simpul kargo apa pun."
+  wrong-node: "Kamu menyalin %copied% tapi mencoba mengubah %target%!"
+  missing-filter-item: "Kamu tidak punya %item%. Barang ini dilewati."
+  pasted: "%item% milikmu telah ditempelkan."
+  cleared: "Simpul kargo yang dipilih telah dikosongkan"
+
+charger:
+  cannot-charge-charger: "Kamu tidak bisa mengisi pengisi daya portabel"
+  item-full: "Barang ini sudah penuh!"
+  not-enough-power: "Pengisi dayamu tidak punya cukup energi!"
+  forgotten-item: "Hei! Kamu meninggalkan sesuatu di pengisi daya! Sekarang dijatuhkan..."
+
+charging-bench:
+  wrong-target: "Kamu hanya bisa memakai kartu ini pada %item%"
+  maxed: "%item% ini sudah maksimal (Tingkat %max%)"
+  upgraded: "%item% ini telah ditingkatkan! %tier%"
+  tier: "Tingkat: %tier%"
+
+command:
+  invalid: "Perintah tidak valid"
+  no-console: "Tidak ada perintah yang tersedia dari konsol"
+  version: "Versi saat ini adalah %version%"
+  specify-key-and-data: "Sebutkan kunci dan datanya"
+  info-added: "Informasi telah ditambahkan."
+  look-at-slimefun-block: "Kamu harus melihat ke blok Slimefun"
+  not-found: "Perintah tidak ditemukan"
+
+crank-generator:
+  missing-core: "Inti generator tidak ada"
+
+dolly:
+  cooldown: "Tunggu sebelum memakai troli lagi!"
+  already-carrying: "Troli ini sudah membawa peti!"
+  picked-up: "Kamu mengangkat peti ini"
+  need-chest: "Kamu harus mengangkat peti dulu!"
+  no-room: "Petimu tidak muat di sana!"
+  placed: "Peti telah diletakkan"
+
+ender-chest-node:
+  registered: "%item% terdaftar atas nama %player% %uuid%"
+  owner: "%item% ini milik %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Kamu hanya bisa meletakkan ini di atas peti ender!"
+
+exp-dispenser:
+  empty: "Tidak ada botol pengalaman di dispenser!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Barangmu sekarang tahan api"
+  failed: "Barangmu tidak bisa dibuat tahan api"
+
+foundry:
+  registered: "Pengecoran telah terdaftar. Klik kanan tungku dengan seember lava untuk memanaskannya."
+  needs-lava: "Pengecoran ini masih harus diisi lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Kamu tidak bisa memakai barang vanilla dengan mesin ini!"
+  recipe-set: "Resep target diatur ke %item%"
+  unsupported: "Barang ini tidak didukung!"
+  right-click-hint: "Klik kanan mesin dengan sebuah barang untuk mengatur resep vanilla"
+
+mini-barrel:
+  enter-size: "Tulis ukuran baru tong. Ukuran maksimal: %max%"
+  out-of-range: "Ukuran baru harus antara 0 dan %max%"
+  remove-items: "Keluarkan barang dari tong sebelum mengubahnya ke ukuran ini!"
+  size-changed: "Ukuran maksimal telah diubah menjadi %size%"
+
+splash:
+  self: "Byur!"
+  target: "Kamu disiram oleh %player%!"
+
+superheated-furnace:
+  has-items: "Tungku superpanas ini tidak bisa dihancurkan karena masih ada barang di dalamnya!"
+  nearby-items: "Pindahkan barang di sekitar sebelum menghancurkan tungku superpanas ini!"
+  overflow: "Ada lebih dari %amount% barang di tungku superpanas ini! Sebagai gantinya %amount% barang akan dijatuhkan!"
+
+warp-pad:
+  marked-destination: "Lempeng ini ditandai sebagai %state% dan ditautkan ke konfiguratormu"
+  marked-origin: "Lempeng ini ditandai sebagai %state% dan pengaturan konfiguratormu ditempelkan padanya"
+  destination: "Tujuan"
+  origin: "Asal"
+  too-far: "Kamu tidak bisa menautkan blok yang berjarak lebih dari %distance% blok!"
+  instructions: "Membungkuk dan klik kanan %pad% untuk mengatur tujuan, lalu klik kanan %pad% lain untuk mengatur asal!"
+  needs-configurator: "Konfigurasikan %pad% ini dengan %configurator%"
+  missing-destination: "%pad% tujuan tidak ada!"
+
+watering-can:
+  no-exotic-garden: "Kamu tidak bisa menyirami tanaman Exotic Garden!"
+  needs-refill: "Kamu harus mengisi ulang %item% milikmu!"
+  filled: "Kamu telah mengisi %item% milikmu"
+  error: "Galat"

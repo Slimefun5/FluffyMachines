@@ -1,0 +1,100 @@
+barrel:
+  has-items: "이 통 안에 아직 아이템이 있어서 부술 수 없습니다!"
+  nearby-items: "이 통을 부수기 전에 주변 아이템을 치워주세요!"
+  overflow: "이 통에 아이템이 %amount%개보다 많습니다! 대신 %amount%개를 떨어뜨립니다!"
+  empty: "이 통은 비어 있습니다!"
+
+cargo:
+  copied: "%item% 을 복사했습니다."
+  nothing-copied: "아직 화물 노드를 복사하지 않았습니다."
+  wrong-node: "%copied% 을 복사했지만 %target% 을 수정하려 하고 있습니다!"
+  missing-filter-item: "%item% 이 없습니다. 이 아이템은 건너뜁니다."
+  pasted: "%item% 을 붙여넣었습니다."
+  cleared: "선택한 화물 노드를 비웠습니다"
+
+charger:
+  cannot-charge-charger: "휴대용 충전기는 충전할 수 없습니다"
+  item-full: "이 아이템은 이미 가득 찼습니다!"
+  not-enough-power: "충전기에 에너지가 부족합니다!"
+  forgotten-item: "이런! 충전기에 뭔가 두고 갔습니다! 지금 떨어뜨립니다..."
+
+charging-bench:
+  wrong-target: "이 카드는 %item% 에만 사용할 수 있습니다"
+  maxed: "이 %item% 는 최대 단계입니다 (단계 %max%)"
+  upgraded: "이 %item% 를 업그레이드했습니다! %tier%"
+  tier: "단계: %tier%"
+
+command:
+  invalid: "잘못된 명령어"
+  no-console: "콘솔에서 사용할 수 있는 명령어가 없습니다"
+  version: "현재 버전은 %version% 입니다"
+  specify-key-and-data: "키와 값을 지정해주세요"
+  info-added: "정보를 추가했습니다."
+  look-at-slimefun-block: "Slimefun 블록을 바라봐야 합니다"
+  not-found: "명령어를 찾을 수 없습니다"
+
+crank-generator:
+  missing-core: "발전기 코어가 없습니다"
+
+dolly:
+  cooldown: "손수레를 다시 쓰기 전에 잠시 기다려주세요!"
+  already-carrying: "이 손수레는 이미 상자를 싣고 있습니다!"
+  picked-up: "이 상자를 들어올렸습니다"
+  need-chest: "먼저 상자를 들어올려야 합니다!"
+  no-room: "상자가 거기에 들어가지 않습니다!"
+  placed: "상자를 내려놓았습니다"
+
+ender-chest-node:
+  registered: "%item% 가 %player% 에게 등록되었습니다 %uuid%"
+  owner: "이 %item% 는 %player% 의 것입니다 %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "이것은 엔더 상자 위에만 놓을 수 있습니다!"
+
+exp-dispenser:
+  empty: "디스펜서에 경험치 병이 없었습니다!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "아이템이 이제 내화성을 갖췄습니다"
+  failed: "아이템을 내화성으로 만들 수 없었습니다"
+
+foundry:
+  registered: "주조소가 등록되었습니다. 용암 양동이로 화로를 우클릭해 가열하세요."
+  needs-lava: "이 주조소는 아직 용암을 채워야 합니다!"
+
+keyed-crafter:
+  no-vanilla-items: "이 기계에는 바닐라 아이템을 쓸 수 없습니다!"
+  recipe-set: "목표 제작법을 %item% 로 설정했습니다"
+  unsupported: "이 아이템은 지원되지 않습니다!"
+  right-click-hint: "바닐라 제작법을 설정하려면 아이템을 들고 기계를 우클릭하세요"
+
+mini-barrel:
+  enter-size: "통의 새 크기를 입력하세요. 최대 크기: %max%"
+  out-of-range: "새 크기는 0 에서 %max% 사이여야 합니다"
+  remove-items: "이 크기로 바꾸기 전에 통에서 아이템을 꺼내세요!"
+  size-changed: "최대 크기를 %size% 로 바꿨습니다"
+
+splash:
+  self: "첨벙!"
+  target: "%player% 님이 물을 뿌렸습니다!"
+
+superheated-furnace:
+  has-items: "이 과열 화로 안에 아직 아이템이 있어서 부술 수 없습니다!"
+  nearby-items: "이 과열 화로를 부수기 전에 주변 아이템을 치워주세요!"
+  overflow: "이 과열 화로에 아이템이 %amount%개보다 많습니다! 대신 %amount%개를 떨어뜨립니다!"
+
+warp-pad:
+  marked-destination: "이 판이 %state% 으로 표시되고 설정기에 연결되었습니다"
+  marked-origin: "이 판이 %state% 으로 표시되고 설정기의 설정이 붙여넣어졌습니다"
+  destination: "도착지"
+  origin: "출발지"
+  too-far: "%distance% 블록보다 멀리 떨어진 블록은 연결할 수 없습니다!"
+  instructions: "웅크린 채 %pad% 를 우클릭해 도착지를 정하고, 다른 %pad% 를 우클릭해 출발지를 정하세요!"
+  needs-configurator: "이 %pad% 는 %configurator% 로 설정하세요"
+  missing-destination: "도착지 %pad% 가 없습니다!"
+
+watering-can:
+  no-exotic-garden: "Exotic Garden 식물에는 물을 줄 수 없습니다!"
+  needs-refill: "%item% 를 다시 채워야 합니다!"
+  filled: "%item% 를 채웠습니다"
+  error: "오류"

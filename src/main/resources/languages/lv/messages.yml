@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Šo mucu nevar sagraut, jo tajā vēl ir priekšmeti!"
+  nearby-items: "Novāc priekšmetus tuvumā, pirms sagraut šo mucu!"
+  overflow: "Šajā mucā ir vairāk nekā %amount% priekšmetu! Tā vietā tiks izmesti %amount% priekšmeti!"
+  empty: "Šī muca ir tukša!"
+
+cargo:
+  copied: "Tavs %item% ir nokopēts."
+  nothing-copied: "Tu vēl neesi nokopējis nevienu kravas mezglu."
+  wrong-node: "Tu nokopēji %copied%, bet mēģini mainīt %target%!"
+  missing-filter-item: "Tev nav %item%. Šis priekšmets tiek izlaists."
+  pasted: "Tavs %item% ir ielīmēts."
+  cleared: "Izvēlētais kravas mezgls ir iztīrīts"
+
+charger:
+  cannot-charge-charger: "Pārnēsājamu lādētāju uzlādēt nevari"
+  item-full: "Šis priekšmets jau ir pilns!"
+  not-enough-power: "Tavam lādētājam nepietiek enerģijas!"
+  forgotten-item: "Ei! Tu kaut ko atstāji lādētājā! Tagad tas tiek izmests..."
+
+charging-bench:
+  wrong-target: "Šo karti vari izmantot tikai uz %item%"
+  maxed: "Šis %item% jau ir maksimumā (Līmenis %max%)"
+  upgraded: "Šis %item% ir uzlabots! %tier%"
+  tier: "Līmenis: %tier%"
+
+command:
+  invalid: "Nederīga komanda"
+  no-console: "No konsoles komandas nav pieejamas"
+  version: "Pašreizējā versija ir %version%"
+  specify-key-and-data: "Norādi atslēgu un datus"
+  info-added: "Informācija ir pievienota."
+  look-at-slimefun-block: "Tev jāskatās uz Slimefun bloku"
+  not-found: "Komanda nav atrasta"
+
+crank-generator:
+  missing-core: "Trūkst generatora kodola"
+
+dolly:
+  cooldown: "Pagaidi, pirms atkal lieto ratiņus!"
+  already-carrying: "Šie ratiņi jau nes lādi!"
+  picked-up: "Tu pacēli šo lādi"
+  need-chest: "Vispirms tev jāpaceļ lāde!"
+  no-room: "Tava lāde tur neiederas!"
+  placed: "Lāde ir nolikta"
+
+ender-chest-node:
+  registered: "%item% reģistrēts spēlētājam %player% %uuid%"
+  owner: "Šis %item% pieder spēlētājam %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "To vari novietot tikai uz endera lādes!"
+
+exp-dispenser:
+  empty: "Dalītājā nebija pieredzes pudelīšu!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tavs priekšmets tagad ir ugunsizturīgs"
+  failed: "Tavu priekšmetu neizdevās padarīt ugunsizturīgu"
+
+foundry:
+  registered: "Lietuve ir reģistrēta. Noklikšķini ar labo uz krāsns ar lavas spaini, lai to sakarsētu."
+  needs-lava: "Šo lietuvi vēl jāpiepilda ar lavu!"
+
+keyed-crafter:
+  no-vanilla-items: "Šajā mašīnā nevari lietot vanilla priekšmetus!"
+  recipe-set: "Mērķa recepte iestatīta uz %item%"
+  unsupported: "Šis priekšmets netiek atbalstīts!"
+  right-click-hint: "Noklikšķini ar labo uz mašīnas ar priekšmetu, lai iestatītu vanilla recepti"
+
+mini-barrel:
+  enter-size: "Ieraksti mucas jauno izmēru. Lielākais izmērs: %max%"
+  out-of-range: "Jaunajam izmēram jābūt no 0 līdz %max%"
+  remove-items: "Izņem priekšmetus no mucas, pirms maini to uz šo izmēru!"
+  size-changed: "Lielākais izmērs nomainīts uz %size%"
+
+splash:
+  self: "Šļaukt!"
+  target: "Tevi apšļakstīja %player%!"
+
+superheated-furnace:
+  has-items: "Šo pārkarsēto krāsni nevar sagraut, jo tajā vēl ir priekšmeti!"
+  nearby-items: "Novāc priekšmetus tuvumā, pirms sagraut šo pārkarsēto krāsni!"
+  overflow: "Šajā pārkarsētajā krāsnī ir vairāk nekā %amount% priekšmetu! Tā vietā tiks izmesti %amount% priekšmeti!"
+
+warp-pad:
+  marked-destination: "Šī plāksne ir atzīmēta kā %state% un piesaistīta tavam konfiguratoram"
+  marked-origin: "Šī plāksne ir atzīmēta kā %state%, un tava konfiguratora iestatījumi ir ielīmēti tajā"
+  destination: "Mērķis"
+  origin: "Sākums"
+  too-far: "Nevari sasaistīt blokus, kas atrodas tālāk par %distance% blokiem!"
+  instructions: "Palieciens un noklikšķini ar labo uz %pad%, lai iestatītu mērķi, tad noklikšķini ar labo uz citas %pad%, lai iestatītu sākumu!"
+  needs-configurator: "Konfigurē šo %pad% ar %configurator%"
+  missing-destination: "Trūkst mērķa %pad%!"
+
+watering-can:
+  no-exotic-garden: "Exotic Garden augus laistīt nevari!"
+  needs-refill: "Tev atkal jāpiepilda sava %item%!"
+  filled: "Tu piepildīji savu %item%"
+  error: "Kļūda"

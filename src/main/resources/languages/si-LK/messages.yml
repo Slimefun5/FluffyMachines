@@ -1,0 +1,100 @@
+barrel:
+  has-items: "මෙම බැරලය තවමත් භාණ්ඩ ඇති නිසා කඩා දැමිය නොහැක!"
+  nearby-items: "මෙම බැරලය කඩා දැමීමට පෙර ආසන්න භාණ්ඩ ඉවත් කරන්න!"
+  overflow: "මෙම බැරලයේ භාණ්ඩ %amount% ට වැඩියෙන් ඇත! ඒ වෙනුවට භාණ්ඩ %amount% බිම දමනු ලැබේ!"
+  empty: "මෙම බැරලය හිස්!"
+
+cargo:
+  copied: "ඔබේ %item% පිටපත් කරන ලදි."
+  nothing-copied: "ඔබ තවම කිසිදු භාණ්ඩ නෝඩයක් පිටපත් කර නැත."
+  wrong-node: "ඔබ %copied% පිටපත් කළා, නමුත් %target% වෙනස් කිරීමට උත්සාහ කරයි!"
+  missing-filter-item: "ඔබට %item% නැත. මෙම භාණ්ඩය මඟහරිනු ලැබේ."
+  pasted: "ඔබේ %item% අලවන ලදි."
+  cleared: "තේරූ භාණ්ඩ නෝඩය හිස් කරන ලදි"
+
+charger:
+  cannot-charge-charger: "අතේ ගෙනයන ආරෝපකයක් ආරෝපණය කළ නොහැක"
+  item-full: "මෙම භාණ්ඩය දැනටමත් පිරී ඇත!"
+  not-enough-power: "ඔබේ ආරෝපකයේ ප්‍රමාණවත් ශක්තියක් නැත!"
+  forgotten-item: "අනේ! ඔබ ආරෝපකයේ යමක් අමතක කර ගියා! දැන් එය බිම දමයි..."
+
+charging-bench:
+  wrong-target: "මෙම කාඩ්පත භාවිත කළ හැක්කේ %item% මත පමණි"
+  maxed: "මෙම %item% උපරිමයේ ඇත (මට්ටම %max%)"
+  upgraded: "මෙම %item% උසස් කරන ලදි! %tier%"
+  tier: "මට්ටම: %tier%"
+
+command:
+  invalid: "වලංගු නොවන විධානයක්"
+  no-console: "කොන්සෝලයෙන් විධාන නොමැත"
+  version: "වත්මන් අනුවාදය %version%"
+  specify-key-and-data: "යතුර සහ දත්ත සඳහන් කරන්න"
+  info-added: "තොරතුරු එකතු කරන ලදි."
+  look-at-slimefun-block: "ඔබ Slimefun කැටයක් දෙස බැලිය යුතුය"
+  not-found: "විධානය හමු නොවිණි"
+
+crank-generator:
+  missing-core: "ජනකයේ හරය නැත"
+
+dolly:
+  cooldown: "ඩොලිය නැවත භාවිත කිරීමට පෙර රැඳී සිටින්න!"
+  already-carrying: "මෙම ඩොලිය දැනටමත් පෙට්ටියක් ගෙන යයි!"
+  picked-up: "ඔබ මෙම පෙට්ටිය ඉසිලුවා"
+  need-chest: "පළමුව පෙට්ටියක් ඉසිලිය යුතුය!"
+  no-room: "ඔබේ පෙට්ටිය එහි නොගැළපේ!"
+  placed: "පෙට්ටිය තබන ලදි"
+
+ender-chest-node:
+  registered: "%item% %player% නමින් ලියාපදිංචි විය %uuid%"
+  owner: "මෙම %item% %player% ට අයත් වේ %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "මෙය තැබිය හැක්කේ එන්ඩර් පෙට්ටියක් මත පමණි!"
+
+exp-dispenser:
+  empty: "බෙදාහරින්නේ අත්දැකීම් බෝතල් නොතිබුණි!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "ඔබේ භාණ්ඩය දැන් ගිනි නොවදින එකක්"
+  failed: "ඔබේ භාණ්ඩය ගිනි නොවදින එකක් කළ නොහැකි විය"
+
+foundry:
+  registered: "වාත්තු කර්මාන්තශාලාව ලියාපදිංචි විය. රත් කිරීමට ලාවා බාල්දියකින් උදුන මත දකුණු-ක්ලික් කරන්න."
+  needs-lava: "මෙම වාත්තු කර්මාන්තශාලාව තවමත් ලාවාවෙන් පිරවිය යුතුය!"
+
+keyed-crafter:
+  no-vanilla-items: "මෙම යන්ත්‍රයේ මුල් ක්‍රීඩාවේ භාණ්ඩ භාවිත කළ නොහැක!"
+  recipe-set: "ඉලක්ක වට්ටෝරුව %item% ලෙස සකසන ලදි"
+  unsupported: "මෙම භාණ්ඩයට සහාය නැත!"
+  right-click-hint: "මුල් ක්‍රීඩාවේ වට්ටෝරුව සැකසීමට භාණ්ඩයක් සමඟ යන්ත්‍රය මත දකුණු-ක්ලික් කරන්න"
+
+mini-barrel:
+  enter-size: "බැරලයේ නව ප්‍රමාණය ටයිප් කරන්න. උපරිම ප්‍රමාණය: %max%"
+  out-of-range: "නව ප්‍රමාණය 0 සහ %max% අතර විය යුතුය"
+  remove-items: "බැරලය මෙම ප්‍රමාණයට වෙනස් කිරීමට පෙර එයින් භාණ්ඩ ඉවත් කරන්න!"
+  size-changed: "උපරිම ප්‍රමාණය %size% ලෙස වෙනස් විය"
+
+splash:
+  self: "ජලය වැටුණා!"
+  target: "%player% ඔබට ජලය ඉසීවා!"
+
+superheated-furnace:
+  has-items: "මෙම අධිතාප උදුන තවමත් භාණ්ඩ ඇති නිසා කඩා දැමිය නොහැක!"
+  nearby-items: "මෙම අධිතාප උදුන කඩා දැමීමට පෙර ආසන්න භාණ්ඩ ඉවත් කරන්න!"
+  overflow: "මෙම අධිතාප උදුනේ භාණ්ඩ %amount% ට වැඩියෙන් ඇත! ඒ වෙනුවට භාණ්ඩ %amount% බිම දමනු ලැබේ!"
+
+warp-pad:
+  marked-destination: "මෙම තැටිය %state% ලෙස සලකුණු කර ඔබේ වින්‍යාසකයට බැඳී ඇත"
+  marked-origin: "මෙම තැටිය %state% ලෙස සලකුණු කර ඔබේ වින්‍යාසකයේ සැකසුම් එයට අලවා ඇත"
+  destination: "ගමනාන්තය"
+  origin: "ආරම්භය"
+  too-far: "කැට %distance% කට වඩා දුරින් ඇති කැට සම්බන්ධ කළ නොහැක!"
+  instructions: "නැමී %pad% මත දකුණු-ක්ලික් කර ගමනාන්තය සකසන්න, පසුව තවත් %pad% මත දකුණු-ක්ලික් කර ආරම්භය සකසන්න!"
+  needs-configurator: "මෙම %pad% %configurator% මගින් වින්‍යාස කරන්න"
+  missing-destination: "ගමනාන්ත %pad% නැත!"
+
+watering-can:
+  no-exotic-garden: "Exotic Garden පැළවලට ජලය දැමිය නොහැක!"
+  needs-refill: "ඔබේ %item% නැවත පිරවිය යුතුය!"
+  filled: "ඔබ ඔබේ %item% පිරවුවා"
+  error: "දෝෂයක්"

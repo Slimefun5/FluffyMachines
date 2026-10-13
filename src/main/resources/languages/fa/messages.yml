@@ -1,0 +1,100 @@
+barrel:
+  has-items: "این بشکه را نمی‌توان شکست چون هنوز چیزهایی درون آن است!"
+  nearby-items: "چیزهای نزدیک را بردار، سپس این بشکه را بشکن!"
+  overflow: "در این بشکه بیش از %amount% چیز است! به جای آن %amount% چیز رها خواهد شد!"
+  empty: "این بشکه خالی است!"
+
+cargo:
+  copied: "%item% تو کپی شد."
+  nothing-copied: "هنوز هیچ گره باری را کپی نکرده‌ای."
+  wrong-node: "یک %copied% کپی کردی اما می‌خواهی یک %target% را تغییر دهی!"
+  missing-filter-item: "%item% نداری. از این چیز می‌گذریم."
+  pasted: "%item% تو جای‌گذاری شد."
+  cleared: "گره بار انتخاب‌شده خالی شد"
+
+charger:
+  cannot-charge-charger: "نمی‌توانی یک شارژر همراه را شارژ کنی"
+  item-full: "این چیز از قبل پر است!"
+  not-enough-power: "شارژر تو انرژی کافی ندارد!"
+  forgotten-item: "هی! چیزی در شارژر جا گذاشتی! همین حالا رها می‌شود..."
+
+charging-bench:
+  wrong-target: "این کارت را فقط روی یک %item% می‌توانی به کار ببری"
+  maxed: "این %item% به بیشترین حد رسیده است (سطح %max%)"
+  upgraded: "این %item% ارتقا یافت! %tier%"
+  tier: "سطح: %tier%"
+
+command:
+  invalid: "فرمان نامعتبر"
+  no-console: "از کنسول هیچ فرمانی در دسترس نیست"
+  version: "نسخهٔ کنونی %version% است"
+  specify-key-and-data: "کلید و داده را مشخص کن"
+  info-added: "اطلاعات افزوده شد."
+  look-at-slimefun-block: "باید به یک بلوک Slimefun نگاه کنی"
+  not-found: "فرمان یافت نشد"
+
+crank-generator:
+  missing-core: "هستهٔ مولد نیست"
+
+dolly:
+  cooldown: "پیش از استفادهٔ دوباره از چرخ‌دستی صبر کن!"
+  already-carrying: "این چرخ‌دستی از قبل یک صندوق حمل می‌کند!"
+  picked-up: "این صندوق را برداشتی"
+  need-chest: "نخست باید یک صندوق برداری!"
+  no-room: "صندوق تو آنجا جا نمی‌شود!"
+  placed: "صندوق گذاشته شد"
+
+ender-chest-node:
+  registered: "%item% به نام %player% ثبت شد %uuid%"
+  owner: "این %item% از آن %player% است %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "این را فقط روی صندوق اندر می‌توانی بگذاری!"
+
+exp-dispenser:
+  empty: "در پخش‌کننده هیچ شیشهٔ تجربه‌ای نبود!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "چیز تو اکنون آتش‌ناپذیر است"
+  failed: "چیز تو آتش‌ناپذیر نشد"
+
+foundry:
+  registered: "ریخته‌گری ثبت شد. برای گرم کردن آن با سطل گدازه روی کوره راست‌کلیک کن."
+  needs-lava: "این ریخته‌گری هنوز باید با گدازه پر شود!"
+
+keyed-crafter:
+  no-vanilla-items: "با این ماشین نمی‌توانی از چیزهای اصل بازی استفاده کنی!"
+  recipe-set: "دستور هدف روی %item% تنظیم شد"
+  unsupported: "این چیز پشتیبانی نمی‌شود!"
+  right-click-hint: "برای تنظیم دستور اصل بازی، با یک چیز روی ماشین راست‌کلیک کن"
+
+mini-barrel:
+  enter-size: "اندازهٔ تازهٔ بشکه را بنویس. بیشترین اندازه: %max%"
+  out-of-range: "اندازهٔ تازه باید میان ۰ و %max% باشد"
+  remove-items: "پیش از تغییر بشکه به این اندازه، چیزهایی را از آن بردار!"
+  size-changed: "بیشترین اندازه به %size% تغییر کرد"
+
+splash:
+  self: "شلپ!"
+  target: "%player% به تو آب پاشید!"
+
+superheated-furnace:
+  has-items: "این کورهٔ بیش‌داغ را نمی‌توان شکست چون هنوز چیزهایی درون آن است!"
+  nearby-items: "چیزهای نزدیک را بردار، سپس این کورهٔ بیش‌داغ را بشکن!"
+  overflow: "در این کورهٔ بیش‌داغ بیش از %amount% چیز است! به جای آن %amount% چیز رها خواهد شد!"
+
+warp-pad:
+  marked-destination: "این صفحه به عنوان %state% نشان‌گذاری و به تنظیم‌گر تو بسته شد"
+  marked-origin: "این صفحه به عنوان %state% نشان‌گذاری شد و تنظیمات تنظیم‌گر تو روی آن جای‌گذاری شد"
+  destination: "مقصد"
+  origin: "مبدأ"
+  too-far: "نمی‌توانی بلوک‌هایی را که بیش از %distance% بلوک فاصله دارند به هم ببندی!"
+  instructions: "خم شو و روی یک %pad% راست‌کلیک کن تا مقصد را تنظیم کنی، سپس روی %pad% دیگری راست‌کلیک کن تا مبدأ را تنظیم کنی!"
+  needs-configurator: "این %pad% را با یک %configurator% تنظیم کن"
+  missing-destination: "%pad% مقصد نیست!"
+
+watering-can:
+  no-exotic-garden: "نمی‌توانی گیاهان Exotic Garden را آبیاری کنی!"
+  needs-refill: "باید %item% خود را پر کنی!"
+  filled: "%item% خود را پر کردی"
+  error: "خطا"

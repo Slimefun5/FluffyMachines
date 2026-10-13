@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Šios statinės negalima sudaužyti, nes joje dar yra daiktų!"
+  nearby-items: "Pašalink daiktus aplinkui, prieš sudaužydamas šią statinę!"
+  overflow: "Šioje statinėje yra daugiau nei %amount% daiktų! Vietoj to bus išmesta %amount% daiktų!"
+  empty: "Ši statinė tuščia!"
+
+cargo:
+  copied: "Tavo %item% nukopijuotas."
+  nothing-copied: "Dar nenukopijavai nė vieno krovinio mazgo."
+  wrong-node: "Nukopijavai %copied%, bet bandai pakeisti %target%!"
+  missing-filter-item: "Neturi %item%. Šis daiktas praleidžiamas."
+  pasted: "Tavo %item% įklijuotas."
+  cleared: "Pasirinktas krovinio mazgas išvalytas"
+
+charger:
+  cannot-charge-charger: "Nešiojamo įkroviklio įkrauti negali"
+  item-full: "Šis daiktas jau pilnas!"
+  not-enough-power: "Tavo įkroviklyje nepakanka energijos!"
+  forgotten-item: "Ei! Kažką pamiršai įkroviklyje! Dabar jis išmetamas..."
+
+charging-bench:
+  wrong-target: "Šią kortą gali naudoti tik ant %item%"
+  maxed: "Šis %item% jau maksimalus (Lygis %max%)"
+  upgraded: "Šis %item% patobulintas! %tier%"
+  tier: "Lygis: %tier%"
+
+command:
+  invalid: "Netinkama komanda"
+  no-console: "Iš konsolės komandų nėra"
+  version: "Dabartinė versija yra %version%"
+  specify-key-and-data: "Nurodyk raktą ir duomenis"
+  info-added: "Informacija pridėta."
+  look-at-slimefun-block: "Turi žiūrėti į Slimefun bloką"
+  not-found: "Komanda nerasta"
+
+crank-generator:
+  missing-core: "Nėra generatoriaus šerdies"
+
+dolly:
+  cooldown: "Palauk, prieš vėl naudodamas vežimėlį!"
+  already-carrying: "Šis vežimėlis jau veža skrynią!"
+  picked-up: "Pakėlei šią skrynią"
+  need-chest: "Pirma turi pakelti skrynią!"
+  no-room: "Tavo skrynia tenai netelpa!"
+  placed: "Skrynia padėta"
+
+ender-chest-node:
+  registered: "%item% užregistruotas žaidėjui %player% %uuid%"
+  owner: "Šis %item% priklauso žaidėjui %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Tai gali padėti tik ant enderio skrynios!"
+
+exp-dispenser:
+  empty: "Dalytuve nebuvo patirties buteliukų!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tavo daiktas dabar ugniai atsparus"
+  failed: "Tavo daikto nepavyko padaryti atsparaus ugniai"
+
+foundry:
+  registered: "Liejykla užregistruota. Spustelk krosnį dešiniu su lavos kibiru, kad ją įkaitintum."
+  needs-lava: "Šią liejyklą dar reikia užpildyti lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Šioje mašinoje negali naudoti vanilla daiktų!"
+  recipe-set: "Tikslinis receptas nustatytas į %item%"
+  unsupported: "Šis daiktas nepalaikomas!"
+  right-click-hint: "Spustelk mašiną dešiniu su daiktu, kad nustatytum vanilla receptą"
+
+mini-barrel:
+  enter-size: "Įrašyk naują statinės dydį. Didžiausias dydis: %max%"
+  out-of-range: "Naujas dydis turi būti tarp 0 ir %max%"
+  remove-items: "Išimk daiktus iš statinės, prieš pakeisdamas ją į šį dydį!"
+  size-changed: "Didžiausias dydis pakeistas į %size%"
+
+splash:
+  self: "Pliumpt!"
+  target: "Tave aptaškė %player%!"
+
+superheated-furnace:
+  has-items: "Šios perkaitintos krosnies negalima sudaužyti, nes joje dar yra daiktų!"
+  nearby-items: "Pašalink daiktus aplinkui, prieš sudaužydamas šią perkaitintą krosnį!"
+  overflow: "Šioje perkaitintoje krosnyje yra daugiau nei %amount% daiktų! Vietoj to bus išmesta %amount% daiktų!"
+
+warp-pad:
+  marked-destination: "Ši plokštė pažymėta kaip %state% ir susieta su tavo konfigūratoriumi"
+  marked-origin: "Ši plokštė pažymėta kaip %state%, o tavo konfigūratoriaus nustatymai įklijuoti į ją"
+  destination: "Tikslas"
+  origin: "Pradžia"
+  too-far: "Negali susieti blokų, nutolusių daugiau nei %distance% blokų!"
+  instructions: "Pasilenk ir spustelk %pad% dešiniu, kad nustatytum tikslą, tada spustelk kitą %pad% dešiniu, kad nustatytum pradžią!"
+  needs-configurator: "Konfigūruok šią %pad% su %configurator%"
+  missing-destination: "Nėra tikslinės %pad%!"
+
+watering-can:
+  no-exotic-garden: "Exotic Garden augalų laistyti negali!"
+  needs-refill: "Turi vėl pripildyti savo %item%!"
+  filled: "Pripildei savo %item%"
+  error: "Klaida"

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Không thể phá thùng này vì bên trong vẫn còn vật phẩm!"
+  nearby-items: "Hãy dọn các vật phẩm gần đó trước khi phá thùng này!"
+  overflow: "Trong thùng này có hơn %amount% vật phẩm! Sẽ rơi ra %amount% vật phẩm thay vào đó!"
+  empty: "Thùng này trống!"
+
+cargo:
+  copied: "Đã sao chép %item% của bạn."
+  nothing-copied: "Bạn chưa sao chép nút hàng hóa nào."
+  wrong-node: "Bạn đã sao chép %copied% nhưng đang cố sửa %target%!"
+  missing-filter-item: "Bạn không có %item%. Vật phẩm này bị bỏ qua."
+  pasted: "Đã dán %item% của bạn."
+  cleared: "Đã xóa nút hàng hóa đã chọn"
+
+charger:
+  cannot-charge-charger: "Bạn không thể sạc một bộ sạc di động"
+  item-full: "Vật phẩm này đã đầy!"
+  not-enough-power: "Bộ sạc của bạn không đủ năng lượng!"
+  forgotten-item: "Này! Bạn để quên thứ gì trong bộ sạc! Giờ nó sẽ rơi ra..."
+
+charging-bench:
+  wrong-target: "Bạn chỉ có thể dùng thẻ này trên %item%"
+  maxed: "%item% này đã ở mức cao nhất (Bậc %max%)"
+  upgraded: "%item% này đã được nâng cấp! %tier%"
+  tier: "Bậc: %tier%"
+
+command:
+  invalid: "Lệnh không hợp lệ"
+  no-console: "Không có lệnh nào dùng được từ bảng điều khiển"
+  version: "Phiên bản hiện tại là %version%"
+  specify-key-and-data: "Hãy nêu khóa và dữ liệu"
+  info-added: "Đã thêm thông tin."
+  look-at-slimefun-block: "Bạn phải nhìn vào một khối Slimefun"
+  not-found: "Không tìm thấy lệnh"
+
+crank-generator:
+  missing-core: "Thiếu lõi máy phát"
+
+dolly:
+  cooldown: "Hãy chờ trước khi dùng xe đẩy lần nữa!"
+  already-carrying: "Xe đẩy này đã chở một hòm!"
+  picked-up: "Bạn đã nhấc hòm này lên"
+  need-chest: "Bạn phải nhấc một hòm lên trước!"
+  no-room: "Hòm của bạn không vừa ở đó!"
+  placed: "Đã đặt hòm xuống"
+
+ender-chest-node:
+  registered: "%item% đã được đăng ký cho %player% %uuid%"
+  owner: "%item% này thuộc về %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Bạn chỉ có thể đặt thứ này lên hòm Ender!"
+
+exp-dispenser:
+  empty: "Không có lọ kinh nghiệm nào trong máy phân phối!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Vật phẩm của bạn giờ chống cháy"
+  failed: "Không thể làm vật phẩm của bạn chống cháy"
+
+foundry:
+  registered: "Đã đăng ký lò đúc. Nhấp chuột phải vào lò với một xô dung nham để nung nóng."
+  needs-lava: "Lò đúc này vẫn cần được đổ dung nham!"
+
+keyed-crafter:
+  no-vanilla-items: "Bạn không thể dùng vật phẩm gốc của game với máy này!"
+  recipe-set: "Đã đặt công thức mục tiêu thành %item%"
+  unsupported: "Vật phẩm này không được hỗ trợ!"
+  right-click-hint: "Nhấp chuột phải vào máy khi đang cầm một vật phẩm để đặt công thức gốc"
+
+mini-barrel:
+  enter-size: "Nhập kích cỡ mới của thùng. Kích cỡ lớn nhất: %max%"
+  out-of-range: "Kích cỡ mới phải nằm giữa 0 và %max%"
+  remove-items: "Hãy lấy vật phẩm ra khỏi thùng trước khi đổi sang kích cỡ này!"
+  size-changed: "Đã đổi kích cỡ lớn nhất thành %size%"
+
+splash:
+  self: "Tũm!"
+  target: "%player% đã tạt nước vào bạn!"
+
+superheated-furnace:
+  has-items: "Không thể phá lò quá nhiệt này vì bên trong vẫn còn vật phẩm!"
+  nearby-items: "Hãy dọn các vật phẩm gần đó trước khi phá lò quá nhiệt này!"
+  overflow: "Trong lò quá nhiệt này có hơn %amount% vật phẩm! Sẽ rơi ra %amount% vật phẩm thay vào đó!"
+
+warp-pad:
+  marked-destination: "Tấm này đã được đánh dấu là %state% và gắn với bộ cấu hình của bạn"
+  marked-origin: "Tấm này đã được đánh dấu là %state% và cài đặt từ bộ cấu hình của bạn đã được dán vào nó"
+  destination: "Điểm đến"
+  origin: "Điểm đi"
+  too-far: "Bạn không thể liên kết các khối cách nhau hơn %distance% khối!"
+  instructions: "Hãy cúi xuống và nhấp chuột phải vào một %pad% để đặt điểm đến, rồi nhấp chuột phải vào một %pad% khác để đặt điểm đi!"
+  needs-configurator: "Hãy cấu hình %pad% này bằng một %configurator%"
+  missing-destination: "Thiếu %pad% điểm đến!"
+
+watering-can:
+  no-exotic-garden: "Bạn không thể tưới cây của Exotic Garden!"
+  needs-refill: "Bạn cần đổ lại %item% của mình!"
+  filled: "Bạn đã đổ đầy %item% của mình"
+  error: "Lỗi"

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Ezt a hordót nem lehet lebontani, mert még tárgyak vannak benne!"
+  nearby-items: "Távolítsd el a közelben lévő tárgyakat, mielőtt lebontod ezt a hordót!"
+  overflow: "Ebben a hordóban több mint %amount% tárgy van! Helyette %amount% tárgy fog kiesni!"
+  empty: "Ez a hordó üres!"
+
+cargo:
+  copied: "A %item% kimásolva."
+  nothing-copied: "Még nem másoltál ki egyetlen cargo csomópontot sem."
+  wrong-node: "Egy %copied% másoltál ki, de egy %target% próbálsz módosítani!"
+  missing-filter-item: "Nincs %item% nálad. Ez a tárgy kimarad."
+  pasted: "A %item% beillesztve."
+  cleared: "A kiválasztott cargo csomópont kiürítve"
+
+charger:
+  cannot-charge-charger: "Hordozható töltőt nem tudsz feltölteni"
+  item-full: "Ez a tárgy már tele van!"
+  not-enough-power: "A töltődben nincs elég energia!"
+  forgotten-item: "Hé! Hagytál valamit a töltőben! Most kiesik..."
+
+charging-bench:
+  wrong-target: "Ezt a kártyát csak egy %item% nevű tárgyon használhatod"
+  maxed: "Ez a %item% a maximumon van (Szint: %max%)"
+  upgraded: "Ez a %item% fejlesztve lett! %tier%"
+  tier: "Szint: %tier%"
+
+command:
+  invalid: "Érvénytelen parancs"
+  no-console: "A konzolból nincs elérhető parancs"
+  version: "A jelenlegi verzió %version%"
+  specify-key-and-data: "Adj meg kulcsot és adatot"
+  info-added: "Az információ hozzáadva."
+  look-at-slimefun-block: "Egy Slimefun blokkra kell néznie"
+  not-found: "A parancs nem található"
+
+crank-generator:
+  missing-core: "Hiányzik a generátormag"
+
+dolly:
+  cooldown: "Várj, mielőtt újra használod a kézikocsit!"
+  already-carrying: "Ez a kézikocsi már szállít egy ládát!"
+  picked-up: "Felvetted ezt a ládát"
+  need-chest: "Először fel kell vennie egy ládát!"
+  no-room: "A ládád nem fér el ott!"
+  placed: "A láda le lett helyezve"
+
+ender-chest-node:
+  registered: "%item% bejegyezve %player% nevére %uuid%"
+  owner: "Ez a %item% %player% tulajdona %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Ezt csak enderládára helyezheted!"
+
+exp-dispenser:
+  empty: "Az adagolóban nem volt tapasztalati fiola!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "A tárgyad mostantól tűzálló"
+  failed: "A tárgyad nem lett tűzálló"
+
+foundry:
+  registered: "Az öntöde be lett jegyezve. Jobb klikk a kemencére egy láva vödörrel, hogy felizzítsd."
+  needs-lava: "Ezt az öntödét még fel kell tölteni lávával!"
+
+keyed-crafter:
+  no-vanilla-items: "Ebben a gépben nem használhatsz vanilla tárgyakat!"
+  recipe-set: "A cél recept beállítva: %item%"
+  unsupported: "Ez a tárgy nem támogatott!"
+  right-click-hint: "Jobb klikk a gépre egy tárggyal, hogy beállítsd a vanilla receptet"
+
+mini-barrel:
+  enter-size: "Írd be a hordó új méretét. Legnagyobb méret: %max%"
+  out-of-range: "Az új méretnek 0 és %max% között kell lennie"
+  remove-items: "Vegyél ki tárgyakat a hordóból, mielőtt erre a méretre állítod!"
+  size-changed: "A legnagyobb méret erre változott: %size%"
+
+splash:
+  self: "Csobb!"
+  target: "%player% lefröcskölt!"
+
+superheated-furnace:
+  has-items: "Ezt a túlhevített kemencét nem lehet lebontani, mert még tárgyak vannak benne!"
+  nearby-items: "Távolítsd el a közelben lévő tárgyakat, mielőtt lebontod ezt a túlhevített kemencét!"
+  overflow: "Ebben a túlhevített kemencében több mint %amount% tárgy van! Helyette %amount% tárgy fog kiesni!"
+
+warp-pad:
+  marked-destination: "Ez a lap %state% lett megjelölve és a konfigurátorodhoz kötve"
+  marked-origin: "Ez a lap %state% lett megjelölve, és a konfigurátorod beállításai rá lettek illesztve"
+  destination: "célként"
+  origin: "kiindulásként"
+  too-far: "Nem köthetsz össze olyan blokkokat, amelyek több mint %distance% blokkra vannak egymástól!"
+  instructions: "Lopakodj és jobb klikkelj egy %pad% nevű tárgyra a cél beállításához, majd jobb klikkelj egy másik %pad% nevűre a kiindulás beállításához!"
+  needs-configurator: "Állítsd be ezt a %pad% nevű tárgyat egy %configurator% nevű tárggyal"
+  missing-destination: "Hiányzik a cél %pad%!"
+
+watering-can:
+  no-exotic-garden: "Az Exotic Garden növényeit nem tudod megöntözni!"
+  needs-refill: "Újra meg kell töltened a %item% nevű tárgyat!"
+  filled: "Megtöltötted a %item% nevű tárgyat"
+  error: "Hiba"

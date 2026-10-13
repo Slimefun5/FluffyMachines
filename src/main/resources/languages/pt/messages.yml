@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Este barril não pode ser quebrado porque ainda tem itens dentro!"
+  nearby-items: "Remove os itens por perto antes de quebrar este barril!"
+  overflow: "Há mais de %amount% itens neste barril! Serão largados %amount% itens em vez disso!"
+  empty: "Este barril está vazio!"
+
+cargo:
+  copied: "O teu %item% foi copiado."
+  nothing-copied: "Ainda não copiaste nenhum nó de carga."
+  wrong-node: "Copiaste um %copied% mas estás a tentar alterar um %target%!"
+  missing-filter-item: "Não tens %item%. Este item vai ser ignorado."
+  pasted: "O teu %item% foi colado."
+  cleared: "O nó de carga selecionado foi limpo"
+
+charger:
+  cannot-charge-charger: "Não podes carregar um carregador portátil"
+  item-full: "Este item já está cheio!"
+  not-enough-power: "O teu carregador não tem energia suficiente!"
+  forgotten-item: "Ei! Deixaste algo no carregador! Vai ser largado agora..."
+
+charging-bench:
+  wrong-target: "Só podes usar este cartão num %item%"
+  maxed: "Este %item% está no máximo (Nível %max%)"
+  upgraded: "Este %item% foi melhorado! %tier%"
+  tier: "Nível: %tier%"
+
+command:
+  invalid: "Comando inválido"
+  no-console: "Não há comandos disponíveis a partir da consola"
+  version: "A versão atual é %version%"
+  specify-key-and-data: "Indica a chave e o dado"
+  info-added: "A informação foi adicionada."
+  look-at-slimefun-block: "Tens de estar a olhar para um bloco do Slimefun"
+  not-found: "Comando não encontrado"
+
+crank-generator:
+  missing-core: "Falta o núcleo do gerador"
+
+dolly:
+  cooldown: "Espera antes de usar o carrinho outra vez!"
+  already-carrying: "Este carrinho já leva um baú!"
+  picked-up: "Apanhaste este baú"
+  need-chest: "Primeiro tens de apanhar um baú!"
+  no-room: "O teu baú não cabe aí!"
+  placed: "O baú foi colocado"
+
+ender-chest-node:
+  registered: "%item% registado em nome de %player% %uuid%"
+  owner: "Este %item% pertence a %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Só podes colocar isto num baú do End!"
+
+exp-dispenser:
+  empty: "Não havia frascos de experiência no dispensador!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "O teu item agora é à prova de fogo"
+  failed: "O teu item não pôde ser tornado à prova de fogo"
+
+foundry:
+  registered: "A fundição foi registada. Clica com o direito na fornalha com um balde de lava para a aquecer."
+  needs-lava: "Esta fundição ainda precisa de ser enchida com lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Não podes usar itens vanilla com esta máquina!"
+  recipe-set: "Receita alvo definida para %item%"
+  unsupported: "Este item não é suportado!"
+  right-click-hint: "Clica com o direito na máquina com um item para definir a receita vanilla"
+
+mini-barrel:
+  enter-size: "Escreve o novo tamanho do barril. Tamanho máximo: %max%"
+  out-of-range: "O novo tamanho tem de estar entre 0 e %max%"
+  remove-items: "Retira itens do barril antes de o mudares para este tamanho!"
+  size-changed: "O tamanho máximo foi mudado para %size%"
+
+splash:
+  self: "Chuá!"
+  target: "Foste molhado por %player%!"
+
+superheated-furnace:
+  has-items: "Esta fornalha superaquecida não pode ser quebrada porque ainda tem itens dentro!"
+  nearby-items: "Remove os itens por perto antes de quebrar esta fornalha superaquecida!"
+  overflow: "Há mais de %amount% itens nesta fornalha superaquecida! Serão largados %amount% itens em vez disso!"
+
+warp-pad:
+  marked-destination: "Esta placa foi marcada como %state% e ligada ao teu configurador"
+  marked-origin: "Esta placa foi marcada como %state% e as configurações do teu configurador foram coladas nela"
+  destination: "Destino"
+  origin: "Origem"
+  too-far: "Não podes ligar blocos separados por mais de %distance% blocos!"
+  instructions: "Agacha-te e clica com o direito numa %pad% para definir o destino, depois clica com o direito noutra %pad% para definir a origem!"
+  needs-configurator: "Configura esta %pad% com um %configurator%"
+  missing-destination: "Falta a %pad% de destino!"
+
+watering-can:
+  no-exotic-garden: "Não podes regar as plantas do Exotic Garden!"
+  needs-refill: "Tens de reabastecer o teu %item%!"
+  filled: "Encheste o teu %item%"
+  error: "Erro"

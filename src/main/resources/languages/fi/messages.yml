@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tätä tynnyriä ei voi rikkoa, koska siinä on vielä tavaraa!"
+  nearby-items: "Poista lähellä olevat tavarat ennen kuin rikot tämän tynnyrin!"
+  overflow: "Tässä tynnyrissä on yli %amount% tavaraa! Sen sijaan pudotetaan %amount% tavaraa!"
+  empty: "Tämä tynnyri on tyhjä!"
+
+cargo:
+  copied: "%item% kopioitiin."
+  nothing-copied: "Et ole vielä kopioinut yhtään rahtisolmua."
+  wrong-node: "Kopioit %copied%, mutta yrität muokata %target%!"
+  missing-filter-item: "Sinulla ei ole %item%. Tämä tavara ohitetaan."
+  pasted: "%item% liitettiin."
+  cleared: "Valittu rahtisolmu tyhjennettiin"
+
+charger:
+  cannot-charge-charger: "Et voi ladata kannettavaa laturia"
+  item-full: "Tämä tavara on jo täynnä!"
+  not-enough-power: "Laturissasi ei ole tarpeeksi energiaa!"
+  forgotten-item: "Hei! Jätit jotain laturiin! Se pudotetaan nyt..."
+
+charging-bench:
+  wrong-target: "Voit käyttää tätä korttia vain %item% kohteessa"
+  maxed: "Tämä %item% on maksimissa (Taso %max%)"
+  upgraded: "Tämä %item% päivitettiin! %tier%"
+  tier: "Taso: %tier%"
+
+command:
+  invalid: "Virheellinen komento"
+  no-console: "Konsolista ei ole saatavilla komentoja"
+  version: "Nykyinen versio on %version%"
+  specify-key-and-data: "Anna avain ja data"
+  info-added: "Tieto lisättiin."
+  look-at-slimefun-block: "Sinun täytyy katsoa Slimefun-lohkoa"
+  not-found: "Komentoa ei löytynyt"
+
+crank-generator:
+  missing-core: "Generaattorin ydin puuttuu"
+
+dolly:
+  cooldown: "Odota ennen kuin käytät nokkakärryä uudelleen!"
+  already-carrying: "Tämä nokkakärry kantaa jo arkkua!"
+  picked-up: "Nostit tämän arkun"
+  need-chest: "Sinun täytyy ensin nostaa arkku!"
+  no-room: "Arkkusi ei mahdu sinne!"
+  placed: "Arkku laskettiin"
+
+ender-chest-node:
+  registered: "%item% rekisteröitiin pelaajalle %player% %uuid%"
+  owner: "Tämä %item% kuuluu pelaajalle %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Voit asettaa tämän vain enderarkun päälle!"
+
+exp-dispenser:
+  empty: "Annostelijassa ei ollut kokemuspulloja!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tavarasi on nyt tulenkestävä"
+  failed: "Tavarastasi ei saatu tulenkestävää"
+
+foundry:
+  registered: "Valimo rekisteröitiin. Napsauta uunia oikealla laavakauhalla kuumentaaksesi sen."
+  needs-lava: "Tämä valimo täytyy vielä täyttää laavalla!"
+
+keyed-crafter:
+  no-vanilla-items: "Et voi käyttää vanilla-tavaroita tässä koneessa!"
+  recipe-set: "Kohdeohje asetettiin: %item%"
+  unsupported: "Tätä tavaraa ei tueta!"
+  right-click-hint: "Napsauta konetta oikealla tavaran kanssa asettaaksesi vanilla-ohjeen"
+
+mini-barrel:
+  enter-size: "Kirjoita tynnyrin uusi koko. Suurin koko: %max%"
+  out-of-range: "Uuden koon täytyy olla välillä 0 ja %max%"
+  remove-items: "Ota tavaroita pois tynnyristä ennen kuin muutat sen tähän kokoon!"
+  size-changed: "Suurin koko muutettiin: %size%"
+
+splash:
+  self: "Loisk!"
+  target: "%player% roiskautti sinua!"
+
+superheated-furnace:
+  has-items: "Tätä ylikuumennettua uunia ei voi rikkoa, koska siinä on vielä tavaraa!"
+  nearby-items: "Poista lähellä olevat tavarat ennen kuin rikot tämän ylikuumennetun uunin!"
+  overflow: "Tässä ylikuumennetussa uunissa on yli %amount% tavaraa! Sen sijaan pudotetaan %amount% tavaraa!"
+
+warp-pad:
+  marked-destination: "Tämä laatta merkittiin %state% ja sidottiin asettimeesi"
+  marked-origin: "Tämä laatta merkittiin %state% ja asettimesi asetukset liitettiin siihen"
+  destination: "määränpääksi"
+  origin: "lähtöpisteeksi"
+  too-far: "Et voi yhdistää lohkoja, joiden välimatka on yli %distance% lohkoa!"
+  instructions: "Hiivi ja napsauta %pad% oikealla asettaaksesi määränpään, sitten napsauta toista %pad% oikealla asettaaksesi lähtöpisteen!"
+  needs-configurator: "Aseta tämä %pad% käyttäen %configurator%"
+  missing-destination: "Määränpää-%pad% puuttuu!"
+
+watering-can:
+  no-exotic-garden: "Et voi kastella Exotic Gardenin kasveja!"
+  needs-refill: "Sinun täytyy täyttää %item% uudelleen!"
+  filled: "Täytit %item%"
+  error: "Virhe"

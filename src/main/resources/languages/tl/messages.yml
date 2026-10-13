@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Hindi mabubungkal ang bariles na ito dahil may mga bagay pa sa loob!"
+  nearby-items: "Alisin ang mga bagay sa paligid bago bungkalin ang bariles na ito!"
+  overflow: "May mahigit %amount% bagay sa bariles na ito! %amount% bagay ang ibabagsak sa halip!"
+  empty: "Walang laman ang bariles na ito!"
+
+cargo:
+  copied: "Nakopya ang %item% mo."
+  nothing-copied: "Wala pa kang kinopyang kargamento na node."
+  wrong-node: "Kumopya ka ng %copied% pero sinusubukan mong baguhin ang %target%!"
+  missing-filter-item: "Wala kang %item%. Lalaktawan ang bagay na ito."
+  pasted: "Naipasok ang %item% mo."
+  cleared: "Nalinis ang napiling kargamento na node"
+
+charger:
+  cannot-charge-charger: "Hindi mo macha-charge ang isang portable na charger"
+  item-full: "Puno na ang bagay na ito!"
+  not-enough-power: "Kulang ang enerhiya ng charger mo!"
+  forgotten-item: "Uy! May naiwan ka sa charger! Ibabagsak na ito ngayon..."
+
+charging-bench:
+  wrong-target: "Magagamit mo lang ang kard na ito sa isang %item%"
+  maxed: "Pinakamataas na ang %item% na ito (Antas %max%)"
+  upgraded: "Napabuti ang %item% na ito! %tier%"
+  tier: "Antas: %tier%"
+
+command:
+  invalid: "Hindi wastong utos"
+  no-console: "Walang utos na magagamit mula sa konsol"
+  version: "Ang kasalukuyang bersyon ay %version%"
+  specify-key-and-data: "Itukoy ang susi at ang datos"
+  info-added: "Naidagdag ang impormasyon."
+  look-at-slimefun-block: "Kailangan mong tumingin sa isang bloke ng Slimefun"
+  not-found: "Hindi natagpuan ang utos"
+
+crank-generator:
+  missing-core: "Nawawala ang ubod ng generator"
+
+dolly:
+  cooldown: "Maghintay bago gamitin muli ang kariton!"
+  already-carrying: "May dalang baul na ang karitong ito!"
+  picked-up: "Binuhat mo ang baul na ito"
+  need-chest: "Kailangan mo munang magbuhat ng baul!"
+  no-room: "Hindi kasya ang baul mo doon!"
+  placed: "Nailapag ang baul"
+
+ender-chest-node:
+  registered: "Nakarehistro ang %item% sa %player% %uuid%"
+  owner: "Ang %item% na ito ay pag-aari ni %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Mailalapag mo lang ito sa isang baul ng Ender!"
+
+exp-dispenser:
+  empty: "Walang botelya ng karanasan sa dispenser!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Hindi na tatablan ng apoy ang bagay mo"
+  failed: "Hindi nagawang hindi tablan ng apoy ang bagay mo"
+
+foundry:
+  registered: "Nakarehistro ang pandayan. I-right click ang pugon na may timba ng lava para painitin ito."
+  needs-lava: "Kailangan pang lagyan ng lava ang pandayan na ito!"
+
+keyed-crafter:
+  no-vanilla-items: "Hindi mo magagamit ang mga orihinal na bagay ng laro sa makinang ito!"
+  recipe-set: "Itinakda ang target na resipe sa %item%"
+  unsupported: "Hindi suportado ang bagay na ito!"
+  right-click-hint: "I-right click ang makina na may hawak na bagay para itakda ang orihinal na resipe ng laro"
+
+mini-barrel:
+  enter-size: "I-type ang bagong laki ng bariles. Pinakamalaking laki: %max%"
+  out-of-range: "Ang bagong laki ay dapat sa pagitan ng 0 at %max%"
+  remove-items: "Mag-alis ng bagay sa bariles bago ito baguhin sa lakíng ito!"
+  size-changed: "Binago ang pinakamalaking laki sa %size%"
+
+splash:
+  self: "Talsik!"
+  target: "Nabasa ka ni %player%!"
+
+superheated-furnace:
+  has-items: "Hindi mabubungkal ang sobrang nag-iinit na pugon na ito dahil may mga bagay pa sa loob!"
+  nearby-items: "Alisin ang mga bagay sa paligid bago bungkalin ang sobrang nag-iinit na pugon na ito!"
+  overflow: "May mahigit %amount% bagay sa sobrang nag-iinit na pugon na ito! %amount% bagay ang ibabagsak sa halip!"
+
+warp-pad:
+  marked-destination: "Namarkahan ang plantsang ito bilang %state% at naiugnay sa configurator mo"
+  marked-origin: "Namarkahan ang plantsang ito bilang %state% at naipasok dito ang mga setting ng configurator mo"
+  destination: "Patutunguhan"
+  origin: "Pinagmulan"
+  too-far: "Hindi mo maiuugnay ang mga bloke na mahigit %distance% bloke ang pagitan!"
+  instructions: "Yumukod at i-right click ang isang %pad% para itakda ang patutunguhan, pagkatapos i-right click ang ibang %pad% para itakda ang pinagmulan!"
+  needs-configurator: "I-configure ang %pad% na ito gamit ang isang %configurator%"
+  missing-destination: "Nawawala ang %pad% na patutunguhan!"
+
+watering-can:
+  no-exotic-garden: "Hindi mo madidiligan ang mga halaman ng Exotic Garden!"
+  needs-refill: "Kailangan mong lagyan muli ang %item% mo!"
+  filled: "Nalagyan mo ang %item% mo"
+  error: "Mali"

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "لا يمكن تحطيم هذا البرميل لأنه لا يزال يحتوي على أشياء!"
+  nearby-items: "أزل الأشياء القريبة قبل تحطيم هذا البرميل!"
+  overflow: "يوجد أكثر من %amount% شيء في هذا البرميل! سيتم إسقاط %amount% شيء بدلاً من ذلك!"
+  empty: "هذا البرميل فارغ!"
+
+cargo:
+  copied: "تم نسخ %item% الخاص بك."
+  nothing-copied: "لم تنسخ أي عقدة شحن بعد."
+  wrong-node: "نسخت %copied% لكنك تحاول تعديل %target%!"
+  missing-filter-item: "لا تملك %item%. سيتم تجاوز هذا الشيء."
+  pasted: "تم لصق %item% الخاص بك."
+  cleared: "تم إفراغ عقدة الشحن المحددة"
+
+charger:
+  cannot-charge-charger: "لا يمكنك شحن شاحن محمول"
+  item-full: "هذا الشيء ممتلئ بالفعل!"
+  not-enough-power: "شاحنك لا يحتوي على طاقة كافية!"
+  forgotten-item: "مهلاً! تركت شيئاً في الشاحن! سيتم إسقاطه الآن..."
+
+charging-bench:
+  wrong-target: "يمكنك استخدام هذه البطاقة على %item% فقط"
+  maxed: "هذا %item% وصل إلى الحد الأقصى (المستوى %max%)"
+  upgraded: "تم تحسين هذا %item%! %tier%"
+  tier: "المستوى: %tier%"
+
+command:
+  invalid: "أمر غير صالح"
+  no-console: "لا توجد أوامر متاحة من وحدة التحكم"
+  version: "الإصدار الحالي هو %version%"
+  specify-key-and-data: "حدد المفتاح والبيانات"
+  info-added: "تمت إضافة المعلومة."
+  look-at-slimefun-block: "يجب أن تنظر إلى كتلة Slimefun"
+  not-found: "لم يتم العثور على الأمر"
+
+crank-generator:
+  missing-core: "نواة المولد مفقودة"
+
+dolly:
+  cooldown: "انتظر قبل استخدام العربة مرة أخرى!"
+  already-carrying: "هذه العربة تحمل صندوقاً بالفعل!"
+  picked-up: "لقد حملت هذا الصندوق"
+  need-chest: "عليك حمل صندوق أولاً!"
+  no-room: "صندوقك لا يتسع هناك!"
+  placed: "تم وضع الصندوق"
+
+ender-chest-node:
+  registered: "تم تسجيل %item% باسم %player% %uuid%"
+  owner: "هذا %item% يملكه %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "يمكنك وضع هذا على صندوق الإندر فقط!"
+
+exp-dispenser:
+  empty: "لم تكن هناك قوارير خبرة في الموزع!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "أصبح شيئك مقاوماً للنار الآن"
+  failed: "لم يتمكن شيئك من أن يصبح مقاوماً للنار"
+
+foundry:
+  registered: "تم تسجيل المسبك. انقر بزر الفأرة الأيمن على الفرن بدلو حمم لتسخينه."
+  needs-lava: "لا يزال يجب تعبئة هذا المسبك بالحمم!"
+
+keyed-crafter:
+  no-vanilla-items: "لا يمكنك استخدام أشياء اللعبة الأصلية مع هذه الآلة!"
+  recipe-set: "تم تعيين الوصفة المستهدفة إلى %item%"
+  unsupported: "هذا الشيء غير مدعوم!"
+  right-click-hint: "انقر بزر الفأرة الأيمن على الآلة بشيء لتعيين وصفة اللعبة الأصلية"
+
+mini-barrel:
+  enter-size: "اكتب الحجم الجديد للبرميل. الحجم الأقصى: %max%"
+  out-of-range: "يجب أن يكون الحجم الجديد بين 0 و %max%"
+  remove-items: "أخرج أشياء من البرميل قبل تغييره إلى هذا الحجم!"
+  size-changed: "تم تغيير الحجم الأقصى إلى %size%"
+
+splash:
+  self: "طرطشة!"
+  target: "لقد رشّك %player%!"
+
+superheated-furnace:
+  has-items: "لا يمكن تحطيم هذا الفرن فائق السخونة لأنه لا يزال يحتوي على أشياء!"
+  nearby-items: "أزل الأشياء القريبة قبل تحطيم هذا الفرن فائق السخونة!"
+  overflow: "يوجد أكثر من %amount% شيء في هذا الفرن فائق السخونة! سيتم إسقاط %amount% شيء بدلاً من ذلك!"
+
+warp-pad:
+  marked-destination: "تم تعليم هذه اللوحة كـ %state% وربطها بمُهيّئك"
+  marked-origin: "تم تعليم هذه اللوحة كـ %state% ولُصقت إعدادات مُهيّئك عليها"
+  destination: "وجهة"
+  origin: "منشأ"
+  too-far: "لا يمكنك ربط كتل تفصلها أكثر من %distance% كتلة!"
+  instructions: "انحنِ وانقر بزر الفأرة الأيمن على %pad% لتعيين الوجهة، ثم انقر بزر الفأرة الأيمن على %pad% آخر لتعيين المنشأ!"
+  needs-configurator: "هيّئ هذا %pad% باستخدام %configurator%"
+  missing-destination: "%pad% الوجهة مفقود!"
+
+watering-can:
+  no-exotic-garden: "لا يمكنك سقي نباتات Exotic Garden!"
+  needs-refill: "عليك إعادة تعبئة %item% الخاص بك!"
+  filled: "لقد عبّأت %item% الخاص بك"
+  error: "خطأ"

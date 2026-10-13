@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tong ini tidak boleh dipecahkan kerana masih ada barang di dalamnya!"
+  nearby-items: "Alihkan barang berdekatan sebelum memecahkan tong ini!"
+  overflow: "Ada lebih daripada %amount% barang dalam tong ini! Sebaliknya %amount% barang akan dijatuhkan!"
+  empty: "Tong ini kosong!"
+
+cargo:
+  copied: "%item% anda telah disalin."
+  nothing-copied: "Anda belum menyalin mana-mana nod kargo."
+  wrong-node: "Anda menyalin %copied% tetapi cuba mengubah %target%!"
+  missing-filter-item: "Anda tiada %item%. Barang ini dilangkau."
+  pasted: "%item% anda telah ditampal."
+  cleared: "Nod kargo yang dipilih telah dikosongkan"
+
+charger:
+  cannot-charge-charger: "Anda tidak boleh mengecas pengecas mudah alih"
+  item-full: "Barang ini sudah penuh!"
+  not-enough-power: "Pengecas anda tidak cukup tenaga!"
+  forgotten-item: "Hei! Anda tertinggal sesuatu dalam pengecas! Sekarang ia dijatuhkan..."
+
+charging-bench:
+  wrong-target: "Anda hanya boleh guna kad ini pada %item%"
+  maxed: "%item% ini sudah maksimum (Tahap %max%)"
+  upgraded: "%item% ini telah ditingkatkan! %tier%"
+  tier: "Tahap: %tier%"
+
+command:
+  invalid: "Arahan tidak sah"
+  no-console: "Tiada arahan tersedia dari konsol"
+  version: "Versi semasa ialah %version%"
+  specify-key-and-data: "Nyatakan kunci dan datanya"
+  info-added: "Maklumat telah ditambah."
+  look-at-slimefun-block: "Anda perlu memandang blok Slimefun"
+  not-found: "Arahan tidak dijumpai"
+
+crank-generator:
+  missing-core: "Teras penjana tiada"
+
+dolly:
+  cooldown: "Tunggu sebelum guna troli lagi!"
+  already-carrying: "Troli ini sudah membawa peti!"
+  picked-up: "Anda mengangkat peti ini"
+  need-chest: "Anda perlu mengangkat peti dahulu!"
+  no-room: "Peti anda tidak muat di sana!"
+  placed: "Peti telah diletakkan"
+
+ender-chest-node:
+  registered: "%item% didaftarkan kepada %player% %uuid%"
+  owner: "%item% ini milik %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Anda hanya boleh meletakkan ini di atas peti ender!"
+
+exp-dispenser:
+  empty: "Tiada botol pengalaman dalam dispenser!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Barang anda kini tahan api"
+  failed: "Barang anda tidak dapat dijadikan tahan api"
+
+foundry:
+  registered: "Pengacuan telah didaftarkan. Klik kanan relau dengan baldi lava untuk memanaskannya."
+  needs-lava: "Pengacuan ini masih perlu diisi dengan lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Anda tidak boleh guna barang vanilla dengan mesin ini!"
+  recipe-set: "Resipi sasaran ditetapkan kepada %item%"
+  unsupported: "Barang ini tidak disokong!"
+  right-click-hint: "Klik kanan mesin dengan sesuatu barang untuk menetapkan resipi vanilla"
+
+mini-barrel:
+  enter-size: "Taip saiz baharu tong. Saiz maksimum: %max%"
+  out-of-range: "Saiz baharu perlu antara 0 dan %max%"
+  remove-items: "Keluarkan barang dari tong sebelum mengubahnya ke saiz ini!"
+  size-changed: "Saiz maksimum telah ditukar kepada %size%"
+
+splash:
+  self: "Buyar!"
+  target: "Anda telah disimbah oleh %player%!"
+
+superheated-furnace:
+  has-items: "Relau terlalu panas ini tidak boleh dipecahkan kerana masih ada barang di dalamnya!"
+  nearby-items: "Alihkan barang berdekatan sebelum memecahkan relau terlalu panas ini!"
+  overflow: "Ada lebih daripada %amount% barang dalam relau terlalu panas ini! Sebaliknya %amount% barang akan dijatuhkan!"
+
+warp-pad:
+  marked-destination: "Papak ini ditanda sebagai %state% dan dipautkan kepada pengkonfigur anda"
+  marked-origin: "Papak ini ditanda sebagai %state% dan tetapan pengkonfigur anda ditampal padanya"
+  destination: "Destinasi"
+  origin: "Asal"
+  too-far: "Anda tidak boleh memaut blok yang berjarak lebih daripada %distance% blok!"
+  instructions: "Tunduk dan klik kanan %pad% untuk menetapkan destinasi, kemudian klik kanan %pad% lain untuk menetapkan asal!"
+  needs-configurator: "Konfigurasikan %pad% ini dengan %configurator%"
+  missing-destination: "%pad% destinasi tiada!"
+
+watering-can:
+  no-exotic-garden: "Anda tidak boleh menyiram tumbuhan Exotic Garden!"
+  needs-refill: "Anda perlu mengisi semula %item% anda!"
+  filled: "Anda telah mengisi %item% anda"
+  error: "Ralat"

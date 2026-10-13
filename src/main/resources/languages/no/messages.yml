@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Denne tønnen kan ikke brytes fordi det fortsatt er gjenstander i den!"
+  nearby-items: "Fjern gjenstandene i nærheten før du bryter denne tønnen!"
+  overflow: "Det er mer enn %amount% gjenstander i denne tønnen! Det slippes %amount% gjenstander i stedet!"
+  empty: "Denne tønnen er tom!"
+
+cargo:
+  copied: "Din %item% er kopiert."
+  nothing-copied: "Du har ikke kopiert noen fraktnode ennå."
+  wrong-node: "Du kopierte en %copied%, men du prøver å endre en %target%!"
+  missing-filter-item: "Du har ingen %item%. Denne gjenstanden hoppes over."
+  pasted: "Din %item% er limt inn."
+  cleared: "Den valgte fraktnoden er tømt"
+
+charger:
+  cannot-charge-charger: "Du kan ikke lade en bærbar lader"
+  item-full: "Denne gjenstanden er allerede full!"
+  not-enough-power: "Laderen din har ikke nok energi!"
+  forgotten-item: "Hei! Du glemte noe i laderen! Det slippes nå..."
+
+charging-bench:
+  wrong-target: "Du kan bare bruke dette kortet på en %item%"
+  maxed: "Denne %item% er på maksimum (Nivå %max%)"
+  upgraded: "Denne %item% er oppgradert! %tier%"
+  tier: "Nivå: %tier%"
+
+command:
+  invalid: "Ugyldig kommando"
+  no-console: "Det finnes ingen kommandoer tilgjengelig fra konsollen"
+  version: "Nåværende versjon er %version%"
+  specify-key-and-data: "Oppgi nøkkelen og dataen"
+  info-added: "Informasjonen er lagt til."
+  look-at-slimefun-block: "Du må se på en Slimefun-blokk"
+  not-found: "Kommandoen ble ikke funnet"
+
+crank-generator:
+  missing-core: "Generatorkjerne mangler"
+
+dolly:
+  cooldown: "Vent før du bruker trillen igjen!"
+  already-carrying: "Denne trillen bærer allerede en kiste!"
+  picked-up: "Du har plukket opp denne kisten"
+  need-chest: "Du må plukke opp en kiste først!"
+  no-room: "Kisten din passer ikke der!"
+  placed: "Kisten er satt ned"
+
+ender-chest-node:
+  registered: "%item% registrert på %player% %uuid%"
+  owner: "Denne %item% tilhører %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Du kan bare plassere dette på en enderkiste!"
+
+exp-dispenser:
+  empty: "Det var ingen erfaringsflasker i dispenseren!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Gjenstanden din er nå brannsikker"
+  failed: "Gjenstanden din kunne ikke gjøres brannsikker"
+
+foundry:
+  registered: "Støperiet er registrert. Høyreklikk ovnen med en bøtte lava for å varme det opp."
+  needs-lava: "Dette støperiet må fortsatt fylles med lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Du kan ikke bruke vanilla-gjenstander i denne maskinen!"
+  recipe-set: "Måloppskriften er satt til %item%"
+  unsupported: "Denne gjenstanden støttes ikke!"
+  right-click-hint: "Høyreklikk maskinen med en gjenstand for å sette vanilla-oppskriften"
+
+mini-barrel:
+  enter-size: "Skriv tønnens nye størrelse. Største størrelse: %max%"
+  out-of-range: "Den nye størrelsen må være mellom 0 og %max%"
+  remove-items: "Ta gjenstander ut av tønnen før du endrer den til denne størrelsen!"
+  size-changed: "Den største størrelsen er endret til %size%"
+
+splash:
+  self: "Plask!"
+  target: "Du ble sprutet på av %player%!"
+
+superheated-furnace:
+  has-items: "Denne overopphetede ovnen kan ikke brytes fordi det fortsatt er gjenstander i den!"
+  nearby-items: "Fjern gjenstandene i nærheten før du bryter denne overopphetede ovnen!"
+  overflow: "Det er mer enn %amount% gjenstander i denne overopphetede ovnen! Det slippes %amount% gjenstander i stedet!"
+
+warp-pad:
+  marked-destination: "Denne platen er merket som %state% og knyttet til konfiguratoren din"
+  marked-origin: "Denne platen er merket som %state%, og innstillingene fra konfiguratoren din er limt inn på den"
+  destination: "Mål"
+  origin: "Utgangspunkt"
+  too-far: "Du kan ikke koble blokker som er mer enn %distance% blokker fra hverandre!"
+  instructions: "Snik og høyreklikk en %pad% for å sette målet, og høyreklikk deretter en annen %pad% for å sette utgangspunktet!"
+  needs-configurator: "Konfigurer denne %pad% med en %configurator%"
+  missing-destination: "Mål-%pad% mangler!"
+
+watering-can:
+  no-exotic-garden: "Du kan ikke vanne planter fra Exotic Garden!"
+  needs-refill: "Du må fylle opp %item% igjen!"
+  filled: "Du har fylt %item%"
+  error: "Feil"

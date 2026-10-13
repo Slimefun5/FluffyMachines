@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tej beczki nie można zniszczyć, bo wciąż są w niej przedmioty!"
+  nearby-items: "Usuń przedmioty w pobliżu, zanim zniszczysz tę beczkę!"
+  overflow: "W tej beczce jest więcej niż %amount% przedmiotów! Zostanie wyrzuconych %amount% przedmiotów zamiast tego!"
+  empty: "Ta beczka jest pusta!"
+
+cargo:
+  copied: "Twój %item% został skopiowany."
+  nothing-copied: "Nie skopiowałeś jeszcze żadnego węzła cargo."
+  wrong-node: "Skopiowałeś %copied%, ale próbujesz zmienić %target%!"
+  missing-filter-item: "Nie masz %item%. Ten przedmiot zostanie pominięty."
+  pasted: "Twój %item% został wklejony."
+  cleared: "Wybrany węzeł cargo został wyczyszczony"
+
+charger:
+  cannot-charge-charger: "Nie możesz naładować przenośnej ładowarki"
+  item-full: "Ten przedmiot jest już pełny!"
+  not-enough-power: "Twoja ładowarka nie ma dość energii!"
+  forgotten-item: "Hej! Zostawiłeś coś w ładowarce! Zostanie teraz wyrzucone..."
+
+charging-bench:
+  wrong-target: "Tej karty możesz użyć tylko na %item%"
+  maxed: "Ten %item% jest na maksimum (Poziom %max%)"
+  upgraded: "Ten %item% został ulepszony! %tier%"
+  tier: "Poziom: %tier%"
+
+command:
+  invalid: "Nieprawidłowe polecenie"
+  no-console: "Z konsoli nie są dostępne żadne polecenia"
+  version: "Aktualna wersja to %version%"
+  specify-key-and-data: "Podaj klucz i dane"
+  info-added: "Informacja została dodana."
+  look-at-slimefun-block: "Musisz patrzeć na blok Slimefun"
+  not-found: "Polecenie nie znalezione"
+
+crank-generator:
+  missing-core: "Brak rdzenia generatora"
+
+dolly:
+  cooldown: "Poczekaj, zanim znów użyjesz wózka!"
+  already-carrying: "Ten wózek już wiezie skrzynię!"
+  picked-up: "Podniosłeś tę skrzynię"
+  need-chest: "Najpierw musisz podnieść skrzynię!"
+  no-room: "Twoja skrzynia tam nie pasuje!"
+  placed: "Skrzynia została postawiona"
+
+ender-chest-node:
+  registered: "%item% zarejestrowany na %player% %uuid%"
+  owner: "Ten %item% należy do %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Możesz to postawić tylko na skrzyni Endu!"
+
+exp-dispenser:
+  empty: "W dozowniku nie było butelek doświadczenia!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Twój przedmiot jest teraz ognioodporny"
+  failed: "Twojego przedmiotu nie udało się uczynić ognioodpornym"
+
+foundry:
+  registered: "Odlewnia została zarejestrowana. Kliknij piec prawym przyciskiem z wiadrem lawy, aby ją rozgrzać."
+  needs-lava: "Tę odlewnię trzeba jeszcze wypełnić lawą!"
+
+keyed-crafter:
+  no-vanilla-items: "Nie możesz używać przedmiotów vanilla w tej maszynie!"
+  recipe-set: "Docelowy przepis ustawiony na %item%"
+  unsupported: "Ten przedmiot nie jest wspierany!"
+  right-click-hint: "Kliknij maszynę prawym przyciskiem z przedmiotem, aby ustawić przepis vanilla"
+
+mini-barrel:
+  enter-size: "Wpisz nowy rozmiar beczki. Maksymalny rozmiar: %max%"
+  out-of-range: "Nowy rozmiar musi być pomiędzy 0 a %max%"
+  remove-items: "Wyjmij przedmioty z beczki, zanim zmienisz ją na ten rozmiar!"
+  size-changed: "Maksymalny rozmiar został zmieniony na %size%"
+
+splash:
+  self: "Plusk!"
+  target: "Zostałeś oblany przez %player%!"
+
+superheated-furnace:
+  has-items: "Tego przegrzanego pieca nie można zniszczyć, bo wciąż są w nim przedmioty!"
+  nearby-items: "Usuń przedmioty w pobliżu, zanim zniszczysz ten przegrzany piec!"
+  overflow: "W tym przegrzanym piecu jest więcej niż %amount% przedmiotów! Zostanie wyrzuconych %amount% przedmiotów zamiast tego!"
+
+warp-pad:
+  marked-destination: "Ta płyta została oznaczona jako %state% i powiązana z twoim konfiguratorem"
+  marked-origin: "Ta płyta została oznaczona jako %state%, a ustawienia twojego konfiguratora zostały na nią wklejone"
+  destination: "Cel"
+  origin: "Początek"
+  too-far: "Nie możesz łączyć bloków oddalonych o więcej niż %distance% bloków!"
+  instructions: "Skradaj się i kliknij prawym przyciskiem %pad%, aby ustawić cel, potem kliknij prawym przyciskiem inny %pad%, aby ustawić początek!"
+  needs-configurator: "Skonfiguruj ten %pad% za pomocą %configurator%"
+  missing-destination: "Brak docelowego %pad%!"
+
+watering-can:
+  no-exotic-garden: "Nie możesz podlewać roślin z Exotic Garden!"
+  needs-refill: "Musisz napełnić swoją %item%!"
+  filled: "Napełniłeś swoją %item%"
+  error: "Błąd"

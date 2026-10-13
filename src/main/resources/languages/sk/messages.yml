@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tento sud nemožno zničiť, pretože sú v ňom stále predmety!"
+  nearby-items: "Odstráň predmety v okolí, než tento sud zničíš!"
+  overflow: "V tomto sude je viac ako %amount% predmetov! Namiesto toho bude vyhodených %amount% predmetov!"
+  empty: "Tento sud je prázdny!"
+
+cargo:
+  copied: "Tvoj %item% bol skopírovaný."
+  nothing-copied: "Ešte si neskopíroval žiadny cargo uzol."
+  wrong-node: "Skopíroval si %copied%, ale snažíš sa zmeniť %target%!"
+  missing-filter-item: "Nemáš %item%. Tento predmet bude preskočený."
+  pasted: "Tvoj %item% bol vložený."
+  cleared: "Vybraný cargo uzol bol vyprázdnený"
+
+charger:
+  cannot-charge-charger: "Prenosnú nabíjačku nabiť nemôžeš"
+  item-full: "Tento predmet je už plný!"
+  not-enough-power: "Tvoja nabíjačka nemá dosť energie!"
+  forgotten-item: "Hej! Nechal si niečo v nabíjačke! Teraz to bude vyhodené..."
+
+charging-bench:
+  wrong-target: "Túto kartu môžeš použiť len na %item%"
+  maxed: "Tento %item% je na maxime (Stupeň %max%)"
+  upgraded: "Tento %item% bol vylepšený! %tier%"
+  tier: "Stupeň: %tier%"
+
+command:
+  invalid: "Neplatný príkaz"
+  no-console: "Z konzoly nie sú dostupné žiadne príkazy"
+  version: "Aktuálna verzia je %version%"
+  specify-key-and-data: "Zadaj kľúč a dáta"
+  info-added: "Informácia bola pridaná."
+  look-at-slimefun-block: "Musíš sa pozerať na blok zo Slimefun"
+  not-found: "Príkaz sa nenašiel"
+
+crank-generator:
+  missing-core: "Chýba jadro generátora"
+
+dolly:
+  cooldown: "Počkaj, než rudlík použiješ znova!"
+  already-carrying: "Tento rudlík už vezie truhlicu!"
+  picked-up: "Zdvihol si túto truhlicu"
+  need-chest: "Najprv musíš zdvihnúť truhlicu!"
+  no-room: "Tvoja truhlica sa tam nezmestí!"
+  placed: "Truhlica bola položená"
+
+ender-chest-node:
+  registered: "%item% zaregistrovaný na %player% %uuid%"
+  owner: "Tento %item% patrí hráčovi %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Toto môžeš položiť len na enderovú truhlicu!"
+
+exp-dispenser:
+  empty: "V dávkovači neboli žiadne liekovky skúseností!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tvoj predmet je teraz ohňovzdorný"
+  failed: "Tvoj predmet nebolo možné urobiť ohňovzdorným"
+
+foundry:
+  registered: "Zlievarňa bola zaregistrovaná. Klikni pravým na pec s vedrom lávy, aby sa rozpálila."
+  needs-lava: "Túto zlievarňu treba ešte naplniť lávou!"
+
+keyed-crafter:
+  no-vanilla-items: "V tomto stroji nemôžeš používať vanilla predmety!"
+  recipe-set: "Cieľový recept nastavený na %item%"
+  unsupported: "Tento predmet nie je podporovaný!"
+  right-click-hint: "Klikni pravým na stroj s predmetom, aby si nastavil vanilla recept"
+
+mini-barrel:
+  enter-size: "Napíš novú veľkosť sudu. Maximálna veľkosť: %max%"
+  out-of-range: "Nová veľkosť musí byť medzi 0 a %max%"
+  remove-items: "Vyber predmety zo sudu, než ho zmeníš na túto veľkosť!"
+  size-changed: "Maximálna veľkosť bola zmenená na %size%"
+
+splash:
+  self: "Čľup!"
+  target: "Postriekal ťa %player%!"
+
+superheated-furnace:
+  has-items: "Túto prehriatu pec nemožno zničiť, pretože sú v nej stále predmety!"
+  nearby-items: "Odstráň predmety v okolí, než túto prehriatu pec zničíš!"
+  overflow: "V tejto prehriatej peci je viac ako %amount% predmetov! Namiesto toho bude vyhodených %amount% predmetov!"
+
+warp-pad:
+  marked-destination: "Táto doska bola označená ako %state% a pripojená k tvojmu konfigurátoru"
+  marked-origin: "Táto doska bola označená ako %state% a nastavenia tvojho konfigurátora boli na ňu vložené"
+  destination: "Cieľ"
+  origin: "Začiatok"
+  too-far: "Nemôžeš spojiť bloky vzdialené viac ako %distance% blokov!"
+  instructions: "Prikrč sa a klikni pravým na %pad%, aby si nastavil cieľ, potom klikni pravým na ďalší %pad%, aby si nastavil začiatok!"
+  needs-configurator: "Nastav tento %pad% pomocou %configurator%"
+  missing-destination: "Chýba cieľový %pad%!"
+
+watering-can:
+  no-exotic-garden: "Rastliny z Exotic Garden zalievať nemôžeš!"
+  needs-refill: "Musíš si znova naplniť %item%!"
+  filled: "Naplnil si svoju %item%"
+  error: "Chyba"

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Den här tunnan kan inte slås sönder eftersom det fortfarande finns saker i den!"
+  nearby-items: "Ta bort sakerna i närheten innan du slår sönder den här tunnan!"
+  overflow: "Det finns mer än %amount% saker i den här tunnan! %amount% saker släpps i stället!"
+  empty: "Den här tunnan är tom!"
+
+cargo:
+  copied: "Din %item% har kopierats."
+  nothing-copied: "Du har inte kopierat någon fraktnod än."
+  wrong-node: "Du kopierade en %copied% men försöker ändra en %target%!"
+  missing-filter-item: "Du har ingen %item%. Den här saken hoppas över."
+  pasted: "Din %item% har klistrats in."
+  cleared: "Den valda fraktnoden har tömts"
+
+charger:
+  cannot-charge-charger: "Du kan inte ladda en bärbar laddare"
+  item-full: "Den här saken är redan full!"
+  not-enough-power: "Din laddare har inte nog med energi!"
+  forgotten-item: "Hej! Du glömde något i laddaren! Det släpps nu..."
+
+charging-bench:
+  wrong-target: "Du kan bara använda det här kortet på en %item%"
+  maxed: "Den här %item% är på max (Nivå %max%)"
+  upgraded: "Den här %item% har uppgraderats! %tier%"
+  tier: "Nivå: %tier%"
+
+command:
+  invalid: "Ogiltigt kommando"
+  no-console: "Det finns inga kommandon tillgängliga från konsolen"
+  version: "Nuvarande version är %version%"
+  specify-key-and-data: "Ange nyckeln och datan"
+  info-added: "Informationen har lagts till."
+  look-at-slimefun-block: "Du måste titta på ett Slimefun-block"
+  not-found: "Kommandot hittades inte"
+
+crank-generator:
+  missing-core: "Generatorkärna saknas"
+
+dolly:
+  cooldown: "Vänta innan du använder pirran igen!"
+  already-carrying: "Den här pirran bär redan en kista!"
+  picked-up: "Du har plockat upp den här kistan"
+  need-chest: "Du måste plocka upp en kista först!"
+  no-room: "Din kista får inte plats där!"
+  placed: "Kistan har satts ner"
+
+ender-chest-node:
+  registered: "%item% registrerad på %player% %uuid%"
+  owner: "Den här %item% tillhör %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Du kan bara placera detta på en enderkista!"
+
+exp-dispenser:
+  empty: "Det fanns inga erfarenhetsflaskor i dispensern!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Din sak är nu brandsäker"
+  failed: "Din sak kunde inte göras brandsäker"
+
+foundry:
+  registered: "Gjuteriet har registrerats. Högerklicka ugnen med en hink lava för att hetta upp det."
+  needs-lava: "Det här gjuteriet måste fortfarande fyllas med lava!"
+
+keyed-crafter:
+  no-vanilla-items: "Du kan inte använda vanilla-saker i den här maskinen!"
+  recipe-set: "Målreceptet är satt till %item%"
+  unsupported: "Den här saken stöds inte!"
+  right-click-hint: "Högerklicka maskinen med en sak för att sätta vanilla-receptet"
+
+mini-barrel:
+  enter-size: "Skriv tunnans nya storlek. Största storlek: %max%"
+  out-of-range: "Den nya storleken måste vara mellan 0 och %max%"
+  remove-items: "Ta ut saker ur tunnan innan du ändrar den till den här storleken!"
+  size-changed: "Största storleken har ändrats till %size%"
+
+splash:
+  self: "Plask!"
+  target: "Du blev vattnad av %player%!"
+
+superheated-furnace:
+  has-items: "Den här överhettade ugnen kan inte slås sönder eftersom det fortfarande finns saker i den!"
+  nearby-items: "Ta bort sakerna i närheten innan du slår sönder den här överhettade ugnen!"
+  overflow: "Det finns mer än %amount% saker i den här överhettade ugnen! %amount% saker släpps i stället!"
+
+warp-pad:
+  marked-destination: "Den här plattan har markerats som %state% och bundits till din konfigurator"
+  marked-origin: "Den här plattan har markerats som %state% och inställningarna från din konfigurator har klistrats in på den"
+  destination: "Mål"
+  origin: "Utgångspunkt"
+  too-far: "Du kan inte länka block som är mer än %distance% block från varandra!"
+  instructions: "Smyg och högerklicka en %pad% för att sätta målet, högerklicka sedan en annan %pad% för att sätta utgångspunkten!"
+  needs-configurator: "Konfigurera den här %pad% med en %configurator%"
+  missing-destination: "Mål-%pad% saknas!"
+
+watering-can:
+  no-exotic-garden: "Du kan inte vattna växter från Exotic Garden!"
+  needs-refill: "Du måste fylla på din %item%!"
+  filled: "Du har fyllt din %item%"
+  error: "Fel"

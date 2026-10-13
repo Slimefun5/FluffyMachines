@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Tento sud nelze zničit, protože v něm jsou stále předměty!"
+  nearby-items: "Odstraň předměty v okolí, než tento sud zničíš!"
+  overflow: "V tomto sudu je více než %amount% předmětů! Místo toho bude vyhozeno %amount% předmětů!"
+  empty: "Tento sud je prázdný!"
+
+cargo:
+  copied: "Tvůj %item% byl zkopírován."
+  nothing-copied: "Ještě jsi nezkopíroval žádný cargo uzel."
+  wrong-node: "Zkopíroval jsi %copied%, ale snažíš se změnit %target%!"
+  missing-filter-item: "Nemáš %item%. Tento předmět bude přeskočen."
+  pasted: "Tvůj %item% byl vložen."
+  cleared: "Vybraný cargo uzel byl vyprázdněn"
+
+charger:
+  cannot-charge-charger: "Přenosnou nabíječku nabít nemůžeš"
+  item-full: "Tento předmět je už plný!"
+  not-enough-power: "Tvoje nabíječka nemá dost energie!"
+  forgotten-item: "Hej! Nechal jsi něco v nabíječce! Teď to bude vyhozeno..."
+
+charging-bench:
+  wrong-target: "Tuto kartu můžeš použít jen na %item%"
+  maxed: "Tento %item% je na maximu (Stupeň %max%)"
+  upgraded: "Tento %item% byl vylepšen! %tier%"
+  tier: "Stupeň: %tier%"
+
+command:
+  invalid: "Neplatný příkaz"
+  no-console: "Z konzole nejsou dostupné žádné příkazy"
+  version: "Aktuální verze je %version%"
+  specify-key-and-data: "Zadej klíč a data"
+  info-added: "Informace byla přidána."
+  look-at-slimefun-block: "Musíš se dívat na blok ze Slimefun"
+  not-found: "Příkaz nenalezen"
+
+crank-generator:
+  missing-core: "Chybí jádro generátoru"
+
+dolly:
+  cooldown: "Počkej, než rudl použiješ znovu!"
+  already-carrying: "Tento rudl už veze truhlu!"
+  picked-up: "Zvedl jsi tuto truhlu"
+  need-chest: "Nejdřív musíš zvednout truhlu!"
+  no-room: "Tvoje truhla se tam nevejde!"
+  placed: "Truhla byla položena"
+
+ender-chest-node:
+  registered: "%item% zaregistrován na %player% %uuid%"
+  owner: "Tento %item% patří hráči %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Tohle můžeš položit jen na enderovou truhlu!"
+
+exp-dispenser:
+  empty: "V dávkovači nebyly žádné lahvičky zkušeností!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tvůj předmět je teď ohnivzdorný"
+  failed: "Tvůj předmět nebylo možné udělat ohnivzdorným"
+
+foundry:
+  registered: "Slévárna byla zaregistrována. Klikni pravým na pec s kbelíkem lávy, aby se rozpálila."
+  needs-lava: "Tuto slévárnu je ještě potřeba naplnit lávou!"
+
+keyed-crafter:
+  no-vanilla-items: "V tomto stroji nemůžeš používat vanilla předměty!"
+  recipe-set: "Cílový recept nastaven na %item%"
+  unsupported: "Tento předmět není podporován!"
+  right-click-hint: "Klikni pravým na stroj s předmětem, abys nastavil vanilla recept"
+
+mini-barrel:
+  enter-size: "Napiš novou velikost sudu. Maximální velikost: %max%"
+  out-of-range: "Nová velikost musí být mezi 0 a %max%"
+  remove-items: "Vyndej předměty ze sudu, než ho změníš na tuto velikost!"
+  size-changed: "Maximální velikost byla změněna na %size%"
+
+splash:
+  self: "Šplouch!"
+  target: "Postříkal tě %player%!"
+
+superheated-furnace:
+  has-items: "Tuto přehřátou pec nelze zničit, protože v ní jsou stále předměty!"
+  nearby-items: "Odstraň předměty v okolí, než tuto přehřátou pec zničíš!"
+  overflow: "V této přehřáté peci je více než %amount% předmětů! Místo toho bude vyhozeno %amount% předmětů!"
+
+warp-pad:
+  marked-destination: "Tato deska byla označena jako %state% a připojena k tvému konfigurátoru"
+  marked-origin: "Tato deska byla označena jako %state% a nastavení tvého konfigurátoru na ni bylo vloženo"
+  destination: "Cíl"
+  origin: "Počátek"
+  too-far: "Nemůžeš spojit bloky vzdálené více než %distance% bloků!"
+  instructions: "Skrč se a klikni pravým na %pad%, abys nastavil cíl, pak klikni pravým na další %pad%, abys nastavil počátek!"
+  needs-configurator: "Nastav tento %pad% pomocí %configurator%"
+  missing-destination: "Chybí cílový %pad%!"
+
+watering-can:
+  no-exotic-garden: "Rostliny z Exotic Garden zalévat nemůžeš!"
+  needs-refill: "Musíš si znovu naplnit %item%!"
+  filled: "Naplnil jsi svou %item%"
+  error: "Chyba"

@@ -1,0 +1,100 @@
+barrel:
+  has-items: "אי אפשר לשבור את החבית הזאת כי עוד יש בה פריטים!"
+  nearby-items: "הסר את הפריטים בסביבה לפני שתשבור את החבית הזאת!"
+  overflow: "יש יותר מ-%amount% פריטים בחבית הזאת! במקום זאת יוטלו %amount% פריטים!"
+  empty: "החבית הזאת ריקה!"
+
+cargo:
+  copied: "ה%item% שלך הועתק."
+  nothing-copied: "עוד לא העתקת שום צומת מטען."
+  wrong-node: "העתקת %copied% אבל אתה מנסה לשנות %target%!"
+  missing-filter-item: "אין לך %item%. הפריט הזה מדולג."
+  pasted: "ה%item% שלך הודבק."
+  cleared: "צומת המטען הנבחר רוקן"
+
+charger:
+  cannot-charge-charger: "אי אפשר להטעין מטען נייד"
+  item-full: "הפריט הזה כבר מלא!"
+  not-enough-power: "למטען שלך אין מספיק אנרגיה!"
+  forgotten-item: "היי! שכחת משהו במטען! הוא מוטל עכשיו..."
+
+charging-bench:
+  wrong-target: "אפשר להשתמש בכרטיס הזה רק על %item%"
+  maxed: "ה%item% הזה במקסימום (דרגה %max%)"
+  upgraded: "ה%item% הזה שודרג! %tier%"
+  tier: "דרגה: %tier%"
+
+command:
+  invalid: "פקודה לא חוקית"
+  no-console: "אין פקודות זמינות מהמסוף"
+  version: "הגרסה הנוכחית היא %version%"
+  specify-key-and-data: "ציין את המפתח ואת הנתון"
+  info-added: "המידע נוסף."
+  look-at-slimefun-block: "אתה חייב להביט בבלוק של Slimefun"
+  not-found: "הפקודה לא נמצאה"
+
+crank-generator:
+  missing-core: "חסר ליבת גנרטור"
+
+dolly:
+  cooldown: "חכה לפני שתשתמש בעגלה שוב!"
+  already-carrying: "העגלה הזאת כבר נושאת תיבה!"
+  picked-up: "הרמת את התיבה הזאת"
+  need-chest: "קודם אתה צריך להרים תיבה!"
+  no-room: "התיבה שלך לא נכנסת לשם!"
+  placed: "התיבה הונחה"
+
+ender-chest-node:
+  registered: "%item% נרשם על שם %player% %uuid%"
+  owner: "ה%item% הזה שייך ל%player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "אפשר להציב את זה רק על תיבת אנדר!"
+
+exp-dispenser:
+  empty: "לא היו בקבוקי ניסיון במפזר!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "הפריט שלך עכשיו עמיד באש"
+  failed: "לא היה אפשר להפוך את הפריט שלך לעמיד באש"
+
+foundry:
+  registered: "היציקה נרשמה. לחץ קליק ימני על הכבשן עם דלי לבה כדי לחמם אותה."
+  needs-lava: "את היציקה הזאת עוד צריך למלא בלבה!"
+
+keyed-crafter:
+  no-vanilla-items: "אי אפשר להשתמש בפריטי המשחק המקורי במכונה הזאת!"
+  recipe-set: "מתכון היעד הוגדר ל%item%"
+  unsupported: "הפריט הזה אינו נתמך!"
+  right-click-hint: "לחץ קליק ימני על המכונה עם פריט כדי להגדיר את מתכון המשחק המקורי"
+
+mini-barrel:
+  enter-size: "הקלד את הגודל החדש של החבית. גודל מקסימלי: %max%"
+  out-of-range: "הגודל החדש צריך להיות בין 0 ל-%max%"
+  remove-items: "הוצא פריטים מהחבית לפני שתשנה אותה לגודל הזה!"
+  size-changed: "הגודל המקסימלי שונה ל-%size%"
+
+splash:
+  self: "פלאש!"
+  target: "%player% התיז עליך!"
+
+superheated-furnace:
+  has-items: "אי אפשר לשבור את הכבשן המחומם הזה כי עוד יש בו פריטים!"
+  nearby-items: "הסר את הפריטים בסביבה לפני שתשבור את הכבשן המחומם הזה!"
+  overflow: "יש יותר מ-%amount% פריטים בכבשן המחומם הזה! במקום זאת יוטלו %amount% פריטים!"
+
+warp-pad:
+  marked-destination: "הלוח הזה סומן כ%state% ונקשר למגדיר שלך"
+  marked-origin: "הלוח הזה סומן כ%state% והגדרות המגדיר שלך הודבקו עליו"
+  destination: "יעד"
+  origin: "מקור"
+  too-far: "אי אפשר לקשר בלוקים שמרוחקים יותר מ-%distance% בלוקים!"
+  instructions: "התכופף ולחץ קליק ימני על %pad% כדי להגדיר את היעד, ואז קליק ימני על %pad% אחר כדי להגדיר את המקור!"
+  needs-configurator: "הגדר את ה%pad% הזה בעזרת %configurator%"
+  missing-destination: "חסר %pad% יעד!"
+
+watering-can:
+  no-exotic-garden: "אי אפשר להשקות את הצמחים של Exotic Garden!"
+  needs-refill: "אתה צריך למלא מחדש את ה%item% שלך!"
+  filled: "מילאת את ה%item% שלך"
+  error: "שגיאה"

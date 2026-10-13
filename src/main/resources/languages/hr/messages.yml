@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Ova se bačva ne može razbiti jer su u njoj još predmeti!"
+  nearby-items: "Ukloni predmete u blizini prije nego razbiješ ovu bačvu!"
+  overflow: "U ovoj bačvi je više od %amount% predmeta! Umjesto toga bit će ispušteno %amount% predmeta!"
+  empty: "Ova bačva je prazna!"
+
+cargo:
+  copied: "Tvoj %item% je kopiran."
+  nothing-copied: "Još nisi kopirao nijedan cargo čvor."
+  wrong-node: "Kopirao si %copied%, ali pokušavaš promijeniti %target%!"
+  missing-filter-item: "Nemaš %item%. Ovaj predmet se preskače."
+  pasted: "Tvoj %item% je zalijepljen."
+  cleared: "Odabrani cargo čvor je ispražnjen"
+
+charger:
+  cannot-charge-charger: "Prijenosni punjač ne možeš puniti"
+  item-full: "Ovaj predmet je već pun!"
+  not-enough-power: "Tvoj punjač nema dovoljno energije!"
+  forgotten-item: "Hej! Ostavio si nešto u punjaču! Sad se ispušta..."
+
+charging-bench:
+  wrong-target: "Ovu karticu možeš koristiti samo na %item%"
+  maxed: "Ovaj %item% je na maksimumu (Razina %max%)"
+  upgraded: "Ovaj %item% je nadograđen! %tier%"
+  tier: "Razina: %tier%"
+
+command:
+  invalid: "Nevažeća naredba"
+  no-console: "Iz konzole nema dostupnih naredbi"
+  version: "Trenutna verzija je %version%"
+  specify-key-and-data: "Navedi kljuc i podatak"
+  info-added: "Informacija je dodana."
+  look-at-slimefun-block: "Moraš gledati u Slimefun blok"
+  not-found: "Naredba nije pronađena"
+
+crank-generator:
+  missing-core: "Nedostaje jezgra generatora"
+
+dolly:
+  cooldown: "Pričekaj prije nego ponovno upotrijebiš kolica!"
+  already-carrying: "Ova kolica već nose škrinju!"
+  picked-up: "Podigao si ovu škrinju"
+  need-chest: "Prvo moraš podignuti škrinju!"
+  no-room: "Tvoja škrinja tamo ne staje!"
+  placed: "Škrinja je postavljena"
+
+ender-chest-node:
+  registered: "%item% registriran na %player% %uuid%"
+  owner: "Ovaj %item% pripada igraču %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Ovo možeš postaviti samo na ender škrinju!"
+
+exp-dispenser:
+  empty: "U dozatoru nije bilo bočica iskustva!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Tvoj predmet je sad otporan na vatru"
+  failed: "Tvoj predmet nije se mogao učiniti otpornim na vatru"
+
+foundry:
+  registered: "Ljevaonica je registrirana. Desnim klikom na peć s kantom lave zagrij je."
+  needs-lava: "Ovu ljevaonicu treba još napuniti lavom!"
+
+keyed-crafter:
+  no-vanilla-items: "U ovom stroju ne možeš koristiti vanilla predmete!"
+  recipe-set: "Ciljani recept postavljen na %item%"
+  unsupported: "Ovaj predmet nije podržan!"
+  right-click-hint: "Desnim klikom na stroj s predmetom postavi vanilla recept"
+
+mini-barrel:
+  enter-size: "Upiši novu veličinu bačve. Najveća veličina: %max%"
+  out-of-range: "Nova veličina mora biti između 0 i %max%"
+  remove-items: "Izvadi predmete iz bačve prije nego je promijeniš na ovu veličinu!"
+  size-changed: "Najveća veličina promijenjena je na %size%"
+
+splash:
+  self: "Pljus!"
+  target: "Poprskao te %player%!"
+
+superheated-furnace:
+  has-items: "Ova se pregrijana peć ne može razbiti jer su u njoj još predmeti!"
+  nearby-items: "Ukloni predmete u blizini prije nego razbiješ ovu pregrijanu peć!"
+  overflow: "U ovoj pregrijanoj peći je više od %amount% predmeta! Umjesto toga bit će ispušteno %amount% predmeta!"
+
+warp-pad:
+  marked-destination: "Ova ploča je označena kao %state% i povezana s tvojim konfiguratorom"
+  marked-origin: "Ova ploča je označena kao %state% i postavke tvog konfiguratora zalijepljene su na nju"
+  destination: "Odredište"
+  origin: "Ishodište"
+  too-far: "Ne možeš povezati blokove udaljene više od %distance% blokova!"
+  instructions: "Šćući se i desnim klikom na %pad% postavi odredište, pa desnim klikom na drugi %pad% postavi ishodište!"
+  needs-configurator: "Konfiguriraj ovaj %pad% pomoću %configurator%"
+  missing-destination: "Nedostaje odredišni %pad%!"
+
+watering-can:
+  no-exotic-garden: "Biljke iz Exotic Garden ne možeš zalijevati!"
+  needs-refill: "Moraš ponovno napuniti svoju %item%!"
+  filled: "Napunio si svoju %item%"
+  error: "Greška"

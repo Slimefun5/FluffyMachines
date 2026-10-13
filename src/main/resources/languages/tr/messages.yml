@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Bu fıçı kırılamaz çünkü içinde hâlâ eşya var!"
+  nearby-items: "Bu fıçıyı kırmadan önce yakındaki eşyaları kaldır!"
+  overflow: "Bu fıçıda %amount% taneden fazla eşya var! Onun yerine %amount% eşya düşürülecek!"
+  empty: "Bu fıçı boş!"
+
+cargo:
+  copied: "%item% öğen kopyalandı."
+  nothing-copied: "Henüz hiçbir kargo düğümü kopyalamadın."
+  wrong-node: "Bir %copied% kopyaladın ama bir %target% değiştirmeye çalışıyorsun!"
+  missing-filter-item: "%item% yok. Bu eşya atlanıyor."
+  pasted: "%item% öğen yapıştırıldı."
+  cleared: "Seçili kargo düğümü boşaltıldı"
+
+charger:
+  cannot-charge-charger: "Taşınabilir şarj cihazını şarj edemezsin"
+  item-full: "Bu eşya zaten dolu!"
+  not-enough-power: "Şarj cihazında yeterli enerji yok!"
+  forgotten-item: "Hey! Şarj cihazında bir şey bıraktın! Şimdi düşürülüyor..."
+
+charging-bench:
+  wrong-target: "Bu kartı yalnızca bir %item% üzerinde kullanabilirsin"
+  maxed: "Bu %item% en üst seviyede (Seviye %max%)"
+  upgraded: "Bu %item% yükseltildi! %tier%"
+  tier: "Seviye: %tier%"
+
+command:
+  invalid: "Geçersiz komut"
+  no-console: "Konsoldan kullanılabilir komut yok"
+  version: "Geçerli sürüm %version%"
+  specify-key-and-data: "Anahtarı ve veriyi belirt"
+  info-added: "Bilgi eklendi."
+  look-at-slimefun-block: "Bir Slimefun bloğuna bakman gerekiyor"
+  not-found: "Komut bulunamadı"
+
+crank-generator:
+  missing-core: "Jeneratör çekirdeği eksik"
+
+dolly:
+  cooldown: "El arabasını yeniden kullanmadan önce bekle!"
+  already-carrying: "Bu el arabası zaten bir sandık taşıyor!"
+  picked-up: "Bu sandığı aldın"
+  need-chest: "Önce bir sandık almalısın!"
+  no-room: "Sandığın oraya sığmıyor!"
+  placed: "Sandık yerleştirildi"
+
+ender-chest-node:
+  registered: "%item%, %player% adına kaydedildi %uuid%"
+  owner: "Bu %item%, %player% oyuncusuna ait %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Bunu yalnızca bir ender sandığına yerleştirebilirsin!"
+
+exp-dispenser:
+  empty: "Dağıtıcıda deneyim şişesi yoktu!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Eşyan artık ateşe dayanıklı"
+  failed: "Eşyan ateşe dayanıklı hâle getirilemedi"
+
+foundry:
+  registered: "Dökümhane kaydedildi. Isıtmak için fırına bir kova lavayla sağ tıkla."
+  needs-lava: "Bu dökümhanenin hâlâ lavayla doldurulması gerekiyor!"
+
+keyed-crafter:
+  no-vanilla-items: "Bu makinede vanilla eşyaları kullanamazsın!"
+  recipe-set: "Hedef tarif %item% olarak ayarlandı"
+  unsupported: "Bu eşya desteklenmiyor!"
+  right-click-hint: "Vanilla tarifini ayarlamak için makineye bir eşyayla sağ tıkla"
+
+mini-barrel:
+  enter-size: "Fıçının yeni boyutunu yaz. En büyük boyut: %max%"
+  out-of-range: "Yeni boyut 0 ile %max% arasında olmalı"
+  remove-items: "Fıçıyı bu boyuta değiştirmeden önce içinden eşya çıkar!"
+  size-changed: "En büyük boyut %size% olarak değiştirildi"
+
+splash:
+  self: "Şap!"
+  target: "%player% seni ıslattı!"
+
+superheated-furnace:
+  has-items: "Bu aşırı ısınmış fırın kırılamaz çünkü içinde hâlâ eşya var!"
+  nearby-items: "Bu aşırı ısınmış fırını kırmadan önce yakındaki eşyaları kaldır!"
+  overflow: "Bu aşırı ısınmış fırında %amount% taneden fazla eşya var! Onun yerine %amount% eşya düşürülecek!"
+
+warp-pad:
+  marked-destination: "Bu levha %state% olarak işaretlendi ve yapılandırıcına bağlandı"
+  marked-origin: "Bu levha %state% olarak işaretlendi ve yapılandırıcının ayarları üzerine yapıştırıldı"
+  destination: "Hedef"
+  origin: "Başlangıç"
+  too-far: "%distance% bloktan daha uzaktaki blokları bağlayamazsın!"
+  instructions: "Eğilip bir %pad% üzerine sağ tıklayarak hedefi ayarla, sonra başka bir %pad% üzerine sağ tıklayarak başlangıcı ayarla!"
+  needs-configurator: "Bu %pad% öğesini bir %configurator% ile yapılandır"
+  missing-destination: "Hedef %pad% eksik!"
+
+watering-can:
+  no-exotic-garden: "Exotic Garden bitkilerini sulayamazsın!"
+  needs-refill: "%item% öğeni yeniden doldurmalısın!"
+  filled: "%item% öğeni doldurdun"
+  error: "Hata"

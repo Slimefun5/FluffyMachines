@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Dit vat kan niet gesloopt worden omdat er nog items in zitten!"
+  nearby-items: "Verwijder de items in de buurt voordat je dit vat sloopt!"
+  overflow: "Er zitten meer dan %amount% items in dit vat! Er worden in plaats daarvan %amount% items gedropt!"
+  empty: "Dit vat is leeg!"
+
+cargo:
+  copied: "Je %item% is gekopieerd."
+  nothing-copied: "Je hebt nog geen cargo-knooppunt gekopieerd."
+  wrong-node: "Je hebt een %copied% gekopieerd maar je probeert een %target% aan te passen!"
+  missing-filter-item: "Je hebt geen %item%. Dit item wordt overgeslagen."
+  pasted: "Je %item% is geplakt."
+  cleared: "Het geselecteerde cargo-knooppunt is leeggemaakt"
+
+charger:
+  cannot-charge-charger: "Je kunt geen draagbare lader opladen"
+  item-full: "Dit item is al vol!"
+  not-enough-power: "Je lader heeft niet genoeg energie!"
+  forgotten-item: "Hé! Je hebt iets in de lader laten liggen! Het wordt nu gedropt..."
+
+charging-bench:
+  wrong-target: "Je kunt deze kaart alleen op een %item% gebruiken"
+  maxed: "Deze %item% is op het maximum (Niveau %max%)"
+  upgraded: "Deze %item% is verbeterd! %tier%"
+  tier: "Niveau: %tier%"
+
+command:
+  invalid: "Ongeldig commando"
+  no-console: "Er zijn geen commando's beschikbaar vanaf de console"
+  version: "De huidige versie is %version%"
+  specify-key-and-data: "Geef de sleutel en de data op"
+  info-added: "De info is toegevoegd."
+  look-at-slimefun-block: "Je moet naar een Slimefun-blok kijken"
+  not-found: "Commando niet gevonden"
+
+crank-generator:
+  missing-core: "Generatorkern ontbreekt"
+
+dolly:
+  cooldown: "Wacht even voordat je de steekwagen weer gebruikt!"
+  already-carrying: "Deze steekwagen draagt al een kist!"
+  picked-up: "Je hebt deze kist opgepakt"
+  need-chest: "Je moet eerst een kist oppakken!"
+  no-room: "Je kist past daar niet!"
+  placed: "De kist is geplaatst"
+
+ender-chest-node:
+  registered: "%item% geregistreerd op %player% %uuid%"
+  owner: "Dit %item% hoort bij %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Je kunt dit alleen op een enderkist plaatsen!"
+
+exp-dispenser:
+  empty: "Er zaten geen ervaringsflesjes in de dispenser!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Je item is nu vuurvast"
+  failed: "Je item kon niet vuurvast gemaakt worden"
+
+foundry:
+  registered: "De gieterij is geregistreerd. Rechtsklik de oven met een emmer lava om hem te verhitten."
+  needs-lava: "Deze gieterij moet nog met lava gevuld worden!"
+
+keyed-crafter:
+  no-vanilla-items: "Je kunt geen vanilla-items met deze machine gebruiken!"
+  recipe-set: "Doelrecept ingesteld op %item%"
+  unsupported: "Dit item wordt niet ondersteund!"
+  right-click-hint: "Rechtsklik de machine met een item om het vanilla-recept in te stellen"
+
+mini-barrel:
+  enter-size: "Typ de nieuwe grootte van het vat. Maximale grootte: %max%"
+  out-of-range: "De nieuwe grootte moet tussen 0 en %max% liggen"
+  remove-items: "Haal items uit het vat voordat je het naar deze grootte verandert!"
+  size-changed: "De maximale grootte is veranderd naar %size%"
+
+splash:
+  self: "Plons!"
+  target: "Je bent besproeid door %player%!"
+
+superheated-furnace:
+  has-items: "Deze overhitte oven kan niet gesloopt worden omdat er nog items in zitten!"
+  nearby-items: "Verwijder de items in de buurt voordat je deze overhitte oven sloopt!"
+  overflow: "Er zitten meer dan %amount% items in deze overhitte oven! Er worden in plaats daarvan %amount% items gedropt!"
+
+warp-pad:
+  marked-destination: "Deze plaat is gemarkeerd als %state% en aan je configurator gebonden"
+  marked-origin: "Deze plaat is gemarkeerd als %state% en de instellingen van je configurator zijn erop geplakt"
+  destination: "Bestemming"
+  origin: "Oorsprong"
+  too-far: "Je kunt geen blokken verbinden die meer dan %distance% blokken uit elkaar liggen!"
+  instructions: "Sluip en rechtsklik op een %pad% om de bestemming in te stellen, rechtsklik dan op een ander %pad% om de oorsprong in te stellen!"
+  needs-configurator: "Configureer dit %pad% met een %configurator%"
+  missing-destination: "Bestemmings-%pad% ontbreekt!"
+
+watering-can:
+  no-exotic-garden: "Je kunt de planten van Exotic Garden niet water geven!"
+  needs-refill: "Je moet je %item% bijvullen!"
+  filled: "Je hebt je %item% gevuld"
+  error: "Fout"

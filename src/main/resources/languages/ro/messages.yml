@@ -1,0 +1,100 @@
+barrel:
+  has-items: "Acest butoi nu poate fi spart pentru că mai are obiecte în el!"
+  nearby-items: "Îndepărtează obiectele din apropiere înainte să spargi acest butoi!"
+  overflow: "În acest butoi sunt mai mult de %amount% obiecte! În schimb vor fi aruncate %amount% obiecte!"
+  empty: "Acest butoi este gol!"
+
+cargo:
+  copied: "%item% al tău a fost copiat."
+  nothing-copied: "Nu ai copiat încă niciun nod de marfă."
+  wrong-node: "Ai copiat un %copied% dar încerci să modifici un %target%!"
+  missing-filter-item: "Nu ai %item%. Acest obiect este omis."
+  pasted: "%item% al tău a fost lipit."
+  cleared: "Nodul de marfă selectat a fost golit"
+
+charger:
+  cannot-charge-charger: "Nu poți încărca un încărcător portabil"
+  item-full: "Acest obiect este deja plin!"
+  not-enough-power: "Încărcătorul tău nu are destulă energie!"
+  forgotten-item: "Hei! Ai lăsat ceva în încărcător! Acum este aruncat..."
+
+charging-bench:
+  wrong-target: "Poți folosi acest card doar pe un %item%"
+  maxed: "Acest %item% este la maxim (Nivelul %max%)"
+  upgraded: "Acest %item% a fost îmbunătățit! %tier%"
+  tier: "Nivelul: %tier%"
+
+command:
+  invalid: "Comandă nevalidă"
+  no-console: "Nu există comenzi disponibile din consolă"
+  version: "Versiunea actuală este %version%"
+  specify-key-and-data: "Precizează cheia și datele"
+  info-added: "Informația a fost adăugată."
+  look-at-slimefun-block: "Trebuie să privești un bloc Slimefun"
+  not-found: "Comanda nu a fost găsită"
+
+crank-generator:
+  missing-core: "Lipsește miezul generatorului"
+
+dolly:
+  cooldown: "Așteaptă înainte să folosești din nou căruciorul!"
+  already-carrying: "Acest cărucior duce deja un cufăr!"
+  picked-up: "Ai ridicat acest cufăr"
+  need-chest: "Mai întâi trebuie să ridici un cufăr!"
+  no-room: "Cufărul tău nu încape acolo!"
+  placed: "Cufărul a fost pus"
+
+ender-chest-node:
+  registered: "%item% înregistrat pe numele %player% %uuid%"
+  owner: "Acest %item% îi aparține lui %player% %uuid%"
+  uuid: "(UUID: %id%)"
+  place-on-ender-chest: "Poți pune asta doar pe un cufăr ender!"
+
+exp-dispenser:
+  empty: "În distribuitor nu erau fiole de experiență!"
+  gained: "+%amount% XP"
+
+fireproof-rune:
+  success: "Obiectul tău este acum rezistent la foc"
+  failed: "Obiectul tău nu a putut fi făcut rezistent la foc"
+
+foundry:
+  registered: "Turnătoria a fost înregistrată. Apasă clic dreapta pe furnal cu o găleată de lavă pentru a o încălzi."
+  needs-lava: "Această turnătorie trebuie încă umplută cu lavă!"
+
+keyed-crafter:
+  no-vanilla-items: "Nu poți folosi obiecte vanilla cu această mașină!"
+  recipe-set: "Rețeta țintă a fost setată pe %item%"
+  unsupported: "Acest obiect nu este acceptat!"
+  right-click-hint: "Apasă clic dreapta pe mașină cu un obiect pentru a seta rețeta vanilla"
+
+mini-barrel:
+  enter-size: "Scrie noua mărime a butoiului. Mărimea maximă: %max%"
+  out-of-range: "Noua mărime trebuie să fie între 0 și %max%"
+  remove-items: "Scoate obiecte din butoi înainte să îl schimbi la această mărime!"
+  size-changed: "Mărimea maximă a fost schimbată la %size%"
+
+splash:
+  self: "Pleosc!"
+  target: "Ai fost stropit de %player%!"
+
+superheated-furnace:
+  has-items: "Acest furnal supraîncălzit nu poate fi spart pentru că mai are obiecte în el!"
+  nearby-items: "Îndepărtează obiectele din apropiere înainte să spargi acest furnal supraîncălzit!"
+  overflow: "În acest furnal supraîncălzit sunt mai mult de %amount% obiecte! În schimb vor fi aruncate %amount% obiecte!"
+
+warp-pad:
+  marked-destination: "Această placă a fost marcată ca %state% și legată de configuratorul tău"
+  marked-origin: "Această placă a fost marcată ca %state% și setările configuratorului tău au fost lipite pe ea"
+  destination: "Destinație"
+  origin: "Origine"
+  too-far: "Nu poți lega blocuri aflate la mai mult de %distance% blocuri distanță!"
+  instructions: "Ghemuiește-te și apasă clic dreapta pe o %pad% pentru a seta destinația, apoi clic dreapta pe altă %pad% pentru a seta originea!"
+  needs-configurator: "Configurează această %pad% cu un %configurator%"
+  missing-destination: "Lipsește %pad% de destinație!"
+
+watering-can:
+  no-exotic-garden: "Nu poți uda plantele din Exotic Garden!"
+  needs-refill: "Trebuie să îți reumpli %item%!"
+  filled: "Ți-ai umplut %item%"
+  error: "Eroare"
