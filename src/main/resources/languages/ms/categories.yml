@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Penjana'
+  machines: 'Mesin'
+  tools: 'Alat'
+  multiblocks: 'Multiblok'
+  barrels: 'Tong Fluffy'
+  portable_chargers: 'Pengecas Mudah Alih'
+  wrenches: 'Sepana'
+  cargo: 'Kargo'
+  misc: 'Pelbagai'

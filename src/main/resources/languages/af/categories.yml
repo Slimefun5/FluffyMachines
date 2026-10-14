@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Kragopwekkers'
+  machines: 'Masjiene'
+  tools: 'Gereedskap'
+  multiblocks: 'Multiblokke'
+  barrels: 'Fluffy Vate'
+  portable_chargers: 'Draagbare Laaiers'
+  wrenches: 'Moersleutels'
+  cargo: 'Vrag'
+  misc: 'Diverse'

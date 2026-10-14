@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Pembangkit Daya'
+  machines: 'Mesin'
+  tools: 'Peralatan'
+  multiblocks: 'Multiblok'
+  barrels: 'Tong Fluffy'
+  portable_chargers: 'Pengisi Daya Portabel'
+  wrenches: 'Kunci Pas'
+  cargo: 'Kargo'
+  misc: 'Lain-lain'

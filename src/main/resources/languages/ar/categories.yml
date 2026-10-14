@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'مولّدات'
+  machines: 'آلات'
+  tools: 'الأدوات'
+  multiblocks: 'هياكل متعددة الكتل'
+  barrels: 'براميل Fluffy'
+  portable_chargers: 'شواحن محمولة'
+  wrenches: 'مفاتيح ربط'
+  cargo: 'الشحن'
+  misc: 'متفرقات'

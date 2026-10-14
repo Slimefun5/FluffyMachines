@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generaattorit'
+  machines: 'Koneet'
+  tools: 'Työkalut'
+  multiblocks: 'Monipalikat'
+  barrels: 'Fluffy-tynnyrit'
+  portable_chargers: 'Kannettavat laturit'
+  wrenches: 'Jakoavaimet'
+  cargo: 'Rahti'
+  misc: 'Sekalaiset'

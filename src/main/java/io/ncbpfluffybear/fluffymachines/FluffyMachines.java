@@ -106,6 +106,7 @@ public class FluffyMachines extends JavaPlugin implements SlimefunAddon {
 
             // Contribute this addon's per-language item translations (languages/<lang>/items.yml).
             Slimefun.getItemTranslationService().registerTranslations(this);
+            Slimefun.getLocalization().registerItemGroupTranslations(this);
             Slimefun.getAddonMessageService().registerTranslations(this);
             registerWiki();
 

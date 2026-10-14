@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'مولدها'
+  machines: 'ماشین‌ها'
+  tools: 'ابزارها'
+  multiblocks: 'چندبلوکی‌ها'
+  barrels: 'بشکه‌های Fluffy'
+  portable_chargers: 'شارژرهای قابل‌حمل'
+  wrenches: 'آچارها'
+  cargo: 'باربری'
+  misc: 'متفرقه'

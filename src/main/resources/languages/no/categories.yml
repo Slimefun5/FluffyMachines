@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generatorer'
+  machines: 'Maskiner'
+  tools: 'Verktøy'
+  multiblocks: 'Multiblokker'
+  barrels: 'Fluffy-tønner'
+  portable_chargers: 'Bærbare ladere'
+  wrenches: 'Skiftenøkler'
+  cargo: 'Last'
+  misc: 'Diverse'

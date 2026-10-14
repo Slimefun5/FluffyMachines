@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generatoriai'
+  machines: 'Mašinos'
+  tools: 'Įrankiai'
+  multiblocks: 'Daugiablokiai'
+  barrels: 'Fluffy statinės'
+  portable_chargers: 'Nešiojami įkrovikliai'
+  wrenches: 'Veržliarakčiai'
+  cargo: 'Kroviniai'
+  misc: 'Įvairūs'

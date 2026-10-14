@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generátory'
+  machines: 'Stroje'
+  tools: 'Nástroje'
+  multiblocks: 'Multibloky'
+  barrels: 'Sudy Fluffy'
+  portable_chargers: 'Prenosné nabíjačky'
+  wrenches: 'Kľúče'
+  cargo: 'Cargo sieť'
+  misc: 'Rôzne'

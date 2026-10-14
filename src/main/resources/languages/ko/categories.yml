@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: '발전기'
+  machines: '기계'
+  tools: '도구'
+  multiblocks: '멀티블럭'
+  barrels: 'Fluffy 통'
+  portable_chargers: '휴대용 충전기'
+  wrenches: '렌치'
+  cargo: '화물'
+  misc: '기타'

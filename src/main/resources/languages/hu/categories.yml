@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generátorok'
+  machines: 'Gépek'
+  tools: 'Eszközök'
+  multiblocks: 'Többblokkos szerkezetek'
+  barrels: 'Fluffy hordók'
+  portable_chargers: 'Hordozható töltők'
+  wrenches: 'Csavarkulcsok'
+  cargo: 'Szállítmány'
+  misc: 'Egyéb'

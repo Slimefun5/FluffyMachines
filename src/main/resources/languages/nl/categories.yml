@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generatoren'
+  machines: 'Machines'
+  tools: 'Gereedschappen'
+  multiblocks: 'Multiblokken'
+  barrels: 'Fluffy Vaten'
+  portable_chargers: 'Draagbare opladers'
+  wrenches: 'Sleutels'
+  cargo: 'Vrachtbeheer'
+  misc: 'Diversen'

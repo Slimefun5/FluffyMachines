@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: '發電機'
+  machines: '機器'
+  tools: '工具'
+  multiblocks: '多重方塊'
+  barrels: 'Fluffy 木桶'
+  portable_chargers: '攜帶式充電器'
+  wrenches: '扳手'
+  cargo: '物流'
+  misc: '雜項'

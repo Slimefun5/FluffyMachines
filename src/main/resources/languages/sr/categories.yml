@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Генератори'
+  machines: 'Машине'
+  tools: 'Алати'
+  multiblocks: 'Мултиблокови'
+  barrels: 'Fluffy бурад'
+  portable_chargers: 'Преносни пуњачи'
+  wrenches: 'Кључеви'
+  cargo: 'Управљање теретом'
+  misc: 'Разно'

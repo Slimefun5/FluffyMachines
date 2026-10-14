@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generadores'
+  machines: 'Máquinas'
+  tools: 'Herramientas'
+  multiblocks: 'Multibloques'
+  barrels: 'Barriles Fluffy'
+  portable_chargers: 'Cargadores portátiles'
+  wrenches: 'Llaves'
+  cargo: 'Manejo de Cargo'
+  misc: 'Varios'

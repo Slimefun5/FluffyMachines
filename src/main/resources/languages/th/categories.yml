@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'เครื่องกำเนิดไฟฟ้า'
+  machines: 'เครื่องจักร'
+  tools: 'เครื่องมือ'
+  multiblocks: 'มัลติบล็อก'
+  barrels: 'ถัง Fluffy'
+  portable_chargers: 'เครื่องชาร์จพกพา'
+  wrenches: 'ประแจ'
+  cargo: 'ขนส่งสินค้า'
+  misc: 'เบ็ดเตล็ด'

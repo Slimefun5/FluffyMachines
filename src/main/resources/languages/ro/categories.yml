@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generatoare'
+  machines: 'Mașinării'
+  tools: 'Unelte'
+  multiblocks: 'Multiblocuri'
+  barrels: 'Butoaie Fluffy'
+  portable_chargers: 'Încărcătoare Portabile'
+  wrenches: 'Chei'
+  cargo: 'Marfă'
+  misc: 'Diverse'

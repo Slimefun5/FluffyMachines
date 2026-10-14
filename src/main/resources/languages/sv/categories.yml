@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Generatorer'
+  machines: 'Maskiner'
+  tools: 'Verkyg'
+  multiblocks: 'Multiblock'
+  barrels: 'Fluffy-tunnor'
+  portable_chargers: 'Bärbara laddare'
+  wrenches: 'Skiftnycklar'
+  cargo: 'Last'
+  misc: 'Diverse'

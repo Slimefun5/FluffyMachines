@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Jeneratörler'
+  machines: 'Makineler'
+  tools: 'Aletler'
+  multiblocks: 'Çoklu Yapılar'
+  barrels: 'Fluffy Fıçılar'
+  portable_chargers: 'Taşınabilir Şarj Cihazları'
+  wrenches: 'İngiliz Anahtarları'
+  cargo: 'Kargo'
+  misc: 'Çeşitli'

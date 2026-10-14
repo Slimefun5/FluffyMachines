@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'Máy phát điện'
+  machines: 'Máy móc'
+  tools: 'Dụng Cụ'
+  multiblocks: 'Đa khối'
+  barrels: 'Thùng Fluffy'
+  portable_chargers: 'Bộ sạc Di động'
+  wrenches: 'Mỏ lết'
+  cargo: 'Hàng hóa'
+  misc: 'Linh tinh'

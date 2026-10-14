@@ -1,0 +1,10 @@
+fluffymachines:
+  generators: 'උත්පාදක'
+  machines: 'යන්ත්‍ර'
+  tools: 'මෙවලම්'
+  multiblocks: 'බහු-කුට්ටි ව්‍යුහ'
+  barrels: 'Fluffy බැරල'
+  portable_chargers: 'අතේ ගෙනයන ආරෝපක'
+  wrenches: 'ස්පැනර'
+  cargo: 'භාණ්ඩ ප්‍රවාහනය'
+  misc: 'විවිධ'
