@@ -415,7 +415,7 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
      * Adds the selection instructions onto display recipe
      */
     public static ItemStack getDisplayItem(SlimefunItem key, List<ItemStack> displayRecipes) {
-        ItemStack item = displayRecipes.get(ACCEPTED_ITEMS.indexOf(key.getItem())).clone(); // Get item with ingredients
+        ItemStack item = displayRecipes.get(indexOfAccepted(key.getId())).clone();
         ItemMeta displayMeta = item.getItemMeta();
 
         List<String> lore = Utils.mutableLoreOf(displayMeta);
@@ -476,6 +476,19 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
 
     private int[] getOutputSlots() {
         return new int[]{24, 25};
+    }
+
+    /**
+     * @implNote By id: {@code SlimefunItemStack} is not an {@code ItemStack} in this fork and has no
+     *           {@code equals}, so {@code List.indexOf} can never match it.
+     */
+    private static int indexOfAccepted(String itemId) {
+        for (int i = 0; i < ACCEPTED_ITEMS.size(); i++) {
+            if (ACCEPTED_ITEMS.get(i).getItemId().equals(itemId)) {
+                return i;
+            }
+        }
+        throw new IllegalArgumentException("Not a Smart Factory recipe: " + itemId);
     }
 
     public static List<SlimefunItemStack> getAcceptedItems() {
