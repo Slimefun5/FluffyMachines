@@ -76,6 +76,11 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                 return;
             }
 
+            if (!PlayerProfile.request(p)) {
+                Messages.send(p, ChatColor.RED, "dolly.cooldown", "Please wait before using the dolly again!");
+                return;
+            }
+
             if (b.getType() == MaterialCompat.safe(XMaterial.CHEST) && Slimefun.getProtectionManager().hasPermission(
                     e.getPlayer(), b.getLocation(), Interaction.BREAK_BLOCK)
             ) {
@@ -102,6 +107,10 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
      * @implNote A dolly used to be recognised as new by an un-replaced {@code "ID: <ID>"} lore placeholder.
      *           Slimefun keeps backpack identity in persistent data and bakes no lore, so that placeholder no
      *           longer exists and every dolly looked already-assigned - meaning none ever got a backpack.
+     *           <p>
+     *           The caller has already ensured the profile is loaded, so {@code PlayerProfile.get} runs the
+     *           callback synchronously and the identity exists before {@link #pickupChest} reads it. While a
+     *           profile is loading, {@code get} discards the callback and the dolly silently did nothing.
      */
     private void buildDolly(ItemStack dolly, Player p) {
         if (PlayerBackpack.readIdentity(dolly).isPresent()) {
@@ -177,6 +186,11 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
     }
 
     private void placeChest(ItemStack dolly, Block chestBlock, Player p) {
+        if (!PlayerBackpack.readIdentity(dolly).isPresent()) {
+            Messages.send(p, ChatColor.RED, "dolly.need-chest", "You must pick up a chest first!");
+            return;
+        }
+
         PlayerProfile.getBackpack(dolly, backpack -> {
 
             if (backpack == null) {
