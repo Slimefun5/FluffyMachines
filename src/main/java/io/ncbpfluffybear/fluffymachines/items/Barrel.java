@@ -75,11 +75,10 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
 
     private final ItemStack HOLOGRAM_OFF_ITEM = CustomItemStack.create(MaterialCompat.safe(XMaterial.QUARTZ_SLAB), "&3Toggle Hologram &c(Off)");
     private final ItemStack HOLOGRAM_ON_ITEM = CustomItemStack.create(MaterialCompat.safe(XMaterial.QUARTZ_SLAB), "&3Toggle Hologram &a(On)");
-    private final ItemStack TRASH_ON_ITEM = CustomItemStack.create(SlimefunItems.TRASH_CAN.item(), "&3Toggle Overfill Trash &a(On)",
-            "&7Turn on to delete unstorable items");
-    private final ItemStack TRASH_OFF_ITEM = CustomItemStack.create(SlimefunItems.TRASH_CAN.item(), "&3Toggle Overfill Trash &c(Off)",
-            "&7Turn on to delete unstorable items"
-    );
+    private final ItemStack TRASH_ON_ITEM = ChestMenuUtils.stripTranslationIdentity(CustomItemStack.create(SlimefunItems.TRASH_CAN.item(),
+            "&3Toggle Overfill Trash &a(On)", "&7Turn on to delete unstorable items"));
+    private final ItemStack TRASH_OFF_ITEM = ChestMenuUtils.stripTranslationIdentity(CustomItemStack.create(SlimefunItems.TRASH_CAN.item(),
+            "&3Toggle Overfill Trash &c(Off)", "&7Turn on to delete unstorable items"));
 
     private final ItemSetting<Boolean> showHologram = new ItemSetting<>(this, "show-hologram", true);
     private final ItemSetting<Boolean> breakOnlyWhenEmpty = new ItemSetting<>(this, "break-only-when-empty", false);
