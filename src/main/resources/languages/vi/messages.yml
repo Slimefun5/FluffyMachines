@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Bạn cần đổ lại %item% của mình!"
   filled: "Bạn đã đổ đầy %item% của mình"
   error: "Lỗi"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Công thức này có phương án dùng khối magma"
+  change-recipe: "&eNgồi xuống và nhấp chuột phải vào nhà máy bằng tài nguyên phù hợp để đổi công thức"

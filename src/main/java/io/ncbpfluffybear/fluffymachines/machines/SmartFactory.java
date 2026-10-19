@@ -1,6 +1,7 @@
 package io.ncbpfluffybear.fluffymachines.machines;
 
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.LiveLore;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
@@ -15,6 +16,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.collections.Pair;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
 import io.github.thebusybiscuit.slimefun5.utils.SlimefunUtils;
+import io.ncbpfluffybear.fluffymachines.FluffyMachines;
 import io.ncbpfluffybear.fluffymachines.utils.Utils;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -418,12 +420,9 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
         ItemStack item = displayRecipes.get(indexOfAccepted(key.getId())).clone();
         ItemMeta displayMeta = item.getItemMeta();
 
-        List<String> lore = Utils.mutableLoreOf(displayMeta);
-        lore.add("");
-        lore.add(Utils.color("&eSneak and Right Click the factory with a"));
-        lore.add(Utils.color("&ecompatible resource to change the recipe"));
-
-        displayMeta.setLore(lore);
+        List<LiveLore.Line> lines = new ArrayList<>(LiveLore.get(displayMeta));
+        lines.add(LiveLore.Line.of(FluffyMachines.getInstance(), "smart-factory.change-recipe"));
+        LiveLore.set(displayMeta, lines);
         item.setItemMeta(displayMeta);
 
         return item;
@@ -438,18 +437,17 @@ public class SmartFactory extends SlimefunItem implements EnergyNetComponent, Re
             ItemStack display = sfStack.item().clone();
             ItemMeta displayMeta = display.getItemMeta();
 
-            List<String> lore = new ArrayList<>();
+            List<LiveLore.Line> lines = new ArrayList<>();
             // Display the first variation of the recipe to avoid clutter
             for (ItemStack item : ITEM_RECIPES.get(sfStack.getItem()).get(0)) {
-                lore.add(Utils.color("&e" + item.getAmount() + "x " + Utils.getViewableName(item)));
+                lines.add(LiveLore.Line.of(FluffyMachines.getInstance(), "smart-factory.ingredient", item.getAmount(), LiveLore.itemName(item)));
             }
 
             if (ITEM_RECIPES.get(sfStack.getItem()).size() > 1) {
-                lore.add("");
-                lore.add(Utils.color("&7This recipe has a Magma Block alternative"));
+                lines.add(LiveLore.Line.of(FluffyMachines.getInstance(), "smart-factory.magma-alternative"));
             }
 
-            displayMeta.setLore(lore);
+            LiveLore.set(displayMeta, lines);
             display.setItemMeta(displayMeta);
             recipes.add(display);
 

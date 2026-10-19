@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "%item% 를 다시 채워야 합니다!"
   filled: "%item% 를 채웠습니다"
   error: "오류"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7이 레시피에는 마그마 블록 대체 레시피가 있습니다"
+  change-recipe: "&e호환되는 자원을 들고 웅크린 채 공장을 우클릭하면 레시피를 바꿀 수 있습니다"

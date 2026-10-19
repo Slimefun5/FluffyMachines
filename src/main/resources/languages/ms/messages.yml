@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Anda perlu mengisi semula %item% anda!"
   filled: "Anda telah mengisi %item% anda"
   error: "Ralat"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Resipi ini mempunyai alternatif dengan blok magma"
+  change-recipe: "&eCangkung dan klik kanan kilang dengan sumber yang serasi untuk menukar resipi"

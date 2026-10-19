@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Újra meg kell töltened a %item% nevű tárgyat!"
   filled: "Megtöltötted a %item% nevű tárgyat"
   error: "Hiba"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Ennek a receptnek van magmatömbös változata"
+  change-recipe: "&eGuggolj, és kattints jobb gombbal a gyárra egy megfelelő nyersanyaggal a recept váltásához"

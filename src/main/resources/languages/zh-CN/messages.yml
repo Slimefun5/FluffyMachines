@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "你需要给%item%重新装水！"
   filled: "你装满了%item%"
   error: "错误"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7此配方有使用岩浆块的替代方案"
+  change-recipe: "&e潜行并手持兼容资源右键点击工厂以更换配方"

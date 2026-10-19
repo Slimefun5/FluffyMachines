@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Πρέπει να ξαναγεμίσεις το %item% σου!"
   filled: "Γέμισες το %item% σου"
   error: "Σφάλμα"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Αυτή η συνταγή έχει εναλλακτική με κύβο μάγματος"
+  change-recipe: "&eΣκύψε και κάνε δεξί κλικ στο εργοστάσιο με κατάλληλο πόρο για να αλλάξεις τη συνταγή"

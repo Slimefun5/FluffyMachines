@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "ඔබේ %item% නැවත පිරවිය යුතුය!"
   filled: "ඔබ ඔබේ %item% පිරවුවා"
   error: "දෝෂයක්"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7මෙම වට්ටෝරුවට මැග්මා කුට්ටියක් සහිත විකල්පයක් ඇත"
+  change-recipe: "&eවට්ටෝරුව වෙනස් කිරීමට ගැළපෙන සම්පතක් සමඟ නැමී කර්මාන්තශාලාව මත දකුණු-ක්ලික් කරන්න"

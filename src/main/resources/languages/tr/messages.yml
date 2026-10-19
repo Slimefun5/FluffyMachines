@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "%item% öğeni yeniden doldurmalısın!"
   filled: "%item% öğeni doldurdun"
   error: "Hata"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Bu tarifin magma bloğu ile bir alternatifi var"
+  change-recipe: "&eTarifi değiştirmek için eğilip fabrikaya uygun bir kaynakla sağ tıkla"

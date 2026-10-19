@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Musíš si znova naplniť %item%!"
   filled: "Naplnil si svoju %item%"
   error: "Chyba"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Tento recept má variant s magmovým blokom"
+  change-recipe: "&eZakrč sa a klikni pravým na továreň vhodnou surovinou na zmenu receptu"

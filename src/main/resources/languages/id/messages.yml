@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Kamu harus mengisi ulang %item% milikmu!"
   filled: "Kamu telah mengisi %item% milikmu"
   error: "Galat"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Resep ini memiliki alternatif dengan balok magma"
+  change-recipe: "&eJongkok lalu klik kanan pabrik dengan sumber daya yang cocok untuk mengganti resep"

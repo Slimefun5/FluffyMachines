@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "باید %item% خود را پر کنی!"
   filled: "%item% خود را پر کردی"
   error: "خطا"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7این دستور یک جایگزین با بلوک ماگما دارد"
+  change-recipe: "&eخم شوید و با یک منبع سازگار روی کارخانه کلیک راست کنید تا دستور تغییر کند"

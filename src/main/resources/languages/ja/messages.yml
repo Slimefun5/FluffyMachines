@@ -1,0 +1,4 @@
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7このレシピにはマグマブロックを使う代替があります"
+  change-recipe: "&e対応する資源を持ってスニークしながら工場を右クリックするとレシピを変更できます"

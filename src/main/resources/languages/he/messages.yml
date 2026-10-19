@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "אתה צריך למלא מחדש את ה%item% שלך!"
   filled: "מילאת את ה%item% שלך"
   error: "שגיאה"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7למתכון הזה יש חלופה עם בלוק מאגמה"
+  change-recipe: "&eהתכופף ולחץ קליק ימני על המפעל עם משאב מתאים כדי לשנות את המתכון"

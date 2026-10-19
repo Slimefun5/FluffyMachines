@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Kailangan mong lagyan muli ang %item% mo!"
   filled: "Nalagyan mo ang %item% mo"
   error: "Mali"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7May alternatibo ang resipeng ito gamit ang magma block"
+  change-recipe: "&eYumuko at i-right-click ang pabrika gamit ang angkop na resource para palitan ang resipe"

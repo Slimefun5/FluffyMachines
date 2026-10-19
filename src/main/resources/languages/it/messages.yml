@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Devi riempire il tuo %item%!"
   filled: "Hai riempito il tuo %item%"
   error: "Errore"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Questa ricetta ha un'alternativa con blocco di magma"
+  change-recipe: "&eAccovacciati e fai clic destro sulla fabbrica con una risorsa compatibile per cambiare la ricetta"

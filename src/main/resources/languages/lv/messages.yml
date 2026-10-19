@@ -98,3 +98,8 @@ watering-can:
   needs-refill: "Tev atkal jāpiepilda sava %item%!"
   filled: "Tu piepildīji savu %item%"
   error: "Kļūda"
+
+smart-factory:
+  ingredient: "&e{0}x {1}"
+  magma-alternative: "&7Šai receptei ir alternatīva ar magmas bloku"
+  change-recipe: "&eTupies un ar labo klikšķi noklikšķini uz rūpnīcas ar piemērotu resursu, lai mainītu recepti"
