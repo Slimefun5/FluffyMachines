@@ -14,6 +14,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.inventory.InvUtils;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun5.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.InventoryCompat;
 import io.github.thebusybiscuit.slimefun5.utils.itemstack.ItemStackWrapper;
 import io.ncbpfluffybear.fluffymachines.objects.DoubleHologramOwner;
 import io.ncbpfluffybear.fluffymachines.objects.NonHopperableBlock;
@@ -657,7 +658,7 @@ public class Barrel extends NonHopperableBlock implements DoubleHologramOwner {
         }
 
         // Extract all
-        ItemStack[] contents = inv.getStorageContents().clone();
+        ItemStack[] contents = InventoryCompat.getStorageContents(inv).clone();
         int maxStackSize = storedItem.getMaxStackSize();
         int outI = 0;
 

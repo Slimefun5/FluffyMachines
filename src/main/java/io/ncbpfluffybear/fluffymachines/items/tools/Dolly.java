@@ -147,7 +147,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                 backpack.setSize(54);
             }
 
-            backpack.getInventory().setStorageContents(chestInventory.getContents());
+            backpack.getInventory().setContents(chestInventory.getContents());
 
             // Add marker for single chests
             if (chestInventory.getSize() == 54) { // Double chest (Avoid instanceof because of weird chest class setup)
@@ -228,7 +228,7 @@ public class Dolly extends SimpleSlimefunItem<ItemUseHandler> {
                         bpContents[0] = Arrays.copyOf(bpContents[0], 27);
                     }
 
-                    ((InventoryHolder) chestBlock.getState()).getInventory().setStorageContents(bpContents[0]);
+                    ((InventoryHolder) chestBlock.getState()).getInventory().setContents(bpContents[0]);
                     dolly.setType(MaterialCompat.safe(XMaterial.MINECART));
                     Messages.send(p, ChatColor.GREEN, "dolly.placed", "Chest has been placed");
                 }
