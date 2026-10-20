@@ -24,6 +24,7 @@ dependencies {
 tasks {
     shadowJar {
         relocate("org.bstats", "fluffymachines.libs.bstats")
+        relocate("dev.walshy.sfmetrics", "fluffymachines.libs.sfmetrics")
         relocate("dev.j3fftw.extrautils", "io.ncbpfluffybear.fluffymachines.extrautils")
         relocate("io.github.thebusybiscuit.slimefun4", "io.github.thebusybiscuit.slimefun5")
     }
