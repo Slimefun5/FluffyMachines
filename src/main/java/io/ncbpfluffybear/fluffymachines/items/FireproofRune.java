@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.EntityCompat;
 
 /**
  * The Fireproof Rune prevents items from
@@ -75,7 +76,7 @@ public class FireproofRune extends SimpleSlimefunItem<ItemDropHandler> {
         }
 
         Location l = rune.getLocation();
-        Collection<Entity> entities = l.getWorld().getNearbyEntities(l, RANGE, RANGE, RANGE, this::findCompatibleItem);
+        Collection<Entity> entities = EntityCompat.getNearbyEntities(l.getWorld(), l, RANGE, RANGE, RANGE, this::findCompatibleItem);
         Optional<Entity> optional = entities.stream().findFirst();
 
         if (optional.isPresent()) {
