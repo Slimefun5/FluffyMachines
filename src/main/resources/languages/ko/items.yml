@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7고급 충전대를 업그레이드해 용량과 충전 속도를 올립니다'
-  name: '&6고급 충전대 업그레이드 카드'
+  name: '고급 충전대 업그레이드 카드'
   stats:
   - '&6충전 속도 &a+5J'
   - '&6용량 &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7아이템에서 마법부여 하나를 제거합니다'
   - '&7작동하려면 &6고대 책&7이 필요합니다'
-  name: '&c고급 자동 마법부여 해제기'
+  name: '고급 자동 마법부여 해제기'
   type:
   - '&7&o기계'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7아이템을 충전합니다'
   - '&7업그레이드하려면 필요: &6고급 충전대 업그레이드 카드'
-  name: '&c고급 충전대'
+  name: '고급 충전대'
   type:
   - '&7&o기계'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&f각 층마다 엘리베이터 판을 설치하면'
   - '&f그 사이를 순간이동할 수 있습니다.'
-  name: '&3대체 엘리베이터 판'
+  name: '대체 엘리베이터 판'
   type:
   - '&7&o기계'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7다음에 사용: &c고급 자동 마법부여 해제기'
   - '&6&o농축된 전력이 담겨 있습니다'
-  name: '&6고대 책'
+  name: '고대 책'
   type:
   - '&7&o부품'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7자동으로 &5고대 제단 &7조합법을 제작합니다'
-  name: '&5자동 고대 제단'
+  name: '자동 고대 제단'
   type:
   - '&7&o기계'
 AUTO_ARMOR_FORGE:
   description:
   - '&7자동으로 방어구 제작소 조합법을 제작합니다'
-  name: '&7자동 방어구 제작소'
+  name: '자동 방어구 제작소'
   type:
   - '&7&o기계'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7자동으로 &f바닐라 &7조합법을 제작합니다'
-  name: '&6자동 제작대'
+  name: '자동 제작대'
   type:
   - '&7&o기계'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7자동으로 &e강화 제작대 &7조합법을 제작합니다'
-  name: '&e자동 강화 제작대'
+  name: '자동 강화 제작대'
   type:
   - '&7&o기계'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7자동으로 &6마법 작업대 &7조합법을 제작합니다'
-  name: '&6자동 마법 작업대'
+  name: '자동 마법 작업대'
   type:
   - '&7&o기계'
 AUTO_TABLE_SAW:
   description:
   - '&7자동으로 &6테이블 톱 &7조합법을 제작합니다'
-  name: '&6자동 테이블 톱'
+  name: '자동 테이블 톱'
   type:
   - '&7&o기계'
 BACKPACK_LOADER:
   description:
   - '&7인벤토리에서 배낭으로 아이템을 옮깁니다'
-  name: '&e배낭 적재기'
+  name: '배낭 적재기'
   type:
   - '&7&o기계'
 BACKPACK_UNLOADER:
   description:
   - '&7배낭의 내용물을 비웁니다'
-  name: '&e배낭 하역기'
+  name: '배낭 하역기'
   type:
   - '&7&o기계'
 BIG_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&b대형 푹신한 통'
+  name: '대형 푹신한 통'
   stats:
   - '&b용량: &e69120000 아이템'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7많은 전력을 담는 핸드헬드 충전기'
-  name: '&a대형 휴대용 충전기'
+  name: '대형 휴대용 충전기'
   stats:
   - '&e충전 속도: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&c바닥없는 푹신한 통'
+  name: '바닥없는 푹신한 통'
   stats:
   - '&b용량: &e1728000000 아이템'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Slimefun 화물 노드와 전기 부품을'
   - '&7빠르게 제거하는 데 사용합니다'
-  name: '&7카보나도 푹신한 렌치'
+  name: '카보나도 푹신한 렌치'
   type:
   - '&7&o도구'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7많은 전력을 담는 핸드헬드 충전기'
-  name: '&4카보나도 휴대용 충전기'
+  name: '카보나도 휴대용 충전기'
   stats:
   - '&e충전 속도: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7화물 노드 사이에서 설정을 복사하고 붙여 넣습니다'
-  name: '&9화물 조작기'
+  name: '화물 조작기'
   type:
   - '&7&o도구'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&c멀티블록 기계입니다!'
-  name: '&7크랭크 발전기'
+  name: '크랭크 발전기'
   type:
   - '&7&o발전기'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7설치된 상자를 내용물째로 들어 올려 다른 곳으로 옮겨 설치할 수 있습니다'
-  name: '&b운반 수레'
+  name: '운반 수레'
   type:
   - '&7&o장치'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7갈고 선별하고 세척하는 일체형 기계'
-  name: '&6전기 가루 제조기'
+  name: '전기 가루 제조기'
   stats:
   - '&8⇨ &b⚡ &7속도: &b10.0배'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7가루를 체질한 광석으로 되돌립니다'
-  name: '&f전기 가루 재활용기'
+  name: '전기 가루 재활용기'
   stats:
   - '&8⇨ &b⚡ &7속도: &b1.0배'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7이것을 &5엔더 상자 &7측면에 설치해 연결하세요'
   - '&7아이템을 가져올 곳은 바라보는 &5엔더 상자'
   - '&7뒤쪽의 &6저장고&7로 옮깁니다'
-  name: '&6엔더 상자 추출 노드'
+  name: '엔더 상자 추출 노드'
   type:
   - '&7&o기계'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7이것을 &5엔더 상자 &7측면에 설치해 연결하세요'
   - '&7아이템을 넣을 곳은 바라보는 &5엔더 상자'
   - '&7뒤쪽의 &6저장고&7에서 가져옵니다'
-  name: '&b엔더 상자 삽입 노드'
+  name: '엔더 상자 삽입 노드'
   type:
   - '&7&o기계'
 EXP_DISPENSER:
   description:
   - '&c멀티블록 기계입니다!'
-  name: '&a경험치 공급기'
+  name: '경험치 공급기'
   type:
   - '&7&o멀티블록'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7떨어진 아이템이 불이나 용암에 타지 않게 합니다'
-  name: '&7고대 룬 &8&l[&c&l내화&8&l]'
+  name: '고대 룬 (내화)'
   type:
   - '&7&o마법'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Slimefun 화물 노드와 전기 부품을'
   - '&7빠르게 제거하는 데 사용합니다'
-  name: '&6푹신한 렌치'
+  name: '푹신한 렌치'
   type:
   - '&7&o도구'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&e가루와 주괴를 녹여 저장합니다'
   - '&c멀티블록 기계입니다!'
-  name: '&c주조소'
+  name: '주조소'
   stats:
   - '&7가루 138,240개 저장 (큰 상자 40개)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7발전기의 멀티블록 부품'
-  name: '&7발전기 코어'
+  name: '발전기 코어'
   type:
   - '&7&o부품'
 HELICOPTER_HAT:
   description:
   - '&7브르르르르르르릉'
-  name: '&1헬리콥터 모자'
+  name: '헬리콥터 모자'
   type:
   - '&7&o갑옷'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&a특대형 푹신한 통'
+  name: '특대형 푹신한 통'
   stats:
   - '&b용량: &e138240000 아이템'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7많은 전력을 담는 핸드헬드 충전기'
-  name: '&2특대형 휴대용 충전기'
+  name: '특대형 휴대용 충전기'
   stats:
   - '&e충전 속도: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&5거대 푹신한 통'
+  name: '거대 푹신한 통'
   stats:
   - '&b용량: &e276480000 아이템'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&6중형 푹신한 통'
+  name: '중형 푹신한 통'
   stats:
   - '&b용량: &e34560000 아이템'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7많은 전력을 담는 핸드헬드 충전기'
-  name: '&6중형 휴대용 충전기'
+  name: '중형 휴대용 충전기'
   stats:
   - '&e충전 속도: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
   - '&7용량을 바꿀 수 있습니다'
-  name: '&e미니 푹신한 통'
+  name: '미니 푹신한 통'
   stats:
   - '&b최대 용량: &e172800 아이템'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7곡괭이와 도끼, 삽을 하나로 합친 도구!'
-  name: '&b팩셀'
+  name: '팩셀'
   type:
   - '&7&o도구'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Slimefun 화물 노드와 전기 부품을'
   - '&7빠르게 제거하는 데 사용합니다'
-  name: '&b강화 푹신한 렌치'
+  name: '강화 푹신한 렌치'
   type:
   - '&7&o도구'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7작물 5개를 한 번에 베어 냅니다'
-  name: '&e낫'
+  name: '낫'
   type:
   - '&7&o도구'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7아이템을 많은 양으로 저장합니다'
-  name: '&e소형 푹신한 통'
+  name: '소형 푹신한 통'
   stats:
   - '&b용량: &e17280000 아이템'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7많은 전력을 담는 핸드헬드 충전기'
-  name: '&e소형 휴대용 충전기'
+  name: '소형 휴대용 충전기'
   stats:
   - '&e충전 속도: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7원재료로 자원을 제작하는'
   - '&7일체형 기계'
-  name: '&c스마트 공장'
+  name: '스마트 공장'
   stats:
   - '&8⇨ &b⚡ &7속도: &b1.0배'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7주조소의 멀티블록 부품'
   - '&c반드시 주조소에서 사용해야 합니다'
-  name: '&c초고열 화로'
+  name: '초고열 화로'
   type:
   - '&7&o부품'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&75x5 반경의 채굴 가능한 블록을 모두 파괴합니다'
-  name: '&e&l개량 폭발 곡괭이'
+  name: '개량 폭발 곡괭이'
   type:
   - '&7&o도구'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&75x5 반경의 삽으로 캘 수 있는 블록을 모두 파괴합니다'
-  name: '&e&l개량 폭발 삽'
+  name: '개량 폭발 삽'
   type:
   - '&7&o도구'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7나무 한 그루를 한 번에 베어 냅니다'
   - '&72블록 범위에서 대각선 블록도 처리합니다'
-  name: '&6&l개량 벌목 도끼'
+  name: '개량 벌목 도끼'
   type:
   - '&7&o도구'
 WARP_PAD:
   description:
   - '&7순간이동 패드 설정기로 패드끼리 연결하세요'
-  name: '&6순간이동 패드'
+  name: '순간이동 패드'
   type:
   - '&7&o기계'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7순간이동 패드 두 개를 연결해 서로 오갈 수 있게 합니다'
-  name: '&6순간이동 패드 설정기'
+  name: '순간이동 패드 설정기'
   type:
   - '&7&o도구'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&f식물에 물을 줍니다'
-  name: '&b물뿌리개'
+  name: '물뿌리개'
   type:
   - '&7&o도구'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7촉촉 촉촉'
-  name: '&b물 살포기'
+  name: '물 살포기'
   type:
   - '&7&o기계'

@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7Päivittää kehittyneen latauspenkin kasvattaen sen kapasiteettia ja latausnopeutta'
-  name: '&6ACB-päivityskortti'
+  name: 'ACB-päivityskortti'
   stats:
   - '&6Latausnopeus &a+5J'
   - '&6Kapasiteetti &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7Poistaa yhden lumouksen esineestä'
   - '&7Tarvitsee &6Muinaisen kirjan &7toimiakseen'
-  name: '&cKehittynyt automaattinen lumouksenpoistaja'
+  name: 'Kehittynyt automaattinen lumouksenpoistaja'
   type:
   - '&7&oKone'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7Lataa esineitä'
   - '&7Päivitettävissä kortilla &6ACB-päivityskortti'
-  name: '&cKehittynyt latauspenkki'
+  name: 'Kehittynyt latauspenkki'
   type:
   - '&7&oKone'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fAseta hissilevy joka kerrokseen'
   - '&fja voit teleportata niiden välillä.'
-  name: '&3Vaihtoehtoinen hissilevy'
+  name: 'Vaihtoehtoinen hissilevy'
   type:
   - '&7&oKone'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7Käytetään koneessa &cKehittynyt automaattinen lumouksenpoistaja'
   - '&6&oSisältää tiivistettyjä määriä virtaa'
-  name: '&6Muinainen kirja'
+  name: 'Muinainen kirja'
   type:
   - '&7&oKomponentti'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7Valmistaa automaattisesti &5Muinaisen alttarin &7reseptejä'
-  name: '&5Automaattinen muinainen alttari'
+  name: 'Automaattinen muinainen alttari'
   type:
   - '&7&oKone'
 AUTO_ARMOR_FORGE:
   description:
   - '&7Valmistaa automaattisesti haarniskapajan reseptejä'
-  name: '&7Automaattinen haarniskapaja'
+  name: 'Automaattinen haarniskapaja'
   type:
   - '&7&oKone'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7Valmistaa automaattisesti &fvanilla&7-reseptejä'
-  name: '&6Automaattinen työpöytä'
+  name: 'Automaattinen työpöytä'
   type:
   - '&7&oKone'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7Valmistaa automaattisesti &eParannetun työpöydän &7reseptejä'
-  name: '&eAutomaattinen parannettu työpöytä'
+  name: 'Automaattinen parannettu työpöytä'
   type:
   - '&7&oKone'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7Valmistaa automaattisesti &6Taikaverstaan &7reseptejä'
-  name: '&6Automaattinen taikaverstas'
+  name: 'Automaattinen taikaverstas'
   type:
   - '&7&oKone'
 AUTO_TABLE_SAW:
   description:
   - '&7Valmistaa automaattisesti &6Pöytäsahan &7reseptejä'
-  name: '&6Automaattinen pöytäsaha'
+  name: 'Automaattinen pöytäsaha'
   type:
   - '&7&oKone'
 BACKPACK_LOADER:
   description:
   - '&7Siirtää esineitä inventaariosta reppuun'
-  name: '&eReppujen lastaaja'
+  name: 'Reppujen lastaaja'
   type:
   - '&7&oKone'
 BACKPACK_UNLOADER:
   description:
   - '&7Tyhjentää reppujen sisällön'
-  name: '&eReppujen purkaja'
+  name: 'Reppujen purkaja'
   type:
   - '&7&oKone'
 BIG_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&bIso pörröinen tynnyri'
+  name: 'Iso pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e69120000 esinettä'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7Kädessä pidettävä laturi, joka pitää sisällään paljon virtaa'
-  name: '&aIso kannettava laturi'
+  name: 'Iso kannettava laturi'
   stats:
   - '&eLatausnopeus: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&cPohjaton pörröinen tynnyri'
+  name: 'Pohjaton pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e1728000000 esinettä'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Käytetään Slimefunin rahtisolmujen nopeaan poistamiseen'
   - '&7ja sähkökomponenttien poistamiseen'
-  name: '&7Karbonado-pörröinen jakoavain'
+  name: 'Karbonado-pörröinen jakoavain'
   type:
   - '&7&oTyökalu'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7Kädessä pidettävä laturi, joka pitää sisällään paljon virtaa'
-  name: '&4Karbonado-kannettava laturi'
+  name: 'Karbonado-kannettava laturi'
   stats:
   - '&eLatausnopeus: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7Kopioi ja liittää rahtisolmujen asetuksia rahtisolmujen välillä'
-  name: '&9Rahtikäsittelijä'
+  name: 'Rahtikäsittelijä'
   type:
   - '&7&oTyökalu'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cTämä on monipalikkakone!'
-  name: '&7Veivigeneraattori'
+  name: 'Veivigeneraattori'
   type:
   - '&7&oGeneraattori'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7Nostaa asetetun arkun sisältöineen, jotta voit kantaa ja asettaa sen muualle'
-  name: '&bNokkakärry'
+  name: 'Nokkakärry'
   type:
   - '&7&oGadgetti'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7Kaikki yhdessä -kone, joka jauhaa, huuhtoo ja pesee'
-  name: '&6Sähköinen pölyvalmistin'
+  name: 'Sähköinen pölyvalmistin'
   stats:
   - '&8⇨ &b⚡ &7Nopeus: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7Kierrättää pölyn takaisin seulotuksi malmiksi'
-  name: '&fSähköinen pölynkierrättäjä'
+  name: 'Sähköinen pölynkierrättäjä'
   stats:
   - '&8⇨ &b⚡ &7Nopeus: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7Aseta tämä &5Enderarkun &7kylkeen sitoaksesi sen'
   - '&7Tämä siirtää esineitä edessä olevasta &5Enderarkusta'
   - '&7siihen &6säiliöön&7, joka on sen takana'
-  name: '&6Enderarkun ulosottosolmu'
+  name: 'Enderarkun ulosottosolmu'
   type:
   - '&7&oKone'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7Aseta tämä &5Enderarkun &7kylkeen sitoaksesi sen'
   - '&7Tämä siirtää esineitä edessä olevaan &5Enderarkkuun'
   - '&7siitä &6säiliöstä&7, joka on sen takana'
-  name: '&bEnderarkun syöttösolmu'
+  name: 'Enderarkun syöttösolmu'
   type:
   - '&7&oKone'
 EXP_DISPENSER:
   description:
   - '&cTämä on monipalikkakone!'
-  name: '&aKokemusjakaja'
+  name: 'Kokemusjakaja'
   type:
   - '&7&oMultiblokki'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7Estää pudotetun esineen palamisen tulessa tai laavassa'
-  name: '&7Muinainen riimu &8&l[&c&lTulenkestävä&8&l]'
+  name: 'Muinainen riimu (Tulenkestävä)'
   type:
   - '&7&oMaaginen'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Käytetään Slimefunin rahtisolmujen nopeaan poistamiseen'
   - '&7ja sähkökomponenttien poistamiseen'
-  name: '&6Pörröinen jakoavain'
+  name: 'Pörröinen jakoavain'
   type:
   - '&7&oTyökalu'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eSulattaa ja varastoi pölyjä ja harkkoja'
   - '&cTämä on monipalikkakone!'
-  name: '&cValimo'
+  name: 'Valimo'
   stats:
   - '&7Varastoi 138,240 pölyä (40 kaksoisarkkua)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7Generaattoreiden monipalikkakomponentti'
-  name: '&7Generaattorin ydin'
+  name: 'Generaattorin ydin'
   type:
   - '&7&oKomponentti'
 HELICOPTER_HAT:
   description:
   - '&7brrrrrrrrRRRRRRRR'
-  name: '&1Helikopterihattu'
+  name: 'Helikopterihattu'
   type:
   - '&7&oPanssari'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&aSuuri pörröinen tynnyri'
+  name: 'Suuri pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e138240000 esinettä'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7Kädessä pidettävä laturi, joka pitää sisällään paljon virtaa'
-  name: '&2Suuri kannettava laturi'
+  name: 'Suuri kannettava laturi'
   stats:
   - '&eLatausnopeus: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&5Massiivinen pörröinen tynnyri'
+  name: 'Massiivinen pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e276480000 esinettä'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&6Keskikokoinen pörröinen tynnyri'
+  name: 'Keskikokoinen pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e34560000 esinettä'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7Kädessä pidettävä laturi, joka pitää sisällään paljon virtaa'
-  name: '&6Keskikokoinen kannettava laturi'
+  name: 'Keskikokoinen kannettava laturi'
   stats:
   - '&eLatausnopeus: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
   - '&7Kapasiteettia voi vaihtaa'
-  name: '&ePikkuruinen pörröinen tynnyri'
+  name: 'Pikkuruinen pörröinen tynnyri'
   stats:
   - '&bEnimmäiskapasiteetti: &e172800 esinettä'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7Hakku, kirves ja lapio yhdessä työkalussa!'
-  name: '&bHakkukirveslapio'
+  name: 'Hakkukirveslapio'
   type:
   - '&7&oTyökalu'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Käytetään Slimefunin rahtisolmujen nopeaan poistamiseen'
   - '&7ja sähkökomponenttien poistamiseen'
-  name: '&bVahvistettu pörröinen jakoavain'
+  name: 'Vahvistettu pörröinen jakoavain'
   type:
   - '&7&oTyökalu'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7Rikkoo 5 viljelykasvia kerralla'
-  name: '&eViikate'
+  name: 'Viikate'
   type:
   - '&7&oTyökalu'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7Varastoi suuren määrän yhtä esinettä'
-  name: '&ePieni pörröinen tynnyri'
+  name: 'Pieni pörröinen tynnyri'
   stats:
   - '&bKapasiteetti: &e17280000 esinettä'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7Kädessä pidettävä laturi, joka pitää sisällään paljon virtaa'
-  name: '&ePieni kannettava laturi'
+  name: 'Pieni kannettava laturi'
   stats:
   - '&eLatausnopeus: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7Kaikki yhdessä -kone, joka valmistaa'
   - '&7resursseja raaka-aineista'
-  name: '&cÄlytehdas'
+  name: 'Älytehdas'
   stats:
   - '&8⇨ &b⚡ &7Nopeus: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7Valimon monipalikkakomponentti'
   - '&cTäytyy käyttää valimossa'
-  name: '&cSuperkuumennettu uuni'
+  name: 'Superkuumennettu uuni'
   type:
   - '&7&oKomponentti'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&7Rikkoo kaikki louhittavat palikat 5x5 säteellä'
-  name: '&e&lPäivitetty räjähtävä hakku'
+  name: 'Päivitetty räjähtävä hakku'
   type:
   - '&7&oTyökalu'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&7Rikkoo kaikki lapioitavat palikat 5x5 säteellä'
-  name: '&e&lPäivitetty räjähtävä lapio'
+  name: 'Päivitetty räjähtävä lapio'
   type:
   - '&7&oTyökalu'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7Kaataa kokonaisen puun kerralla'
   - '&72 palikan ulottuma ja toimii myös vinoihin palikoihin'
-  name: '&6&lPäivitetty puunkaatokirves'
+  name: 'Päivitetty puunkaatokirves'
   type:
   - '&7&oTyökalu'
 WARP_PAD:
   description:
   - '&7Käytä siirtymäalustan määrittäjää linkittääksesi siirtymäalustoja'
-  name: '&6Siirtymäalusta'
+  name: 'Siirtymäalusta'
   type:
   - '&7&oKone'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7Linkittää kaksi siirtymäalustaa yhteen, jotta voit siirtyä niiden välillä'
-  name: '&6Siirtymäalustan määrittäjä'
+  name: 'Siirtymäalustan määrittäjä'
   type:
   - '&7&oTyökalu'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fKastelee kasveja'
-  name: '&bKastelukannu'
+  name: 'Kastelukannu'
   type:
   - '&7&oTyökalu'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7Ropsis ropsis'
-  name: '&bVesisadetin'
+  name: 'Vesisadetin'
   type:
   - '&7&oKone'

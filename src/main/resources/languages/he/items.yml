@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7משדרג שולחן טעינה מתקדם ומגדיל את הקיבולת ומהירות הטעינה שלו'
-  name: '&6כרטיס שדרוג איי-סי-בי'
+  name: 'כרטיס שדרוג איי-סי-בי'
   stats:
   - '&6מהירות טעינה &a+5J'
   - '&6קיבולת &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7מסיר כישוף אחד מפריט'
   - '&7דורש &6ספר עתיק &7כדי לפעול'
-  name: '&cמפרק כישופים אוטומטי מתקדם'
+  name: 'מפרק כישופים אוטומטי מתקדם'
   type:
   - '&7&oמכונה'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7טוען פריטים'
   - '&7ניתן לשדרג בעזרת &6כרטיס שדרוג איי-סי-בי'
-  name: '&cשולחן טעינה מתקדם'
+  name: 'שולחן טעינה מתקדם'
   type:
   - '&7&oמכונה'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fהנח לוח מעלית בכל קומה'
   - '&fותוכל להתטלפר ביניהן.'
-  name: '&3לוחית מעלית חלופית'
+  name: 'לוחית מעלית חלופית'
   type:
   - '&7&oמכונה'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7משמש ב&cמפרק הכישופים האוטומטי המתקדם'
   - '&6&oמכיל כמויות מרוכזות של כוח'
-  name: '&6ספר עתיק'
+  name: 'ספר עתיק'
   type:
   - '&7&oרכיב'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7יוצר אוטומטית מתכוני &5מזבח עתיק&7'
-  name: '&5מזבח עתיק אוטומטי'
+  name: 'מזבח עתיק אוטומטי'
   type:
   - '&7&oמכונה'
 AUTO_ARMOR_FORGE:
   description:
   - '&7יוצרת אוטומטית מתכוני מפחת שריון'
-  name: '&7מפחת שריון אוטומטית'
+  name: 'מפחת שריון אוטומטית'
   type:
   - '&7&oמכונה'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7יוצר אוטומטית מתכונים &fמקוריים&7'
-  name: '&6שולחן יצירה אוטומטי'
+  name: 'שולחן יצירה אוטומטי'
   type:
   - '&7&oמכונה'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7יוצר אוטומטית מתכוני &eשולחן יצירה משופר&7'
-  name: '&eשולחן יצירה משופר אוטומטי'
+  name: 'שולחן יצירה משופר אוטומטי'
   type:
   - '&7&oמכונה'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7יוצר אוטומטית מתכוני &6שולחן עבודה קסום&7'
-  name: '&6שולחן עבודה קסום אוטומטי'
+  name: 'שולחן עבודה קסום אוטומטי'
   type:
   - '&7&oמכונה'
 AUTO_TABLE_SAW:
   description:
   - '&7יוצר אוטומטית מתכוני &6מסור שולחן&7'
-  name: '&6מסור שולחן אוטומטי'
+  name: 'מסור שולחן אוטומטי'
   type:
   - '&7&oמכונה'
 BACKPACK_LOADER:
   description:
   - '&7מעביר פריטים מהמלאי לתרמיל'
-  name: '&eמטעין תרמילים'
+  name: 'מטעין תרמילים'
   type:
   - '&7&oמכונה'
 BACKPACK_UNLOADER:
   description:
   - '&7מרוקן את תוכן התרמילים'
-  name: '&eמרוקן תרמילים'
+  name: 'מרוקן תרמילים'
   type:
   - '&7&oמכונה'
 BIG_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&bחבית פלומתית גדולה'
+  name: 'חבית פלומתית גדולה'
   stats:
   - '&bקיבולת: &e69120000 פריטים'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7מטען ידני שמחזיק הרבה כוח'
-  name: '&aמטען נייד גדול'
+  name: 'מטען נייד גדול'
   stats:
   - '&eמהירות טעינה: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&cחבית פלומתית ללא תחתית'
+  name: 'חבית פלומתית ללא תחתית'
   stats:
   - '&bקיבולת: &e1728000000 פריטים'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7משמש להסרה מהירה של צומתי מטען של Slimefun'
   - '&7ושל רכיבי חשמל'
-  name: '&7מפתח פלומתי קרבונדו'
+  name: 'מפתח פלומתי קרבונדו'
   type:
   - '&7&oכלי'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7מטען ידני שמחזיק הרבה כוח'
-  name: '&4מטען נייד קרבונדו'
+  name: 'מטען נייד קרבונדו'
   stats:
   - '&eמהירות טעינה: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7מעתיק ומדביק הגדרות צומת מטען בין צומתי מטען'
-  name: '&9מתמרן מטען'
+  name: 'מתמרן מטען'
   type:
   - '&7&oכלי'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cזו מכונת רב-בלוק!'
-  name: '&7גנרטור ארכובה'
+  name: 'גנרטור ארכובה'
   type:
   - '&7&oגנרטור'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7מרימה תיבה מוצבת יחד עם תוכנה כדי שתוכל לשאת אותה ולהציב במקום אחר'
-  name: '&bעגלה'
+  name: 'עגלה'
   type:
   - '&7&oגאדג׳ט'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7מכונה משולבת שטוחנת, מנפה ושוטפת'
-  name: '&6מייצר אבקה חשמלי'
+  name: 'מייצר אבקה חשמלי'
   stats:
   - '&8⇨ &b⚡ &7מהירות: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7ממחזר אבקה בחזרה לעפרה מנופה'
-  name: '&fממחזר אבקה חשמלי'
+  name: 'ממחזר אבקה חשמלי'
   stats:
   - '&8⇨ &b⚡ &7מהירות: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7הצב זאת בצד של &5תיבת אנדר &7כדי לקשר'
   - '&7זה יעביר פריטים מ&5תיבת האנדר שמולו'
   - '&7אל ה&6מכל &7שמאחוריו'
-  name: '&6צומת חילוץ מתיבת אנדר'
+  name: 'צומת חילוץ מתיבת אנדר'
   type:
   - '&7&oמכונה'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7הצב זאת בצד של &5תיבת אנדר &7כדי לקשר'
   - '&7זה יעביר פריטים אל &5תיבת האנדר שמולו'
   - '&7מה&6מכל &7שמאחוריו'
-  name: '&bצומת הכנסה לתיבת אנדר'
+  name: 'צומת הכנסה לתיבת אנדר'
   type:
   - '&7&oמכונה'
 EXP_DISPENSER:
   description:
   - '&cזו מכונת רב-בלוק!'
-  name: '&aמפזר ניסיון'
+  name: 'מפזר ניסיון'
   type:
   - '&7&oרב בלוק'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7מונעת מפריט מושלך להישרף באש או בלבה'
-  name: '&7רונה עתיקה &8&l[&c&lחסינת אש&8&l]'
+  name: 'רונה עתיקה (חסינת אש)'
   type:
   - '&7&oקסום'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7משמש להסרה מהירה של צומתי מטען של Slimefun'
   - '&7ושל רכיבי חשמל'
-  name: '&6מפתח פלומתי'
+  name: 'מפתח פלומתי'
   type:
   - '&7&oכלי'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eמתיך ומאחסן אבקות ומטילים'
   - '&cזו מכונת רב-בלוק!'
-  name: '&cבית יציקה'
+  name: 'בית יציקה'
   stats:
   - '&7מאחסן 138,240 אבקה (40 תיבות כפולות)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7רכיב רב-בלוק של גנרטורים'
-  name: '&7ליבת גנרטור'
+  name: 'ליבת גנרטור'
   type:
   - '&7&oרכיב'
 HELICOPTER_HAT:
   description:
   - '&7ברררררררררררררר'
-  name: '&1כובע מסוק'
+  name: 'כובע מסוק'
   type:
   - '&7&oשריון'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&aחבית פלומתית ענקית'
+  name: 'חבית פלומתית ענקית'
   stats:
   - '&bקיבולת: &e138240000 פריטים'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7מטען ידני שמחזיק הרבה כוח'
-  name: '&2מטען נייד ענק'
+  name: 'מטען נייד ענק'
   stats:
   - '&eמהירות טעינה: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&5חבית פלומתית עצומה'
+  name: 'חבית פלומתית עצומה'
   stats:
   - '&bקיבולת: &e276480000 פריטים'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&6חבית פלומתית בינונית'
+  name: 'חבית פלומתית בינונית'
   stats:
   - '&bקיבולת: &e34560000 פריטים'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7מטען ידני שמחזיק הרבה כוח'
-  name: '&6מטען נייד בינוני'
+  name: 'מטען נייד בינוני'
   stats:
   - '&eמהירות טעינה: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
   - '&7בעלת קיבולת משתנה'
-  name: '&eחבית פלומתית זעירה'
+  name: 'חבית פלומתית זעירה'
   stats:
   - '&bקיבולת מקסימלית: &e172800 פריטים'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7מכוש, גרזן ואת חפירה בכלי אחד!'
-  name: '&bפקסל'
+  name: 'פקסל'
   type:
   - '&7&oכלי'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7משמש להסרה מהירה של צומתי מטען של Slimefun'
   - '&7ושל רכיבי חשמל'
-  name: '&bמפתח פלומתי מחוזק'
+  name: 'מפתח פלומתי מחוזק'
   type:
   - '&7&oכלי'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7שובר 5 גידולים בבת אחת'
-  name: '&eחרמש'
+  name: 'חרמש'
   type:
   - '&7&oכלי'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7מאחסנת כמות גדולה של פריט'
-  name: '&eחבית פלומתית קטנה'
+  name: 'חבית פלומתית קטנה'
   stats:
   - '&bקיבולת: &e17280000 פריטים'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7מטען ידני שמחזיק הרבה כוח'
-  name: '&eמטען נייד קטן'
+  name: 'מטען נייד קטן'
   stats:
   - '&eמהירות טעינה: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7מכונה משולבת שיוצרת'
   - '&7משאבים מחומרי גלם'
-  name: '&cמפעל חכם'
+  name: 'מפעל חכם'
   stats:
   - '&8⇨ &b⚡ &7מהירות: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7רכיב רב-בלוק של בית היציקה'
   - '&cחייב לשמש בבית היציקה'
-  name: '&cכבשן סופר-מחומם'
+  name: 'כבשן סופר-מחומם'
   type:
   - '&7&oרכיב'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&7שובר את כל הבלוקים הניתנים לכרייה ברדיוס 5x5'
-  name: '&e&lמכוש מתפוצץ משודרג'
+  name: 'מכוש מתפוצץ משודרג'
   type:
   - '&7&oכלי'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&7שובר את כל הבלוקים הניתנים לחפירה ברדיוס 5x5'
-  name: '&e&lאת חפירה מתפוצץ משודרג'
+  name: 'את חפירה מתפוצץ משודרג'
   type:
   - '&7&oכלי'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7כורת עץ שלם בבת אחת'
   - '&7טווח 2 בלוקים ועובד גם על בלוקים אלכסוניים'
-  name: '&6&lגרזן כורתים משודרג'
+  name: 'גרזן כורתים משודרג'
   type:
   - '&7&oכלי'
 WARP_PAD:
   description:
   - '&7השתמש במגדיר משטחי קפיצה כדי לקשר משטחי קפיצה'
-  name: '&6משטח קפיצה'
+  name: 'משטח קפיצה'
   type:
   - '&7&oמכונה'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7מקשר שני משטחי קפיצה כדי שתוכל להשתגר ביניהם'
-  name: '&6מגדיר משטחי קפיצה'
+  name: 'מגדיר משטחי קפיצה'
   type:
   - '&7&oכלי'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fמשקה צמחים'
-  name: '&bמזלף'
+  name: 'מזלף'
   type:
   - '&7&oכלי'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7טיף טיף'
-  name: '&bממטרת מים'
+  name: 'ממטרת מים'
   type:
   - '&7&oמכונה'

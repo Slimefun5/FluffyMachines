@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7Uzlabo progresīvo uzlādes galdu, palielinot tā ietilpību un uzlādes ātrumu'
-  name: '&6ACB uzlabojuma karte'
+  name: 'ACB uzlabojuma karte'
   stats:
   - '&6Uzlādes ātrums &a+5J'
   - '&6Ietilpība &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7Noņem vienu apbūrumu no priekšmeta'
   - '&7Darbībai nepieciešama &6Senā grāmata&7'
-  name: '&cProgresīvā automātiskā atburšanas mašīna'
+  name: 'Progresīvā automātiskā atburšanas mašīna'
   type:
   - '&7&oMašīna'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7Uzlādē priekšmetus'
   - '&7Var uzlabot ar &6ACB uzlabojuma karti'
-  name: '&cProgresīvais uzlādes galds'
+  name: 'Progresīvais uzlādes galds'
   type:
   - '&7&oMašīna'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fNovieto lifta plāksni katrā stāvā'
   - '&fun varēsi teleportēties starp tām.'
-  name: '&3Alternatīvā lifta plāksne'
+  name: 'Alternatīvā lifta plāksne'
   type:
   - '&7&oMašīna'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7Izmanto &cprogresīvajā automātiskajā atburšanas mašīnā'
   - '&6&oSatur koncentrētu enerģijas daudzumu'
-  name: '&6Senā grāmata'
+  name: 'Senā grāmata'
   type:
   - '&7&oSastāvdaļa'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7Automātiski izgatavo &5senā altāra &7receptes'
-  name: '&5Automātiskais senais altāris'
+  name: 'Automātiskais senais altāris'
   type:
   - '&7&oMašīna'
 AUTO_ARMOR_FORGE:
   description:
   - '&7Automātiski izgatavo bruņu kalves receptes'
-  name: '&7Automātiskā bruņu kalve'
+  name: 'Automātiskā bruņu kalve'
   type:
   - '&7&oMašīna'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7Automātiski izgatavo &fparastās &7receptes'
-  name: '&6Automātiskais izgatavošanas galds'
+  name: 'Automātiskais izgatavošanas galds'
   type:
   - '&7&oMašīna'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7Automātiski izgatavo &euzlabotā izgatavošanas galda &7receptes'
-  name: '&eAutomātiskais uzlabotais izgatavošanas galds'
+  name: 'Automātiskais uzlabotais izgatavošanas galds'
   type:
   - '&7&oMašīna'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7Automātiski izgatavo &6maģiskā darbgalda &7receptes'
-  name: '&6Automātiskais maģiskais darbgalds'
+  name: 'Automātiskais maģiskais darbgalds'
   type:
   - '&7&oMašīna'
 AUTO_TABLE_SAW:
   description:
   - '&7Automātiski izgatavo &6galda zāģa &7receptes'
-  name: '&6Automātiskais galda zāģis'
+  name: 'Automātiskais galda zāģis'
   type:
   - '&7&oMašīna'
 BACKPACK_LOADER:
   description:
   - '&7Pārvieto priekšmetus no inventāra uz mugursomu'
-  name: '&eMugursomas iekrāvējs'
+  name: 'Mugursomas iekrāvējs'
   type:
   - '&7&oMašīna'
 BACKPACK_UNLOADER:
   description:
   - '&7Iztukšo mugursomu saturu'
-  name: '&eMugursomas izkrāvējs'
+  name: 'Mugursomas izkrāvējs'
   type:
   - '&7&oMašīna'
 BIG_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&bLiela pūkainā muca'
+  name: 'Liela pūkainā muca'
   stats:
   - '&bIetilpība: &e69120000 priekšmeti'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7Rokas lādētājs, kas glabā daudz enerģijas'
-  name: '&aLiels pārnēsājams lādētājs'
+  name: 'Liels pārnēsājams lādētājs'
   stats:
   - '&eUzlādes ātrums: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&cBezdibena pūkainā muca'
+  name: 'Bezdibena pūkainā muca'
   stats:
   - '&bIetilpība: &e1728000000 priekšmeti'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Izmanto, lai ātri noņemtu Slimefun kravas mezglus'
   - '&7un elektrības komponentus'
-  name: '&7Karbonado pūkainā uzgriežņatslēga'
+  name: 'Karbonado pūkainā uzgriežņatslēga'
   type:
   - '&7&oRīks'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7Rokas lādētājs, kas glabā daudz enerģijas'
-  name: '&4Karbonado pārnēsājams lādētājs'
+  name: 'Karbonado pārnēsājams lādētājs'
   stats:
   - '&eUzlādes ātrums: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7Kopē un ielīmē kravas mezglu iestatījumus starp kravas mezgliem'
-  name: '&9Kravas manipulators'
+  name: 'Kravas manipulators'
   type:
   - '&7&oRīks'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cŠī ir multibloka mašīna!'
-  name: '&7Kloķa ģenerators'
+  name: 'Kloķa ģenerators'
   type:
   - '&7&oĢenerators'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7Paceļ novietotu lādi kopā ar tās saturu, lai tu to varētu pārnest un novietot citur'
-  name: '&bRatiņi'
+  name: 'Ratiņi'
   type:
   - '&7&oIerīce'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7Viss vienā mašīna, kas maļ, skalo un mazgā'
-  name: '&6Elektriskais putekļu fabrikators'
+  name: 'Elektriskais putekļu fabrikators'
   stats:
   - '&8⇨ &b⚡ &7Ātrums: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7Pārstrādā putekļus atpakaļ sijātā rūdā'
-  name: '&fElektriskais putekļu pārstrādātājs'
+  name: 'Elektriskais putekļu pārstrādātājs'
   stats:
   - '&8⇨ &b⚡ &7Ātrums: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7Novieto to &5Ender lādes &7sānos, lai piesaistītu'
   - '&7Tas pārvietos priekšmetus no pretim esošās &5Ender lādes'
   - '&7uz &6tvertni &7aiz tā'
-  name: '&6Ender lādes izņemšanas mezgls'
+  name: 'Ender lādes izņemšanas mezgls'
   type:
   - '&7&oMašīna'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7Novieto to &5Ender lādes &7sānos, lai piesaistītu'
   - '&7Tas pārvietos priekšmetus uz pretim esošo &5Ender lādi'
   - '&7no &6tvertnes &7aiz tā'
-  name: '&bEnder lādes ievietošanas mezgls'
+  name: 'Ender lādes ievietošanas mezgls'
   type:
   - '&7&oMašīna'
 EXP_DISPENSER:
   description:
   - '&cŠī ir multibloka mašīna!'
-  name: '&aPieredzes dozators'
+  name: 'Pieredzes dozators'
   type:
   - '&7&oDaudzbloks'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7Neļauj nomestam priekšmetam sadegt ugunī vai lavā'
-  name: '&7Senā rūna &8&l[&c&lUgunsdroša&8&l]'
+  name: 'Senā rūna (Ugunsdroša)'
   type:
   - '&7&oMaģisks'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Izmanto, lai ātri noņemtu Slimefun kravas mezglus'
   - '&7un elektrības komponentus'
-  name: '&6Pūkainā uzgriežņatslēga'
+  name: 'Pūkainā uzgriežņatslēga'
   type:
   - '&7&oRīks'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eKausē un uzglabā putekļus un lietņus'
   - '&cŠī ir multibloka mašīna!'
-  name: '&cLietuve'
+  name: 'Lietuve'
   stats:
   - '&7Uzglabā 138,240 putekļu (40 dubultlādes)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7Ģeneratoru multibloka komponents'
-  name: '&7Ģeneratora kodols'
+  name: 'Ģeneratora kodols'
   type:
   - '&7&oSastāvdaļa'
 HELICOPTER_HAT:
   description:
   - '&7brrrrrrrrRRRRRRRR'
-  name: '&1Helikoptera cepure'
+  name: 'Helikoptera cepure'
   type:
   - '&7&oBruņas'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&aĻoti liela pūkainā muca'
+  name: 'Ļoti liela pūkainā muca'
   stats:
   - '&bIetilpība: &e138240000 priekšmeti'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7Rokas lādētājs, kas glabā daudz enerģijas'
-  name: '&2Ļoti liels pārnēsājams lādētājs'
+  name: 'Ļoti liels pārnēsājams lādētājs'
   stats:
   - '&eUzlādes ātrums: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&5Milzīga pūkainā muca'
+  name: 'Milzīga pūkainā muca'
   stats:
   - '&bIetilpība: &e276480000 priekšmeti'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&6Vidēja pūkainā muca'
+  name: 'Vidēja pūkainā muca'
   stats:
   - '&bIetilpība: &e34560000 priekšmeti'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7Rokas lādētājs, kas glabā daudz enerģijas'
-  name: '&6Vidējs pārnēsājams lādētājs'
+  name: 'Vidējs pārnēsājams lādētājs'
   stats:
   - '&eUzlādes ātrums: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
   - '&7Tai ir maināma ietilpība'
-  name: '&eMini pūkainā muca'
+  name: 'Mini pūkainā muca'
   stats:
   - '&bMaks. ietilpība: &e172800 priekšmeti'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7Cērte, cirvis un lāpsta vienā rīkā!'
-  name: '&bPaxel'
+  name: 'Paxel'
   type:
   - '&7&oRīks'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Izmanto, lai ātri noņemtu Slimefun kravas mezglus'
   - '&7un elektrības komponentus'
-  name: '&bPastiprinātā pūkainā uzgriežņatslēga'
+  name: 'Pastiprinātā pūkainā uzgriežņatslēga'
   type:
   - '&7&oRīks'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7Novāc 5 kultūraugus uzreiz'
-  name: '&eIzkapts'
+  name: 'Izkapts'
   type:
   - '&7&oRīks'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7Uzglabā lielu daudzumu viena priekšmeta'
-  name: '&eMaza pūkainā muca'
+  name: 'Maza pūkainā muca'
   stats:
   - '&bIetilpība: &e17280000 priekšmeti'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7Rokas lādētājs, kas glabā daudz enerģijas'
-  name: '&eMazs pārnēsājams lādētājs'
+  name: 'Mazs pārnēsājams lādētājs'
   stats:
   - '&eUzlādes ātrums: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7Viss vienā mašīna, kas izgatavo'
   - '&7resursus no izejvielām'
-  name: '&cViedā rūpnīca'
+  name: 'Viedā rūpnīca'
   stats:
   - '&8⇨ &b⚡ &7Ātrums: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7Lietuves multibloka komponents'
   - '&cJālieto lietuvē'
-  name: '&cĪpaši uzkarsēta krāsns'
+  name: 'Īpaši uzkarsēta krāsns'
   type:
   - '&7&oSastāvdaļa'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&7Salauž visus iegūstamos blokus 5x5 rādiusā'
-  name: '&e&lUzlabota sprādzienbīstamā cērte'
+  name: 'Uzlabota sprādzienbīstamā cērte'
   type:
   - '&7&oRīks'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&7Salauž visus ar lāpstu raktos blokus 5x5 rādiusā'
-  name: '&e&lUzlabota sprādzienbīstamā lāpsta'
+  name: 'Uzlabota sprādzienbīstamā lāpsta'
   type:
   - '&7&oRīks'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7Nocērt veselu koku uzreiz'
   - '&72 bloku aizsniedzamība, darbojas arī uz diagonāliem blokiem'
-  name: '&6&lUzlabots mežcirtēja cirvis'
+  name: 'Uzlabots mežcirtēja cirvis'
   type:
   - '&7&oRīks'
 WARP_PAD:
   description:
   - '&7Izmanto teleportācijas platformu konfiguratoru, lai saistītu platformas'
-  name: '&6Teleportācijas platforma'
+  name: 'Teleportācijas platforma'
   type:
   - '&7&oMašīna'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7Saista divas teleportācijas platformas, lai starp tām varētu teleportēties'
-  name: '&6Teleportācijas platformu konfigurators'
+  name: 'Teleportācijas platformu konfigurators'
   type:
   - '&7&oRīks'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fLaista augus'
-  name: '&bLaistāmkanna'
+  name: 'Laistāmkanna'
   type:
   - '&7&oRīks'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7Šļaku šļaku'
-  name: '&bŪdens smidzinātājs'
+  name: 'Ūdens smidzinātājs'
   type:
   - '&7&oMašīna'

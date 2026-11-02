@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7Nadograđuje naprednu klupu za punjenje i povećava joj kapacitet i brzinu punjenja'
-  name: '&6ACB kartica za nadogradnju'
+  name: 'ACB kartica za nadogradnju'
   stats:
   - '&6Brzina punjenja &a+5J'
   - '&6Kapacitet &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7Uklanja jednu čaroliju s predmeta'
   - '&7Zahtijeva &6drevnu knjigu &7za rad'
-  name: '&cNapredni automatski raščaravač'
+  name: 'Napredni automatski raščaravač'
   type:
   - '&7&oStroj'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7Puni predmete'
   - '&7Može se nadograditi &6ACB karticom za nadogradnju'
-  name: '&cNapredna klupa za punjenje'
+  name: 'Napredna klupa za punjenje'
   type:
   - '&7&oStroj'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fPostavi ploču dizala na svaki kat'
   - '&fi moći ćeš se teleportirati među njima.'
-  name: '&3Alternativna ploča dizala'
+  name: 'Alternativna ploča dizala'
   type:
   - '&7&oStroj'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7Koristi se u &cnaprednom automatskom raščaravaču'
   - '&6&oSadrži zgusnute količine energije'
-  name: '&6Drevna knjiga'
+  name: 'Drevna knjiga'
   type:
   - '&7&oKomponenta'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7Automatski izrađuje recepte &5drevnog oltara&7'
-  name: '&5Automatski drevni oltar'
+  name: 'Automatski drevni oltar'
   type:
   - '&7&oStroj'
 AUTO_ARMOR_FORGE:
   description:
   - '&7Automatski izrađuje recepte kovačnice oklopa'
-  name: '&7Automatska kovačnica oklopa'
+  name: 'Automatska kovačnica oklopa'
   type:
   - '&7&oStroj'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7Automatski izrađuje &fvanilla &7recepte'
-  name: '&6Automatski stol za izradu'
+  name: 'Automatski stol za izradu'
   type:
   - '&7&oStroj'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7Automatski izrađuje recepte &epoboljšanog stola za izradu&7'
-  name: '&eAutomatski poboljšani stol za izradu'
+  name: 'Automatski poboljšani stol za izradu'
   type:
   - '&7&oStroj'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7Automatski izrađuje recepte &6magičnog radnog stola&7'
-  name: '&6Automatski magični radni stol'
+  name: 'Automatski magični radni stol'
   type:
   - '&7&oStroj'
 AUTO_TABLE_SAW:
   description:
   - '&7Automatski izrađuje recepte &6stolne pile&7'
-  name: '&6Automatska stolna pila'
+  name: 'Automatska stolna pila'
   type:
   - '&7&oStroj'
 BACKPACK_LOADER:
   description:
   - '&7Premješta predmete iz inventara u ruksak'
-  name: '&eUtovarivač ruksaka'
+  name: 'Utovarivač ruksaka'
   type:
   - '&7&oStroj'
 BACKPACK_UNLOADER:
   description:
   - '&7Prazni sadržaj ruksaka'
-  name: '&eIstovarivač ruksaka'
+  name: 'Istovarivač ruksaka'
   type:
   - '&7&oStroj'
 BIG_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&bVelika pahuljasta bačva'
+  name: 'Velika pahuljasta bačva'
   stats:
   - '&bKapacitet: &e69120000 predmeta'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7Ručni punjač koji drži mnogo energije'
-  name: '&aVeliki prijenosni punjač'
+  name: 'Veliki prijenosni punjač'
   stats:
   - '&eBrzina punjenja: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&cBezdana pahuljasta bačva'
+  name: 'Bezdana pahuljasta bačva'
   stats:
   - '&bKapacitet: &e1728000000 predmeta'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Služi za brzo uklanjanje Slimefun teretnih čvorova'
   - '&7i električnih komponenti'
-  name: '&7Karbonado pahuljasti ključ'
+  name: 'Karbonado pahuljasti ključ'
   type:
   - '&7&oAlat'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7Ručni punjač koji drži mnogo energije'
-  name: '&4Karbonado prijenosni punjač'
+  name: 'Karbonado prijenosni punjač'
   stats:
   - '&eBrzina punjenja: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7Kopira i lijepi postavke između teretnih čvorova'
-  name: '&9Manipulator tereta'
+  name: 'Manipulator tereta'
   type:
   - '&7&oAlat'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cOvo je multiblok stroj!'
-  name: '&7Generator na ručicu'
+  name: 'Generator na ručicu'
   type:
   - '&7&oGenerator'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7Podiže postavljenu škrinju zajedno sa sadržajem kako bi je mogao nositi i postaviti drugdje'
-  name: '&bKolica'
+  name: 'Kolica'
   type:
   - '&7&oNaprava'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7Stroj sve u jednom koji melje, ispire i pere'
-  name: '&6Električni proizvođač praha'
+  name: 'Električni proizvođač praha'
   stats:
   - '&8⇨ &b⚡ &7Brzina: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7Reciklira prah natrag u prosijanu rudu'
-  name: '&fElektrični reciklator praha'
+  name: 'Električni reciklator praha'
   stats:
   - '&8⇨ &b⚡ &7Brzina: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7Postavi ovo sa strane &5Ender škrinje &7za povezivanje'
   - '&7Ovo će premještati predmete iz okrenute &5Ender škrinje'
   - '&7u &6spremnik &7iza sebe'
-  name: '&6Čvor za izvlačenje iz Ender škrinje'
+  name: 'Čvor za izvlačenje iz Ender škrinje'
   type:
   - '&7&oStroj'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7Postavi ovo sa strane &5Ender škrinje &7za povezivanje'
   - '&7Ovo će premještati predmete u okrenutu &5Ender škrinju'
   - '&7iz &6spremnika &7iza sebe'
-  name: '&bČvor za ubacivanje u Ender škrinju'
+  name: 'Čvor za ubacivanje u Ender škrinju'
   type:
   - '&7&oStroj'
 EXP_DISPENSER:
   description:
   - '&cOvo je multiblok stroj!'
-  name: '&aDispenzer iskustva'
+  name: 'Dispenzer iskustva'
   type:
   - '&7&oVišeblok'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7Sprječava da odbačeni predmet izgori u vatri ili lavi'
-  name: '&7Drevna runa &8&l[&c&lOtporna na vatru&8&l]'
+  name: 'Drevna runa (Otporna na vatru)'
   type:
   - '&7&oMagično'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Služi za brzo uklanjanje Slimefun teretnih čvorova'
   - '&7i električnih komponenti'
-  name: '&6Pahuljasti ključ'
+  name: 'Pahuljasti ključ'
   type:
   - '&7&oAlat'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eTali i pohranjuje prahove i poluge'
   - '&cOvo je multiblok stroj!'
-  name: '&cLjevaonica'
+  name: 'Ljevaonica'
   stats:
   - '&7Pohranjuje 138,240 praha (40 dvostrukih škrinja)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7Multiblok komponenta generatora'
-  name: '&7Jezgra generatora'
+  name: 'Jezgra generatora'
   type:
   - '&7&oKomponenta'
 HELICOPTER_HAT:
   description:
   - '&7brrrrrrrrRRRRRRRR'
-  name: '&1Helikopterski šešir'
+  name: 'Helikopterski šešir'
   type:
   - '&7&oOklop'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&aGolema pahuljasta bačva'
+  name: 'Golema pahuljasta bačva'
   stats:
   - '&bKapacitet: &e138240000 predmeta'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7Ručni punjač koji drži mnogo energije'
-  name: '&2Golemi prijenosni punjač'
+  name: 'Golemi prijenosni punjač'
   stats:
   - '&eBrzina punjenja: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&5Ogromna pahuljasta bačva'
+  name: 'Ogromna pahuljasta bačva'
   stats:
   - '&bKapacitet: &e276480000 predmeta'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&6Srednja pahuljasta bačva'
+  name: 'Srednja pahuljasta bačva'
   stats:
   - '&bKapacitet: &e34560000 predmeta'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7Ručni punjač koji drži mnogo energije'
-  name: '&6Srednji prijenosni punjač'
+  name: 'Srednji prijenosni punjač'
   stats:
   - '&eBrzina punjenja: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
   - '&7Ima promjenjiv kapacitet'
-  name: '&eMini pahuljasta bačva'
+  name: 'Mini pahuljasta bačva'
   stats:
   - '&bNajveći kapacitet: &e172800 predmeta'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7Pijuk, sjekira i lopata u jednom alatu!'
-  name: '&bPaxel'
+  name: 'Paxel'
   type:
   - '&7&oAlat'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Služi za brzo uklanjanje Slimefun teretnih čvorova'
   - '&7i električnih komponenti'
-  name: '&bOjačani pahuljasti ključ'
+  name: 'Ojačani pahuljasti ključ'
   type:
   - '&7&oAlat'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7Razbija 5 usjeva odjednom'
-  name: '&eKosa'
+  name: 'Kosa'
   type:
   - '&7&oAlat'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7Pohranjuje veliku količinu jednog predmeta'
-  name: '&eMala pahuljasta bačva'
+  name: 'Mala pahuljasta bačva'
   stats:
   - '&bKapacitet: &e17280000 predmeta'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7Ručni punjač koji drži mnogo energije'
-  name: '&eMali prijenosni punjač'
+  name: 'Mali prijenosni punjač'
   stats:
   - '&eBrzina punjenja: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7Stroj sve u jednom koji izrađuje'
   - '&7resurse iz sirovina'
-  name: '&cPametna tvornica'
+  name: 'Pametna tvornica'
   stats:
   - '&8⇨ &b⚡ &7Brzina: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7Multiblok komponenta ljevaonice'
   - '&cMora se koristiti u ljevaonici'
-  name: '&cPregrijana peć'
+  name: 'Pregrijana peć'
   type:
   - '&7&oKomponenta'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&7Razbija sve rudarive blokove u radijusu 5x5'
-  name: '&e&lNadograđeni eksplozivni pijuk'
+  name: 'Nadograđeni eksplozivni pijuk'
   type:
   - '&7&oAlat'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&7Razbija sve blokove za lopatu u radijusu 5x5'
-  name: '&e&lNadograđena eksplozivna lopata'
+  name: 'Nadograđena eksplozivna lopata'
   type:
   - '&7&oAlat'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7Obara cijelo stablo odjednom'
   - '&7Doseg od 2 bloka, radi i na dijagonalnim blokovima'
-  name: '&6&lNadograđena drvosječka sjekira'
+  name: 'Nadograđena drvosječka sjekira'
   type:
   - '&7&oAlat'
 WARP_PAD:
   description:
   - '&7Koristi konfigurator teleportnih podloga za njihovo povezivanje'
-  name: '&6Teleportna podloga'
+  name: 'Teleportna podloga'
   type:
   - '&7&oStroj'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7Povezuje dvije teleportne podloge kako bi se mogao teleportirati između njih'
-  name: '&6Konfigurator teleportnih podloga'
+  name: 'Konfigurator teleportnih podloga'
   type:
   - '&7&oAlat'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fZalijeva biljke'
-  name: '&bKanta za zalijevanje'
+  name: 'Kanta za zalijevanje'
   type:
   - '&7&oAlat'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7Prsk, prsk'
-  name: '&bVodena prskalica'
+  name: 'Vodena prskalica'
   type:
   - '&7&oStroj'

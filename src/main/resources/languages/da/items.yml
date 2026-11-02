@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7Opgraderer en avanceret opladerbænk og øger dens kapacitet og opladningshastighed'
-  name: '&6ACB-opgraderingskort'
+  name: 'ACB-opgraderingskort'
   stats:
   - '&6Opladningshastighed &a+5J'
   - '&6Kapacitet &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7Fjerner én fortryllelse fra en genstand'
   - '&7Kræver en &6Ældgammel bog &7for at virke'
-  name: '&cAvanceret automatisk affortryller'
+  name: 'Avanceret automatisk affortryller'
   type:
   - '&7&oMaskine'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7Oplader genstande'
   - '&7Kan opgraderes med et &6ACB-opgraderingskort'
-  name: '&cAvanceret opladerbænk'
+  name: 'Avanceret opladerbænk'
   type:
   - '&7&oMaskine'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fPlacér en elevatorplade på hver etage'
   - '&fog du vil kunne teleportere mellem dem.'
-  name: '&3Alternativ elevatorplade'
+  name: 'Alternativ elevatorplade'
   type:
   - '&7&oMaskine'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7Bruges i den &cAvancerede automatiske affortryller'
   - '&6&oIndeholder koncentrerede mængder kraft'
-  name: '&6Ældgammel bog'
+  name: 'Ældgammel bog'
   type:
   - '&7&oKomponent'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7Fremstiller automatisk &5Ældgammelt alter&7-opskrifter'
-  name: '&5Automatisk ældgammelt alter'
+  name: 'Automatisk ældgammelt alter'
   type:
   - '&7&oMaskine'
 AUTO_ARMOR_FORGE:
   description:
   - '&7Fremstiller automatisk opskrifter til rustningssmedjen'
-  name: '&7Automatisk rustningssmedje'
+  name: 'Automatisk rustningssmedje'
   type:
   - '&7&oMaskine'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7Fremstiller automatisk &fvanilla&7-opskrifter'
-  name: '&6Automatisk arbejdsbord'
+  name: 'Automatisk arbejdsbord'
   type:
   - '&7&oMaskine'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7Fremstiller automatisk &eForbedret arbejdsbord&7-opskrifter'
-  name: '&eAutomatisk forbedret arbejdsbord'
+  name: 'Automatisk forbedret arbejdsbord'
   type:
   - '&7&oMaskine'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7Fremstiller automatisk &6Magisk arbejdsbænk&7-opskrifter'
-  name: '&6Automatisk magisk arbejdsbænk'
+  name: 'Automatisk magisk arbejdsbænk'
   type:
   - '&7&oMaskine'
 AUTO_TABLE_SAW:
   description:
   - '&7Fremstiller automatisk &6Bordsav&7-opskrifter'
-  name: '&6Automatisk bordsav'
+  name: 'Automatisk bordsav'
   type:
   - '&7&oMaskine'
 BACKPACK_LOADER:
   description:
   - '&7Flytter genstande fra inventaret til rygsækken'
-  name: '&eRygsækfylder'
+  name: 'Rygsækfylder'
   type:
   - '&7&oMaskine'
 BACKPACK_UNLOADER:
   description:
   - '&7Tømmer indholdet af rygsække'
-  name: '&eRygsækstømmer'
+  name: 'Rygsækstømmer'
   type:
   - '&7&oMaskine'
 BIG_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&bStor lodden tønde'
+  name: 'Stor lodden tønde'
   stats:
   - '&bKapacitet: &e69120000 genstande'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7En håndholdt oplader, der rummer meget strøm'
-  name: '&aStor bærbar oplader'
+  name: 'Stor bærbar oplader'
   stats:
   - '&eOpladningshastighed: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&cBundløs lodden tønde'
+  name: 'Bundløs lodden tønde'
   stats:
   - '&bKapacitet: &e1728000000 genstande'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Bruges til hurtigt at fjerne Slimefun-fragtnoder'
   - '&7og elektricitetskomponenter'
-  name: '&7Carbonado lodden skruenøgle'
+  name: 'Carbonado lodden skruenøgle'
   type:
   - '&7&oVærktøj'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7En håndholdt oplader, der rummer meget strøm'
-  name: '&4Carbonado bærbar oplader'
+  name: 'Carbonado bærbar oplader'
   stats:
   - '&eOpladningshastighed: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7Kopierer og indsætter indstillinger mellem fragtnoder'
-  name: '&9Fragtmanipulator'
+  name: 'Fragtmanipulator'
   type:
   - '&7&oVærktøj'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cDette er en multiblokmaskine!'
-  name: '&7Håndsvingsgenerator'
+  name: 'Håndsvingsgenerator'
   type:
   - '&7&oGenerator'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7Samler en placeret kiste op sammen med indholdet, så du kan bære den med og sætte den et andet sted'
-  name: '&bSækkevogn'
+  name: 'Sækkevogn'
   type:
   - '&7&oGadget'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7En alt-i-én-maskine, der maler, sigter og vasker'
-  name: '&6Elektrisk støvfabrikator'
+  name: 'Elektrisk støvfabrikator'
   stats:
   - '&8⇨ &b⚡ &7Hastighed: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7Genbruger støv tilbage til sigtet malm'
-  name: '&fElektrisk støvgenbruger'
+  name: 'Elektrisk støvgenbruger'
   stats:
   - '&8⇨ &b⚡ &7Hastighed: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7Placer denne på siden af en &5enderkiste &7for at binde den'
   - '&7Den flytter genstande fra den vendte &5enderkiste'
   - '&7til den &6beholder &7bag den'
-  name: '&6Udtagsnode til enderkiste'
+  name: 'Udtagsnode til enderkiste'
   type:
   - '&7&oMaskine'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7Placer denne på siden af en &5enderkiste &7for at binde den'
   - '&7Den flytter genstande til den vendte &5enderkiste'
   - '&7fra den &6beholder &7bag den'
-  name: '&bIndsætningsnode til enderkiste'
+  name: 'Indsætningsnode til enderkiste'
   type:
   - '&7&oMaskine'
 EXP_DISPENSER:
   description:
   - '&cDette er en multiblokmaskine!'
-  name: '&aErfaringsdispenser'
+  name: 'Erfaringsdispenser'
   type:
   - '&7&oMultiblok'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7Forhindrer en tabt genstand i at brænde op i ild eller lava'
-  name: '&7Ældgammel rune &8&l[&c&lIldfast&8&l]'
+  name: 'Ældgammel rune (Ildfast)'
   type:
   - '&7&oMagisk'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Bruges til hurtigt at fjerne Slimefun-fragtnoder'
   - '&7og elektricitetskomponenter'
-  name: '&6Lodden skruenøgle'
+  name: 'Lodden skruenøgle'
   type:
   - '&7&oVærktøj'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eSmelter og opbevarer støv og barrer'
   - '&cDette er en multiblokmaskine!'
-  name: '&cStøberi'
+  name: 'Støberi'
   stats:
   - '&7Opbevarer 138,240 støv (40 dobbeltkister)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7Multiblokkomponent til generatorer'
-  name: '&7Generatorkerne'
+  name: 'Generatorkerne'
   type:
   - '&7&oKomponent'
 HELICOPTER_HAT:
   description:
   - '&7brrrrrrrrRRRRRRRR'
-  name: '&1Helikopterhat'
+  name: 'Helikopterhat'
   type:
   - '&7&oRustning'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&aMeget stor lodden tønde'
+  name: 'Meget stor lodden tønde'
   stats:
   - '&bKapacitet: &e138240000 genstande'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7En håndholdt oplader, der rummer meget strøm'
-  name: '&2Meget stor bærbar oplader'
+  name: 'Meget stor bærbar oplader'
   stats:
   - '&eOpladningshastighed: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&5Vældig lodden tønde'
+  name: 'Vældig lodden tønde'
   stats:
   - '&bKapacitet: &e276480000 genstande'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&6Mellemstor lodden tønde'
+  name: 'Mellemstor lodden tønde'
   stats:
   - '&bKapacitet: &e34560000 genstande'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7En håndholdt oplader, der rummer meget strøm'
-  name: '&6Mellemstor bærbar oplader'
+  name: 'Mellemstor bærbar oplader'
   stats:
   - '&eOpladningshastighed: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
   - '&7Har en kapacitet, der kan ændres'
-  name: '&eMini lodden tønde'
+  name: 'Mini lodden tønde'
   stats:
   - '&bMaks. kapacitet: &e172800 genstande'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7En spidshakke, en økse og en skovl i ét værktøj!'
-  name: '&bPaxel'
+  name: 'Paxel'
   type:
   - '&7&oVærktøj'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Bruges til hurtigt at fjerne Slimefun-fragtnoder'
   - '&7og elektricitetskomponenter'
-  name: '&bForstærket lodden skruenøgle'
+  name: 'Forstærket lodden skruenøgle'
   type:
   - '&7&oVærktøj'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7Høster 5 afgrøder på én gang'
-  name: '&eLe'
+  name: 'Le'
   type:
   - '&7&oVærktøj'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7Opbevarer en stor mængde af en genstand'
-  name: '&eLille lodden tønde'
+  name: 'Lille lodden tønde'
   stats:
   - '&bKapacitet: &e17280000 genstande'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7En håndholdt oplader, der rummer meget strøm'
-  name: '&eLille bærbar oplader'
+  name: 'Lille bærbar oplader'
   stats:
   - '&eOpladningshastighed: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7En alt-i-én-maskine, der fremstiller'
   - '&7ressourcer af råmaterialer'
-  name: '&cIntelligent fabrik'
+  name: 'Intelligent fabrik'
   stats:
   - '&8⇨ &b⚡ &7Hastighed: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7Multiblokkomponent til støberiet'
   - '&cSkal bruges i støberiet'
-  name: '&cSuperopvarmet ovn'
+  name: 'Superopvarmet ovn'
   type:
   - '&7&oKomponent'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&7Bryder alle brydelige blokke i en 5x5-radius'
-  name: '&e&lOpgraderet eksplosiv spidshakke'
+  name: 'Opgraderet eksplosiv spidshakke'
   type:
   - '&7&oVærktøj'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&7Bryder alle blokke, en skovl kan grave, i en 5x5-radius'
-  name: '&e&lOpgraderet eksplosiv skovl'
+  name: 'Opgraderet eksplosiv skovl'
   type:
   - '&7&oVærktøj'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7Fælder et helt træ på én gang'
   - '&72 blokkes rækkevidde, og virker også på diagonale blokke'
-  name: '&6&lOpgraderet tømmerøkse'
+  name: 'Opgraderet tømmerøkse'
   type:
   - '&7&oVærktøj'
 WARP_PAD:
   description:
   - '&7Brug en springplatformskonfigurator til at forbinde springplatforme'
-  name: '&6Springplatform'
+  name: 'Springplatform'
   type:
   - '&7&oMaskine'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7Forbinder to springplatforme, så du kan teleportere mellem dem'
-  name: '&6Springplatformskonfigurator'
+  name: 'Springplatformskonfigurator'
   type:
   - '&7&oVærktøj'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fVander planter'
-  name: '&bVandkande'
+  name: 'Vandkande'
   type:
   - '&7&oVærktøj'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7Plask plask'
-  name: '&bVandspreder'
+  name: 'Vandspreder'
   type:
   - '&7&oMaskine'

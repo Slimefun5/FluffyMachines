@@ -1,7 +1,7 @@
 ACB_UPGRADE_CARD:
   description:
   - '&7Bir Gelişmiş Şarj Tezgahını yükseltir, kapasitesini ve şarj hızını artırır'
-  name: '&6GŞT Yükseltme Kartı'
+  name: 'GŞT Yükseltme Kartı'
   stats:
   - '&6Şarj Hızı &a+5J'
   - '&6Kapasite &a+128J'
@@ -14,21 +14,21 @@ ADVANCED_AUTO_DISENCHANTER:
   description:
   - '&7Bir eşyadan bir büyüyü kaldırır'
   - '&7Çalışmak için bir &6Kadim Kitap &7gerektirir'
-  name: '&cGelişmiş Otomatik Büyü Sökücü'
+  name: 'Gelişmiş Otomatik Büyü Sökücü'
   type:
   - '&7&oMakine'
 ADVANCED_CHARGING_BENCH:
   description:
   - '&7Eşyaları şarj eder'
   - '&7Şununla yükseltilebilir: &6GŞT Yükseltme Kartı'
-  name: '&cGelişmiş Şarj Tezgahı'
+  name: 'Gelişmiş Şarj Tezgahı'
   type:
   - '&7&oMakine'
 ALTERNATE_ELEVATOR_PLATE:
   description:
   - '&fHer katta bir Asansör Plakası yerleştirin'
   - '&fve aralarında ışınlanabilirsiniz.'
-  name: '&3Alternatif Asansör Plakası'
+  name: 'Alternatif Asansör Plakası'
   type:
   - '&7&oMakine'
   usage:
@@ -38,61 +38,61 @@ ANCIENT_BOOK:
   description:
   - '&7Şurada kullanılır: &cGelişmiş Otomatik Büyü Sökücü'
   - '&6&oYoğunlaştırılmış güç barındırır'
-  name: '&6Kadim Kitap'
+  name: 'Kadim Kitap'
   type:
   - '&7&oBileşen'
 AUTO_ANCIENT_ALTAR:
   description:
   - '&7Otomatik olarak &5Kadim Sunak &7tarifleri üretir'
-  name: '&5Otomatik Kadim Sunak'
+  name: 'Otomatik Kadim Sunak'
   type:
   - '&7&oMakine'
 AUTO_ARMOR_FORGE:
   description:
   - '&7Otomatik olarak Zırh Ocağı tarifleri üretir'
-  name: '&7Otomatik Zırh Ocağı'
+  name: 'Otomatik Zırh Ocağı'
   type:
   - '&7&oMakine'
 AUTO_CRAFTING_TABLE:
   description:
   - '&7Otomatik olarak &fvanilla &7tarifleri üretir'
-  name: '&6Otomatik Çalışma Tezgahı'
+  name: 'Otomatik Çalışma Tezgahı'
   type:
   - '&7&oMakine'
 AUTO_ENHANCED_CRAFTING_TABLE:
   description:
   - '&7Otomatik olarak &eGeliştirilmiş Çalışma Tezgahı &7tarifleri üretir'
-  name: '&eOtomatik Geliştirilmiş Çalışma Tezgahı'
+  name: 'Otomatik Geliştirilmiş Çalışma Tezgahı'
   type:
   - '&7&oMakine'
 AUTO_MAGIC_WORKBENCH:
   description:
   - '&7Otomatik olarak &6Sihir Tezgahı &7tarifleri üretir'
-  name: '&6Otomatik Sihir Tezgahı'
+  name: 'Otomatik Sihir Tezgahı'
   type:
   - '&7&oMakine'
 AUTO_TABLE_SAW:
   description:
   - '&7Otomatik olarak &6Tezgah Testeresi &7tarifleri üretir'
-  name: '&6Otomatik Tezgah Testeresi'
+  name: 'Otomatik Tezgah Testeresi'
   type:
   - '&7&oMakine'
 BACKPACK_LOADER:
   description:
   - '&7Eşyaları envanterden çantaya taşır'
-  name: '&eÇanta Doldurucu'
+  name: 'Çanta Doldurucu'
   type:
   - '&7&oMakine'
 BACKPACK_UNLOADER:
   description:
   - '&7Çantaların içindekileri boşaltır'
-  name: '&eÇanta Boşaltıcı'
+  name: 'Çanta Boşaltıcı'
   type:
   - '&7&oMakine'
 BIG_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&bBüyük Tüylü Fıçı'
+  name: 'Büyük Tüylü Fıçı'
   stats:
   - '&bKapasite: &e69120000 Eşya'
   type:
@@ -100,7 +100,7 @@ BIG_FLUFFY_BARREL:
 BIG_PORTABLE_CHARGER:
   description:
   - '&7Bol güç tutan el tipi bir şarj cihazı'
-  name: '&aBüyük Taşınabilir Şarj Cihazı'
+  name: 'Büyük Taşınabilir Şarj Cihazı'
   stats:
   - '&eŞarj Hızı: &764 J/s'
   type:
@@ -108,7 +108,7 @@ BIG_PORTABLE_CHARGER:
 BOTTOMLESS_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&cDipsiz Tüylü Fıçı'
+  name: 'Dipsiz Tüylü Fıçı'
   stats:
   - '&bKapasite: &e1728000000 Eşya'
   type:
@@ -117,7 +117,7 @@ CARBONADO_FLUFFY_WRENCH:
   description:
   - '&7Slimefun kargo düğümlerini ve elektrik bileşenlerini'
   - '&7hızlıca sökmek için kullanılır'
-  name: '&7Karbonado Tüylü İngiliz Anahtarı'
+  name: 'Karbonado Tüylü İngiliz Anahtarı'
   type:
   - '&7&oAlet'
   usage:
@@ -125,7 +125,7 @@ CARBONADO_FLUFFY_WRENCH:
 CARBONADO_PORTABLE_CHARGER:
   description:
   - '&7Bol güç tutan el tipi bir şarj cihazı'
-  name: '&4Karbonado Taşınabilir Şarj Cihazı'
+  name: 'Karbonado Taşınabilir Şarj Cihazı'
   stats:
   - '&eŞarj Hızı: &74096 J/s'
   type:
@@ -133,7 +133,7 @@ CARBONADO_PORTABLE_CHARGER:
 CARGO_MANIPULATOR:
   description:
   - '&7Kargo düğümleri arasında düğüm ayarlarını kopyalar ve yapıştırır'
-  name: '&9Kargo Manipülatörü'
+  name: 'Kargo Manipülatörü'
   type:
   - '&7&oAlet'
   usage:
@@ -143,7 +143,7 @@ CARGO_MANIPULATOR:
 CRANK_GENERATOR:
   description:
   - '&cBu bir Çok Bloklu makinedir!'
-  name: '&7Kollu Jeneratör'
+  name: 'Kollu Jeneratör'
   type:
   - '&7&oJeneratör'
   usage:
@@ -151,7 +151,7 @@ CRANK_GENERATOR:
 DOLLY:
   description:
   - '&7Yerleştirilmiş bir sandığı içindekilerle birlikte alır, böylece taşıyıp başka yere koyabilirsin'
-  name: '&bEl Arabası'
+  name: 'El Arabası'
   type:
   - '&7&oCihaz'
   usage:
@@ -159,7 +159,7 @@ DOLLY:
 ELECTRIC_DUST_FABRICATOR:
   description:
   - '&7Öğüten, eleyen ve yıkayan hepsi bir arada bir makine'
-  name: '&6Elektrikli Toz Fabrikatörü'
+  name: 'Elektrikli Toz Fabrikatörü'
   stats:
   - '&8⇨ &b⚡ &7Hız: &b10.0x'
   type:
@@ -167,7 +167,7 @@ ELECTRIC_DUST_FABRICATOR:
 ELECTRIC_DUST_RECYCLER:
   description:
   - '&7Tozu yeniden elenmiş cevhere dönüştürür'
-  name: '&fElektrikli Toz Geri Dönüştürücü'
+  name: 'Elektrikli Toz Geri Dönüştürücü'
   stats:
   - '&8⇨ &b⚡ &7Hız: &b1.0x'
   type:
@@ -177,7 +177,7 @@ ENDER_CHEST_EXTRACTION_NODE:
   - '&7Bağlamak için bunu bir &5Ender Sandığının &7yanına koy'
   - '&7Bu, eşyaları baktığı &5Ender Sandığından'
   - '&7arkasındaki &6Kaba &7taşır'
-  name: '&6Ender Sandığı Çıkarma Düğümü'
+  name: 'Ender Sandığı Çıkarma Düğümü'
   type:
   - '&7&oMakine'
 ENDER_CHEST_INSERTION_NODE:
@@ -185,13 +185,13 @@ ENDER_CHEST_INSERTION_NODE:
   - '&7Bağlamak için bunu bir &5Ender Sandığının &7yanına koy'
   - '&7Bu, eşyaları baktığı &5Ender Sandığına taşır'
   - '&7arkasındaki &6Kaptan &7alarak'
-  name: '&bEnder Sandığı Ekleme Düğümü'
+  name: 'Ender Sandığı Ekleme Düğümü'
   type:
   - '&7&oMakine'
 EXP_DISPENSER:
   description:
   - '&cBu bir Çok Bloklu makinedir!'
-  name: '&aTecrübe Dağıtıcısı'
+  name: 'Tecrübe Dağıtıcısı'
   type:
   - '&7&oYapı'
   usage:
@@ -201,7 +201,7 @@ EXP_DISPENSER:
 FIREPROOF_RUNE:
   description:
   - '&7Düşmüş bir eşyanın ateşte veya lavda yanmasını önler'
-  name: '&7Kadim Rün &8&l[&c&lAteşe Dayanıklı&8&l]'
+  name: 'Kadim Rün (Ateşe Dayanıklı)'
   type:
   - '&7&oSihirli'
   usage:
@@ -211,7 +211,7 @@ FLUFFY_WRENCH:
   description:
   - '&7Slimefun kargo düğümlerini ve elektrik bileşenlerini'
   - '&7hızlıca sökmek için kullanılır'
-  name: '&6Tüylü İngiliz Anahtarı'
+  name: 'Tüylü İngiliz Anahtarı'
   type:
   - '&7&oAlet'
   usage:
@@ -220,7 +220,7 @@ FOUNDRY:
   description:
   - '&eTozları ve külçeleri eritip depolar'
   - '&cBu bir Çok Bloklu makinedir!'
-  name: '&cDökümhane'
+  name: 'Dökümhane'
   stats:
   - '&7138,240 toz depolar (40 Çift Sandık)'
   type:
@@ -228,13 +228,13 @@ FOUNDRY:
 GENERATOR_CORE:
   description:
   - '&7Jeneratörlerin çok bloklu bileşeni'
-  name: '&7Jeneratör Çekirdeği'
+  name: 'Jeneratör Çekirdeği'
   type:
   - '&7&oBileşen'
 HELICOPTER_HAT:
   description:
   - '&7brrrrrrrrRRRRRRRR'
-  name: '&1Helikopter Şapkası'
+  name: 'Helikopter Şapkası'
   type:
   - '&7&oZırh'
   usage:
@@ -242,7 +242,7 @@ HELICOPTER_HAT:
 LARGE_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&aKocaman Tüylü Fıçı'
+  name: 'Kocaman Tüylü Fıçı'
   stats:
   - '&bKapasite: &e138240000 Eşya'
   type:
@@ -250,7 +250,7 @@ LARGE_FLUFFY_BARREL:
 LARGE_PORTABLE_CHARGER:
   description:
   - '&7Bol güç tutan el tipi bir şarj cihazı'
-  name: '&2Kocaman Taşınabilir Şarj Cihazı'
+  name: 'Kocaman Taşınabilir Şarj Cihazı'
   stats:
   - '&eŞarj Hızı: &7512 J/s'
   type:
@@ -258,7 +258,7 @@ LARGE_PORTABLE_CHARGER:
 MASSIVE_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&5Devasa Tüylü Fıçı'
+  name: 'Devasa Tüylü Fıçı'
   stats:
   - '&bKapasite: &e276480000 Eşya'
   type:
@@ -266,7 +266,7 @@ MASSIVE_FLUFFY_BARREL:
 MEDIUM_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&6Orta Tüylü Fıçı'
+  name: 'Orta Tüylü Fıçı'
   stats:
   - '&bKapasite: &e34560000 Eşya'
   type:
@@ -274,7 +274,7 @@ MEDIUM_FLUFFY_BARREL:
 MEDIUM_PORTABLE_CHARGER:
   description:
   - '&7Bol güç tutan el tipi bir şarj cihazı'
-  name: '&6Orta Taşınabilir Şarj Cihazı'
+  name: 'Orta Taşınabilir Şarj Cihazı'
   stats:
   - '&eŞarj Hızı: &732 J/s'
   type:
@@ -283,7 +283,7 @@ MINI_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
   - '&7Değiştirilebilir bir kapasitesi vardır'
-  name: '&eMini Tüylü Fıçı'
+  name: 'Mini Tüylü Fıçı'
   stats:
   - '&bAzami Kapasite: &e172800 Eşya'
   type:
@@ -291,14 +291,14 @@ MINI_FLUFFY_BARREL:
 PAXEL:
   description:
   - '&7Tek bir alette kazma, balta ve kürek!'
-  name: '&bPaxel'
+  name: 'Paxel'
   type:
   - '&7&oAlet'
 REINFORCED_FLUFFY_WRENCH:
   description:
   - '&7Slimefun kargo düğümlerini ve elektrik bileşenlerini'
   - '&7hızlıca sökmek için kullanılır'
-  name: '&bTakviyeli Tüylü İngiliz Anahtarı'
+  name: 'Takviyeli Tüylü İngiliz Anahtarı'
   type:
   - '&7&oAlet'
   usage:
@@ -306,13 +306,13 @@ REINFORCED_FLUFFY_WRENCH:
 SCYTHE:
   description:
   - '&7Aynı anda 5 ekin biçer'
-  name: '&eTırpan'
+  name: 'Tırpan'
   type:
   - '&7&oAlet'
 SMALL_FLUFFY_BARREL:
   description:
   - '&7Bir eşyayı büyük miktarda depolar'
-  name: '&eKüçük Tüylü Fıçı'
+  name: 'Küçük Tüylü Fıçı'
   stats:
   - '&bKapasite: &e17280000 Eşya'
   type:
@@ -320,7 +320,7 @@ SMALL_FLUFFY_BARREL:
 SMALL_PORTABLE_CHARGER:
   description:
   - '&7Bol güç tutan el tipi bir şarj cihazı'
-  name: '&eKüçük Taşınabilir Şarj Cihazı'
+  name: 'Küçük Taşınabilir Şarj Cihazı'
   stats:
   - '&eŞarj Hızı: &78 J/s'
   type:
@@ -329,7 +329,7 @@ SMART_FACTORY:
   description:
   - '&7Ham malzemelerden kaynak üreten'
   - '&7hepsi bir arada bir makine'
-  name: '&cAkıllı Fabrika'
+  name: 'Akıllı Fabrika'
   stats:
   - '&8⇨ &b⚡ &7Hız: &b1.0x'
   type:
@@ -338,32 +338,32 @@ SUPERHEATED_FURNACE:
   description:
   - '&7Dökümhanenin çok bloklu bileşeni'
   - '&cDökümhanede kullanılmalıdır'
-  name: '&cSüper Isıtılmış Fırın'
+  name: 'Süper Isıtılmış Fırın'
   type:
   - '&7&oBileşen'
 UPGRADED_EXPLOSIVE_PICKAXE:
   description:
   - '&75x5 yarıçapındaki kazılabilir tüm blokları kırar'
-  name: '&e&lYükseltilmiş Patlayıcı Kazma'
+  name: 'Yükseltilmiş Patlayıcı Kazma'
   type:
   - '&7&oAlet'
 UPGRADED_EXPLOSIVE_SHOVEL:
   description:
   - '&75x5 yarıçapındaki küreklenebilir tüm blokları kırar'
-  name: '&e&lYükseltilmiş Patlayıcı Kürek'
+  name: 'Yükseltilmiş Patlayıcı Kürek'
   type:
   - '&7&oAlet'
 UPGRADED_LUMBER_AXE:
   description:
   - '&7Bütün bir ağacı tek seferde devirir'
   - '&72 blok erişimi vardır ve çapraz bloklarda da çalışır'
-  name: '&6&lYükseltilmiş Oduncu Baltası'
+  name: 'Yükseltilmiş Oduncu Baltası'
   type:
   - '&7&oAlet'
 WARP_PAD:
   description:
   - '&7Işınlanma Pedlerini bağlamak için Işınlanma Pedi Yapılandırıcısı kullan'
-  name: '&6Işınlanma Pedi'
+  name: 'Işınlanma Pedi'
   type:
   - '&7&oMakine'
   usage:
@@ -372,7 +372,7 @@ WARP_PAD:
 WARP_PAD_CONFIGURATOR:
   description:
   - '&7İki Işınlanma Pedini birbirine bağlar, böylece aralarında ışınlanabilirsin'
-  name: '&6Işınlanma Pedi Yapılandırıcısı'
+  name: 'Işınlanma Pedi Yapılandırıcısı'
   type:
   - '&7&oAlet'
   usage:
@@ -381,7 +381,7 @@ WARP_PAD_CONFIGURATOR:
 WATERING_CAN:
   description:
   - '&fBitkileri sular'
-  name: '&bSulama Kabı'
+  name: 'Sulama Kabı'
   type:
   - '&7&oAlet'
   usage:
@@ -391,6 +391,6 @@ WATERING_CAN:
 WATER_SPRINKLER:
   description:
   - '&7Fışkır fışkır'
-  name: '&bSu Fıskiyesi'
+  name: 'Su Fıskiyesi'
   type:
   - '&7&oMakine'

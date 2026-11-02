@@ -2,7 +2,7 @@
 # Composed at render time by LoreComposer in the order Type -> Description -> Stats -> Usage.
 
 MINI_FLUFFY_BARREL:
-  name: "&eMini Fluffy Barrel"
+  name: 'Mini Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -12,7 +12,7 @@ MINI_FLUFFY_BARREL:
     - "&bMax Capacity: &e172800 Items"
 
 SMALL_PORTABLE_CHARGER:
-  name: "&eSmall Portable Charger"
+  name: 'Small Portable Charger'
   type:
     - "&7&oGadget"
   description:
@@ -21,7 +21,7 @@ SMALL_PORTABLE_CHARGER:
     - "&eCharge Speed: &78 J/s"
 
 MEDIUM_PORTABLE_CHARGER:
-  name: "&6Medium Portable Charger"
+  name: 'Medium Portable Charger'
   type:
     - "&7&oGadget"
   description:
@@ -30,7 +30,7 @@ MEDIUM_PORTABLE_CHARGER:
     - "&eCharge Speed: &732 J/s"
 
 BIG_PORTABLE_CHARGER:
-  name: "&aBig Portable Charger"
+  name: 'Big Portable Charger'
   type:
     - "&7&oGadget"
   description:
@@ -39,7 +39,7 @@ BIG_PORTABLE_CHARGER:
     - "&eCharge Speed: &764 J/s"
 
 LARGE_PORTABLE_CHARGER:
-  name: "&2Large Portable Charger"
+  name: 'Large Portable Charger'
   type:
     - "&7&oGadget"
   description:
@@ -48,7 +48,7 @@ LARGE_PORTABLE_CHARGER:
     - "&eCharge Speed: &7512 J/s"
 
 CARBONADO_PORTABLE_CHARGER:
-  name: "&4Carbonado Portable Charger"
+  name: 'Carbonado Portable Charger'
   type:
     - "&7&oGadget"
   description:
@@ -57,7 +57,7 @@ CARBONADO_PORTABLE_CHARGER:
     - "&eCharge Speed: &74096 J/s"
 
 ANCIENT_BOOK:
-  name: "&6Ancient Book"
+  name: 'Ancient Book'
   type:
     - "&7&oComponent"
   description:
@@ -65,7 +65,7 @@ ANCIENT_BOOK:
     - "&6&oContains concentrated amounts of power"
 
 HELICOPTER_HAT:
-  name: "&1Helicopter Hat"
+  name: 'Helicopter Hat'
   type:
     - "&7&oArmor"
   description:
@@ -74,7 +74,7 @@ HELICOPTER_HAT:
     - "&eSneak &7to use"
 
 WATERING_CAN:
-  name: "&bWatering Can"
+  name: 'Watering Can'
   type:
     - "&7&oTool"
   description:
@@ -85,7 +85,7 @@ WATERING_CAN:
     - "&7> &eRight Click &7a player to slow them down"
 
 ENDER_CHEST_EXTRACTION_NODE:
-  name: "&6Ender Chest Extraction Node"
+  name: 'Ender Chest Extraction Node'
   type:
     - "&7&oMachine"
   description:
@@ -94,7 +94,7 @@ ENDER_CHEST_EXTRACTION_NODE:
     - "&7to the &6Container &7behind it"
 
 ENDER_CHEST_INSERTION_NODE:
-  name: "&bEnder Chest Insertion Node"
+  name: 'Ender Chest Insertion Node'
   type:
     - "&7&oMachine"
   description:
@@ -103,42 +103,42 @@ ENDER_CHEST_INSERTION_NODE:
     - "&7from the &6Container &7behind it"
 
 AUTO_CRAFTING_TABLE:
-  name: "&6Auto Crafting Table"
+  name: 'Auto Crafting Table'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts &fvanilla &7recipes"
 
 AUTO_ANCIENT_ALTAR:
-  name: "&5Auto Ancient Altar"
+  name: 'Auto Ancient Altar'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts &5Ancient Altar &7recipes"
 
 AUTO_TABLE_SAW:
-  name: "&6Auto Table Saw"
+  name: 'Auto Table Saw'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts &6Table Saw &7recipes"
 
 WATER_SPRINKLER:
-  name: "&bWater Sprinkler"
+  name: 'Water Sprinkler'
   type:
     - "&7&oMachine"
   description:
     - "&7Sprinkly sprinkly"
 
 GENERATOR_CORE:
-  name: "&7Generator Core"
+  name: 'Generator Core'
   type:
     - "&7&oComponent"
   description:
     - "&7Multiblock component of generators"
 
 CRANK_GENERATOR:
-  name: "&7Crank Generator"
+  name: 'Crank Generator'
   type:
     - "&7&oGenerator"
   description:
@@ -147,7 +147,7 @@ CRANK_GENERATOR:
     - "&eRight click &7the lever to generate power"
 
 FOUNDRY:
-  name: "&cFoundry"
+  name: 'Foundry'
   type:
     - "&7&oMultiblock"
   description:
@@ -157,35 +157,35 @@ FOUNDRY:
     - "&7Stores 138,240 dust (40 Double Chests)"
 
 BACKPACK_UNLOADER:
-  name: "&eBackpack Unloader"
+  name: 'Backpack Unloader'
   type:
     - "&7&oMachine"
   description:
     - "&7Empties the contents of backpacks"
 
 BACKPACK_LOADER:
-  name: "&eBackpack Loader"
+  name: 'Backpack Loader'
   type:
     - "&7&oMachine"
   description:
     - "&7Moves items from inventory to backpack"
 
 UPGRADED_EXPLOSIVE_PICKAXE:
-  name: "&e&lUpgraded Explosive Pickaxe"
+  name: 'Upgraded Explosive Pickaxe'
   type:
     - "&7&oTool"
   description:
     - "&7Breaks all mineable blocks in a 5x5 radius"
 
 UPGRADED_EXPLOSIVE_SHOVEL:
-  name: "&e&lUpgraded Explosive Shovel"
+  name: 'Upgraded Explosive Shovel'
   type:
     - "&7&oTool"
   description:
     - "&7Breaks all shovelable blocks in a 5x5 radius"
 
 FIREPROOF_RUNE:
-  name: "&7Ancient Rune &8&l[&c&lFireproof&8&l]"
+  name: 'Ancient Rune (Fireproof)'
   type:
     - "&7&oMagical"
   description:
@@ -195,7 +195,7 @@ FIREPROOF_RUNE:
     - "&emake it &cfireproof"
 
 SUPERHEATED_FURNACE:
-  name: "&cSuper Heated Furnace"
+  name: 'Super Heated Furnace'
   type:
     - "&7&oComponent"
   description:
@@ -203,28 +203,28 @@ SUPERHEATED_FURNACE:
     - "&cMust be used in the Foundry"
 
 AUTO_ENHANCED_CRAFTING_TABLE:
-  name: "&eAuto Enhanced Crafting Table"
+  name: 'Auto Enhanced Crafting Table'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts &eEnhanced Crafting Table &7recipes"
 
 AUTO_MAGIC_WORKBENCH:
-  name: "&6Auto Magic Workbench"
+  name: 'Auto Magic Workbench'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts &6Magic Workbench &7recipes"
 
 AUTO_ARMOR_FORGE:
-  name: "&7Auto Armor Forge"
+  name: 'Auto Armor Forge'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically crafts Armor Forge recipes"
 
 ADVANCED_AUTO_DISENCHANTER:
-  name: "&cAdvanced Auto Disenchanter"
+  name: 'Advanced Auto Disenchanter'
   type:
     - "&7&oMachine"
   description:
@@ -232,14 +232,14 @@ ADVANCED_AUTO_DISENCHANTER:
     - "&7Requires an &6Ancient Book &7to operate"
 
 SCYTHE:
-  name: "&eScythe"
+  name: 'Scythe'
   type:
     - "&7&oTool"
   description:
     - "&7Breaks 5 crops at once"
 
 UPGRADED_LUMBER_AXE:
-  name: "&6&lUpgraded Lumber Axe"
+  name: 'Upgraded Lumber Axe'
   type:
     - "&7&oTool"
   description:
@@ -247,7 +247,7 @@ UPGRADED_LUMBER_AXE:
     - "&72 block reach and works on diagonal blocks too"
 
 DOLLY:
-  name: "&bDolly"
+  name: 'Dolly'
   type:
     - "&7&oGadget"
   description:
@@ -256,7 +256,7 @@ DOLLY:
     - "&7Right click a chest to pick it up"
 
 WARP_PAD:
-  name: "&6Warp Pad"
+  name: 'Warp Pad'
   type:
     - "&7&oMachine"
   description:
@@ -266,7 +266,7 @@ WARP_PAD:
     - "&7the linked destination pad"
 
 WARP_PAD_CONFIGURATOR:
-  name: "&6Warp Pad Configurator"
+  name: 'Warp Pad Configurator'
   type:
     - "&7&oTool"
   description:
@@ -276,7 +276,7 @@ WARP_PAD_CONFIGURATOR:
     - "&eRight Click &7on a Warp Pad to set the origin"
 
 ELECTRIC_DUST_FABRICATOR:
-  name: "&6Electric Dust Fabricator"
+  name: 'Electric Dust Fabricator'
   type:
     - "&7&oMachine"
   description:
@@ -285,7 +285,7 @@ ELECTRIC_DUST_FABRICATOR:
     - "&8⇨ &b⚡ &7Speed: &b10.0x"
 
 ELECTRIC_DUST_RECYCLER:
-  name: "&fElectric Dust Recycler"
+  name: 'Electric Dust Recycler'
   type:
     - "&7&oMachine"
   description:
@@ -294,7 +294,7 @@ ELECTRIC_DUST_RECYCLER:
     - "&8⇨ &b⚡ &7Speed: &b1.0x"
 
 ALTERNATE_ELEVATOR_PLATE:
-  name: "&3Alternate Elevator Plate"
+  name: 'Alternate Elevator Plate'
   type:
     - "&7&oMachine"
   description:
@@ -305,7 +305,7 @@ ALTERNATE_ELEVATOR_PLATE:
     - "&7Uses a Chest GUI instead of a Book GUI"
 
 FLUFFY_WRENCH:
-  name: "&6Fluffy Wrench"
+  name: 'Fluffy Wrench'
   type:
     - "&7&oTool"
   description:
@@ -315,7 +315,7 @@ FLUFFY_WRENCH:
     - "&eLeft&7/&eRight Click &7a compatible block to break it"
 
 REINFORCED_FLUFFY_WRENCH:
-  name: "&bReinforced Fluffy Wrench"
+  name: 'Reinforced Fluffy Wrench'
   type:
     - "&7&oTool"
   description:
@@ -325,7 +325,7 @@ REINFORCED_FLUFFY_WRENCH:
     - "&eLeft&7/&eRight Click &7a compatible block to break it"
 
 CARBONADO_FLUFFY_WRENCH:
-  name: "&7Carbonado Fluffy Wrench"
+  name: 'Carbonado Fluffy Wrench'
   type:
     - "&7&oTool"
   description:
@@ -335,14 +335,14 @@ CARBONADO_FLUFFY_WRENCH:
     - "&eLeft&7/&eRight Click &7a compatible block to break it"
 
 PAXEL:
-  name: "&bPaxel"
+  name: 'Paxel'
   type:
     - "&7&oTool"
   description:
     - "&7A pickaxe, axe, and shovel in one tool!"
 
 ADVANCED_CHARGING_BENCH:
-  name: "&cAdvanced Charging Bench"
+  name: 'Advanced Charging Bench'
   type:
     - "&7&oMachine"
   description:
@@ -350,7 +350,7 @@ ADVANCED_CHARGING_BENCH:
     - "&7Can be upgraded using an &6ACB Upgrade Card"
 
 ACB_UPGRADE_CARD:
-  name: "&6ACB Upgrade Card"
+  name: 'ACB Upgrade Card'
   type:
     - "&7&oComponent"
   description:
@@ -363,7 +363,7 @@ ACB_UPGRADE_CARD:
     - "&eRight Click &7onto an &cAdvanced Charging Bench"
 
 CARGO_MANIPULATOR:
-  name: "&9Cargo Manipulator"
+  name: 'Cargo Manipulator'
   type:
     - "&7&oTool"
   description:
@@ -374,7 +374,7 @@ CARGO_MANIPULATOR:
     - "&eSneak and Right Click &7to clear a cargo node"
 
 EXP_DISPENSER:
-  name: "&aExp Dispenser"
+  name: 'Exp Dispenser'
   type:
     - "&7&oMultiblock"
   description:
@@ -385,7 +385,7 @@ EXP_DISPENSER:
     - "&7and barrel the dispenser is facing"
 
 SMART_FACTORY:
-  name: "&cSmart Factory"
+  name: 'Smart Factory'
   type:
     - "&7&oMachine"
   description:
@@ -395,7 +395,7 @@ SMART_FACTORY:
     - "&8⇨ &b⚡ &7Speed: &b1.0x"
 
 SMALL_FLUFFY_BARREL:
-  name: "&eSmall Fluffy Barrel"
+  name: 'Small Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -404,7 +404,7 @@ SMALL_FLUFFY_BARREL:
     - "&bCapacity: &e17280000 Items"
 
 MEDIUM_FLUFFY_BARREL:
-  name: "&6Medium Fluffy Barrel"
+  name: 'Medium Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -413,7 +413,7 @@ MEDIUM_FLUFFY_BARREL:
     - "&bCapacity: &e34560000 Items"
 
 BIG_FLUFFY_BARREL:
-  name: "&bBig Fluffy Barrel"
+  name: 'Big Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -422,7 +422,7 @@ BIG_FLUFFY_BARREL:
     - "&bCapacity: &e69120000 Items"
 
 LARGE_FLUFFY_BARREL:
-  name: "&aLarge Fluffy Barrel"
+  name: 'Large Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -431,7 +431,7 @@ LARGE_FLUFFY_BARREL:
     - "&bCapacity: &e138240000 Items"
 
 MASSIVE_FLUFFY_BARREL:
-  name: "&5Massive Fluffy Barrel"
+  name: 'Massive Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
@@ -440,7 +440,7 @@ MASSIVE_FLUFFY_BARREL:
     - "&bCapacity: &e276480000 Items"
 
 BOTTOMLESS_FLUFFY_BARREL:
-  name: "&cBottomless Fluffy Barrel"
+  name: 'Bottomless Fluffy Barrel'
   type:
     - "&7&oMisc"
   description:
